@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import AppStoreButtons from "@/components/AppStoreButtons";
 import SavingsCounter from "@/components/SavingsCounter";
@@ -33,70 +34,32 @@ function Hero() {
             <AppStoreButtons className="mt-8" />
           </div>
 
-          {/* Mockup — UI karty čerpacích stanic */}
+          {/* Phone mockup se screenshotem aplikace */}
           <div className="relative flex justify-center lg:justify-end" aria-label="Ukázka aplikace PHMarket">
-            <div className="relative w-72 sm:w-80">
+            <div className="relative">
               {/* Phone frame */}
-              <div className="bg-white rounded-3xl shadow-2xl border border-gray-200 p-4 space-y-3">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-sm font-semibold text-dark">Nejbližší stanice</span>
-                  <span className="text-xs text-gray-400">PHMap</span>
-                </div>
-
-                {/* Station card 1 */}
-                <div className="rounded-xl bg-primary/5 border border-primary/20 p-3">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <p className="font-semibold text-sm text-dark">ORLEN Český Těšín</p>
-                      <p className="text-xs text-gray-500 mt-0.5">0,8 km od vás</p>
-                    </div>
-                    <div className="bg-primary text-white text-xs font-bold px-2 py-1 rounded-lg">
-                      -2,50 Kč/l
-                    </div>
-                  </div>
-                  <div className="flex gap-2 mt-2">
-                    <span className="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">Natural 95</span>
-                    <span className="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">Diesel</span>
-                  </div>
-                </div>
-
-                {/* Station card 2 */}
-                <div className="rounded-xl bg-gray-50 border border-gray-100 p-3">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <p className="font-semibold text-sm text-dark">MOL Třinec</p>
-                      <p className="text-xs text-gray-500 mt-0.5">3,2 km od vás</p>
-                    </div>
-                    <div className="bg-primary text-white text-xs font-bold px-2 py-1 rounded-lg">
-                      -1,80 Kč/l
-                    </div>
-                  </div>
-                  <div className="flex gap-2 mt-2">
-                    <span className="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">Natural 95</span>
-                  </div>
-                </div>
-
-                {/* Station card 3 */}
-                <div className="rounded-xl bg-gray-50 border border-gray-100 p-3">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <p className="font-semibold text-sm text-dark">EuroOil Havířov</p>
-                      <p className="text-xs text-gray-500 mt-0.5">8,5 km od vás</p>
-                    </div>
-                    <div className="bg-primary text-white text-xs font-bold px-2 py-1 rounded-lg">
-                      -3,00 Kč/l
-                    </div>
-                  </div>
-                  <div className="flex gap-2 mt-2">
-                    <span className="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">Diesel</span>
-                    <span className="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">AdBlue</span>
+              <div className="relative w-[280px] sm:w-[320px] mx-auto">
+                {/* Outer frame */}
+                <div className="rounded-[3rem] bg-dark p-3 shadow-2xl">
+                  {/* Notch */}
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-7 bg-dark rounded-b-2xl z-10" />
+                  {/* Screen */}
+                  <div className="rounded-[2.25rem] overflow-hidden bg-white">
+                    <Image
+                      src="/app-screenshot.png"
+                      alt="PHMarket aplikace — přehled čerpacích stanic se slevami"
+                      width={640}
+                      height={1385}
+                      className="w-full h-auto"
+                      priority
+                    />
                   </div>
                 </div>
               </div>
 
               {/* Decorative blur */}
-              <div className="absolute -z-10 -top-6 -right-6 w-40 h-40 bg-primary/20 rounded-full blur-3xl" />
-              <div className="absolute -z-10 -bottom-4 -left-4 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />
+              <div className="absolute -z-10 -top-8 -right-8 w-48 h-48 bg-primary/20 rounded-full blur-3xl" />
+              <div className="absolute -z-10 -bottom-6 -left-6 w-36 h-36 bg-primary/10 rounded-full blur-2xl" />
             </div>
           </div>
         </div>
