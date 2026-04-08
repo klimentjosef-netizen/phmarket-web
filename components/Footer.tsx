@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const SOCIAL_LINKS = [
@@ -45,13 +46,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-white font-bold text-sm">PH</span>
-              </div>
-              <span className="text-xl font-bold text-white">
-                PH<span className="text-primary">Market</span>
-              </span>
+            <Link href="/" className="inline-block mb-4">
+              <Image
+                src="/logo.png"
+                alt="PHMarket logo"
+                width={140}
+                height={60}
+                className="h-10 w-auto brightness-0 invert"
+              />
             </Link>
             <p className="text-sm text-gray-400 leading-relaxed">
               Chytrá aplikace pro úspory na tankování. Bez registrace, poplatků
