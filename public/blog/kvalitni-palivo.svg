@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E6935"/>
+      <stop offset="50%" style="stop-color:#186E31"/>
+      <stop offset="100%" style="stop-color:#0D4F3D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg4)"/>
+  <circle cx="1050" cy="150" r="220" fill="rgba(255,255,255,0.04)"/>
+  <circle cx="900" cy="480" r="180" fill="rgba(255,255,255,0.03)"/>
+  <!-- Scale/balance icon -->
+  <g transform="translate(840, 160)" stroke="rgba(255,255,255,0.2)" stroke-width="4" fill="none">
+    <line x1="100" y1="0" x2="100" y2="180"/>
+    <line x1="20" y1="60" x2="180" y2="60"/>
+    <!-- Left pan -->
+    <path d="M20 60 L0 130 L80 130 Z" fill="rgba(255,255,255,0.05)"/>
+    <text x="30" y="118" fill="rgba(255,255,255,0.3)" font-family="system-ui, sans-serif" font-size="18" font-weight="700" stroke="none">Kč</text>
+    <!-- Right pan (higher = quality) -->
+    <path d="M180 60 L140 100 L220 100 Z" fill="rgba(255,255,255,0.08)"/>
+    <text x="163" y="94" fill="rgba(255,255,255,0.3)" font-family="system-ui, sans-serif" font-size="16" font-weight="700" stroke="none">✓</text>
+    <rect x="80" y="180" width="40" height="15" rx="3"/>
+  </g>
+  <!-- Shield check -->
+  <g transform="translate(920, 370)" fill="rgba(255,255,255,0.1)">
+    <path d="M40 0 L80 15 L80 50 C80 80 40 100 40 100 C40 100 0 80 0 50 L0 15 Z"/>
+    <polyline points="18,48 32,62 60,34" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- Text -->
+  <text x="80" y="240" fill="white" font-family="system-ui, -apple-system, sans-serif" font-size="46" font-weight="700" letter-spacing="-1">
+    <tspan x="80" dy="0">Kvalitní palivo</tspan>
+    <tspan x="80" dy="58">vs. nízká cena</tspan>
+  </text>
+  <text x="80" y="390" fill="rgba(255,255,255,0.6)" font-family="system-ui, -apple-system, sans-serif" font-size="22">
+    <tspan x="80" dy="0">Musíte se bát levného tankování?</tspan>
+  </text>
+  <rect x="80" y="510" width="140" height="36" rx="18" fill="rgba(255,255,255,0.15)"/>
+  <text x="150" y="534" fill="white" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">PHMarket</text>
+</svg>

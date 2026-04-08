@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3a4a"/>
+      <stop offset="100%" style="stop-color:#0D4F3D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg6)"/>
+  <!-- Snowflakes -->
+  <g fill="rgba(255,255,255,0.08)" font-family="system-ui, sans-serif" font-size="60">
+    <text x="850" y="120">❄</text>
+    <text x="1000" y="250">❄</text>
+    <text x="920" y="400">❄</text>
+    <text x="1080" y="480">❄</text>
+    <text x="780" y="320" font-size="40">❄</text>
+  </g>
+  <!-- Thermometer -->
+  <g transform="translate(950, 140)">
+    <rect x="30" y="0" width="20" height="200" rx="10" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="3"/>
+    <circle cx="40" cy="230" r="30" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="3"/>
+    <!-- Mercury level low = cold -->
+    <rect x="34" y="120" width="12" height="80" rx="6" fill="rgba(100,180,255,0.3)"/>
+    <circle cx="40" cy="230" r="20" fill="rgba(100,180,255,0.3)"/>
+    <!-- Temperature marks -->
+    <line x1="55" y1="30" x2="70" y2="30" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+    <line x1="55" y1="70" x2="70" y2="70" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+    <line x1="55" y1="110" x2="70" y2="110" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+    <line x1="55" y1="150" x2="70" y2="150" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+  </g>
+  <!-- Sun (summer) vs snowflake (winter) -->
+  <g transform="translate(850, 440)" opacity="0.15">
+    <circle cx="0" cy="0" r="20" fill="white"/>
+    <g stroke="white" stroke-width="3">
+      <line x1="0" y1="-32" x2="0" y2="-40"/>
+      <line x1="0" y1="32" x2="0" y2="40"/>
+      <line x1="-32" y1="0" x2="-40" y2="0"/>
+      <line x1="32" y1="0" x2="40" y2="0"/>
+    </g>
+    <text x="60" y="8" fill="white" font-family="system-ui, sans-serif" font-size="24" font-weight="700">vs</text>
+    <text x="100" y="15" fill="white" font-family="system-ui, sans-serif" font-size="40">❄</text>
+  </g>
+  <!-- Text -->
+  <text x="80" y="240" fill="white" font-family="system-ui, -apple-system, sans-serif" font-size="46" font-weight="700" letter-spacing="-1">
+    <tspan x="80" dy="0">Zimní vs. letní</tspan>
+    <tspan x="80" dy="58">nafta</tspan>
+  </text>
+  <text x="80" y="390" fill="rgba(255,255,255,0.6)" font-family="system-ui, -apple-system, sans-serif" font-size="22">
+    <tspan x="80" dy="0">Co se skutečně děje v mrazech</tspan>
+    <tspan x="80" dy="32">a jak tankovat správně</tspan>
+  </text>
+  <rect x="80" y="510" width="140" height="36" rx="18" fill="rgba(24,110,49,0.4)"/>
+  <text x="150" y="534" fill="white" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">PHMarket</text>
+</svg>

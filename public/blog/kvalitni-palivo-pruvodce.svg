@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D4F3D"/>
+      <stop offset="100%" style="stop-color:#186E31"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg7)"/>
+  <circle cx="1000" cy="200" r="250" fill="rgba(255,255,255,0.03)"/>
+  <circle cx="850" cy="450" r="200" fill="rgba(255,255,255,0.02)"/>
+  <!-- Fuel nozzle -->
+  <g transform="translate(850, 130)" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="10" y="80" width="80" height="150" rx="8"/>
+    <path d="M50 80 L50 40 L90 40 L90 0"/>
+    <circle cx="50" cy="155" r="25"/>
+    <path d="M90 0 L110 20 L110 80 L90 80"/>
+    <!-- Drip -->
+    <path d="M50 240 C50 240 65 260 65 270 C65 278 58 285 50 285 C42 285 35 278 35 270 C35 260 50 240 50 240Z" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.18)"/>
+  </g>
+  <!-- Checklist -->
+  <g transform="translate(920, 360)" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2">
+    <rect x="0" y="0" width="180" height="200" rx="10"/>
+    <line x1="20" y1="40" x2="160" y2="40"/>
+    <line x1="20" y1="80" x2="160" y2="80"/>
+    <line x1="20" y1="120" x2="160" y2="120"/>
+    <line x1="20" y1="160" x2="160" y2="160"/>
+    <!-- Checkmarks -->
+    <polyline points="30,20 37,30 50,15" stroke="rgba(75,145,109,0.5)" stroke-width="3"/>
+    <polyline points="30,60 37,70 50,55" stroke="rgba(75,145,109,0.5)" stroke-width="3"/>
+    <polyline points="30,100 37,110 50,95" stroke="rgba(75,145,109,0.5)" stroke-width="3"/>
+    <polyline points="30,140 37,150 50,135" stroke="rgba(75,145,109,0.5)" stroke-width="3"/>
+    <!-- Lines -->
+    <line x1="60" y1="25" x2="150" y2="25" stroke="rgba(255,255,255,0.1)" stroke-width="8" stroke-linecap="round"/>
+    <line x1="60" y1="65" x2="140" y2="65" stroke="rgba(255,255,255,0.1)" stroke-width="8" stroke-linecap="round"/>
+    <line x1="60" y1="105" x2="130" y2="105" stroke="rgba(255,255,255,0.1)" stroke-width="8" stroke-linecap="round"/>
+    <line x1="60" y1="145" x2="145" y2="145" stroke="rgba(255,255,255,0.1)" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <!-- Text -->
+  <text x="80" y="230" fill="white" font-family="system-ui, -apple-system, sans-serif" font-size="46" font-weight="700" letter-spacing="-1">
+    <tspan x="80" dy="0">Jak poznat</tspan>
+    <tspan x="80" dy="58">kvalitní palivo</tspan>
+  </text>
+  <text x="80" y="390" fill="rgba(255,255,255,0.6)" font-family="system-ui, -apple-system, sans-serif" font-size="22">
+    <tspan x="80" dy="0">Kompletní průvodce</tspan>
+    <tspan x="80" dy="32">pro řidiče (2025)</tspan>
+  </text>
+  <rect x="80" y="510" width="140" height="36" rx="18" fill="rgba(255,255,255,0.15)"/>
+  <text x="150" y="534" fill="white" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">PHMarket</text>
+</svg>

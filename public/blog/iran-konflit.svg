@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D4F3D"/>
+      <stop offset="100%" style="stop-color:#186E31"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4B916D;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#186E31;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Decorative circles -->
+  <circle cx="900" cy="150" r="200" fill="url(#accent)"/>
+  <circle cx="1050" cy="450" r="150" fill="url(#accent)"/>
+  <circle cx="150" cy="500" r="120" fill="url(#accent)"/>
+  <!-- Fuel pump icon -->
+  <g transform="translate(850, 180)" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="4">
+    <rect x="0" y="40" width="120" height="160" rx="10"/>
+    <rect x="20" y="70" width="80" height="50" rx="5"/>
+    <path d="M120 80 L160 60 L160 160 L140 170 L140 100" stroke-width="4"/>
+    <circle cx="60" cy="160" r="15"/>
+    <rect x="30" y="10" width="60" height="30" rx="5"/>
+  </g>
+  <!-- Chart arrow going up -->
+  <g transform="translate(880, 350)" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="5">
+    <polyline points="0,120 40,90 80,100 120,50 160,60 200,10"/>
+    <polygon points="195,-5 215,10 195,25" fill="rgba(255,255,255,0.12)"/>
+  </g>
+  <!-- Text -->
+  <text x="80" y="260" fill="white" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="700" letter-spacing="-1">
+    <tspan x="80" dy="0">Konflikt v Íránu</tspan>
+    <tspan x="80" dy="60">a ceny paliv</tspan>
+  </text>
+  <text x="80" y="400" fill="rgba(255,255,255,0.6)" font-family="system-ui, -apple-system, sans-serif" font-size="22">
+    <tspan x="80" dy="0">Proč benzín a nafta zdražují</tspan>
+    <tspan x="80" dy="32">a co nás čeká dál</tspan>
+  </text>
+  <!-- PHMarket badge -->
+  <rect x="80" y="510" width="140" height="36" rx="18" fill="rgba(255,255,255,0.15)"/>
+  <text x="150" y="534" fill="white" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">PHMarket</text>
+</svg>

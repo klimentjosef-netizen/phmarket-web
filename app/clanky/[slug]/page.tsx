@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { articles } from "@/lib/articles";
@@ -108,8 +109,21 @@ export default function ArticlePage({ params }: Props) {
 
   return (
     <article>
+      {/* Cover image */}
+      {article.coverImage && (
+        <div className="relative w-full h-[300px] md:h-[400px]">
+          <Image
+            src={article.coverImage}
+            alt={article.title}
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+      )}
+
       {/* Header */}
-      <section className="bg-gradient-to-br from-gray-50 to-white py-16 md:py-20">
+      <section className={`bg-gradient-to-br from-gray-50 to-white ${article.coverImage ? "py-10 md:py-14" : "py-16 md:py-20"}`}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link
             href="/clanky"
