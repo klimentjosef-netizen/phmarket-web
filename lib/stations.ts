@@ -1,0 +1,133 @@
+export interface Station {
+  id: string;
+  name: string;
+  address: string;
+  lat: number;
+  lng: number;
+  fuels: string[];
+  discount: string;
+  brand: string;
+}
+
+export const stations: Station[] = [
+  {
+    id: "1",
+    name: "ORLEN Český Těšín",
+    address: "Hlavní třída 123, 737 01 Český Těšín",
+    lat: 49.7462,
+    lng: 18.6285,
+    fuels: ["Natural 95", "Diesel"],
+    discount: "-2,50 Kč/l",
+    brand: "ORLEN",
+  },
+  {
+    id: "2",
+    name: "MOL Třinec",
+    address: "Frýdecká 456, 739 61 Třinec",
+    lat: 49.6775,
+    lng: 18.6726,
+    fuels: ["Natural 95", "Diesel", "LPG"],
+    discount: "-1,80 Kč/l",
+    brand: "MOL",
+  },
+  {
+    id: "3",
+    name: "EuroOil Havířov",
+    address: "Hlavní třída 789, 736 01 Havířov",
+    lat: 49.7797,
+    lng: 18.4341,
+    fuels: ["Diesel", "AdBlue"],
+    discount: "-3,00 Kč/l",
+    brand: "EuroOil",
+  },
+  {
+    id: "4",
+    name: "Robin Oil Karviná",
+    address: "Ostravská 12, 735 06 Karviná",
+    lat: 49.8542,
+    lng: 18.5426,
+    fuels: ["Natural 95", "Diesel"],
+    discount: "-2,20 Kč/l",
+    brand: "Robin Oil",
+  },
+  {
+    id: "5",
+    name: "Tank ONO Frýdek-Místek",
+    address: "Příborská 55, 738 01 Frýdek-Místek",
+    lat: 49.6881,
+    lng: 18.3535,
+    fuels: ["Natural 95", "Natural 98", "Diesel"],
+    discount: "-1,50 Kč/l",
+    brand: "Tank ONO",
+  },
+  {
+    id: "6",
+    name: "ORLEN Ostrava-Poruba",
+    address: "Opavská 321, 708 00 Ostrava",
+    lat: 49.8272,
+    lng: 18.1691,
+    fuels: ["Natural 95", "Diesel", "LPG"],
+    discount: "-2,00 Kč/l",
+    brand: "ORLEN",
+  },
+  {
+    id: "7",
+    name: "EuroOil Ostrava-Hrabůvka",
+    address: "Místecká 78, 700 30 Ostrava",
+    lat: 49.7987,
+    lng: 18.2654,
+    fuels: ["Natural 95", "Diesel"],
+    discount: "-2,80 Kč/l",
+    brand: "EuroOil",
+  },
+  {
+    id: "8",
+    name: "MOL Opava",
+    address: "Olomoucká 44, 746 01 Opava",
+    lat: 49.9368,
+    lng: 17.8969,
+    fuels: ["Natural 95", "Natural 98", "Diesel"],
+    discount: "-1,60 Kč/l",
+    brand: "MOL",
+  },
+  {
+    id: "9",
+    name: "Robin Oil Bohumín",
+    address: "1. máje 15, 735 81 Bohumín",
+    lat: 49.9043,
+    lng: 18.3574,
+    fuels: ["Natural 95", "Diesel"],
+    discount: "-2,40 Kč/l",
+    brand: "Robin Oil",
+  },
+  {
+    id: "10",
+    name: "Tank ONO Orlová",
+    address: "Slezská 90, 735 14 Orlová",
+    lat: 49.8452,
+    lng: 18.4308,
+    fuels: ["Natural 95", "Diesel", "AdBlue"],
+    discount: "-1,90 Kč/l",
+    brand: "Tank ONO",
+  },
+  {
+    id: "11",
+    name: "ORLEN Nový Jičín",
+    address: "Štefánikova 22, 741 01 Nový Jičín",
+    lat: 49.5943,
+    lng: 18.0103,
+    fuels: ["Natural 95", "Diesel"],
+    discount: "-2,10 Kč/l",
+    brand: "ORLEN",
+  },
+  {
+    id: "12",
+    name: "EuroOil Frýdlant nad Ostravicí",
+    address: "Hlavní 200, 739 11 Frýdlant n.O.",
+    lat: 49.5881,
+    lng: 18.3585,
+    fuels: ["Natural 95", "Diesel"],
+    discount: "-2,70 Kč/l",
+    brand: "EuroOil",
+  },
+];

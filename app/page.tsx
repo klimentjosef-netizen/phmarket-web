@@ -1,5 +1,6 @@
 import Link from "next/link";
 import AppStoreButtons from "@/components/AppStoreButtons";
+import SavingsCounter from "@/components/SavingsCounter";
 
 /* ------------------------------------------------------------------ */
 /*  Hero                                                               */
@@ -343,6 +344,7 @@ export default function Home() {
     <>
       <Hero />
       <StatsBar />
+      <SavingsCounter />
       <HowItWorks />
       <Services />
       <Partners />
