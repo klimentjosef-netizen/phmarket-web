@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import AppStoreButtons from "@/components/AppStoreButtons";
 import SavingsCounter from "@/components/SavingsCounter";
+import HeroAnimation from "@/components/HeroAnimation";
 
 /* ------------------------------------------------------------------ */
 /*  Hero                                                               */
@@ -34,28 +34,10 @@ function Hero() {
             <AppStoreButtons className="mt-8" />
           </div>
 
-          {/* Phone mockup se screenshotem aplikace */}
-          <div className="relative flex justify-center lg:justify-end" aria-label="Ukázka aplikace PHMarket">
+          {/* Animovaný totem s autem a mincemi */}
+          <div className="relative flex justify-center lg:justify-end" aria-label="Ukázka úspory s PHMarket">
             <div className="relative">
-              {/* Phone frame */}
-              <div className="relative w-[280px] sm:w-[320px] mx-auto">
-                {/* Outer frame */}
-                <div className="rounded-[3rem] bg-dark p-3 shadow-2xl">
-                  {/* Notch */}
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-7 bg-dark rounded-b-2xl z-10" />
-                  {/* Screen */}
-                  <div className="rounded-[2.25rem] overflow-hidden bg-white">
-                    <Image
-                      src="/app-screenshot.png"
-                      alt="PHMarket aplikace — přehled čerpacích stanic se slevami"
-                      width={640}
-                      height={1385}
-                      className="w-full h-auto"
-                      priority
-                    />
-                  </div>
-                </div>
-              </div>
+              <HeroAnimation />
 
               {/* Decorative blur */}
               <div className="absolute -z-10 -top-8 -right-8 w-48 h-48 bg-primary/20 rounded-full blur-3xl" />
