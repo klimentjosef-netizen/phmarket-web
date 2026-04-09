@@ -59,7 +59,17 @@ function renderContent(content: string) {
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
 
-    if (line.startsWith("### ")) {
+    if (line.startsWith("#### ")) {
+      flushList();
+      elements.push(
+        <h4
+          key={i}
+          className="text-lg font-semibold text-dark mt-6 mb-2"
+        >
+          {line.slice(5)}
+        </h4>
+      );
+    } else if (line.startsWith("### ")) {
       flushList();
       elements.push(
         <h3

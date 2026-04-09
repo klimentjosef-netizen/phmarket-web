@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#186E31"/>
+      <stop offset="100%" style="stop-color:#1E6935"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg8)"/>
+  <circle cx="950" cy="250" r="280" fill="rgba(255,255,255,0.04)"/>
+  <!-- 2026 big text -->
+  <text x="800" y="320" fill="rgba(255,255,255,0.06)" font-family="system-ui, sans-serif" font-size="220" font-weight="900">2026</text>
+  <!-- Fuel pump + money -->
+  <g transform="translate(900, 140)" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="4" stroke-linecap="round">
+    <rect x="10" y="50" width="80" height="120" rx="8"/>
+    <rect x="25" y="75" width="50" height="35" rx="4"/>
+    <path d="M90 80 L120 65 L120 140 L105 148 L105 100"/>
+    <circle cx="50" cy="140" r="12"/>
+  </g>
+  <!-- Arrow trending down (savings) -->
+  <g transform="translate(890, 350)" stroke="rgba(255,255,255,0.2)" stroke-width="5" fill="none" stroke-linecap="round">
+    <polyline points="0,0 50,30 100,15 150,50 200,80"/>
+    <polygon points="195,65 215,80 195,95" fill="rgba(255,255,255,0.15)" stroke="none"/>
+  </g>
+  <!-- Kč symbol -->
+  <text x="1020" y="440" fill="rgba(255,255,255,0.1)" font-family="system-ui, sans-serif" font-size="80" font-weight="700">Kč</text>
+  <!-- Text -->
+  <text x="80" y="240" fill="white" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="700" letter-spacing="-1">
+    <tspan x="80" dy="0">Ceny paliv 2026</tspan>
+  </text>
+  <text x="80" y="330" fill="rgba(255,255,255,0.6)" font-family="system-ui, -apple-system, sans-serif" font-size="24">
+    <tspan x="80" dy="0">Jak ušetřit na benzínu a začít</tspan>
+    <tspan x="80" dy="36">vydělávat při tankování</tspan>
+  </text>
+  <rect x="80" y="510" width="140" height="36" rx="18" fill="rgba(255,255,255,0.15)"/>
+  <text x="150" y="534" fill="white" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">PHMarket</text>
+</svg>
