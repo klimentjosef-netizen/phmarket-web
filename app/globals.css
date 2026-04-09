@@ -7,72 +7,97 @@ body {
   background: #ffffff;
 }
 
-@keyframes coin-fall {
-  0% {
-    opacity: 0;
-    transform: translateY(0) rotate(0deg);
-  }
-  10% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(280px) rotate(720deg);
-  }
+/* ================================================================== */
+/*  Hero Redesign Animations                                           */
+/* ================================================================== */
+
+/* -- Glass-morphism card ------------------------------------------- */
+.hero-glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
-@keyframes coin-spin {
-  0%, 100% {
-    transform: scaleX(1);
-  }
-  50% {
-    transform: scaleX(0.3);
-  }
+/* -- Levitation (floating cards) ----------------------------------- */
+@keyframes hero-levitate-1 {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+@keyframes hero-levitate-2 {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+.hero-levitate-1 { animation: hero-levitate-1 4s ease-in-out infinite; }
+.hero-levitate-2 { animation: hero-levitate-2 5s ease-in-out infinite; }
+
+/* -- Road slide ---------------------------------------------------- */
+@keyframes hero-road-slide {
+  0% { opacity: 0; transform: translateX(-30px) scaleX(0.6); }
+  20% { opacity: 0.6; }
+  80% { opacity: 0.6; }
+  100% { opacity: 0; transform: translateX(30px) scaleX(1.2); }
 }
 
+/* -- Coin fall ----------------------------------------------------- */
+@keyframes hero-coin-fall {
+  0% { opacity: 0; transform: translateY(0) rotate(0deg); }
+  10% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(400px) rotate(720deg); }
+}
+@keyframes hero-coin-spin {
+  0%, 100% { transform: scaleX(1); }
+  50% { transform: scaleX(0.3); }
+}
+.hero-coin-fall { animation: hero-coin-fall 2.8s ease-in forwards; }
+.hero-coin-spin { animation: hero-coin-spin 0.6s ease-in-out infinite; }
+
+/* -- Phone glow ---------------------------------------------------- */
+@keyframes hero-phone-glow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.1); }
+}
+.hero-phone-glow { animation: hero-phone-glow 3s ease-in-out infinite; }
+
+/* -- Celebration pulse --------------------------------------------- */
+@keyframes hero-pulse-glow {
+  0%, 100% { opacity: 0.3; transform: scale(0.9); }
+  50% { opacity: 0.6; transform: scale(1.15); }
+}
+.hero-pulse-glow { animation: hero-pulse-glow 2s ease-in-out infinite; }
+
+/* -- Price pop (reused for other sections) ------------------------- */
 @keyframes price-pop {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  50% {
-    transform: scale(1.15);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+  0% { opacity: 0; transform: scale(0.5); }
+  50% { transform: scale(1.15); }
+  100% { opacity: 1; transform: scale(1); }
 }
+.animate-price-pop { animation: price-pop 0.4s ease-out forwards; }
 
+/* -- Bounce in ---------------------------------------------------- */
 @keyframes bounce-in {
-  0% {
-    opacity: 0;
-    transform: scale(0) rotate(-10deg);
-  }
-  60% {
-    transform: scale(1.2) rotate(3deg);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1) rotate(0deg);
-  }
+  0% { opacity: 0; transform: scale(0) rotate(-10deg); }
+  60% { transform: scale(1.2) rotate(3deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+.animate-bounce-in { animation: bounce-in 0.5s ease-out forwards; }
+
+/* -- Hero gradient background ------------------------------------- */
+.hero-premium-bg {
+  background: linear-gradient(
+    160deg,
+    #0a1a0f 0%,
+    #0d2818 25%,
+    #0f3321 50%,
+    #0a2015 75%,
+    #061210 100%
+  );
 }
 
-.animate-coin-fall {
-  animation: coin-fall 2.5s ease-in forwards;
-}
-
-.animate-coin-spin {
-  animation: coin-spin 0.6s ease-in-out infinite;
-}
-
-.animate-price-pop {
-  animation: price-pop 0.4s ease-out forwards;
-}
-
-.animate-bounce-in {
-  animation: bounce-in 0.5s ease-out forwards;
+/* -- Subtle grid overlay ------------------------------------------ */
+.hero-grid-overlay {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
 }

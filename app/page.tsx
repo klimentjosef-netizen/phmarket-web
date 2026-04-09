@@ -1,51 +1,55 @@
 import Link from "next/link";
 import AppStoreButtons from "@/components/AppStoreButtons";
 import SavingsCounter from "@/components/SavingsCounter";
-import HeroAnimation from "@/components/HeroAnimation";
+import HeroRedesignAnimation from "@/components/HeroRedesignAnimation";
 
 /* ------------------------------------------------------------------ */
 /*  Hero                                                               */
 /* ------------------------------------------------------------------ */
 function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-gray-50 to-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Text */}
-          <div>
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary mb-6">
+    <section className="relative overflow-hidden hero-premium-bg">
+      {/* Subtle grid overlay */}
+      <div className="absolute inset-0 hero-grid-overlay pointer-events-none" />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 lg:py-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Left: Content */}
+          <div className="relative z-10">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 px-4 py-1.5 text-sm font-medium text-emerald-400 mb-6">
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               Bez registrace ani plastových karet
             </span>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark leading-tight tracking-tight">
-              Šetři na každém tankování díky{" "}
-              <span className="text-primary">chytré aplikaci.</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] tracking-tight">
+              Tankuj chytře.{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-emerald-300">
+                Ušetřeno.
+              </span>
             </h1>
 
-            <p className="mt-6 text-lg text-gray-600 leading-relaxed max-w-xl">
+            <p className="mt-6 text-lg text-white/60 leading-relaxed max-w-xl">
               PHMarket tě navede k čerpacím stanicím s kvalitním palivem, kde
               uplatníš slevové kódy. Bez registrace, poplatků nebo plastových
               karet — vše v mobilu.
             </p>
 
-            <AppStoreButtons className="mt-8" />
+            <div className="mt-10">
+              <AppStoreButtons className="" />
+            </div>
           </div>
 
-          {/* Animovaný totem s autem a mincemi */}
+          {/* Right: Animated Phone Scene */}
           <div className="relative flex justify-center lg:justify-end" aria-label="Ukázka úspory s PHMarket">
-            <div className="relative">
-              <HeroAnimation />
-
-              {/* Decorative blur */}
-              <div className="absolute -z-10 -top-8 -right-8 w-48 h-48 bg-primary/20 rounded-full blur-3xl" />
-              <div className="absolute -z-10 -bottom-6 -left-6 w-36 h-36 bg-primary/10 rounded-full blur-2xl" />
-            </div>
+            <HeroRedesignAnimation />
           </div>
         </div>
       </div>
+
+      {/* Bottom fade into next section */}
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />
     </section>
   );
 }
