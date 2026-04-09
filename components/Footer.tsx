@@ -52,7 +52,7 @@ export default function Footer() {
                 alt="PHMarket logo"
                 width={140}
                 height={60}
-                className="h-10 w-auto brightness-0 invert"
+                className="h-10 w-auto"
               />
             </Link>
             <p className="text-sm text-gray-400 leading-relaxed">
