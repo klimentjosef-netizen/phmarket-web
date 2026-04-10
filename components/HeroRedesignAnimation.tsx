@@ -150,9 +150,10 @@ function PhoneMockup({ visible }: { visible: boolean }) {
 
           {/* App screenshot */}
           <Image
-            src="/phmarket-app-displej.png"
+            src="/app-screenshot.png"
             alt="PHMarket aplikace"
             fill
+            sizes="(max-width: 640px) 220px, (max-width: 1024px) 260px, (max-width: 1280px) 300px, 340px"
             className="object-cover object-top"
             priority
           />
