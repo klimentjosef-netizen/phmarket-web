@@ -8,7 +8,7 @@ import HeroRedesignAnimation from "@/components/HeroRedesignAnimation";
 /* ------------------------------------------------------------------ */
 function Hero() {
   return (
-    <section className="relative overflow-hidden hero-premium-bg">
+    <section className="relative overflow-x-clip hero-premium-bg">
       {/* Subtle grid overlay */}
       <div className="absolute inset-0 hero-grid-overlay pointer-events-none" />
 

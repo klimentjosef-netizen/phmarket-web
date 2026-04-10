@@ -52,8 +52,8 @@ function PriceCard({
       } ${isCompetitor ? "hero-levitate-1" : "hero-levitate-2"}`}
       style={{
         ...(isCompetitor
-          ? { top: "15%", left: "-60px" }
-          : { bottom: "20%", right: "-60px" }),
+          ? { top: "15%", left: "-70px" }
+          : { bottom: "20%", right: "-70px" }),
       }}
     >
       <div
@@ -142,7 +142,7 @@ function PhoneMockup({ visible }: { visible: boolean }) {
       }`}
     >
       {/* Phone frame */}
-      <div className="relative w-[220px] h-[440px] sm:w-[260px] sm:h-[520px] rounded-[2.5rem] bg-gradient-to-b from-gray-800 to-gray-900 p-[6px] shadow-2xl shadow-black/40">
+      <div className="relative w-[220px] h-[440px] sm:w-[260px] sm:h-[520px] lg:w-[300px] lg:h-[600px] xl:w-[340px] xl:h-[680px] rounded-[2.5rem] bg-gradient-to-b from-gray-800 to-gray-900 p-[6px] shadow-2xl shadow-black/40">
         {/* Screen bezel */}
         <div className="relative w-full h-full rounded-[2.2rem] overflow-hidden bg-black">
           {/* Notch */}
@@ -218,7 +218,7 @@ export default function HeroRedesignAnimation() {
   const showGlow = phase === "celebration";
 
   return (
-    <div className="relative w-full h-full flex items-center justify-center min-h-[480px] sm:min-h-[560px]">
+    <div className="relative w-full h-full flex items-center justify-center min-h-[480px] sm:min-h-[560px] lg:min-h-[640px] xl:min-h-[720px]">
       {/* Layer 1: Digital Road */}
       <DigitalRoad active={showRoad} />
 
