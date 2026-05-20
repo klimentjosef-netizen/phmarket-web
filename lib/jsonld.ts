@@ -74,6 +74,66 @@ export const mobileApplicationSchema = {
   publisher: { "@id": ORG_ID },
 };
 
+export type ServiceSchemaInput = {
+  id: string;
+  serviceType: string;
+  name: string;
+  description: string;
+  audience?: string;
+  priceDescription?: string;
+};
+
+export function serviceSchema(s: ServiceSchemaInput) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${SITE_URL}${s.id}`,
+    serviceType: s.serviceType,
+    name: s.name,
+    description: s.description,
+    provider: { "@id": ORG_ID },
+    areaServed: { "@type": "Country", name: "Česká republika" },
+    ...(s.audience
+      ? {
+          audience: {
+            "@type": "BusinessAudience",
+            audienceType: s.audience,
+          },
+        }
+      : {}),
+    ...(s.priceDescription
+      ? {
+          offers: {
+            "@type": "Offer",
+            priceCurrency: "CZK",
+            priceSpecification: {
+              "@type": "PriceSpecification",
+              priceCurrency: "CZK",
+              description: s.priceDescription,
+            },
+          },
+        }
+      : {}),
+  };
+}
+
+export type FaqItem = { question: string; answer: string };
+
+export function faqSchema(items: FaqItem[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((it) => ({
+      "@type": "Question",
+      name: it.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: it.answer,
+      },
+    })),
+  };
+}
+
 export type ArticleSchemaInput = {
   title: string;
   slug: string;

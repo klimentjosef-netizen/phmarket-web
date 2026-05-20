@@ -2,6 +2,7 @@ export interface Article {
   title: string;
   slug: string;
   date: string;
+  updatedAt?: string;
   timeToRead: number;
   seoDescription: string;
   coverImage: string | null;

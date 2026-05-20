@@ -33,6 +33,7 @@ export function generateMetadata({ params }: Props): Metadata {
       title: article.title,
       description: article.seoDescription || article.title,
       publishedTime: article.date,
+      modifiedTime: article.updatedAt,
       images: article.coverImage
         ? [{ url: article.coverImage, alt: article.title }]
         : undefined,
@@ -150,6 +151,7 @@ export default function ArticlePage({ params }: Props) {
     title: article.title,
     slug: article.slug,
     datePublished: article.date,
+    dateModified: article.updatedAt,
     description: article.seoDescription || article.title,
     image: article.coverImage,
     wordCount,
@@ -203,8 +205,16 @@ export default function ArticlePage({ params }: Props) {
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-dark leading-tight">
             {article.title}
           </h1>
-          <div className="flex items-center gap-4 mt-4 text-sm text-gray-400">
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-4 text-sm text-gray-400">
             <time dateTime={article.date}>{formatDate(article.date)}</time>
+            {article.updatedAt && (
+              <span>
+                aktualizováno{" "}
+                <time dateTime={article.updatedAt}>
+                  {formatDate(article.updatedAt)}
+                </time>
+              </span>
+            )}
             <span>{article.timeToRead} min čtení</span>
           </div>
         </div>
