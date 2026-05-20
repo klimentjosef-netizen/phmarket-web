@@ -2,12 +2,20 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { articles } from "@/lib/articles";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbSchema, SITE_URL } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Články | PHMarket",
+  title: "Články",
   description:
     "Články a novinky ze světa pohonných hmot, čerpacích stanic a úspor při tankování.",
+  alternates: { canonical: "/clanky" },
 };
+
+const breadcrumb = breadcrumbSchema([
+  { name: "Domů", url: SITE_URL },
+  { name: "Články" },
+]);
 
 function formatDate(dateStr: string) {
   const d = new Date(dateStr);
@@ -25,6 +33,7 @@ export default function ArticlesPage() {
 
   return (
     <>
+      <JsonLd id="breadcrumb-schema" data={breadcrumb} />
       <section className="bg-gradient-to-br from-gray-50 to-white py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold text-dark">Články</h1>

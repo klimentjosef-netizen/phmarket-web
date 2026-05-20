@@ -1,0 +1,29 @@
+# PHMarket
+
+> PHMarket je česká aplikace pro úspory na tankování. Spojuje řidiče s partnerskými čerpacími stanicemi v ČR, kde uplatní slevové kódy přímo z mobilu — bez registrace a bez plastových karet. Dále nabízí B2B služby čištění palivových nádrží a mikrozávozy motorové nafty.
+
+## Co PHMarket dělá
+
+- **Aplikace pro slevy na tankování (iOS, Android, zdarma)** — mapa partnerských čerpacích stanic v ČR, slevové kódy na benzín a naftu, bez registrace, bez poplatků
+- **PHMap** — mapa partnerských čerpacích stanic v reálném čase
+- **Čištění palivových nádrží** — B2B služba pro čerpací stanice a firmy s vozovým parkem v ČR (odstranění biokalů, sedimentů, vody)
+- **Mikrozávozy motorové nafty** — dovoz nafty přímo k zákazníkovi v ČR
+
+## Klíčové stránky
+
+- [Domovská stránka](https://phmarket.cz): co PHMarket dělá, jak funguje, partneři
+- [Mapa partnerských stanic / PHMap](https://phmarket.cz/phmap): mapa čerpacích stanic v ČR se slevovými kódy
+- [Tankujte levněji](https://phmarket.cz/tankujte-levneji): jak používat slevové kódy na palivo
+- [Čištění nádrží](https://phmarket.cz/cisteni-nadrzi): profesionální čištění palivových nádrží
+- [Mikrozávozy motorové nafty](https://phmarket.cz/mikrozavozy-motorove-nafty): dovoz nafty k zákazníkovi
+- [Články](https://phmarket.cz/clanky): články o palivech, cenách, kvalitě a chytrém tankování
+
+## Stažení aplikace
+
+- App Store: https://apps.apple.com/pl/app/phmarket-obchod/id6753677131
+- Google Play: https://play.google.com/store/apps/details?id=branded.m8391e3c5a7fa40ff980dd3ec24d7cd28.phmarket
+
+## Provozovatel
+
+PHMarket s.r.o., Hlavní třída 87/2, 73701 Český Těšín, Česká republika
+IČO 04529031, DIČ CZ04529031

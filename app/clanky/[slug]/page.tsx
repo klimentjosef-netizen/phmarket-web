@@ -3,6 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { articles } from "@/lib/articles";
+import JsonLd from "@/components/JsonLd";
+import {
+  articleSchema,
+  breadcrumbSchema,
+  SITE_URL,
+} from "@/lib/jsonld";
 
 interface Props {
   params: { slug: string };
@@ -15,9 +21,28 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: Props): Metadata {
   const article = articles.find((a) => a.slug === params.slug);
   if (!article) return {};
+  const url = `/clanky/${article.slug}`;
   return {
-    title: `${article.title} | PHMarket`,
+    title: article.title,
     description: article.seoDescription || article.title,
+    alternates: { canonical: url, languages: { "cs-CZ": url } },
+    openGraph: {
+      type: "article",
+      locale: "cs_CZ",
+      url,
+      title: article.title,
+      description: article.seoDescription || article.title,
+      publishedTime: article.date,
+      images: article.coverImage
+        ? [{ url: article.coverImage, alt: article.title }]
+        : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.seoDescription || article.title,
+      images: article.coverImage ? [article.coverImage] : undefined,
+    },
   };
 }
 
@@ -117,8 +142,29 @@ export default function ArticlePage({ params }: Props) {
   const article = articles.find((a) => a.slug === params.slug);
   if (!article) notFound();
 
+  const wordCount = article.content
+    .split(/\s+/)
+    .filter(Boolean).length;
+
+  const schema = articleSchema({
+    title: article.title,
+    slug: article.slug,
+    datePublished: article.date,
+    description: article.seoDescription || article.title,
+    image: article.coverImage,
+    wordCount,
+  });
+
+  const breadcrumb = breadcrumbSchema([
+    { name: "Domů", url: SITE_URL },
+    { name: "Články", url: `${SITE_URL}/clanky` },
+    { name: article.title },
+  ]);
+
   return (
     <article>
+      <JsonLd id="article-schema" data={schema} />
+      <JsonLd id="breadcrumb-schema" data={breadcrumb} />
       {/* Cover image */}
       {article.coverImage && (
         <div className="relative w-full h-[300px] md:h-[400px]">

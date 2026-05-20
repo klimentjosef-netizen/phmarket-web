@@ -2,6 +2,8 @@ import Link from "next/link";
 import AppStoreButtons from "@/components/AppStoreButtons";
 import SavingsCounter from "@/components/SavingsCounter";
 import HeroRedesignAnimation from "@/components/HeroRedesignAnimation";
+import JsonLd from "@/components/JsonLd";
+import { mobileApplicationSchema } from "@/lib/jsonld";
 
 /* ------------------------------------------------------------------ */
 /*  Hero                                                               */
@@ -291,6 +293,7 @@ function CtaSection() {
 export default function Home() {
   return (
     <>
+      <JsonLd id="mobile-application-schema" data={mobileApplicationSchema} />
       <Hero />
       <StatsBar />
       <SavingsCounter />
