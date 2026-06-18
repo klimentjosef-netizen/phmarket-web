@@ -43,35 +43,36 @@ function PriceCard({
 }) {
   const isCompetitor = type === "competitor";
 
+  // On mobile the cards sit just inside the viewport, overlapping the phone
+  // corners; on desktop (lg) they float out to the sides of the scene.
+  const posClass = isCompetitor
+    ? "top-[2%] left-1 sm:left-2 lg:top-[15%] lg:left-[-70px]"
+    : "bottom-[6%] right-1 sm:right-2 lg:bottom-[20%] lg:right-[-70px]";
+
   return (
     <div
-      className={`hero-glass-card absolute transition-all duration-700 ${
+      className={`hero-glass-card absolute z-20 ${posClass} transition-all duration-700 ${
         visible
           ? "opacity-100 translate-y-0 scale-100"
           : "opacity-0 translate-y-4 scale-95"
       } ${isCompetitor ? "hero-levitate-1" : "hero-levitate-2"}`}
-      style={{
-        ...(isCompetitor
-          ? { top: "15%", left: "-70px" }
-          : { bottom: "20%", right: "-70px" }),
-      }}
     >
       <div
-        className={`rounded-2xl px-5 py-3 border ${
+        className={`rounded-xl lg:rounded-2xl px-3 py-2 lg:px-5 lg:py-3 border ${
           isCompetitor
             ? "border-red-400/30 bg-red-500/10"
             : "border-emerald-400/30 bg-emerald-500/10"
         } backdrop-blur-xl shadow-2xl`}
       >
-        <p className="text-[11px] font-medium text-white/60 mb-1">
-          {isCompetitor ? "Konkurence" : "PHMarket Sleva"}
+        <p className="text-[10px] lg:text-[11px] font-medium text-white/60 mb-0.5 lg:mb-1">
+          {isCompetitor ? "Konkurence" : "PHMarket sleva"}
         </p>
         <p
-          className={`text-xl font-bold ${
+          className={`text-base lg:text-xl font-bold ${
             isCompetitor ? "text-red-400" : "text-emerald-400"
           }`}
         >
-          {isCompetitor ? "39,90 Kc/l" : "-3,50 Kc/l"}
+          {isCompetitor ? "39,90 Kč/l" : "−3,50 Kč/l"}
         </p>
       </div>
     </div>
@@ -84,15 +85,15 @@ function PriceCard({
 function SavingsBadge({ visible }: { visible: boolean }) {
   return (
     <div
-      className={`absolute -top-4 left-1/2 -translate-x-1/2 z-20 transition-all duration-500 ${
+      className={`absolute top-0 lg:-top-4 left-1/2 -translate-x-1/2 z-30 transition-all duration-500 ${
         visible
           ? "opacity-100 scale-100 translate-y-0"
           : "opacity-0 scale-50 -translate-y-4"
       }`}
     >
-      <div className="hero-glass-card rounded-full px-5 py-2.5 border border-emerald-400/40 bg-emerald-500/15 backdrop-blur-xl shadow-2xl whitespace-nowrap">
-        <span className="text-sm font-bold text-emerald-400">
-          Usetfeno: 175 Kc na nadrzi
+      <div className="hero-glass-card rounded-full px-4 py-2 lg:px-5 lg:py-2.5 border border-emerald-400/40 bg-emerald-500/15 backdrop-blur-xl shadow-2xl whitespace-nowrap">
+        <span className="text-xs lg:text-sm font-bold text-emerald-400">
+          Ušetřeno: 175 Kč na nádrži
         </span>
       </div>
     </div>
