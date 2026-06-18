@@ -14,7 +14,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "PHMarket — Šetři na každém tankování",
+    default: "PHMarket: Šetři na každém tankování",
     template: "%s | PHMarket",
   },
   description:
@@ -30,14 +30,14 @@ export const metadata: Metadata = {
     locale: "cs_CZ",
     siteName: "PHMarket",
     url: SITE_URL,
-    title: "PHMarket — Šetři na každém tankování",
+    title: "PHMarket: Šetři na každém tankování",
     description:
       "Slevové kódy na pohonné hmoty u partnerských čerpacích stanic v ČR. Bez registrace, bez plastových karet.",
     images: [{ url: "/logo.png", width: 384, height: 384, alt: "PHMarket logo" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "PHMarket — Šetři na každém tankování",
+    title: "PHMarket: Šetři na každém tankování",
     description:
       "Slevové kódy na pohonné hmoty u partnerských čerpacích stanic v ČR.",
     images: ["/logo.png"],

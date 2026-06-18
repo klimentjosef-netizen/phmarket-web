@@ -3,7 +3,7 @@ import AppStoreButtons from "@/components/AppStoreButtons";
 import StationMap from "@/components/StationMap";
 
 export const metadata: Metadata = {
-  title: "PHMap — Mapa čerpacích stanic | PHMarket",
+  title: "PHMap: Mapa čerpacích stanic | PHMarket",
   description:
     "PHMap ti ukáže nejbližší partnerské čerpací stanice se slevovými kódy na pohonné hmoty. Najdi stanici a ušetři.",
 };

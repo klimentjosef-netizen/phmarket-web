@@ -36,7 +36,7 @@ const faqItems = [
   {
     question: "Jak často je třeba čistit palivovou nádrž?",
     answer:
-      "U podzemních nádrží čerpacích stanic s palivem B7 (s biosložkou) doporučujeme inspekci jednou ročně a fyzické čištění zpravidla každé 2–3 roky. U nádrží s naftou bez biosložky (B0) postačí čistění při výměně paliva nebo jednou za 3–5 let. U firemních vozových parků a nadzemních provozních nádrží závisí frekvence na obrátkovosti — minimálně však jednou za 2 roky.",
+      "U podzemních nádrží čerpacích stanic s palivem B7 (s biosložkou) doporučujeme inspekci jednou ročně a fyzické čištění zpravidla každé 2 až 3 roky. U nádrží s naftou bez biosložky (B0) postačí čistění při výměně paliva nebo jednou za 3 až 5 let. U firemních vozových parků a nadzemních provozních nádrží závisí frekvence na obrátkovosti, minimálně však jednou za 2 roky.",
   },
   {
     question: "Co se v nádrži ukládá a proč to vadí?",
@@ -46,7 +46,7 @@ const faqItems = [
   {
     question: "Jak dlouho čištění trvá a musíme zavřít provoz?",
     answer:
-      "Standardní podzemní nádrž 30–50 m³ obvykle zvládneme za 8–24 hodin podle stavu. Pro čerpací stanice plánujeme zásah na nejnižší obrátkový čas (typicky noc / pondělí ráno) tak, aby dotčená stanice nemusela uzavřít celý provoz — čistíme jednu nádrž v cyklu, ostatní zůstávají v provozu.",
+      "Standardní podzemní nádrž 30 až 50 m³ obvykle zvládneme za 8 až 24 hodin podle stavu. Pro čerpací stanice plánujeme zásah na nejnižší obrátkový čas (typicky noc / pondělí ráno) tak, aby dotčená stanice nemusela uzavřít celý provoz, čistíme jednu nádrž v cyklu, ostatní zůstávají v provozu.",
   },
   {
     question: "Co se stane s odčerpaným palivem?",
@@ -56,7 +56,7 @@ const faqItems = [
   {
     question: "Děláte i nadzemní provozní nádrže a kontejnery (IBC)?",
     answer:
-      "Ano. Čistíme nadzemní nádrže (typicky 1–10 m³) pro vozové parky, zemědělské provozy a generátory, stejně tak menší kontejnery IBC 1 000 l. Postup je rychlejší než u podzemních nádrží, často hotovo do 4 hodin.",
+      "Ano. Čistíme nadzemní nádrže (typicky 1 až 10 m³) pro vozové parky, zemědělské provozy a generátory, stejně tak menší kontejnery IBC 1 000 l. Postup je rychlejší než u podzemních nádrží, často hotovo do 4 hodin.",
   },
   {
     question: "Působíte jen v Moravskoslezském kraji, nebo po celé ČR?",
@@ -93,7 +93,7 @@ export default function CisteniNadrziPage() {
               href="mailto:info@phmarket.cz"
               className="inline-flex items-center gap-2 mt-8 bg-primary hover:bg-primary-dark text-white font-semibold px-6 py-3 rounded-lg transition-colors"
             >
-              Nezávazná poptávka — info@phmarket.cz
+              Nezávazná poptávka: info@phmarket.cz
             </Link>
           </div>
         </div>
@@ -146,27 +146,27 @@ export default function CisteniNadrziPage() {
           </h2>
           <ul className="space-y-3 text-gray-700">
             <li>
-              <strong>Provozovatelé čerpacích stanic</strong> — podzemní nádrže
-              30–50 m³ s naftou B7, benzínem nebo prémiovými palivy. Pravidelná
+              <strong>Provozovatelé čerpacích stanic</strong>: podzemní nádrže
+              30 až 50 m³ s naftou B7, benzínem nebo prémiovými palivy. Pravidelná
               kontrola jako prevence kontaminace zákaznických nádrží.
             </li>
             <li>
-              <strong>Dopravní firmy a vozové parky</strong> — nadzemní
-              skladovací nádrže 5–20 m³, ze kterých tankují kamiony nebo
+              <strong>Dopravní firmy a vozové parky</strong>: nadzemní
+              skladovací nádrže 5 až 20 m³, ze kterých tankují kamiony nebo
               autobusy. Riziko: ucpané filtry, výpadky vozidel.
             </li>
             <li>
-              <strong>Zemědělské provozy</strong> — sezónní stanice (kombajny,
+              <strong>Zemědělské provozy</strong>: sezónní stanice (kombajny,
               traktory) s několikaměsíčním stáním paliva. Riziko: degradace
               MEŘO v naftě B7, biokaly při startu sezóny.
             </li>
             <li>
-              <strong>Provozovatelé záložních generátorů</strong> — datová
+              <strong>Provozovatelé záložních generátorů</strong>: datová
               centra, nemocnice, průmysl. Riziko: nádrž stojí roky a při
               skutečném výpadku motor odmítne nastartovat na zkažené palivo.
             </li>
             <li>
-              <strong>Vlastníci sezónní techniky</strong> — obytné vozy, lodě,
+              <strong>Vlastníci sezónní techniky</strong>: obytné vozy, lodě,
               veteráni s drahým vstřikovacím systémem.
             </li>
           </ul>
@@ -181,11 +181,11 @@ export default function CisteniNadrziPage() {
           </h2>
           <ul className="space-y-2 text-gray-700">
             <li>
-              <strong>Objemy:</strong> nádrže 1–60 m³ (podzemní i nadzemní)
+              <strong>Objemy:</strong> nádrže 1 až 60 m³ (podzemní i nadzemní)
             </li>
             <li>
-              <strong>Doba čištění:</strong> nadzemní 1–10 m³ obvykle 2–6 h,
-              podzemní 30–50 m³ obvykle 8–24 h
+              <strong>Doba čištění:</strong> nadzemní 1 až 10 m³ obvykle 2 až 6 h,
+              podzemní 30 až 50 m³ obvykle 8 až 24 h
             </li>
             <li>
               <strong>Výjezd:</strong> typicky do 5 pracovních dnů od potvrzení
@@ -211,7 +211,7 @@ export default function CisteniNadrziPage() {
       <section className="py-12 md:py-16 bg-gray-50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
           <h2 className="text-2xl md:text-3xl font-bold text-dark">
-            Jak postupujeme — krok za krokem
+            Jak postupujeme krok za krokem
           </h2>
           <ol className="list-decimal pl-6 space-y-3 text-gray-700">
             <li>
@@ -226,7 +226,7 @@ export default function CisteniNadrziPage() {
             </li>
             <li>
               <strong>Plánování výjezdu.</strong> Termín volíme tak, aby
-              čerpací stanice mohla provozovat ostatní nádrže — typicky
+              čerpací stanice mohla provozovat ostatní nádrže, typicky
               pondělí ráno nebo víkendová noc.
             </li>
             <li>
@@ -265,7 +265,7 @@ export default function CisteniNadrziPage() {
                     Kritérium
                   </th>
                   <th className="py-3 pr-4 font-semibold text-primary">
-                    PHMarket — profesionální čištění
+                    PHMarket: profesionální čištění
                   </th>
                   <th className="py-3 pr-4 font-semibold text-gray-600">
                     Interní čištění svépomocí
@@ -278,15 +278,15 @@ export default function CisteniNadrziPage() {
               <tbody className="text-gray-700">
                 <tr className="border-b border-gray-100">
                   <td className="py-3 pr-4 font-medium">Doba</td>
-                  <td className="py-3 pr-4">8–24 h (50 m³)</td>
-                  <td className="py-3 pr-4">2–5 dnů (riziko prodlevy)</td>
-                  <td className="py-3">2–6 týdnů + stavba</td>
+                  <td className="py-3 pr-4">8 až 24 h (50 m³)</td>
+                  <td className="py-3 pr-4">2 až 5 dnů (riziko prodlevy)</td>
+                  <td className="py-3">2 až 6 týdnů + stavba</td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="py-3 pr-4 font-medium">Riziko BOZP</td>
-                  <td className="py-3 pr-4">Nízké — certifikovaný postup</td>
+                  <td className="py-3 pr-4">Nízké, certifikovaný postup</td>
                   <td className="py-3 pr-4">
-                    Vysoké — výpary, výbušná atmosféra
+                    Vysoké (výpary, výbušná atmosféra)
                   </td>
                   <td className="py-3">Nízké, ale rozsáhlá stavba</td>
                 </tr>
@@ -296,7 +296,7 @@ export default function CisteniNadrziPage() {
                     Certifikovaná, vč. protokolu SEPNO
                   </td>
                   <td className="py-3 pr-4">
-                    Riziko — bez protokolu hrozí pokuta
+                    Riziko, bez protokolu hrozí pokuta
                   </td>
                   <td className="py-3">Součást demontáže</td>
                 </tr>
@@ -304,7 +304,7 @@ export default function CisteniNadrziPage() {
                   <td className="py-3 pr-4 font-medium">Náklady</td>
                   <td className="py-3 pr-4">Jednorázová cena na vyžádání</td>
                   <td className="py-3 pr-4">Skryté náklady (čas, riziko)</td>
-                  <td className="py-3">Statisíce — milion+</td>
+                  <td className="py-3">Statisíce až milion+</td>
                 </tr>
               </tbody>
             </table>

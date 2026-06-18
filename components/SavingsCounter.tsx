@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-// Baseline values — set these to your real numbers at a known date
+// Baseline values: set these to your real numbers at a known date
 const BASELINE_DATE = new Date("2026-04-08T00:00:00Z").getTime();
 const BASELINE_SAVINGS = 2_450_000; // Kč
 const BASELINE_CODES = 15_200;
@@ -98,7 +98,7 @@ export default function SavingsCounter() {
             Kolik jsme už společně ušetřili
           </h2>
           <p className="mt-3 text-gray-600">
-            Číslo roste v reálném čase — každou sekundu šetříme dál
+            Číslo roste v reálném čase, každou sekundu šetříme dál
           </p>
         </div>
 

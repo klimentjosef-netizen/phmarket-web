@@ -159,7 +159,7 @@ export default function LegalDoc({
                 data={`${pdfHref}#view=FitH`}
                 type="application/pdf"
                 className="w-full h-[78vh]"
-                aria-label={`${title} – PDF`}
+                aria-label={`${title}: PDF`}
               >
                 <div className="p-8 text-center text-gray-600">
                   Váš prohlížeč neumí zobrazit PDF přímo na stránce.{" "}

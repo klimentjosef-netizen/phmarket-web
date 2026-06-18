@@ -11,7 +11,7 @@ import {
 export const metadata: Metadata = {
   title: "Mikrozávozy motorové nafty v ČR | PHMarket",
   description:
-    "Mikrozávozy motorové nafty (200–3 000 l) přímo k zákazníkovi v České republice. Stavby, zemědělství, vozové parky, generátory. Cena dle aktuální velkoobchodní cenovky, dodávka typicky do 72 hodin.",
+    "Mikrozávozy motorové nafty (200 až 3 000 l) přímo k zákazníkovi v České republice. Stavby, zemědělství, vozové parky, generátory. Cena dle aktuální velkoobchodní cenovky, dodávka typicky do 72 hodin.",
   alternates: { canonical: "/mikrozavozy-motorove-nafty" },
 };
 
@@ -20,7 +20,7 @@ const service = serviceSchema({
   serviceType: "Mikrozávozy motorové nafty",
   name: "Mikrozávozy motorové nafty",
   description:
-    "Dovoz motorové nafty (typicky 200–3 000 litrů) přímo na adresu zákazníka v celé České republice. Pro stavby, zemědělské provozy, dopravní firmy, záložní generátory a vlastníky nadzemních provozních nádrží.",
+    "Dovoz motorové nafty (typicky 200 až 3 000 litrů) přímo na adresu zákazníka v celé České republice. Pro stavby, zemědělské provozy, dopravní firmy, záložní generátory a vlastníky nadzemních provozních nádrží.",
   audience:
     "Stavební firmy, zemědělci, dopravní firmy, vozové parky, provozovatelé záložních generátorů",
   priceDescription:
@@ -36,7 +36,7 @@ const faqItems = [
   {
     question: "Jaký je minimální a maximální objem dodávky?",
     answer:
-      "Typický rozsah mikrozávozu je 200–3 000 litrů na jednu dodávku. Menší objemy (od 200 l) řešíme pomocí přepravního IBC nebo cisterny s menším výdejem; větší objemy (3 000+ l) předáváme partnerské cisterně. Pro pravidelné odběry (např. zemědělci v sezóně) domlouváme cyklický závoz na měsíční nebo týdenní bázi.",
+      "Typický rozsah mikrozávozu je 200 až 3 000 litrů na jednu dodávku. Menší objemy (od 200 l) řešíme pomocí přepravního IBC nebo cisterny s menším výdejem; větší objemy (3 000+ l) předáváme partnerské cisterně. Pro pravidelné odběry (např. zemědělci v sezóně) domlouváme cyklický závoz na měsíční nebo týdenní bázi.",
   },
   {
     question: "Jak je stanovena cena nafty?",
@@ -46,12 +46,12 @@ const faqItems = [
   {
     question: "Tankuje se přímo do mé nádrže nebo se nafta jen předá v kanystru?",
     answer:
-      "Cisterna stočí naftu přímo do vaší nadzemní nebo podzemní nádrže přes výdejní hadici s počítačem (cejchovaným podle zákona č. 505/1990 Sb. o metrologii). Vystavíme dodací list s objemem v litrech při 15 °C, datem a podpisem řidiče. Není to ‚nafta v kanystru‘ — jde o standardní velkoobchodní dodávku.",
+      "Cisterna stočí naftu přímo do vaší nadzemní nebo podzemní nádrže přes výdejní hadici s počítačem (cejchovaným podle zákona č. 505/1990 Sb. o metrologii). Vystavíme dodací list s objemem v litrech při 15 °C, datem a podpisem řidiče. Není to ‚nafta v kanystru‘. Jde o standardní velkoobchodní dodávku.",
   },
   {
     question: "Jaké palivo dovážíte? Splňuje ČSN EN 590?",
     answer:
-      "Dodáváme motorovou naftu třídy B7 (s povinnou biosložkou do 7 % MEŘO) podle normy ČSN EN 590. Na vyžádání zajistíme i naftu bez biosložky (B0) — ta je vhodná pro stroje s dlouhým stáním (zemědělství, generátory, sezónní technika), protože nevytváří biokaly. V zimním období dodáváme zimní třídu D (CFPP do −20 °C) nebo arktickou (CFPP −32 °C) podle aktuálního období.",
+      "Dodáváme motorovou naftu třídy B7 (s povinnou biosložkou do 7 % MEŘO) podle normy ČSN EN 590. Na vyžádání zajistíme i naftu bez biosložky (B0), ta je vhodná pro stroje s dlouhým stáním (zemědělství, generátory, sezónní technika), protože nevytváří biokaly. V zimním období dodáváme zimní třídu D (CFPP do −20 °C) nebo arktickou (CFPP −32 °C) podle aktuálního období.",
   },
   {
     question: "Jak rychle dorazí dodávka?",
@@ -61,12 +61,12 @@ const faqItems = [
   {
     question: "Vystavíte fakturu s DPH a jakou platbu přijímáte?",
     answer:
-      "Standardně fakturujeme jako plátci DPH (sazba 21 %), splatnost 7–14 dní pro stálé zákazníky, pro první odběr požadujeme platbu předem nebo dobírkou. Akceptujeme bankovní převod; v hotovosti pouze do limitu 270 000 Kč podle § 4 zákona o omezení plateb v hotovosti.",
+      "Standardně fakturujeme jako plátci DPH (sazba 21 %), splatnost 7 až 14 dní pro stálé zákazníky, pro první odběr požadujeme platbu předem nebo dobírkou. Akceptujeme bankovní převod; v hotovosti pouze do limitu 270 000 Kč podle § 4 zákona o omezení plateb v hotovosti.",
   },
   {
     question: "Působíte po celé ČR?",
     answer:
-      "Ano. Zázemí máme v Českém Těšíně (Moravskoslezský kraj), ale pravidelně dovážíme do celé České republiky. Logisticky nejvýhodnější je východní polovina ČR; pro Plzeňský a Karlovarský kraj plánujeme dodávky s kratším předstihem (typicky 3–5 dnů).",
+      "Ano. Zázemí máme v Českém Těšíně (Moravskoslezský kraj), ale pravidelně dovážíme do celé České republiky. Logisticky nejvýhodnější je východní polovina ČR; pro Plzeňský a Karlovarský kraj plánujeme dodávky s kratším předstihem (typicky 3 až 5 dnů).",
   },
 ];
 
@@ -88,7 +88,7 @@ export default function MikrozavozyPage() {
               <span className="text-primary">motorové nafty</span>
             </h1>
             <p className="mt-6 text-lg text-gray-700 leading-relaxed">
-              Dovoz motorové nafty 200–3 000 litrů přímo na adresu zákazníka v
+              Dovoz motorové nafty 200 až 3 000 litrů přímo na adresu zákazníka v
               celé České republice. Pro stavby, zemědělské provozy, dopravní
               firmy, vozové parky, záložní generátory a vlastníky nadzemních
               provozních nádrží. Palivo třídy B7 podle ČSN EN 590, na
@@ -99,7 +99,7 @@ export default function MikrozavozyPage() {
               href="mailto:info@phmarket.cz?subject=Pop%C3%A1vka%20mikrozavoz"
               className="inline-flex items-center gap-2 mt-8 bg-primary hover:bg-primary-dark text-white font-semibold px-6 py-3 rounded-lg transition-colors"
             >
-              Poptávka — info@phmarket.cz
+              Poptávka: info@phmarket.cz
             </Link>
           </div>
         </div>
@@ -112,10 +112,10 @@ export default function MikrozavozyPage() {
             Co je mikrozávoz motorové nafty
           </h2>
           <p className="text-gray-700 leading-relaxed">
-            Mikrozávoz je dodávka malého objemu motorové nafty (typicky 200–3
+            Mikrozávoz je dodávka malého objemu motorové nafty (typicky 200 až 3
             000 litrů) přímo na adresu zákazníka pomocí cisterny nebo
             přepravního IBC. Liší se od velkozávozu k čerpacím stanicím (10
-            000+ l) tím, že obsluhuje koncové firemní spotřebitele — stavby,
+            000+ l) tím, že obsluhuje koncové firemní spotřebitele: stavby,
             zemědělce, dopravce, generátorové soustavy.
           </p>
           <h3 className="text-xl font-semibold text-dark pt-2">
@@ -123,15 +123,15 @@ export default function MikrozavozyPage() {
           </h3>
           <ul className="list-disc pl-6 space-y-1 text-gray-700">
             <li>
-              Motorovou naftu třídy B7 (s biosložkou do 7 % MEŘO) — ČSN EN 590
+              Motorovou naftu třídy B7 (s biosložkou do 7 % MEŘO), ČSN EN 590
             </li>
             <li>
-              Naftu bez biosložky B0 — pro generátory, sezónní techniku a
+              Naftu bez biosložky B0, pro generátory, sezónní techniku a
               dlouhodobé skladování
             </li>
             <li>
               Zimní třídy D a F (CFPP −20 °C, resp. −32 °C) v období
-              listopad–březen
+              listopad až březen
             </li>
           </ul>
           <h3 className="text-xl font-semibold text-dark pt-2">Co neděláme</h3>
@@ -151,29 +151,29 @@ export default function MikrozavozyPage() {
           </h2>
           <ul className="space-y-3 text-gray-700">
             <li>
-              <strong>Stavební firmy</strong> — bagrové, drtiče, jeřáby a
+              <strong>Stavební firmy</strong>: bagrové, drtiče, jeřáby a
               další stroje na stavbě. Místo objíždění čerpací stanice
               dovezeme naftu přímo na staveniště, často mimo dohled (klíčový
               prvek prevence krádeží paliva).
             </li>
             <li>
-              <strong>Zemědělci</strong> — sezónní spotřeba (jaro: setí,
+              <strong>Zemědělci</strong>: sezónní spotřeba (jaro: setí,
               sklizeň). Mikrozávoz pokryje krátkodobý nárůst spotřeby bez
               nutnosti budovat vlastní velkoobjemovou nádrž.
             </li>
             <li>
-              <strong>Dopravní firmy a vozové parky</strong> — vlastní
-              skladovací nádrž 5–20 m³, pravidelný plánovaný závoz po
+              <strong>Dopravní firmy a vozové parky</strong>: vlastní
+              skladovací nádrž 5 až 20 m³, pravidelný plánovaný závoz po
               vyčerpání zásob.
             </li>
             <li>
-              <strong>Datová centra, nemocnice, průmysl</strong> — náplň
+              <strong>Datová centra, nemocnice, průmysl</strong>: náplň
               záložních generátorů; periodická obnova paliva, aby se v
               nádrži netvořily biokaly.
             </li>
             <li>
-              <strong>Provozovatelé nadzemních nádrží</strong> — drobné firmy
-              s lokální nádrží 1–5 m³, kterým by se nevyplatil velkozávoz.
+              <strong>Provozovatelé nadzemních nádrží</strong>: drobné firmy
+              s lokální nádrží 1 až 5 m³, kterým by se nevyplatil velkozávoz.
             </li>
           </ul>
         </div>
@@ -187,7 +187,7 @@ export default function MikrozavozyPage() {
           </h2>
           <ul className="space-y-2 text-gray-700">
             <li>
-              <strong>Rozsah dodávky:</strong> 200 — 3 000 litrů na jeden
+              <strong>Rozsah dodávky:</strong> 200 až 3 000 litrů na jeden
               výjezd
             </li>
             <li>
@@ -221,7 +221,7 @@ export default function MikrozavozyPage() {
       <section className="py-12 md:py-16 bg-gray-50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
           <h2 className="text-2xl md:text-3xl font-bold text-dark">
-            Jak postupujeme — krok za krokem
+            Jak postupujeme krok za krokem
           </h2>
           <ol className="list-decimal pl-6 space-y-3 text-gray-700">
             <li>
@@ -293,11 +293,11 @@ export default function MikrozavozyPage() {
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="py-3 pr-4 font-medium">Čas obsluhy</td>
-                  <td className="py-3 pr-4">0 — dovezeme</td>
+                  <td className="py-3 pr-4">0, dovezeme</td>
                   <td className="py-3 pr-4">
                     Cesta k pumpě + manipulace s kanystry
                   </td>
-                  <td className="py-3">0 — dovezeme</td>
+                  <td className="py-3">0, dovezeme</td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="py-3 pr-4 font-medium">Riziko krádeže</td>

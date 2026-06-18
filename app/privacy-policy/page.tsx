@@ -6,7 +6,7 @@ import { breadcrumbSchema, SITE_URL } from "@/lib/jsonld";
 export const metadata: Metadata = {
   title: "Zásady ochrany osobních údajů",
   description:
-    "Zásady ochrany osobních údajů aplikace PHMarket — jaké údaje zpracováváme, za jakým účelem, jak dlouho a jaká máte práva podle GDPR. Účinnost od 1. června 2026.",
+    "Zásady ochrany osobních údajů aplikace PHMarket: jaké údaje zpracováváme, za jakým účelem, jak dlouho a jaká máte práva podle GDPR. Účinnost od 1. června 2026.",
   alternates: { canonical: "/privacy-policy" },
 };
 

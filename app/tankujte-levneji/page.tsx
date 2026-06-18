@@ -4,7 +4,7 @@ import AppStoreButtons from "@/components/AppStoreButtons";
 export const metadata: Metadata = {
   title: "Tankujte levněji s PHMarket | PHMarket",
   description:
-    "Tankujte levněji díky slevovým kódům v aplikaci PHMarket. Bez registrace, poplatků nebo plastových karet — vše v mobilu.",
+    "Tankujte levněji díky slevovým kódům v aplikaci PHMarket. Bez registrace, poplatků nebo plastových karet. Vše v mobilu.",
 };
 
 export default function TankujteLevnejiPage() {

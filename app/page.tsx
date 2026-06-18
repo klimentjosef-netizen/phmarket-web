@@ -35,7 +35,7 @@ function Hero() {
             <p className="mt-6 text-lg text-white/60 leading-relaxed max-w-xl">
               PHMarket tě navede k čerpacím stanicím s kvalitním palivem, kde
               uplatníš slevové kódy. Bez registrace, poplatků nebo plastových
-              karet — vše v mobilu.
+              karet. Vše v mobilu.
             </p>
 
             <div className="mt-10">
@@ -178,7 +178,7 @@ function Services() {
     {
       title: "Mikrozávozy motorové nafty",
       description:
-        "Dovoz nafty přímo k zákazníkovi — rychle, pohodlně a za výhodné ceny.",
+        "Dovoz nafty přímo k zákazníkovi, rychle, pohodlně a za výhodné ceny.",
       href: "/mikrozavozy-motorove-nafty",
       icon: (
         <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
