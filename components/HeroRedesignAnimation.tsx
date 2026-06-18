@@ -130,6 +130,66 @@ function DigitalRoad({ active }: { active: boolean }) {
 }
 
 /* ------------------------------------------------------------------ */
+/*  Driving Car (premium SVG)                                          */
+/* ------------------------------------------------------------------ */
+function Car() {
+  return (
+    <div className="absolute bottom-[2%] z-20 hero-car-drive pointer-events-none">
+      <div className="relative hero-car-bob">
+        {/* Headlight beam (driving direction → right) */}
+        <div className="absolute right-0 top-[42%] -translate-y-1/2 translate-x-full w-16 h-7 bg-gradient-to-r from-amber-200/35 to-transparent blur-md rounded-full" />
+        {/* Emerald underglow / motion shadow */}
+        <div className="absolute inset-x-2 -bottom-1 h-3 bg-emerald-400/30 blur-md rounded-full" />
+
+        <svg width="108" height="44" viewBox="0 0 108 44" fill="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="carBody" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#1f3b2c" />
+              <stop offset="55%" stopColor="#13261c" />
+              <stop offset="100%" stopColor="#0b1812" />
+            </linearGradient>
+            <linearGradient id="carRoof" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#27523c" />
+              <stop offset="100%" stopColor="#16302322" />
+            </linearGradient>
+          </defs>
+
+          {/* Body */}
+          <rect x="12" y="17" width="84" height="17" rx="6" fill="url(#carBody)" stroke="#34d399" strokeOpacity="0.35" strokeWidth="1" />
+          {/* Cabin / roof */}
+          <path d="M30 17 L40 5 L66 5 L78 17 Z" fill="url(#carRoof)" stroke="#34d399" strokeOpacity="0.25" strokeWidth="1" />
+          {/* Windows */}
+          <path d="M41 7 L34.5 15 L50 15 L50 7 Z" fill="#9be7cf" opacity="0.45" />
+          <path d="M53 7 L53 15 L70 15 L64 7 Z" fill="#9be7cf" opacity="0.45" />
+          {/* Door seam */}
+          <line x1="54" y1="19" x2="54" y2="32" stroke="#0b1812" strokeWidth="0.8" strokeOpacity="0.6" />
+          {/* Headlight (front / right) */}
+          <rect x="92" y="21" width="4" height="5" rx="1.5" fill="#fde68a" />
+          <circle cx="94" cy="23.5" r="3.5" fill="#fde68a" opacity="0.35" />
+          {/* Tail light (rear / left) */}
+          <rect x="12" y="21" width="3" height="5" rx="1.5" fill="#34d399" />
+
+          {/* Rear wheel */}
+          <circle cx="32" cy="34" r="7.5" fill="#15110f" stroke="#2c2c2c" strokeWidth="1" />
+          <g className="hero-wheel-spin" style={{ transformBox: "fill-box", transformOrigin: "center" }}>
+            <circle cx="32" cy="34" r="3.6" fill="#9aa0a6" />
+            <line x1="32" y1="30.4" x2="32" y2="37.6" stroke="#3a3f44" strokeWidth="1.2" />
+            <line x1="28.4" y1="34" x2="35.6" y2="34" stroke="#3a3f44" strokeWidth="1.2" />
+          </g>
+          {/* Front wheel */}
+          <circle cx="76" cy="34" r="7.5" fill="#15110f" stroke="#2c2c2c" strokeWidth="1" />
+          <g className="hero-wheel-spin" style={{ transformBox: "fill-box", transformOrigin: "center" }}>
+            <circle cx="76" cy="34" r="3.6" fill="#9aa0a6" />
+            <line x1="76" y1="30.4" x2="76" y2="37.6" stroke="#3a3f44" strokeWidth="1.2" />
+            <line x1="72.4" y1="34" x2="79.6" y2="34" stroke="#3a3f44" strokeWidth="1.2" />
+          </g>
+        </svg>
+      </div>
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
 /*  Phone Mockup                                                       */
 /* ------------------------------------------------------------------ */
 function PhoneMockup({ visible }: { visible: boolean }) {
@@ -222,6 +282,9 @@ export default function HeroRedesignAnimation() {
     <div className="relative w-full h-full flex items-center justify-center min-h-[480px] sm:min-h-[560px] lg:min-h-[640px] xl:min-h-[720px]">
       {/* Layer 1: Digital Road */}
       <DigitalRoad active={showRoad} />
+
+      {/* Layer 1b: Driving Car */}
+      <Car />
 
       {/* Layer 2: Price Cards */}
       <PriceCard type="competitor" visible={showCompetitor} />
