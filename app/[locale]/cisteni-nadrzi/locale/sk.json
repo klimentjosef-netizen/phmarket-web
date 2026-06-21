@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "title": "Čistenie palivových nádrží v ČR",
+    "description": "Profesionálne čistenie palivových nádrží čerpacích staníc a firemných vozových parkov v celej ČR. Odstránenie biokalov, vody a sedimentov. Pôsobnosť po celej Českej republike."
+  },
+  "breadcrumbName": "Čistenie nádrží",
+  "schema": {
+    "id": "/cisteni-nadrzi#service",
+    "serviceType": "Profesionálne čistenie palivových nádrží",
+    "name": "Čistenie palivových nádrží",
+    "description": "Odstránenie biokalov, sedimentov a vody z palivových nádrží čerpacích staníc, firemných vozových parkov, generátorových sústav a poľnohospodárskej techniky. Pôsobnosť po celej Českej republike.",
+    "audience": "Čerpacie stanice, dopravné firmy, vlastníci vozových parkov, poľnohospodári, prevádzkovatelia záložných generátorov",
+    "priceDescription": "Cena na vyžiadanie podľa objemu nádrže, typu kontaminácie a vzdialenosti."
+  },
+  "faqItems": [
+    {
+      "question": "Ako často je potrebné čistiť palivovú nádrž?",
+      "answer": "Pri podzemných nádržiach čerpacích staníc s palivom B7 (s biozložkou) odporúčame inšpekciu raz ročne a fyzické čistenie spravidla každé 2 až 3 roky. Pri nádržiach s naftou bez biozložky (B0) postačí čistenie pri výmene paliva alebo raz za 3 až 5 rokov. Pri firemných vozových parkoch a nadzemných prevádzkových nádržiach závisí frekvencia od obrátkovosti, minimálne však raz za 2 roky."
+    },
+    {
+      "question": "Čo sa v nádrži ukladá a prečo to prekáža?",
+      "answer": "Hlavnými kontaminantmi sú: voda (kondenzácia + hygroskopickosť biozložky MEŘO), biokaly (slizovité usadeniny z degradácie MEŘO), železné rezné častice z korózie stien, prach a mikroorganizmy. Tieto usadeniny upchávajú sanie čerpadla, palivový filter a v krajnom prípade poškodzujú vstrekovače, ktorých oprava sa pri moderných dieseloch pohybuje v desiatkach tisíc korún."
+    },
+    {
+      "question": "Ako dlho čistenie trvá a musíme zatvoriť prevádzku?",
+      "answer": "Štandardnú podzemnú nádrž 30 až 50 m³ obvykle zvládneme za 8 až 24 hodín podľa stavu. Pri čerpacích staniciach plánujeme zásah na najnižší obrátkový čas (typicky noc / pondelok ráno) tak, aby dotknutá stanica nemusela uzavrieť celú prevádzku, čistíme jednu nádrž v cykle, ostatné zostávajú v prevádzke."
+    },
+    {
+      "question": "Čo sa stane s odčerpaným palivom?",
+      "answer": "Palivo, ktoré možno rekuperovať, prefiltrujeme a vrátime do nádrže. Nepoužiteľná časť (voda + kaly) je odvezená ako nebezpečný odpad (kód 13 07 03* podľa Katalógu odpadov) do certifikovanej likvidácie. O likvidácii dostanete protokol pre vaše hlásenie SEPNO."
+    },
+    {
+      "question": "Robíte aj nadzemné prevádzkové nádrže a kontajnery (IBC)?",
+      "answer": "Áno. Čistíme nadzemné nádrže (typicky 1 až 10 m³) pre vozové parky, poľnohospodárske prevádzky a generátory, rovnako aj menšie kontajnery IBC 1 000 l. Postup je rýchlejší než pri podzemných nádržiach, často hotovo do 4 hodín."
+    },
+    {
+      "question": "Pôsobíte len v Moravskosliezskom kraji, alebo po celej ČR?",
+      "answer": "Pôsobíme po celej Českej republike. Naše zázemie je v Českom Tešíne, ale výjazd Praha, Brno, Plzeň alebo do pohraničia pravidelne realizujeme."
+    }
+  ],
+  "content": {
+    "heroTitlePre": "Čistenie palivových",
+    "heroTitleHl": "nádrží",
+    "heroIntro": "Profesionálne čistenie palivových nádrží čerpacích staníc, firemných vozových parkov, poľnohospodárskych prevádzok a záložných generátorov po celej Českej republike. Odstránime biokaly z MEŘO, vodu a sedimenty, odvezieme nebezpečný odpad na certifikovanú likvidáciu a odovzdáme protokol. Výjazd typicky do 5 pracovných dní, cena na vyžiadanie.",
+    "heroCtaLabel": "Nezáväzný dopyt: info@phmarket.cz",
+    "heroMailtoSubject": "Dopyt čistenia nádrže",
+    "defTitle": "Čo je čistenie palivovej nádrže",
+    "defPara": "Čistenie palivovej nádrže je technologický proces, pri ktorom sa z podzemnej alebo nadzemnej nádrže odstráni voda, biokaly, sedimenty a rezné častice nahromadené na dne a stenách. Cieľom je obnoviť čistotu paliva podľa ČSN EN 590 (motorová nafta) alebo ČSN EN 228 (benzín) a zabrániť poškodeniu vstrekovacieho systému koncových používateľov.",
+    "doTitle": "Čo konkrétne robíme",
+    "doItems": [
+      "Odčerpanie paliva do dočasnej nádrže s medzifiltráciou",
+      "Odstránenie usadenín na dne (mechanicky + odsávacia technika)",
+      "Vysušenie nádrže a vizuálna kontrola stien",
+      "Spätné napustenie prefiltrovaného paliva (alebo dodanie nového)",
+      "Odvoz nebezpečného odpadu na certifikovanú likvidáciu + protokol"
+    ],
+    "dontTitle": "Čo nerobíme",
+    "dontItems": [
+      "Stavebné opravy nádrží a obetónovanie",
+      "Ciachovanie a metrológiu (odovzdávame partnerskej firme)",
+      "Demontáž nádrže zo zeme"
+    ],
+    "whomTitle": "Pre koho je služba určená",
+    "whomItems": [
+      {
+        "strong": "Prevádzkovatelia čerpacích staníc",
+        "text": ": podzemné nádrže 30 až 50 m³ s naftou B7, benzínom alebo prémiovými palivami. Pravidelná kontrola ako prevencia kontaminácie zákazníckych nádrží."
+      },
+      {
+        "strong": "Dopravné firmy a vozové parky",
+        "text": ": nadzemné skladovacie nádrže 5 až 20 m³, z ktorých tankujú kamióny alebo autobusy. Riziko: upchaté filtre, výpadky vozidiel."
+      },
+      {
+        "strong": "Poľnohospodárske prevádzky",
+        "text": ": sezónne stanice (kombajny, traktory) s niekoľkomesačným státím paliva. Riziko: degradácia MEŘO v nafte B7, biokaly pri štarte sezóny."
+      },
+      {
+        "strong": "Prevádzkovatelia záložných generátorov",
+        "text": ": dátové centrá, nemocnice, priemysel. Riziko: nádrž stojí roky a pri skutočnom výpadku motor odmietne naštartovať na pokazené palivo."
+      },
+      {
+        "strong": "Vlastníci sezónnej techniky",
+        "text": ": obytné vozy, lode, veteráni s drahým vstrekovacím systémom."
+      }
+    ],
+    "numbersTitle": "Čísla a fakty",
+    "numbersItems": [
+      { "strong": "Objemy:", "text": "nádrže 1 až 60 m³ (podzemné aj nadzemné)" },
+      {
+        "strong": "Doba čistenia:",
+        "text": "nadzemné 1 až 10 m³ obvykle 2 až 6 h, podzemné 30 až 50 m³ obvykle 8 až 24 h"
+      },
+      {
+        "strong": "Výjazd:",
+        "text": "typicky do 5 pracovných dní od potvrdenia objednávky, havarijný zásah do 48 hodín (podľa vyťaženia)"
+      },
+      {
+        "strong": "Pokrytie:",
+        "text": "celá Česká republika; zázemie Český Těšín, výjazdy Praha / Brno / Plzeň bežne"
+      },
+      {
+        "strong": "Odpad:",
+        "text": "likvidácia pod kódom 13 07 03* (iné kvapalné palivá) v certifikovanej likvidácii, protokol pre SEPNO"
+      },
+      {
+        "strong": "Cena:",
+        "text": "na vyžiadanie podľa objemu, stupňa kontaminácie a vzdialenosti"
+      }
+    ],
+    "howTitle": "Ako postupujeme krok za krokom",
+    "howItems": [
+      {
+        "strong": "Kontakt a posúdenie.",
+        "text": "Pošlite nám fotografiu nádrže, údaje o objeme, type paliva a poslednej kontrole. Do 24 hodín sa ozveme."
+      },
+      {
+        "strong": "Cenová ponuka.",
+        "text": "Pripravíme rozpočet s pevnou cenou pre štandardný rozsah a sadzbou za extra hodiny pri nadštandardnej kontaminácii."
+      },
+      {
+        "strong": "Plánovanie výjazdu.",
+        "text": "Termín volíme tak, aby čerpacia stanica mohla prevádzkovať ostatné nádrže, typicky pondelok ráno alebo víkendová noc."
+      },
+      {
+        "strong": "Odčerpanie paliva.",
+        "text": "Palivo prečerpáme do mobilnej odsávacej nádrže s predfiltráciou 5 μm a 25 μm."
+      },
+      {
+        "strong": "Mechanické čistenie.",
+        "text": "Sedimenty a kaly odstránime z dna a stien. Pri podzemných nádržiach používame kameru na vizuálnu kontrolu po vyčistení."
+      },
+      {
+        "strong": "Spätné napustenie.",
+        "text": "Prefiltrované palivo vraciame späť; nepoužiteľnú frakciu odvážame."
+      },
+      {
+        "strong": "Odovzdanie a dokumentácia.",
+        "text": "Odovzdáme protokol o vyčistení + doklad o odovzdaní nebezpečného odpadu pre vaše hlásenie SEPNO."
+      }
+    ],
+    "compTitle": "Porovnanie s alternatívami",
+    "compCols": [
+      "Kritérium",
+      "PHMarket: profesionálne čistenie",
+      "Interné čistenie svojpomocne",
+      "Výmena nádrže"
+    ],
+    "compRows": [
+      ["Doba", "8 až 24 h (50 m³)", "2 až 5 dní (riziko omeškania)", "2 až 6 týždňov + stavba"],
+      ["Riziko BOZP", "Nízke, certifikovaný postup", "Vysoké (výpary, výbušná atmosféra)", "Nízke, ale rozsiahla stavba"],
+      ["Likvidácia odpadu", "Certifikovaná, vrátane protokolu SEPNO", "Riziko, bez protokolu hrozí pokuta", "Súčasť demontáže"],
+      ["Náklady", "Jednorazová cena na vyžiadanie", "Skryté náklady (čas, riziko)", "Statisíce až milión+"]
+    ],
+    "faqTitle": "Časté otázky",
+    "ctaTitle": "Pošlite nezáväzný dopyt",
+    "ctaPara": "Napíšte nám objem nádrže, typ paliva a lokalitu. Do 24 hodín sa ozveme s konkrétnou cenou a termínom.",
+    "ctaLabel": "info@phmarket.cz",
+    "ctaMailtoSubject": "Dopyt čistenia nádrže"
+  }
+}

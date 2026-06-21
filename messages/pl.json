@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "homeTitle": "PHMarket: Oszczędzaj przy każdym tankowaniu",
+    "homeDescription": "PHMarket poprowadzi Cię do stacji paliw z dobrej jakości paliwem, gdzie wykorzystasz kody rabatowe. Bez rejestracji, opłat i plastikowych kart.",
+    "ogDescription": "Kody rabatowe na paliwo na partnerskich stacjach. Bez rejestracji, bez plastikowych kart."
+  },
+  "nav": {
+    "home": "Strona główna",
+    "phmap": "PHMap",
+    "articles": "Artykuły",
+    "tankujte": "Tankuj taniej",
+    "cisteni": "Czyszczenie zbiorników",
+    "mikrozavozy": "Mikrodostawy oleju napędowego",
+    "downloadApp": "Pobierz aplikację"
+  },
+  "switcher": {
+    "label": "Język",
+    "cs": "Čeština",
+    "sk": "Slovenčina",
+    "pl": "Polski",
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "appButtons": {
+    "downloadOn": "Pobierz z"
+  },
+  "footer": {
+    "tagline": "Sprytna aplikacja do oszczędzania na tankowaniu. Bez rejestracji, opłat i plastikowych kart.",
+    "navHeading": "Nawigacja",
+    "legalHeading": "Informacje prawne",
+    "contactHeading": "Kontakt",
+    "terms": "Regulamin",
+    "privacy": "Ochrona danych osobowych",
+    "rights": "Wszelkie prawa zastrzeżone."
+  },
+  "hero": {
+    "badge": "Bez rejestracji ani plastikowych kart",
+    "titleLine1": "Tankuj sprytnie.",
+    "titleHighlight": "Oszczędzaj.",
+    "subtitle": "PHMarket poprowadzi Cię do stacji paliw z dobrej jakości paliwem, gdzie wykorzystasz kody rabatowe. Bez rejestracji, opłat i plastikowych kart. Wszystko w telefonie.",
+    "sceneAria": "Przykład oszczędności z PHMarket",
+    "competitor": "Konkurencja",
+    "phmarketDiscount": "Rabat PHMarket",
+    "saved": "Zaoszczędzone: 175 Kč na baku"
+  },
+  "stats": {
+    "stationsValue": "100+",
+    "stationsLabel": "stacji partnerskich",
+    "savingValue": "do 3 Kč",
+    "savingLabel": "oszczędność na litr",
+    "feeValue": "0 Kč",
+    "feeLabel": "opłata za aplikację",
+    "mapValue": "PHMap",
+    "mapLabel": "mapa stacji"
+  },
+  "savings": {
+    "title": "Ile już razem zaoszczędziliśmy",
+    "subtitle": "Liczba rośnie w czasie rzeczywistym, oszczędzamy z każdą sekundą",
+    "totalSaved": "Łączne oszczędności użytkowników",
+    "codesUsed": "Wykorzystanych kodów rabatowych",
+    "activeUsers": "Aktywnych użytkowników"
+  },
+  "howItWorks": {
+    "title": "Jak to działa",
+    "subtitle": "Cztery proste kroki do tańszego tankowania",
+    "stepLabel": "krok",
+    "steps": [
+      { "title": "Pobierz aplikację", "description": "iOS i Android za darmo" },
+      { "title": "Znajdź stację", "description": "Mapa PHMap pokaże najbliższych partnerów" },
+      { "title": "Wykorzystaj kod", "description": "Pokaż kod bezpośrednio przy kasie" },
+      { "title": "Oszczędzaj", "description": "Rabat odliczany jest natychmiast" }
+    ]
+  },
+  "services": {
+    "title": "Pozostałe usługi",
+    "learnMore": "Dowiedz się więcej",
+    "cisteni": {
+      "title": "Czyszczenie zbiorników",
+      "description": "Profesjonalne czyszczenie zbiorników paliwa dla stacji paliw oraz klientów firmowych."
+    },
+    "mikrozavozy": {
+      "title": "Mikrodostawy oleju napędowego",
+      "description": "Dostawa oleju napędowego bezpośrednio do klienta, szybko, wygodnie i w korzystnych cenach."
+    }
+  },
+  "partners": {
+    "title": "Nasze partnerskie stacje paliw",
+    "subtitle": "Nasi odbiorcy"
+  },
+  "homeCta": {
+    "title": "Zacznij oszczędzać już dziś.",
+    "subtitle": "Pobierz aplikację PHMarket i zacznij korzystać z kodów rabatowych na partnerskich stacjach paliw w całych Czechach."
+  },
+  "legal": {
+    "breadcrumbHome": "Strona główna",
+    "effectiveFrom": "Obowiązuje od {date}",
+    "openPdf": "Otwórz dokument (PDF)",
+    "downloadPdf": "Pobierz PDF",
+    "languageVersions": "Wersje językowe",
+    "tableOfContents": "Spis treści",
+    "viewerFallbackBefore": "Twoja przeglądarka nie może wyświetlić PDF bezpośrednio na stronie. ",
+    "viewerFallbackLink": "Otwórz dokument w nowym oknie",
+    "mobilePromptTitle": "Pełną treść dokumentu otworzysz w PDF.",
+    "mobilePromptSubtitle": "Dla wygodnego czytania na telefonie zalecamy otwarcie dokumentu na pełnym ekranie.",
+    "operator": "Operator",
+    "emailLabel": "E-mail"
+  },
+  "tankujtePage": {
+    "metaTitle": "Tankuj taniej z PHMarket",
+    "metaDescription": "Tankuj taniej dzięki kodom rabatowym w aplikacji PHMarket. Bez rejestracji, opłat i plastikowych kart. Wszystko w telefonie.",
+    "title": "Tankuj <hl>taniej</hl>",
+    "subtitle": "Z aplikacją PHMarket zaoszczędzisz przy każdym tankowaniu. Wystarczy pokazać kod rabatowy bezpośrednio przy kasie stacji, a rabat zostanie odliczony natychmiast od ceny paliwa.",
+    "benefitsHeading": "Dlaczego tankować z PHMarket?",
+    "benefits": [
+      { "title": "Oszczędność do 3 Kč na litr", "desc": "Dzięki ekskluzywnym kodom rabatowym oszczędzasz przy każdym tankowaniu." },
+      { "title": "Bez rejestracji", "desc": "Żadnych skomplikowanych rejestracji ani wypełniania formularzy. Pobierz i tankuj." },
+      { "title": "Żadnych opłat", "desc": "Aplikacja jest całkowicie darmowa. Żadnych ukrytych opłat ani abonamentu." },
+      { "title": "Bez plastikowych kart", "desc": "Koniec z kartami lojalnościowymi. Wszystko masz wygodnie w telefonie." },
+      { "title": "100+ stacji", "desc": "Sieć partnerskich stacji paliw w całych Czechach." },
+      { "title": "Dobre paliwo", "desc": "Współpracujemy tylko ze sprawdzonymi stacjami paliw z dobrej jakości paliwem." }
+    ],
+    "ctaTitle": "Zacznij oszczędzać już dziś",
+    "ctaSubtitle": "Pobierz aplikację PHMarket i wykorzystaj swój pierwszy kod rabatowy."
+  },
+  "phmapPage": {
+    "metaTitle": "PHMap: Mapa stacji paliw",
+    "metaDescription": "PHMap pokaże Ci najbliższe partnerskie stacje paliw z kodami rabatowymi na paliwo. Znajdź stację i oszczędzaj.",
+    "subtitle": "Interaktywna mapa partnerskich stacji paliw. Znajdź najbliższą stację z aktualnymi kodami rabatowymi.",
+    "featuresHeading": "Co potrafi PHMap",
+    "features": [
+      { "title": "Najbliższe stacje", "desc": "Pokazuje partnerskie stacje paliw w Twojej okolicy uszeregowane według odległości." },
+      { "title": "Aktualne rabaty", "desc": "Przy każdej stacji widzisz aktualne kody rabatowe i wysokość oszczędności na litr." },
+      { "title": "Nawigacja", "desc": "Jednym kliknięciem uruchomisz nawigację bezpośrednio do wybranej stacji." }
+    ]
+  },
+  "articlesPage": {
+    "metaTitle": "Artykuły",
+    "metaDescription": "Artykuły i nowości ze świata paliw, stacji paliw i oszczędzania przy tankowaniu.",
+    "title": "Artykuły",
+    "heroSubtitle": "Nowości i porady ze świata paliw oraz sprytnego tankowania.",
+    "readMore": "Czytaj więcej",
+    "minRead": "min czytania",
+    "breadcrumb": "Artykuły"
+  }
+}

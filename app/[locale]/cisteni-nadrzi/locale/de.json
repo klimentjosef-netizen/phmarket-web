@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "title": "Reinigung von Kraftstofftanks in Tschechien",
+    "description": "Professionelle Reinigung von Kraftstofftanks an Tankstellen und in betrieblichen Fuhrparks in ganz Tschechien. Entfernung von Bioschlamm, Wasser und Sedimenten. Tätig in der gesamten Tschechischen Republik."
+  },
+  "breadcrumbName": "Tankreinigung",
+  "schema": {
+    "id": "/cisteni-nadrzi#service",
+    "serviceType": "Professionelle Reinigung von Kraftstofftanks",
+    "name": "Reinigung von Kraftstofftanks",
+    "description": "Entfernung von Bioschlamm, Sedimenten und Wasser aus Kraftstofftanks von Tankstellen, betrieblichen Fuhrparks, Generatoranlagen und landwirtschaftlicher Technik. Tätig in der gesamten Tschechischen Republik.",
+    "audience": "Tankstellen, Transportunternehmen, Fuhrparkbetreiber, Landwirte, Betreiber von Notstromgeneratoren",
+    "priceDescription": "Preis auf Anfrage je nach Tankvolumen, Art der Kontamination und Entfernung."
+  },
+  "faqItems": [
+    {
+      "question": "Wie oft muss ein Kraftstofftank gereinigt werden?",
+      "answer": "Bei unterirdischen Tanks von Tankstellen mit Kraftstoff B7 (mit Biokomponente) empfehlen wir eine Inspektion einmal jährlich und eine physische Reinigung in der Regel alle 2 bis 3 Jahre. Bei Tanks mit Diesel ohne Biokomponente (B0) genügt eine Reinigung beim Kraftstoffwechsel oder einmal alle 3 bis 5 Jahre. Bei betrieblichen Fuhrparks und oberirdischen Betriebstanks hängt die Häufigkeit vom Durchsatz ab, mindestens jedoch einmal alle 2 Jahre."
+    },
+    {
+      "question": "Was lagert sich im Tank ab und warum ist das problematisch?",
+      "answer": "Die Hauptkontaminanten sind: Wasser (Kondensation + Hygroskopizität der Biokomponente MEŘO (FAME)), Bioschlamm (schleimige Ablagerungen aus dem Abbau von MEŘO (FAME)), eiserne Rostpartikel aus der Korrosion der Wände, Staub und Mikroorganismen. Diese Ablagerungen verstopfen die Pumpenansaugung, den Kraftstofffilter und beschädigen im Extremfall die Einspritzdüsen, deren Reparatur bei modernen Dieselmotoren im Bereich von Zehntausenden Kronen liegt."
+    },
+    {
+      "question": "Wie lange dauert die Reinigung und müssen wir den Betrieb schließen?",
+      "answer": "Einen üblichen unterirdischen Tank von 30 bis 50 m³ schaffen wir in der Regel in 8 bis 24 Stunden, je nach Zustand. Für Tankstellen planen wir den Einsatz auf die durchsatzschwächste Zeit (typischerweise Nacht / Montagmorgen), sodass die betroffene Tankstelle nicht den gesamten Betrieb schließen muss; wir reinigen einen Tank im Zyklus, die übrigen bleiben in Betrieb."
+    },
+    {
+      "question": "Was geschieht mit dem abgepumpten Kraftstoff?",
+      "answer": "Kraftstoff, der wiederverwertet werden kann, filtern wir und führen ihn in den Tank zurück. Der unbrauchbare Teil (Wasser + Schlamm) wird als gefährlicher Abfall (Code 13 07 03* gemäß Abfallkatalog) zur zertifizierten Entsorgung abtransportiert. Über die Entsorgung erhalten Sie ein Protokoll für Ihre SEPNO-Meldung."
+    },
+    {
+      "question": "Reinigen Sie auch oberirdische Betriebstanks und Container (IBC)?",
+      "answer": "Ja. Wir reinigen oberirdische Tanks (typischerweise 1 bis 10 m³) für Fuhrparks, landwirtschaftliche Betriebe und Generatoren sowie kleinere IBC-Container mit 1 000 l. Der Ablauf ist schneller als bei unterirdischen Tanks, oft in unter 4 Stunden erledigt."
+    },
+    {
+      "question": "Sind Sie nur in der Region Mährisch-Schlesien tätig oder in ganz Tschechien?",
+      "answer": "Wir sind in der gesamten Tschechischen Republik tätig. Unser Stützpunkt ist in Český Těšín, aber Einsätze nach Prag, Brünn, Pilsen oder ins Grenzgebiet führen wir regelmäßig durch."
+    }
+  ],
+  "content": {
+    "heroTitlePre": "Reinigung von",
+    "heroTitleHl": "Kraftstofftanks",
+    "heroIntro": "Professionelle Reinigung von Kraftstofftanks an Tankstellen, in betrieblichen Fuhrparks, landwirtschaftlichen Betrieben und von Notstromgeneratoren in ganz Tschechien. Wir entfernen Bioschlamm aus MEŘO (FAME), Wasser und Sedimente, transportieren den gefährlichen Abfall zur zertifizierten Entsorgung und übergeben ein Protokoll. Einsatz typischerweise innerhalb von 5 Werktagen, Preis auf Anfrage.",
+    "heroCtaLabel": "Unverbindliche Anfrage: info@phmarket.cz",
+    "heroMailtoSubject": "Anfrage Tankreinigung",
+    "defTitle": "Was ist die Reinigung eines Kraftstofftanks",
+    "defPara": "Die Reinigung eines Kraftstofftanks ist ein technologischer Prozess, bei dem aus einem unterirdischen oder oberirdischen Tank Wasser, Bioschlamm, Sedimente und Rostpartikel entfernt werden, die sich am Boden und an den Wänden angesammelt haben. Ziel ist es, die Reinheit des Kraftstoffs gemäß ČSN EN 590 (Dieselkraftstoff) oder ČSN EN 228 (Benzin) wiederherzustellen und eine Beschädigung des Einspritzsystems der Endnutzer zu verhindern.",
+    "doTitle": "Was wir konkret tun",
+    "doItems": [
+      "Abpumpen des Kraftstoffs in einen Zwischentank mit Zwischenfiltration",
+      "Entfernung der Ablagerungen am Boden (mechanisch + Absaugtechnik)",
+      "Trocknung des Tanks und visuelle Kontrolle der Wände",
+      "Rückbefüllung mit gefiltertem Kraftstoff (oder Lieferung von neuem)",
+      "Abtransport des gefährlichen Abfalls zur zertifizierten Entsorgung + Protokoll"
+    ],
+    "dontTitle": "Was wir nicht tun",
+    "dontItems": [
+      "Bauliche Reparaturen von Tanks und Einbetonierung",
+      "Eichung und Metrologie (übergeben wir an ein Partnerunternehmen)",
+      "Ausbau des Tanks aus dem Boden"
+    ],
+    "whomTitle": "Für wen ist die Leistung bestimmt",
+    "whomItems": [
+      {
+        "strong": "Tankstellenbetreiber",
+        "text": ": unterirdische Tanks von 30 bis 50 m³ mit Diesel B7, Benzin oder Premiumkraftstoffen. Regelmäßige Kontrolle als Prävention gegen die Kontamination der Kundentanks."
+      },
+      {
+        "strong": "Transportunternehmen und Fuhrparks",
+        "text": ": oberirdische Lagertanks von 5 bis 20 m³, aus denen LKW oder Busse betankt werden. Risiko: verstopfte Filter, Fahrzeugausfälle."
+      },
+      {
+        "strong": "Landwirtschaftliche Betriebe",
+        "text": ": saisonale Tankstellen (Mähdrescher, Traktoren) mit mehrmonatiger Standzeit des Kraftstoffs. Risiko: Abbau von MEŘO (FAME) im Diesel B7, Bioschlamm zu Saisonbeginn."
+      },
+      {
+        "strong": "Betreiber von Notstromgeneratoren",
+        "text": ": Rechenzentren, Krankenhäuser, Industrie. Risiko: der Tank steht jahrelang und bei einem echten Stromausfall verweigert der Motor den Start aufgrund verdorbenen Kraftstoffs."
+      },
+      {
+        "strong": "Besitzer saisonaler Technik",
+        "text": ": Wohnmobile, Boote, Oldtimer mit teurem Einspritzsystem."
+      }
+    ],
+    "numbersTitle": "Zahlen und Fakten",
+    "numbersItems": [
+      { "strong": "Volumina:", "text": "Tanks von 1 bis 60 m³ (unter- und oberirdisch)" },
+      {
+        "strong": "Reinigungsdauer:",
+        "text": "oberirdisch 1 bis 10 m³ in der Regel 2 bis 6 h, unterirdisch 30 bis 50 m³ in der Regel 8 bis 24 h"
+      },
+      {
+        "strong": "Einsatz:",
+        "text": "typischerweise innerhalb von 5 Werktagen nach Auftragsbestätigung, Noteinsatz innerhalb von 48 Stunden (je nach Auslastung)"
+      },
+      {
+        "strong": "Abdeckung:",
+        "text": "gesamte Tschechische Republik; Stützpunkt Český Těšín, Einsätze nach Prag / Brünn / Pilsen üblich"
+      },
+      {
+        "strong": "Abfall:",
+        "text": "Entsorgung unter dem Code 13 07 03* (andere flüssige Kraftstoffe) in zertifizierter Entsorgung, Protokoll für SEPNO"
+      },
+      {
+        "strong": "Preis:",
+        "text": "auf Anfrage je nach Volumen, Grad der Kontamination und Entfernung"
+      }
+    ],
+    "howTitle": "Wie wir Schritt für Schritt vorgehen",
+    "howItems": [
+      {
+        "strong": "Kontakt und Beurteilung.",
+        "text": "Senden Sie uns ein Foto des Tanks sowie Angaben zum Volumen, Kraftstofftyp und zur letzten Kontrolle. Innerhalb von 24 Stunden melden wir uns."
+      },
+      {
+        "strong": "Preisangebot.",
+        "text": "Wir erstellen ein Budget mit Festpreis für den Standardumfang und einem Stundensatz für Zusatzstunden bei überdurchschnittlicher Kontamination."
+      },
+      {
+        "strong": "Einsatzplanung.",
+        "text": "Den Termin wählen wir so, dass die Tankstelle die übrigen Tanks weiter betreiben kann, typischerweise Montagmorgen oder eine Wochenendnacht."
+      },
+      {
+        "strong": "Abpumpen des Kraftstoffs.",
+        "text": "Den Kraftstoff pumpen wir in einen mobilen Absaugtank mit Vorfiltration von 5 μm und 25 μm um."
+      },
+      {
+        "strong": "Mechanische Reinigung.",
+        "text": "Sedimente und Schlamm entfernen wir vom Boden und von den Wänden. Bei unterirdischen Tanks verwenden wir nach der Reinigung eine Kamera zur visuellen Kontrolle."
+      },
+      {
+        "strong": "Rückbefüllung.",
+        "text": "Den gefilterten Kraftstoff führen wir zurück; die unbrauchbare Fraktion transportieren wir ab."
+      },
+      {
+        "strong": "Übergabe und Dokumentation.",
+        "text": "Wir übergeben ein Reinigungsprotokoll + Nachweis über die Übergabe des gefährlichen Abfalls für Ihre SEPNO-Meldung."
+      }
+    ],
+    "compTitle": "Vergleich mit Alternativen",
+    "compCols": [
+      "Kriterium",
+      "PHMarket: professionelle Reinigung",
+      "Interne Reinigung in Eigenregie",
+      "Tankaustausch"
+    ],
+    "compRows": [
+      ["Dauer", "8 bis 24 h (50 m³)", "2 bis 5 Tage (Risiko von Verzögerungen)", "2 bis 6 Wochen + Bau"],
+      ["Arbeitsschutzrisiko", "Gering, zertifiziertes Verfahren", "Hoch (Dämpfe, explosive Atmosphäre)", "Gering, aber umfangreicher Bau"],
+      ["Abfallentsorgung", "Zertifiziert, inkl. SEPNO-Protokoll", "Risikobehaftet, ohne Protokoll droht Bußgeld", "Teil des Ausbaus"],
+      ["Kosten", "Einmaliger Preis auf Anfrage", "Versteckte Kosten (Zeit, Risiko)", "Hunderttausende bis über eine Million"]
+    ],
+    "faqTitle": "Häufige Fragen",
+    "ctaTitle": "Senden Sie eine unverbindliche Anfrage",
+    "ctaPara": "Schreiben Sie uns das Tankvolumen, den Kraftstofftyp und den Standort. Innerhalb von 24 Stunden melden wir uns mit einem konkreten Preis und Termin.",
+    "ctaLabel": "info@phmarket.cz",
+    "ctaMailtoSubject": "Anfrage Tankreinigung"
+  }
+}

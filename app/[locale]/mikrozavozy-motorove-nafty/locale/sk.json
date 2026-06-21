@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Mikrorozvozy motorovej nafty v ČR",
+    "description": "Mikrorozvozy motorovej nafty (200 až 3 000 l) priamo k zákazníkovi v Českej republike. Stavby, poľnohospodárstvo, vozové parky, generátory. Cena podľa aktuálneho veľkoobchodného cenníka, dodávka typicky do 72 hodín."
+  },
+  "breadcrumbName": "Mikrorozvozy motorovej nafty",
+  "schema": {
+    "id": "/mikrozavozy-motorove-nafty#service",
+    "serviceType": "Mikrorozvozy motorovej nafty",
+    "name": "Mikrorozvozy motorovej nafty",
+    "description": "Dovoz motorovej nafty (typicky 200 až 3 000 litrov) priamo na adresu zákazníka v celej Českej republike. Pre stavby, poľnohospodárske prevádzky, dopravné firmy, záložné generátory a vlastníkov nadzemných prevádzkových nádrží.",
+    "audience": "Stavebné firmy, poľnohospodári, dopravné firmy, vozové parky, prevádzkovatelia záložných generátorov",
+    "priceDescription": "Cena podľa aktuálneho veľkoobchodného cenníka paliva + doprava podľa vzdialenosti a objemu."
+  },
+  "faqItems": [
+    {
+      "question": "Aký je minimálny a maximálny objem dodávky?",
+      "answer": "Typický rozsah mikrorozvozu je 200 až 3 000 litrov na jednu dodávku. Menšie objemy (od 200 l) riešime pomocou prepravného IBC alebo cisterny s menším výdajom; väčšie objemy (3 000+ l) odovzdávame partnerskej cisterne. Pri pravidelných odberoch (napr. poľnohospodári v sezóne) dohadujeme cyklický rozvoz na mesačnej alebo týždennej báze."
+    },
+    {
+      "question": "Ako je stanovená cena nafty?",
+      "answer": "Cena sa odvíja od aktuálnej veľkoobchodnej ceny motorovej nafty (referenčne Čepro alebo Unipetrol) v deň dodania. K nej sa pripočítava doprava (kalkulovaná podľa vzdialenosti od skladu a objemu) a marža. Pred dodaním vždy potvrdzujeme finálnu cenu. Pre pravidelných odberateľov ponúkame cenovú indexáciu na Brent alebo cenník ČEPRO."
+    },
+    {
+      "question": "Tankuje sa priamo do mojej nádrže alebo sa nafta len odovzdá v kanistri?",
+      "answer": "Cisterna prečerpá naftu priamo do vašej nadzemnej alebo podzemnej nádrže cez výdajnú hadicu s počítadlom (ciachovaným podľa zákona č. 505/1990 Sb. o metrológii). Vystavíme dodací list s objemom v litroch pri 15 °C, dátumom a podpisom vodiča. Nie je to ‚nafta v kanistri‘. Ide o štandardnú veľkoobchodnú dodávku."
+    },
+    {
+      "question": "Aké palivo dovážate? Spĺňa ČSN EN 590?",
+      "answer": "Dodávame motorovú naftu triedy B7 (s povinnou biozložkou do 7 % MEŘO) podľa normy ČSN EN 590. Na vyžiadanie zabezpečíme aj naftu bez biozložky (B0), tá je vhodná pre stroje s dlhým státím (poľnohospodárstvo, generátory, sezónna technika), pretože nevytvára biokaly. V zimnom období dodávame zimnú triedu D (CFPP do −20 °C) alebo arktickú (CFPP −32 °C) podľa aktuálneho obdobia."
+    },
+    {
+      "question": "Ako rýchlo dorazí dodávka?",
+      "answer": "Štandardná dodávka pri potvrdení do 10:00 ráno: typicky nasledujúci pracovný deň, inak do 72 hodín. Havarijný dovoz pre generátory a dopravu (do 24 hodín) riešime individuálne podľa vyťaženia."
+    },
+    {
+      "question": "Vystavíte faktúru s DPH a akú platbu prijímate?",
+      "answer": "Štandardne fakturujeme ako platitelia DPH (sadzba 21 %), splatnosť 7 až 14 dní pre stálych zákazníkov, pre prvý odber požadujeme platbu vopred alebo na dobierku. Akceptujeme bankový prevod; v hotovosti len do limitu 270 000 Kč podľa § 4 zákona o obmedzení platieb v hotovosti."
+    },
+    {
+      "question": "Pôsobíte po celej ČR?",
+      "answer": "Áno. Zázemie máme v Českom Těšíne (Moravskosliezsky kraj), ale pravidelne dovážame do celej Českej republiky. Logisticky najvýhodnejšia je východná polovica ČR; pre Plzeňský a Karlovarský kraj plánujeme dodávky s kratším predstihom (typicky 3 až 5 dní)."
+    }
+  ],
+  "content": {
+    "heroTitlePre": "Mikrorozvozy",
+    "heroTitleHl": "motorovej nafty",
+    "heroIntro": "Dovoz motorovej nafty 200 až 3 000 litrov priamo na adresu zákazníka v celej Českej republike. Pre stavby, poľnohospodárske prevádzky, dopravné firmy, vozové parky, záložné generátory a vlastníkov nadzemných prevádzkových nádrží. Palivo triedy B7 podľa ČSN EN 590, na vyžiadanie aj nafta bez biozložky B0. Cena podľa aktuálneho veľkoobchodného cenníka, štandardná dodávka do 72 hodín.",
+    "heroCtaLabel": "Dopyt: info@phmarket.cz",
+    "heroMailtoSubject": "Dopyt mikrorozvoz",
+    "defTitle": "Čo je mikrorozvoz motorovej nafty",
+    "defPara": "Mikrorozvoz je dodávka malého objemu motorovej nafty (typicky 200 až 3 000 litrov) priamo na adresu zákazníka pomocou cisterny alebo prepravného IBC. Líši sa od veľkorozvozu k čerpacím staniciam (10 000+ l) tým, že obsluhuje koncových firemných spotrebiteľov: stavby, poľnohospodárov, dopravcov, generátorové sústavy.",
+    "doTitle": "Čo dodávame",
+    "doItems": [
+      "Motorovú naftu triedy B7 (s biozložkou do 7 % MEŘO), ČSN EN 590",
+      "Naftu bez biozložky B0, pre generátory, sezónnu techniku a dlhodobé skladovanie",
+      "Zimné triedy D a F (CFPP −20 °C, resp. −32 °C) v období november až marec"
+    ],
+    "dontTitle": "Čo nerobíme",
+    "dontItems": [
+      "Benzín (Natural 95, 98, 100)",
+      "LPG, CNG, AdBlue ako samostatnú dodávku",
+      "Mikrorozvozy fyzickým osobám pre osobnú potrebu"
+    ],
+    "whomTitle": "Pre koho je služba určená",
+    "whomItems": [
+      {
+        "strong": "Stavebné firmy",
+        "text": ": bagre, drviče, žeriavy a ďalšie stroje na stavbe. Namiesto objazdov čerpacej stanice dovezieme naftu priamo na stavenisko, často mimo dohľadu (kľúčový prvok prevencie krádeží paliva)."
+      },
+      {
+        "strong": "Poľnohospodári",
+        "text": ": sezónna spotreba (jar: sejba, žatva). Mikrorozvoz pokryje krátkodobý nárast spotreby bez nutnosti budovať vlastnú veľkoobjemovú nádrž."
+      },
+      {
+        "strong": "Dopravné firmy a vozové parky",
+        "text": ": vlastná skladovacia nádrž 5 až 20 m³, pravidelný plánovaný rozvoz po vyčerpaní zásob."
+      },
+      {
+        "strong": "Dátové centrá, nemocnice, priemysel",
+        "text": ": náplň záložných generátorov; periodická obnova paliva, aby sa v nádrži netvorili biokaly."
+      },
+      {
+        "strong": "Prevádzkovatelia nadzemných nádrží",
+        "text": ": drobné firmy s lokálnou nádržou 1 až 5 m³, ktorým by sa neoplatil veľkorozvoz."
+      }
+    ],
+    "numbersTitle": "Čísla a fakty",
+    "numbersItems": [
+      { "strong": "Rozsah dodávky:", "text": "200 až 3 000 litrov na jeden výjazd" },
+      {
+        "strong": "Štandardná dodacia doba:",
+        "text": "do 72 hodín od potvrdenia (typicky nasledujúci pracovný deň)"
+      },
+      { "strong": "Havarijná dodávka:", "text": "do 24 hodín podľa vyťaženia" },
+      { "strong": "Pokrytie:", "text": "celá Česká republika; zázemie Český Těšín" },
+      {
+        "strong": "Cena:",
+        "text": "aktuálna veľkoobchodná cena ČEPRO/Unipetrol + doprava + marža (transparentne rozpísané na faktúre)"
+      },
+      {
+        "strong": "Metrológia:",
+        "text": "cisterna s počítadlom ciachovaným podľa zákona č. 505/1990 Sb., dodací list s objemom pri 15 °C"
+      },
+      {
+        "strong": "Norma paliva:",
+        "text": "ČSN EN 590 (štandardná B7), na vyžiadanie B0 alebo zimné triedy"
+      }
+    ],
+    "howTitle": "Ako postupujeme krok za krokom",
+    "howItems": [
+      {
+        "strong": "Dopyt.",
+        "text": "Pošlite nám objem, typ (B7 / B0 / zimná), miesto dodania a požadovaný termín. Email info@phmarket.cz."
+      },
+      {
+        "strong": "Cenová ponuka.",
+        "text": "Do niekoľkých hodín (pracovný deň) potvrdíme dostupnosť, aktuálnu cenu a termín."
+      },
+      {
+        "strong": "Potvrdenie dodávky.",
+        "text": "Vystavíme zálohovú faktúru (prvý odber) alebo potvrdíme termín pre existujúceho zákazníka."
+      },
+      {
+        "strong": "Výjazd cisterny.",
+        "text": "Cisterna dorazí v dohodnutom čase. Vodič skontroluje prístupnosť nádrže a začne prečerpávať."
+      },
+      {
+        "strong": "Prečerpanie a dodací list.",
+        "text": "Pri výdaji sa odčíta objem podľa ciachovaného počítadla, vystaví sa dodací list s dátumom, časom a podpisom."
+      },
+      {
+        "strong": "Faktúra.",
+        "text": "Daňový doklad vystavíme do 5 pracovných dní od dodávky, splatnosť podľa dohody."
+      }
+    ],
+    "compTitle": "Porovnanie s alternatívami",
+    "compCols": [
+      "Kritérium",
+      "Mikrorozvoz PHMarket",
+      "Verejná ČS (kanistre / firemná karta)",
+      "Veľkorozvoz (10 000+ l)"
+    ],
+    "compRows": [
+      ["Cena za liter", "Veľkoobchodná + doprava", "Maloobchodná (vyššia)", "Najnižšia (vyžaduje väčšiu nádrž)"],
+      ["Minimálny objem", "200 l", "Bez minima", "Typicky 10 000+ l"],
+      ["Čas obsluhy", "0, dovezieme", "Cesta k pumpe + manipulácia s kanistrami", "0, dovezieme"],
+      ["Riziko krádeže", "Nízke (priamo do nádrže)", "Vysoké (kanistre na stavbe)", "Nízke"],
+      ["Potreba vlastnej nádrže", "Odporúčaná (1+ m³)", "Nie", "Nutná (10+ m³)"]
+    ],
+    "faqTitle": "Časté otázky",
+    "ctaTitle": "Potrebujete dovoz nafty?",
+    "ctaPara": "Napíšte nám objem, typ paliva (B7 / B0 / zimná), miesto a požadovaný termín. Pripravíme cenovú ponuku v pracovných hodinách.",
+    "ctaLabel": "info@phmarket.cz",
+    "ctaMailtoSubject": "Dopyt mikrorozvoz nafty"
+  }
+}

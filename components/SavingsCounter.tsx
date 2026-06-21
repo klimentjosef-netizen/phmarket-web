@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 
 // Baseline values: set these to your real numbers at a known date
 const BASELINE_DATE = new Date("2026-04-08T00:00:00Z").getTime();
@@ -90,16 +91,13 @@ function LiveNumber({
 }
 
 export default function SavingsCounter() {
+  const t = useTranslations("savings");
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-dark">
-            Kolik jsme už společně ušetřili
-          </h2>
-          <p className="mt-3 text-gray-600">
-            Číslo roste v reálném čase, každou sekundu šetříme dál
-          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-dark">{t("title")}</h2>
+          <p className="mt-3 text-gray-600">{t("subtitle")}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -111,9 +109,7 @@ export default function SavingsCounter() {
                 suffix=" Kč"
               />
             </div>
-            <p className="mt-2 text-sm text-gray-500">
-              Celková úspora uživatelů
-            </p>
+            <p className="mt-2 text-sm text-gray-500">{t("totalSaved")}</p>
           </div>
           <div className="text-center">
             <div className="text-4xl md:text-5xl font-bold text-primary">
@@ -123,9 +119,7 @@ export default function SavingsCounter() {
                 suffix="+"
               />
             </div>
-            <p className="mt-2 text-sm text-gray-500">
-              Využitých slevových kódů
-            </p>
+            <p className="mt-2 text-sm text-gray-500">{t("codesUsed")}</p>
           </div>
           <div className="text-center">
             <div className="text-4xl md:text-5xl font-bold text-primary">
@@ -135,9 +129,7 @@ export default function SavingsCounter() {
                 suffix="+"
               />
             </div>
-            <p className="mt-2 text-sm text-gray-500">
-              Aktivních uživatelů
-            </p>
+            <p className="mt-2 text-sm text-gray-500">{t("activeUsers")}</p>
           </div>
         </div>
       </div>

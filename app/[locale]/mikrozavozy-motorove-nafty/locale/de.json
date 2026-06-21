@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Mikrolieferungen von Dieselkraftstoff in Tschechien",
+    "description": "Mikrolieferungen von Dieselkraftstoff (200 bis 3 000 l) direkt zum Kunden in der Tschechischen Republik. Baustellen, Landwirtschaft, Fuhrparks, Generatoren. Preis nach aktueller Großhandelspreisliste, Lieferung typischerweise innerhalb von 72 Stunden."
+  },
+  "breadcrumbName": "Mikrolieferungen von Dieselkraftstoff",
+  "schema": {
+    "id": "/mikrozavozy-motorove-nafty#service",
+    "serviceType": "Mikrolieferungen von Dieselkraftstoff",
+    "name": "Mikrolieferungen von Dieselkraftstoff",
+    "description": "Lieferung von Dieselkraftstoff (typischerweise 200 bis 3 000 Liter) direkt an die Adresse des Kunden in der gesamten Tschechischen Republik. Für Baustellen, landwirtschaftliche Betriebe, Transportunternehmen, Notstromgeneratoren und Eigentümer oberirdischer Betriebstanks.",
+    "audience": "Bauunternehmen, Landwirte, Transportunternehmen, Fuhrparks, Betreiber von Notstromgeneratoren",
+    "priceDescription": "Preis nach aktueller Großhandelspreisliste des Kraftstoffs + Transport nach Entfernung und Menge."
+  },
+  "faqItems": [
+    {
+      "question": "Was ist die minimale und maximale Liefermenge?",
+      "answer": "Der typische Umfang einer Mikrolieferung liegt bei 200 bis 3 000 Litern pro Lieferung. Kleinere Mengen (ab 200 l) lösen wir mithilfe eines Transport-IBC oder eines Tankwagens mit kleinerer Abgabe; größere Mengen (3 000+ l) übergeben wir an einen Partner-Tankwagen. Für regelmäßige Abnahmen (z. B. Landwirte in der Saison) vereinbaren wir eine zyklische Belieferung auf monatlicher oder wöchentlicher Basis."
+    },
+    {
+      "question": "Wie wird der Dieselpreis festgelegt?",
+      "answer": "Der Preis richtet sich nach dem aktuellen Großhandelspreis für Dieselkraftstoff (Referenz ČEPRO oder Unipetrol) am Liefertag. Hinzu kommen der Transport (kalkuliert nach Entfernung vom Lager und Menge) sowie die Marge. Vor der Lieferung bestätigen wir stets den Endpreis. Für regelmäßige Abnehmer bieten wir eine Preisindexierung an Brent oder die ČEPRO-Preisliste an."
+    },
+    {
+      "question": "Wird direkt in meinen Tank betankt oder wird der Diesel nur im Kanister übergeben?",
+      "answer": "Der Tankwagen pumpt den Diesel direkt in Ihren oberirdischen oder unterirdischen Tank über einen Abgabeschlauch mit Zähler (geeicht nach Gesetz Nr. 505/1990 Slg. über das Messwesen). Wir stellen einen Lieferschein mit der Menge in Litern bei 15 °C, Datum und Unterschrift des Fahrers aus. Es handelt sich nicht um ‚Diesel im Kanister‘. Es ist eine standardmäßige Großhandelslieferung."
+    },
+    {
+      "question": "Welchen Kraftstoff liefern Sie? Erfüllt er ČSN EN 590?",
+      "answer": "Wir liefern Dieselkraftstoff der Klasse B7 (mit obligatorischem Bioanteil bis 7 % FAME) nach der Norm ČSN EN 590. Auf Anfrage stellen wir auch Diesel ohne Bioanteil (B0) bereit; dieser ist für Maschinen mit langen Standzeiten geeignet (Landwirtschaft, Generatoren, Saisontechnik), da er keine Bioschlämme bildet. In der Winterzeit liefern wir die Winterklasse D (CFPP bis −20 °C) oder die arktische Klasse (CFPP −32 °C) je nach aktueller Jahreszeit."
+    },
+    {
+      "question": "Wie schnell trifft die Lieferung ein?",
+      "answer": "Standardlieferung bei Bestätigung bis 10:00 Uhr morgens: typischerweise am folgenden Werktag, ansonsten innerhalb von 72 Stunden. Notfalllieferungen für Generatoren und den Transport (innerhalb von 24 Stunden) lösen wir individuell je nach Auslastung."
+    },
+    {
+      "question": "Stellen Sie eine Rechnung mit Mehrwertsteuer aus und welche Zahlungsart akzeptieren Sie?",
+      "answer": "Standardmäßig rechnen wir als Mehrwertsteuerzahler ab (Satz 21 %), Zahlungsfrist 7 bis 14 Tage für Stammkunden; für die erste Abnahme verlangen wir Vorauszahlung oder Nachnahme. Wir akzeptieren Banküberweisung; in bar nur bis zum Limit von 270.000 CZK gemäß § 4 des Gesetzes zur Begrenzung von Barzahlungen."
+    },
+    {
+      "question": "Sind Sie in der gesamten Tschechischen Republik tätig?",
+      "answer": "Ja. Unseren Standort haben wir in Český Těšín (Mährisch-Schlesische Region), aber wir liefern regelmäßig in die gesamte Tschechische Republik. Logistisch am günstigsten ist die östliche Hälfte Tschechiens; für die Regionen Pilsen und Karlsbad planen wir Lieferungen mit etwas längerem Vorlauf (typischerweise 3 bis 5 Tage)."
+    }
+  ],
+  "content": {
+    "heroTitlePre": "Mikrolieferungen von",
+    "heroTitleHl": "Dieselkraftstoff",
+    "heroIntro": "Lieferung von Dieselkraftstoff von 200 bis 3 000 Litern direkt an die Adresse des Kunden in der gesamten Tschechischen Republik. Für Baustellen, landwirtschaftliche Betriebe, Transportunternehmen, Fuhrparks, Notstromgeneratoren und Eigentümer oberirdischer Betriebstanks. Kraftstoff der Klasse B7 nach ČSN EN 590, auf Anfrage auch Diesel ohne Bioanteil B0. Preis nach aktueller Großhandelspreisliste, Standardlieferung innerhalb von 72 Stunden.",
+    "heroCtaLabel": "Anfrage: info@phmarket.cz",
+    "heroMailtoSubject": "Anfrage Mikrolieferung",
+    "defTitle": "Was ist eine Mikrolieferung von Dieselkraftstoff",
+    "defPara": "Eine Mikrolieferung ist die Lieferung einer kleinen Menge Dieselkraftstoff (typischerweise 200 bis 3 000 Liter) direkt an die Adresse des Kunden mittels Tankwagen oder Transport-IBC. Sie unterscheidet sich von der Großlieferung an Tankstellen (10 000+ l) dadurch, dass sie gewerbliche Endverbraucher bedient: Baustellen, Landwirte, Spediteure, Generatorsysteme.",
+    "doTitle": "Was wir liefern",
+    "doItems": [
+      "Dieselkraftstoff der Klasse B7 (mit Bioanteil bis 7 % FAME), ČSN EN 590",
+      "Diesel ohne Bioanteil B0, für Generatoren, Saisontechnik und Langzeitlagerung",
+      "Winterklassen D und F (CFPP −20 °C bzw. −32 °C) im Zeitraum November bis März"
+    ],
+    "dontTitle": "Was wir nicht machen",
+    "dontItems": [
+      "Benzin (Natural 95, 98, 100)",
+      "LPG, CNG, AdBlue als eigenständige Lieferung",
+      "Mikrolieferungen an Privatpersonen für den persönlichen Bedarf"
+    ],
+    "whomTitle": "Für wen die Dienstleistung bestimmt ist",
+    "whomItems": [
+      {
+        "strong": "Bauunternehmen",
+        "text": ": Bagger, Brecher, Kräne und weitere Maschinen auf der Baustelle. Statt eine Tankstelle anzufahren, liefern wir den Diesel direkt auf die Baustelle, oft außerhalb der Sichtweite (ein Schlüsselelement zur Vorbeugung von Kraftstoffdiebstahl)."
+      },
+      {
+        "strong": "Landwirte",
+        "text": ": saisonaler Verbrauch (Frühjahr: Aussaat, Ernte). Die Mikrolieferung deckt den kurzfristigen Anstieg des Verbrauchs ab, ohne dass ein eigener Großtank gebaut werden muss."
+      },
+      {
+        "strong": "Transportunternehmen und Fuhrparks",
+        "text": ": eigener Lagertank von 5 bis 20 m³, regelmäßige geplante Belieferung nach Aufbrauch der Vorräte."
+      },
+      {
+        "strong": "Rechenzentren, Krankenhäuser, Industrie",
+        "text": ": Befüllung von Notstromgeneratoren; periodische Erneuerung des Kraftstoffs, damit sich im Tank keine Bioschlämme bilden."
+      },
+      {
+        "strong": "Betreiber oberirdischer Tanks",
+        "text": ": kleine Unternehmen mit lokalem Tank von 1 bis 5 m³, für die sich eine Großlieferung nicht lohnen würde."
+      }
+    ],
+    "numbersTitle": "Zahlen und Fakten",
+    "numbersItems": [
+      { "strong": "Lieferumfang:", "text": "200 bis 3 000 Liter pro Anfahrt" },
+      {
+        "strong": "Standardlieferzeit:",
+        "text": "innerhalb von 72 Stunden nach Bestätigung (typischerweise am folgenden Werktag)"
+      },
+      { "strong": "Notfalllieferung:", "text": "innerhalb von 24 Stunden je nach Auslastung" },
+      { "strong": "Abdeckung:", "text": "gesamte Tschechische Republik; Standort Český Těšín" },
+      {
+        "strong": "Preis:",
+        "text": "aktueller Großhandelspreis ČEPRO/Unipetrol + Transport + Marge (transparent auf der Rechnung aufgeschlüsselt)"
+      },
+      {
+        "strong": "Messwesen:",
+        "text": "Tankwagen mit Zähler, geeicht nach Gesetz Nr. 505/1990 Slg., Lieferschein mit Menge bei 15 °C"
+      },
+      {
+        "strong": "Kraftstoffnorm:",
+        "text": "ČSN EN 590 (Standard B7), auf Anfrage B0 oder Winterklassen"
+      }
+    ],
+    "howTitle": "Wie wir Schritt für Schritt vorgehen",
+    "howItems": [
+      {
+        "strong": "Anfrage.",
+        "text": "Senden Sie uns Menge, Typ (B7 / B0 / Winter), Lieferort und gewünschten Termin. E-Mail info@phmarket.cz."
+      },
+      {
+        "strong": "Preisangebot.",
+        "text": "Innerhalb weniger Stunden (Werktag) bestätigen wir Verfügbarkeit, aktuellen Preis und Termin."
+      },
+      {
+        "strong": "Bestätigung der Lieferung.",
+        "text": "Wir stellen eine Vorauszahlungsrechnung aus (erste Abnahme) oder bestätigen den Termin für einen bestehenden Kunden."
+      },
+      {
+        "strong": "Anfahrt des Tankwagens.",
+        "text": "Der Tankwagen trifft zum vereinbarten Zeitpunkt ein. Der Fahrer prüft die Zugänglichkeit des Tanks und beginnt mit dem Umpumpen."
+      },
+      {
+        "strong": "Umpumpen und Lieferschein.",
+        "text": "Bei der Abgabe wird die Menge anhand des geeichten Zählers abgelesen, es wird ein Lieferschein mit Datum, Uhrzeit und Unterschrift ausgestellt."
+      },
+      {
+        "strong": "Rechnung.",
+        "text": "Den Steuerbeleg stellen wir innerhalb von 5 Werktagen nach der Lieferung aus, Zahlungsfrist nach Vereinbarung."
+      }
+    ],
+    "compTitle": "Vergleich mit Alternativen",
+    "compCols": [
+      "Kriterium",
+      "Mikrolieferung PHMarket",
+      "Öffentliche Tankstelle (Kanister / Firmenkarte)",
+      "Großlieferung (10 000+ l)"
+    ],
+    "compRows": [
+      ["Preis pro Liter", "Großhandel + Transport", "Einzelhandel (höher)", "Niedrigster (erfordert größeren Tank)"],
+      ["Mindestmenge", "200 l", "Ohne Minimum", "Typischerweise 10 000+ l"],
+      ["Bedienzeit", "0, wir liefern", "Fahrt zur Tankstelle + Hantieren mit Kanistern", "0, wir liefern"],
+      ["Diebstahlrisiko", "Niedrig (direkt in den Tank)", "Hoch (Kanister auf der Baustelle)", "Niedrig"],
+      ["Bedarf an eigenem Tank", "Empfohlen (1+ m³)", "Nein", "Erforderlich (10+ m³)"]
+    ],
+    "faqTitle": "Häufige Fragen",
+    "ctaTitle": "Brauchen Sie eine Diesellieferung?",
+    "ctaPara": "Schreiben Sie uns Menge, Kraftstofftyp (B7 / B0 / Winter), Ort und gewünschten Termin. Wir erstellen ein Preisangebot während der Geschäftszeiten.",
+    "ctaLabel": "info@phmarket.cz",
+    "ctaMailtoSubject": "Anfrage Mikrolieferung Diesel"
+  }
+}

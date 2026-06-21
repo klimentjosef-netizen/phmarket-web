@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Mikrodostawy oleju napędowego w Czechach",
+    "description": "Mikrodostawy oleju napędowego (200 do 3 000 l) bezpośrednio do klienta w Czechach. Budowy, rolnictwo, floty pojazdów, generatory. Cena według aktualnego cennika hurtowego, dostawa zazwyczaj w ciągu 72 godzin."
+  },
+  "breadcrumbName": "Mikrodostawy oleju napędowego",
+  "schema": {
+    "id": "/mikrozavozy-motorove-nafty#service",
+    "serviceType": "Mikrodostawy oleju napędowego",
+    "name": "Mikrodostawy oleju napędowego",
+    "description": "Dowóz oleju napędowego (zazwyczaj 200 do 3 000 litrów) bezpośrednio pod adres klienta na terenie całych Czech. Dla budów, gospodarstw rolnych, firm transportowych, generatorów zasilania awaryjnego oraz właścicieli naziemnych zbiorników roboczych.",
+    "audience": "Firmy budowlane, rolnicy, firmy transportowe, floty pojazdów, operatorzy generatorów zasilania awaryjnego",
+    "priceDescription": "Cena według aktualnego cennika hurtowego paliwa + transport w zależności od odległości i ilości."
+  },
+  "faqItems": [
+    {
+      "question": "Jaka jest minimalna i maksymalna ilość dostawy?",
+      "answer": "Typowy zakres mikrodostawy to 200 do 3 000 litrów na jedną dostawę. Mniejsze ilości (od 200 l) realizujemy za pomocą transportowego IBC lub cysterny z mniejszym wydawaniem; większe ilości (3 000+ l) przekazujemy cysternie partnerskiej. W przypadku regularnych odbiorów (np. rolnicy w sezonie) ustalamy cykliczne dostawy w cyklu miesięcznym lub tygodniowym."
+    },
+    {
+      "question": "Jak ustalana jest cena oleju napędowego?",
+      "answer": "Cena zależy od aktualnej ceny hurtowej oleju napędowego (referencyjnie Čepro lub Unipetrol) w dniu dostawy. Do niej doliczany jest transport (kalkulowany według odległości od magazynu i ilości) oraz marża. Przed dostawą zawsze potwierdzamy cenę końcową. Dla stałych odbiorców oferujemy indeksację ceny do Brent lub cennika ČEPRO."
+    },
+    {
+      "question": "Czy tankowane jest bezpośrednio do mojego zbiornika, czy olej napędowy jest tylko przekazywany w kanistrze?",
+      "answer": "Cysterna przelewa olej napędowy bezpośrednio do Twojego naziemnego lub podziemnego zbiornika przez wąż wydawczy z licznikiem (legalizowanym zgodnie z zákon č. 505/1990 Sb. o metrologii). Wystawiamy dowód dostawy z ilością w litrach przy 15 °C, datą i podpisem kierowcy. To nie jest „olej napędowy w kanistrze”. To standardowa dostawa hurtowa."
+    },
+    {
+      "question": "Jakie paliwo dowozicie? Czy spełnia normę ČSN EN 590?",
+      "answer": "Dostarczamy olej napędowy klasy B7 (z obowiązkowym dodatkiem biokomponentu do 7 % MEŘO) zgodnie z normą ČSN EN 590. Na życzenie zapewnimy także olej napędowy bez biokomponentu (B0), który jest odpowiedni dla maszyn długo stojących (rolnictwo, generatory, technika sezonowa), ponieważ nie tworzy osadów biologicznych. W okresie zimowym dostarczamy klasę zimową D (CFPP do −20 °C) lub arktyczną (CFPP −32 °C) w zależności od aktualnego okresu."
+    },
+    {
+      "question": "Jak szybko dotrze dostawa?",
+      "answer": "Standardowa dostawa przy potwierdzeniu do 10:00 rano: zazwyczaj następnego dnia roboczego, w przeciwnym razie w ciągu 72 godzin. Dowóz awaryjny dla generatorów i transportu (do 24 godzin) realizujemy indywidualnie w zależności od obłożenia."
+    },
+    {
+      "question": "Czy wystawiacie fakturę z VAT i jakie płatności przyjmujecie?",
+      "answer": "Standardowo fakturujemy jako płatnik VAT (stawka 21 %), termin płatności 7 do 14 dni dla stałych klientów, przy pierwszym odbiorze wymagamy płatności z góry lub za pobraniem. Akceptujemy przelew bankowy; gotówkę tylko do limitu 270 000 Kč zgodnie z § 4 ustawy o ograniczeniu płatności gotówkowych."
+    },
+    {
+      "question": "Czy działacie na terenie całych Czech?",
+      "answer": "Tak. Zaplecze mamy w Český Těšín (kraj morawsko-śląski), ale regularnie dowozimy na teren całych Czech. Logistycznie najkorzystniejsza jest wschodnia połowa Czech; dla kraju pilzneńskiego i karlowarskiego planujemy dostawy z krótszym wyprzedzeniem (zazwyczaj 3 do 5 dni)."
+    }
+  ],
+  "content": {
+    "heroTitlePre": "Mikrodostawy",
+    "heroTitleHl": "oleju napędowego",
+    "heroIntro": "Dowóz oleju napędowego 200 do 3 000 litrów bezpośrednio pod adres klienta na terenie całych Czech. Dla budów, gospodarstw rolnych, firm transportowych, flot pojazdów, generatorów zasilania awaryjnego oraz właścicieli naziemnych zbiorników roboczych. Paliwo klasy B7 zgodnie z ČSN EN 590, na życzenie także olej napędowy bez biokomponentu B0. Cena według aktualnego cennika hurtowego, standardowa dostawa w ciągu 72 godzin.",
+    "heroCtaLabel": "Zapytanie: info@phmarket.cz",
+    "heroMailtoSubject": "Zapytanie o mikrodostawę",
+    "defTitle": "Czym jest mikrodostawa oleju napędowego",
+    "defPara": "Mikrodostawa to dostawa małej ilości oleju napędowego (zazwyczaj 200 do 3 000 litrów) bezpośrednio pod adres klienta za pomocą cysterny lub transportowego IBC. Różni się od dużych dostaw na stacje paliw (10 000+ l) tym, że obsługuje końcowych odbiorców firmowych: budowy, rolników, przewoźników, zespoły generatorów.",
+    "doTitle": "Co dostarczamy",
+    "doItems": [
+      "Olej napędowy klasy B7 (z biokomponentem do 7 % MEŘO), ČSN EN 590",
+      "Olej napędowy bez biokomponentu B0, dla generatorów, techniki sezonowej i długotrwałego magazynowania",
+      "Klasy zimowe D i F (CFPP −20 °C, względnie −32 °C) w okresie od listopada do marca"
+    ],
+    "dontTitle": "Czego nie robimy",
+    "dontItems": [
+      "Benzyna (Natural 95, 98, 100)",
+      "LPG, CNG, AdBlue jako samodzielna dostawa",
+      "Mikrodostawy dla osób fizycznych na potrzeby osobiste"
+    ],
+    "whomTitle": "Dla kogo przeznaczona jest usługa",
+    "whomItems": [
+      {
+        "strong": "Firmy budowlane",
+        "text": ": koparki, kruszarki, dźwigi i inne maszyny na budowie. Zamiast objeżdżania stacji paliw dowieziemy olej napędowy bezpośrednio na plac budowy, często poza zasięgiem wzroku (kluczowy element zapobiegania kradzieżom paliwa)."
+      },
+      {
+        "strong": "Rolnicy",
+        "text": ": sezonowe zużycie (wiosna: siew, żniwa). Mikrodostawa pokryje krótkotrwały wzrost zużycia bez konieczności budowania własnego zbiornika wielkopojemnościowego."
+      },
+      {
+        "strong": "Firmy transportowe i floty pojazdów",
+        "text": ": własny zbiornik magazynowy 5 do 20 m³, regularna planowana dostawa po wyczerpaniu zapasów."
+      },
+      {
+        "strong": "Centra danych, szpitale, przemysł",
+        "text": ": napełnianie generatorów zasilania awaryjnego; okresowa wymiana paliwa, aby w zbiorniku nie tworzyły się osady biologiczne."
+      },
+      {
+        "strong": "Operatorzy zbiorników naziemnych",
+        "text": ": małe firmy z lokalnym zbiornikiem 1 do 5 m³, którym duża dostawa by się nie opłacała."
+      }
+    ],
+    "numbersTitle": "Liczby i fakty",
+    "numbersItems": [
+      { "strong": "Zakres dostawy:", "text": "200 do 3 000 litrów na jeden wyjazd" },
+      {
+        "strong": "Standardowy czas dostawy:",
+        "text": "do 72 godzin od potwierdzenia (zazwyczaj następnego dnia roboczego)"
+      },
+      { "strong": "Dostawa awaryjna:", "text": "do 24 godzin w zależności od obłożenia" },
+      { "strong": "Zasięg:", "text": "całe Czechy; zaplecze Český Těšín" },
+      {
+        "strong": "Cena:",
+        "text": "aktualna cena hurtowa ČEPRO/Unipetrol + transport + marża (przejrzyście rozpisana na fakturze)"
+      },
+      {
+        "strong": "Metrologia:",
+        "text": "cysterna z licznikiem legalizowanym zgodnie z zákon č. 505/1990 Sb., dowód dostawy z ilością przy 15 °C"
+      },
+      {
+        "strong": "Norma paliwa:",
+        "text": "ČSN EN 590 (standardowe B7), na życzenie B0 lub klasy zimowe"
+      }
+    ],
+    "howTitle": "Jak postępujemy krok po kroku",
+    "howItems": [
+      {
+        "strong": "Zapytanie.",
+        "text": "Prześlij nam ilość, typ (B7 / B0 / zimowy), miejsce dostawy i żądany termin. Email info@phmarket.cz."
+      },
+      {
+        "strong": "Oferta cenowa.",
+        "text": "W ciągu kilku godzin (dzień roboczy) potwierdzimy dostępność, aktualną cenę i termin."
+      },
+      {
+        "strong": "Potwierdzenie dostawy.",
+        "text": "Wystawimy fakturę zaliczkową (pierwszy odbiór) lub potwierdzimy termin dla obecnego klienta."
+      },
+      {
+        "strong": "Wyjazd cysterny.",
+        "text": "Cysterna dotrze w ustalonym czasie. Kierowca sprawdzi dostępność zbiornika i rozpocznie przelewanie."
+      },
+      {
+        "strong": "Przelanie i dowód dostawy.",
+        "text": "Podczas wydawania odczytywana jest ilość według legalizowanego licznika, wystawiany jest dowód dostawy z datą, godziną i podpisem."
+      },
+      {
+        "strong": "Faktura.",
+        "text": "Dokument podatkowy wystawimy w ciągu 5 dni roboczych od dostawy, termin płatności według ustaleń."
+      }
+    ],
+    "compTitle": "Porównanie z alternatywami",
+    "compCols": [
+      "Kryterium",
+      "Mikrodostawa PHMarket",
+      "Publiczna stacja paliw (kanistry / karta firmowa)",
+      "Duża dostawa (10 000+ l)"
+    ],
+    "compRows": [
+      ["Cena za litr", "Hurtowa + transport", "Detaliczna (wyższa)", "Najniższa (wymaga większego zbiornika)"],
+      ["Minimalna ilość", "200 l", "Bez minimum", "Zazwyczaj 10 000+ l"],
+      ["Czas obsługi", "0, dowozimy", "Dojazd na stację + manipulacja kanistrami", "0, dowozimy"],
+      ["Ryzyko kradzieży", "Niskie (bezpośrednio do zbiornika)", "Wysokie (kanistry na budowie)", "Niskie"],
+      ["Potrzeba własnego zbiornika", "Zalecana (1+ m³)", "Nie", "Konieczna (10+ m³)"]
+    ],
+    "faqTitle": "Częste pytania",
+    "ctaTitle": "Potrzebujesz dowozu oleju napędowego?",
+    "ctaPara": "Napisz nam ilość, typ paliwa (B7 / B0 / zimowy), miejsce i żądany termin. Przygotujemy ofertę cenową w godzinach pracy.",
+    "ctaLabel": "info@phmarket.cz",
+    "ctaMailtoSubject": "Zapytanie o mikrodostawę oleju napędowego"
+  }
+}

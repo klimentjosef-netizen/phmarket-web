@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "homeTitle": "PHMarket: Šetri pri každom tankovaní",
+    "homeDescription": "PHMarket ťa navedie k čerpacím staniciam s kvalitným palivom, kde uplatníš zľavové kódy. Bez registrácie, poplatkov alebo plastových kariet.",
+    "ogDescription": "Zľavové kódy na pohonné hmoty u partnerských čerpacích staníc. Bez registrácie, bez plastových kariet."
+  },
+  "nav": {
+    "home": "Domov",
+    "phmap": "PHMap",
+    "articles": "Články",
+    "tankujte": "Tankujte lacnejšie",
+    "cisteni": "Čistenie nádrží",
+    "mikrozavozy": "Mikrorozvozy nafty",
+    "downloadApp": "Stiahnuť aplikáciu"
+  },
+  "switcher": {
+    "label": "Jazyk",
+    "cs": "Čeština",
+    "sk": "Slovenčina",
+    "pl": "Polski",
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "appButtons": {
+    "downloadOn": "Stiahnuť na"
+  },
+  "footer": {
+    "tagline": "Šikovná aplikácia na úspory pri tankovaní. Bez registrácie, poplatkov alebo plastových kariet.",
+    "navHeading": "Navigácia",
+    "legalHeading": "Právne",
+    "contactHeading": "Kontakt",
+    "terms": "Obchodné podmienky",
+    "privacy": "Ochrana osobných údajov",
+    "rights": "Všetky práva vyhradené."
+  },
+  "hero": {
+    "badge": "Bez registrácie ani plastových kariet",
+    "titleLine1": "Tankuj šikovne.",
+    "titleHighlight": "Ušetrené.",
+    "subtitle": "PHMarket ťa navedie k čerpacím staniciam s kvalitným palivom, kde uplatníš zľavové kódy. Bez registrácie, poplatkov alebo plastových kariet. Všetko v mobile.",
+    "sceneAria": "Ukážka úspory s PHMarket",
+    "competitor": "Konkurencia",
+    "phmarketDiscount": "PHMarket zľava",
+    "saved": "Ušetrené: 175 Kč na nádrž"
+  },
+  "stats": {
+    "stationsValue": "100+",
+    "stationsLabel": "partnerských staníc",
+    "savingValue": "až 3 Kč",
+    "savingLabel": "úspora na liter",
+    "feeValue": "0 Kč",
+    "feeLabel": "poplatok za aplikáciu",
+    "mapValue": "PHMap",
+    "mapLabel": "mapa staníc"
+  },
+  "savings": {
+    "title": "Koľko sme už spoločne ušetrili",
+    "subtitle": "Číslo rastie v reálnom čase, každú sekundu šetríme ďalej",
+    "totalSaved": "Celková úspora používateľov",
+    "codesUsed": "Využitých zľavových kódov",
+    "activeUsers": "Aktívnych používateľov"
+  },
+  "howItWorks": {
+    "title": "Ako to funguje",
+    "subtitle": "Štyri jednoduché kroky k lacnejšiemu tankovaniu",
+    "stepLabel": "krok",
+    "steps": [
+      { "title": "Stiahni aplikáciu", "description": "iOS aj Android zadarmo" },
+      { "title": "Nájdi stanicu", "description": "Mapa PHMap ukáže najbližších partnerov" },
+      { "title": "Uplatni kód", "description": "Zobraz kód priamo pri pokladni" },
+      { "title": "Ušetri", "description": "Zľava sa odpočíta okamžite" }
+    ]
+  },
+  "services": {
+    "title": "Ďalšie služby",
+    "learnMore": "Zistiť viac",
+    "cisteni": {
+      "title": "Čistenie nádrží",
+      "description": "Profesionálne čistenie palivových nádrží pre čerpacie stanice aj firemných zákazníkov."
+    },
+    "mikrozavozy": {
+      "title": "Mikrorozvozy motorovej nafty",
+      "description": "Dovoz nafty priamo k zákazníkovi, rýchlo, pohodlne a za výhodné ceny."
+    }
+  },
+  "partners": {
+    "title": "Naše partnerské čerpacie stanice",
+    "subtitle": "Naši odberatelia"
+  },
+  "homeCta": {
+    "title": "Začni šetriť ešte dnes.",
+    "subtitle": "Stiahni si aplikáciu PHMarket a začni využívať zľavové kódy u partnerských čerpacích staníc po celej ČR."
+  },
+  "legal": {
+    "breadcrumbHome": "Domov",
+    "effectiveFrom": "Účinnosť od {date}",
+    "openPdf": "Otvoriť dokument (PDF)",
+    "downloadPdf": "Stiahnuť PDF",
+    "languageVersions": "Jazykové verzie",
+    "tableOfContents": "Obsah dokumentu",
+    "viewerFallbackBefore": "Váš prehliadač nevie zobraziť PDF priamo na stránke. ",
+    "viewerFallbackLink": "Otvorte dokument v novom okne",
+    "mobilePromptTitle": "Celé znenie dokumentu otvoríte v PDF.",
+    "mobilePromptSubtitle": "Pre pohodlné čítanie na mobile odporúčame dokument otvoriť na celú obrazovku.",
+    "operator": "Prevádzkovateľ",
+    "emailLabel": "E-mail"
+  },
+  "tankujtePage": {
+    "metaTitle": "Tankujte lacnejšie s PHMarket",
+    "metaDescription": "Tankujte lacnejšie vďaka zľavovým kódom v aplikácii PHMarket. Bez registrácie, poplatkov alebo plastových kariet. Všetko v mobile.",
+    "title": "Tankujte <hl>lacnejšie</hl>",
+    "subtitle": "S aplikáciou PHMarket ušetríte pri každom tankovaní. Stačí zobraziť zľavový kód priamo pri pokladni čerpacej stanice a zľava sa odpočíta okamžite z ceny paliva.",
+    "benefitsHeading": "Prečo tankovať s PHMarket?",
+    "benefits": [
+      { "title": "Úspora až 3 Kč na liter", "desc": "Vďaka exkluzívnym zľavovým kódom ušetríte pri každom tankovaní." },
+      { "title": "Bez registrácie", "desc": "Žiadne zložité registrácie ani vypĺňanie formulárov. Stiahni a tankuj." },
+      { "title": "Žiadne poplatky", "desc": "Aplikácia je kompletne zadarmo. Žiadne skryté poplatky ani predplatné." },
+      { "title": "Bez plastových kariet", "desc": "Koniec s vernostnými kartami. Všetko máš pohodlne v mobile." },
+      { "title": "100+ staníc", "desc": "Sieť partnerských čerpacích staníc po celej Českej republike." },
+      { "title": "Kvalitné palivo", "desc": "Spolupracujeme len s overenými čerpacími stanicami s kvalitným palivom." }
+    ],
+    "ctaTitle": "Začni šetriť ešte dnes",
+    "ctaSubtitle": "Stiahni si aplikáciu PHMarket a uplatni svoj prvý zľavový kód."
+  },
+  "phmapPage": {
+    "metaTitle": "PHMap: Mapa čerpacích staníc",
+    "metaDescription": "PHMap ti ukáže najbližšie partnerské čerpacie stanice so zľavovými kódmi na pohonné hmoty. Nájdi stanicu a ušetri.",
+    "subtitle": "Interaktívna mapa partnerských čerpacích staníc. Nájdi najbližšiu stanicu s aktuálnymi zľavovými kódmi.",
+    "featuresHeading": "Čo PHMap dokáže",
+    "features": [
+      { "title": "Najbližšie stanice", "desc": "Zobrazí partnerské čerpacie stanice vo tvojom okolí zoradené podľa vzdialenosti." },
+      { "title": "Aktuálne zľavy", "desc": "Pri každej stanici vidíš aktuálne zľavové kódy a výšku úspory na liter." },
+      { "title": "Navigácia", "desc": "Jedným kliknutím spustíš navigáciu priamo k vybranej stanici." }
+    ]
+  },
+  "articlesPage": {
+    "metaTitle": "Články",
+    "metaDescription": "Články a novinky zo sveta pohonných hmôt, čerpacích staníc a úspor pri tankovaní.",
+    "title": "Články",
+    "heroSubtitle": "Novinky a tipy zo sveta pohonných hmôt a šikovného tankovania.",
+    "readMore": "Čítať viac",
+    "minRead": "min čítania",
+    "breadcrumb": "Články"
+  }
+}

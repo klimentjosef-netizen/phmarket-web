@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 export type LegalLang = {
   code: string;
@@ -55,6 +56,7 @@ export default function LegalDoc({
   languages,
   contactEmail,
 }: LegalDocProps) {
+  const t = useTranslations("legal");
   return (
     <div className="bg-white">
       {/* Header */}
@@ -62,7 +64,7 @@ export default function LegalDoc({
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20">
           <nav className="text-sm text-white/50 mb-6" aria-label="Drobečková navigace">
             <Link href="/" className="hover:text-emerald-400 transition-colors">
-              Domů
+              {t("breadcrumbHome")}
             </Link>
             <span className="mx-2">/</span>
             <span className="text-white/80">{title}</span>
@@ -70,7 +72,7 @@ export default function LegalDoc({
 
           <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 text-xs font-medium text-emerald-400 mb-5">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-            Účinnost od {effectiveDate}
+            {t("effectiveFrom", { date: effectiveDate })}
           </span>
 
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
@@ -92,7 +94,7 @@ export default function LegalDoc({
               className="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-white font-semibold px-5 py-3 transition-colors shadow-lg shadow-emerald-500/20"
             >
               <ArrowTopRight />
-              Otevřít dokument (PDF)
+              {t("openPdf")}
             </a>
             <a
               href={pdfHref}
@@ -100,7 +102,7 @@ export default function LegalDoc({
               className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 hover:border-emerald-400/60 text-white font-semibold px-5 py-3 transition-colors"
             >
               <ArrowDownTray />
-              Stáhnout PDF
+              {t("downloadPdf")}
             </a>
           </div>
 
@@ -108,7 +110,7 @@ export default function LegalDoc({
           {languages.length > 0 && (
             <div className="mt-7">
               <p className="text-xs uppercase tracking-wider text-white/40 mb-2">
-                Jazykové verze
+                {t("languageVersions")}
               </p>
               <div className="flex flex-wrap gap-2">
                 {languages.map((lang) => (
@@ -138,7 +140,7 @@ export default function LegalDoc({
         <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-10">
           {/* TOC */}
           <aside className="lg:sticky lg:top-24 lg:self-start">
-            <h2 className="text-lg font-bold text-dark mb-4">Obsah dokumentu</h2>
+            <h2 className="text-lg font-bold text-dark mb-4">{t("tableOfContents")}</h2>
             <ol className="space-y-1.5">
               {toc.map((item, i) => (
                 <li
@@ -162,9 +164,9 @@ export default function LegalDoc({
                 aria-label={`${title}: PDF`}
               >
                 <div className="p-8 text-center text-gray-600">
-                  Váš prohlížeč neumí zobrazit PDF přímo na stránce.{" "}
+                  {t("viewerFallbackBefore")}
                   <a href={pdfHref} target="_blank" rel="noopener noreferrer" className="text-primary font-semibold underline">
-                    Otevřete dokument v novém okně
+                    {t("viewerFallbackLink")}
                   </a>
                   .
                 </div>
@@ -174,11 +176,10 @@ export default function LegalDoc({
             {/* Mobile prompt */}
             <div className="md:hidden rounded-2xl border border-gray-200 bg-gray-50 p-6 text-center">
               <p className="text-gray-700 font-medium">
-                Celé znění dokumentu otevřete v PDF.
+                {t("mobilePromptTitle")}
               </p>
               <p className="text-sm text-gray-500 mt-1 mb-5">
-                Pro pohodlné čtení na mobilu doporučujeme dokument otevřít na celou
-                obrazovku.
+                {t("mobilePromptSubtitle")}
               </p>
               <a
                 href={pdfHref}
@@ -187,19 +188,19 @@ export default function LegalDoc({
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-primary hover:bg-primary-dark text-white font-semibold px-5 py-3 transition-colors w-full"
               >
                 <ArrowTopRight />
-                Otevřít dokument (PDF)
+                {t("openPdf")}
               </a>
             </div>
 
             {/* Contact / operator */}
             <div className="mt-10 rounded-2xl bg-gray-50 border border-gray-200 p-6">
-              <h2 className="text-base font-bold text-dark mb-3">Provozovatel</h2>
+              <h2 className="text-base font-bold text-dark mb-3">{t("operator")}</h2>
               <address className="not-italic text-sm text-gray-600 space-y-0.5">
                 <p className="font-semibold text-dark">PHMarket s.r.o.</p>
                 <p>Hlavní třída 87/2, 737 01 Český Těšín, Česká republika</p>
                 <p>IČO: 04529031 &middot; DIČ: CZ04529031</p>
                 <p>
-                  E-mail:{" "}
+                  {t("emailLabel")}:{" "}
                   <a href={`mailto:${contactEmail}`} className="text-primary font-medium hover:underline">
                     {contactEmail}
                   </a>

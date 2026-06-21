@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "homeTitle": "PHMarket: Spare bei jedem Tanken",
+    "homeDescription": "PHMarket führt dich zu Tankstellen mit hochwertigem Kraftstoff, wo du Rabattcodes einlöst. Ohne Registrierung, Gebühren oder Plastikkarten.",
+    "ogDescription": "Rabattcodes für Kraftstoff an Partnertankstellen. Ohne Registrierung, ohne Plastikkarten."
+  },
+  "nav": {
+    "home": "Startseite",
+    "phmap": "PHMap",
+    "articles": "Artikel",
+    "tankujte": "Günstiger tanken",
+    "cisteni": "Tankreinigung",
+    "mikrozavozy": "Diesel-Mikrolieferung",
+    "downloadApp": "App herunterladen"
+  },
+  "switcher": {
+    "label": "Sprache",
+    "cs": "Čeština",
+    "sk": "Slovenčina",
+    "pl": "Polski",
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "appButtons": {
+    "downloadOn": "Laden im"
+  },
+  "footer": {
+    "tagline": "Eine smarte App zum Sparen beim Tanken. Ohne Registrierung, Gebühren oder Plastikkarten.",
+    "navHeading": "Navigation",
+    "legalHeading": "Rechtliches",
+    "contactHeading": "Kontakt",
+    "terms": "Allgemeine Geschäftsbedingungen",
+    "privacy": "Datenschutz",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "hero": {
+    "badge": "Ohne Registrierung oder Plastikkarten",
+    "titleLine1": "Tanke smart.",
+    "titleHighlight": "Gespart.",
+    "subtitle": "PHMarket führt dich zu Tankstellen mit hochwertigem Kraftstoff, wo du Rabattcodes einlöst. Ohne Registrierung, Gebühren oder Plastikkarten. Alles im Handy.",
+    "sceneAria": "Beispiel für Ersparnis mit PHMarket",
+    "competitor": "Konkurrenz",
+    "phmarketDiscount": "PHMarket Rabatt",
+    "saved": "Gespart: 175 CZK pro Tankfüllung"
+  },
+  "stats": {
+    "stationsValue": "100+",
+    "stationsLabel": "Partnertankstellen",
+    "savingValue": "bis zu 3 CZK",
+    "savingLabel": "Ersparnis pro Liter",
+    "feeValue": "0 CZK",
+    "feeLabel": "Gebühr für die App",
+    "mapValue": "PHMap",
+    "mapLabel": "Tankstellenkarte"
+  },
+  "savings": {
+    "title": "Wie viel wir gemeinsam schon gespart haben",
+    "subtitle": "Die Zahl wächst in Echtzeit, wir sparen jede Sekunde weiter",
+    "totalSaved": "Gesamtersparnis der Nutzer",
+    "codesUsed": "Eingelöste Rabattcodes",
+    "activeUsers": "Aktive Nutzer"
+  },
+  "howItWorks": {
+    "title": "So funktioniert es",
+    "subtitle": "Vier einfache Schritte zu günstigerem Tanken",
+    "stepLabel": "Schritt",
+    "steps": [
+      { "title": "App herunterladen", "description": "Kostenlos für iOS und Android" },
+      { "title": "Tankstelle finden", "description": "Die PHMap-Karte zeigt die nächsten Partner" },
+      { "title": "Code einlösen", "description": "Zeige den Code direkt an der Kasse" },
+      { "title": "Sparen", "description": "Der Rabatt wird sofort abgezogen" }
+    ]
+  },
+  "services": {
+    "title": "Weitere Leistungen",
+    "learnMore": "Mehr erfahren",
+    "cisteni": {
+      "title": "Tankreinigung",
+      "description": "Professionelle Reinigung von Kraftstofftanks für Tankstellen und Firmenkunden."
+    },
+    "mikrozavozy": {
+      "title": "Diesel-Mikrolieferung",
+      "description": "Diesel direkt zum Kunden geliefert, schnell, bequem und zu günstigen Preisen."
+    }
+  },
+  "partners": {
+    "title": "Unsere Partnertankstellen",
+    "subtitle": "Unsere Abnehmer"
+  },
+  "homeCta": {
+    "title": "Fang noch heute an zu sparen.",
+    "subtitle": "Lade die PHMarket-App herunter und nutze Rabattcodes an Partnertankstellen in ganz Tschechien."
+  },
+  "legal": {
+    "breadcrumbHome": "Startseite",
+    "effectiveFrom": "Gültig ab {date}",
+    "openPdf": "Dokument öffnen (PDF)",
+    "downloadPdf": "PDF herunterladen",
+    "languageVersions": "Sprachversionen",
+    "tableOfContents": "Inhalt des Dokuments",
+    "viewerFallbackBefore": "Ihr Browser kann das PDF nicht direkt auf der Seite anzeigen. ",
+    "viewerFallbackLink": "Öffnen Sie das Dokument in einem neuen Fenster",
+    "mobilePromptTitle": "Den vollständigen Text des Dokuments öffnen Sie als PDF.",
+    "mobilePromptSubtitle": "Für bequemes Lesen auf dem Handy empfehlen wir, das Dokument im Vollbild zu öffnen.",
+    "operator": "Betreiber",
+    "emailLabel": "E-Mail"
+  },
+  "tankujtePage": {
+    "metaTitle": "Günstiger tanken mit PHMarket",
+    "metaDescription": "Tanke günstiger dank Rabattcodes in der PHMarket-App. Ohne Registrierung, Gebühren oder Plastikkarten. Alles im Handy.",
+    "title": "<hl>Günstiger</hl> tanken",
+    "subtitle": "Mit der PHMarket-App sparst du bei jedem Tanken. Zeige einfach den Rabattcode direkt an der Kasse der Tankstelle und der Rabatt wird sofort vom Kraftstoffpreis abgezogen.",
+    "benefitsHeading": "Warum mit PHMarket tanken?",
+    "benefits": [
+      { "title": "Spare bis zu 3 CZK pro Liter", "desc": "Dank exklusiver Rabattcodes sparst du bei jedem Tanken." },
+      { "title": "Ohne Registrierung", "desc": "Keine komplizierten Anmeldungen oder Formulare. Herunterladen und tanken." },
+      { "title": "Keine Gebühren", "desc": "Die App ist komplett kostenlos. Keine versteckten Gebühren oder Abos." },
+      { "title": "Ohne Plastikkarten", "desc": "Schluss mit Treuekarten. Alles bequem in deinem Handy." },
+      { "title": "100+ Tankstellen", "desc": "Ein Netz von Partnertankstellen in ganz Tschechien." },
+      { "title": "Hochwertiger Kraftstoff", "desc": "Wir arbeiten nur mit geprüften Tankstellen mit hochwertigem Kraftstoff." }
+    ],
+    "ctaTitle": "Fang noch heute an zu sparen",
+    "ctaSubtitle": "Lade die PHMarket-App herunter und löse deinen ersten Rabattcode ein."
+  },
+  "phmapPage": {
+    "metaTitle": "PHMap: Tankstellenkarte",
+    "metaDescription": "PHMap zeigt dir die nächsten Partnertankstellen mit Rabattcodes für Kraftstoff. Finde eine Tankstelle und spare.",
+    "subtitle": "Eine interaktive Karte der Partnertankstellen. Finde die nächste Tankstelle mit aktuellen Rabattcodes.",
+    "featuresHeading": "Was PHMap kann",
+    "features": [
+      { "title": "Nächste Tankstellen", "desc": "Zeigt Partnertankstellen in deiner Nähe, sortiert nach Entfernung." },
+      { "title": "Aktuelle Rabatte", "desc": "Bei jeder Tankstelle siehst du die aktuellen Rabattcodes und die Ersparnis pro Liter." },
+      { "title": "Navigation", "desc": "Mit einem Tippen startest du die Navigation direkt zur gewählten Tankstelle." }
+    ]
+  },
+  "articlesPage": {
+    "metaTitle": "Artikel",
+    "metaDescription": "Artikel und Neuigkeiten aus der Welt des Kraftstoffs, der Tankstellen und des Sparens beim Tanken.",
+    "title": "Artikel",
+    "heroSubtitle": "Neuigkeiten und Tipps aus der Welt des Kraftstoffs und des smarten Tankens.",
+    "readMore": "Mehr lesen",
+    "minRead": "Min. Lesezeit",
+    "breadcrumb": "Artikel"
+  }
+}

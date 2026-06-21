@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "title": "Czyszczenie zbiorników paliwowych w Czechach",
+    "description": "Profesjonalne czyszczenie zbiorników paliwowych stacji paliw i firmowych flot pojazdów na terenie całych Czech. Usuwanie szlamu bakteryjnego, wody i osadów. Działamy na obszarze całej Republiki Czeskiej."
+  },
+  "breadcrumbName": "Czyszczenie zbiorników",
+  "schema": {
+    "id": "/cisteni-nadrzi#service",
+    "serviceType": "Profesjonalne czyszczenie zbiorników paliwowych",
+    "name": "Czyszczenie zbiorników paliwowych",
+    "description": "Usuwanie szlamu bakteryjnego, osadów i wody ze zbiorników paliwowych stacji paliw, firmowych flot pojazdów, zespołów generatorowych i maszyn rolniczych. Działamy na obszarze całej Republiki Czeskiej.",
+    "audience": "Stacje paliw, firmy transportowe, właściciele flot pojazdów, rolnicy, operatorzy generatorów awaryjnych",
+    "priceDescription": "Cena na zapytanie w zależności od pojemności zbiornika, rodzaju zanieczyszczenia i odległości."
+  },
+  "faqItems": [
+    {
+      "question": "Jak często należy czyścić zbiornik paliwowy?",
+      "answer": "W przypadku zbiorników podziemnych stacji paliw z paliwem B7 (z biokomponentem) zalecamy inspekcję raz w roku i fizyczne czyszczenie zazwyczaj co 2 do 3 lat. W przypadku zbiorników z olejem napędowym bez biokomponentu (B0) wystarczy czyszczenie przy wymianie paliwa lub raz na 3 do 5 lat. W przypadku firmowych flot pojazdów i naziemnych zbiorników eksploatacyjnych częstotliwość zależy od rotacji, jednak minimalnie raz na 2 lata."
+    },
+    {
+      "question": "Co odkłada się w zbiorniku i dlaczego to przeszkadza?",
+      "answer": "Głównymi zanieczyszczeniami są: woda (kondensacja + higroskopijność biokomponentu MEŘO), szlam bakteryjny (śluzowate osady z degradacji MEŘO), żelazne cząstki rdzy z korozji ścian, kurz i mikroorganizmy. Te osady zatykają zasysanie pompy, filtr paliwa, a w skrajnym przypadku uszkadzają wtryskiwacze, których naprawa w nowoczesnych silnikach diesla sięga dziesiątek tysięcy koron."
+    },
+    {
+      "question": "Jak długo trwa czyszczenie i czy musimy zamknąć stację?",
+      "answer": "Standardowy zbiornik podziemny 30 do 50 m³ zazwyczaj jesteśmy w stanie wyczyścić w 8 do 24 godzin w zależności od stanu. Dla stacji paliw planujemy interwencję na czas najniższej rotacji (zazwyczaj noc / poniedziałek rano) tak, aby dana stacja nie musiała zamykać całej działalności, czyścimy jeden zbiornik w cyklu, pozostałe pozostają w eksploatacji."
+    },
+    {
+      "question": "Co dzieje się z odpompowanym paliwem?",
+      "answer": "Paliwo, które można odzyskać, filtrujemy i zwracamy do zbiornika. Część nieprzydatną (woda + szlam) odwozimy jako odpad niebezpieczny (kod 13 07 03* według Katalogu odpadów) do certyfikowanej utylizacji. O utylizacji otrzymają Państwo protokół do swojego zgłoszenia SEPNO."
+    },
+    {
+      "question": "Czyścicie również naziemne zbiorniki eksploatacyjne i kontenery (IBC)?",
+      "answer": "Tak. Czyścimy zbiorniki naziemne (zazwyczaj 1 do 10 m³) dla flot pojazdów, gospodarstw rolnych i generatorów, a także mniejsze kontenery IBC 1 000 l. Procedura jest szybsza niż w przypadku zbiorników podziemnych, często gotowe w ciągu 4 godzin."
+    },
+    {
+      "question": "Działacie tylko w kraju morawsko-śląskim, czy na terenie całych Czech?",
+      "answer": "Działamy na terenie całej Republiki Czeskiej. Nasza baza znajduje się w Český Těšín, ale wyjazdy do Pragi, Brna, Pilzna czy w rejony przygraniczne realizujemy regularnie."
+    }
+  ],
+  "content": {
+    "heroTitlePre": "Czyszczenie zbiorników",
+    "heroTitleHl": "paliwowych",
+    "heroIntro": "Profesjonalne czyszczenie zbiorników paliwowych stacji paliw, firmowych flot pojazdów, gospodarstw rolnych i generatorów awaryjnych na terenie całej Republiki Czeskiej. Usuniemy szlam bakteryjny z MEŘO, wodę i osady, odwieziemy odpad niebezpieczny do certyfikowanej utylizacji i przekażemy protokół. Wyjazd zazwyczaj do 5 dni roboczych, cena na zapytanie.",
+    "heroCtaLabel": "Niezobowiązujące zapytanie: info@phmarket.cz",
+    "heroMailtoSubject": "Zapytanie o czyszczenie zbiornika",
+    "defTitle": "Czym jest czyszczenie zbiornika paliwowego",
+    "defPara": "Czyszczenie zbiornika paliwowego to proces technologiczny, podczas którego z podziemnego lub naziemnego zbiornika usuwa się wodę, szlam bakteryjny, osady i cząstki rdzy nagromadzone na dnie i ścianach. Celem jest przywrócenie czystości paliwa zgodnie z ČSN EN 590 (olej napędowy) lub ČSN EN 228 (benzyna) oraz zapobieżenie uszkodzeniu układu wtryskowego użytkowników końcowych.",
+    "doTitle": "Co konkretnie robimy",
+    "doItems": [
+      "Odpompowanie paliwa do zbiornika tymczasowego z filtracją pośrednią",
+      "Usunięcie osadów na dnie (mechanicznie + technika odsysająca)",
+      "Osuszenie zbiornika i kontrola wizualna ścian",
+      "Ponowne napełnienie przefiltrowanym paliwem (lub dostarczenie nowego)",
+      "Odwóz odpadu niebezpiecznego do certyfikowanej utylizacji + protokół"
+    ],
+    "dontTitle": "Czego nie robimy",
+    "dontItems": [
+      "Naprawy budowlane zbiorników i obetonowanie",
+      "Cechowania i metrologii (przekazujemy firmie partnerskiej)",
+      "Demontaż zbiornika z ziemi"
+    ],
+    "whomTitle": "Dla kogo przeznaczona jest usługa",
+    "whomItems": [
+      {
+        "strong": "Operatorzy stacji paliw",
+        "text": ": zbiorniki podziemne 30 do 50 m³ z olejem napędowym B7, benzyną lub paliwami premium. Regularna kontrola jako profilaktyka zanieczyszczenia zbiorników klientów."
+      },
+      {
+        "strong": "Firmy transportowe i floty pojazdów",
+        "text": ": naziemne zbiorniki magazynowe 5 do 20 m³, z których tankują ciężarówki lub autobusy. Ryzyko: zatkane filtry, awarie pojazdów."
+      },
+      {
+        "strong": "Gospodarstwa rolne",
+        "text": ": stacje sezonowe (kombajny, ciągniki) z kilkumiesięcznym przestojem paliwa. Ryzyko: degradacja MEŘO w oleju napędowym B7, szlam bakteryjny na początku sezonu."
+      },
+      {
+        "strong": "Operatorzy generatorów awaryjnych",
+        "text": ": centra danych, szpitale, przemysł. Ryzyko: zbiornik stoi latami i przy rzeczywistej awarii silnik odmawia uruchomienia na zepsutym paliwie."
+      },
+      {
+        "strong": "Właściciele techniki sezonowej",
+        "text": ": kampery, łodzie, pojazdy zabytkowe z drogim układem wtryskowym."
+      }
+    ],
+    "numbersTitle": "Liczby i fakty",
+    "numbersItems": [
+      { "strong": "Pojemności:", "text": "zbiorniki 1 do 60 m³ (podziemne i naziemne)" },
+      {
+        "strong": "Czas czyszczenia:",
+        "text": "naziemne 1 do 10 m³ zazwyczaj 2 do 6 h, podziemne 30 do 50 m³ zazwyczaj 8 do 24 h"
+      },
+      {
+        "strong": "Wyjazd:",
+        "text": "zazwyczaj do 5 dni roboczych od potwierdzenia zamówienia, interwencja awaryjna do 48 godzin (w zależności od obłożenia)"
+      },
+      {
+        "strong": "Zasięg:",
+        "text": "cała Republika Czeska; baza Český Těšín, wyjazdy do Pragi / Brna / Pilzna na co dzień"
+      },
+      {
+        "strong": "Odpad:",
+        "text": "utylizacja pod kodem 13 07 03* (inne paliwa płynne) w certyfikowanej utylizacji, protokół do SEPNO"
+      },
+      {
+        "strong": "Cena:",
+        "text": "na zapytanie w zależności od pojemności, stopnia zanieczyszczenia i odległości"
+      }
+    ],
+    "howTitle": "Jak postępujemy krok po kroku",
+    "howItems": [
+      {
+        "strong": "Kontakt i ocena.",
+        "text": "Prześlij nam zdjęcie zbiornika, dane o pojemności, rodzaju paliwa i ostatniej kontroli. W ciągu 24 godzin się odezwiemy."
+      },
+      {
+        "strong": "Oferta cenowa.",
+        "text": "Przygotujemy kosztorys z ceną stałą dla standardowego zakresu i stawką za dodatkowe godziny przy ponadnormatywnym zanieczyszczeniu."
+      },
+      {
+        "strong": "Planowanie wyjazdu.",
+        "text": "Termin dobieramy tak, aby stacja paliw mogła eksploatować pozostałe zbiorniki, zazwyczaj poniedziałek rano lub weekendowa noc."
+      },
+      {
+        "strong": "Odpompowanie paliwa.",
+        "text": "Paliwo przepompowujemy do mobilnego zbiornika odsysającego z filtracją wstępną 5 μm i 25 μm."
+      },
+      {
+        "strong": "Czyszczenie mechaniczne.",
+        "text": "Osady i szlam usuwamy z dna i ścian. W przypadku zbiorników podziemnych używamy kamery do kontroli wizualnej po wyczyszczeniu."
+      },
+      {
+        "strong": "Ponowne napełnienie.",
+        "text": "Przefiltrowane paliwo zwracamy z powrotem; nieprzydatną frakcję odwozimy."
+      },
+      {
+        "strong": "Przekazanie i dokumentacja.",
+        "text": "Przekażemy protokół z czyszczenia + dokument przekazania odpadu niebezpiecznego do Państwa zgłoszenia SEPNO."
+      }
+    ],
+    "compTitle": "Porównanie z alternatywami",
+    "compCols": [
+      "Kryterium",
+      "PHMarket: profesjonalne czyszczenie",
+      "Czyszczenie własnymi siłami",
+      "Wymiana zbiornika"
+    ],
+    "compRows": [
+      ["Czas", "8 do 24 h (50 m³)", "2 do 5 dni (ryzyko opóźnienia)", "2 do 6 tygodni + budowa"],
+      ["Ryzyko BHP", "Niskie, certyfikowana procedura", "Wysokie (opary, atmosfera wybuchowa)", "Niskie, ale rozległa budowa"],
+      ["Utylizacja odpadu", "Certyfikowana, wraz z protokołem SEPNO", "Ryzyko, bez protokołu grozi kara", "Część demontażu"],
+      ["Koszty", "Jednorazowa cena na zapytanie", "Ukryte koszty (czas, ryzyko)", "Setki tysięcy do miliona+"]
+    ],
+    "faqTitle": "Najczęstsze pytania",
+    "ctaTitle": "Wyślij niezobowiązujące zapytanie",
+    "ctaPara": "Napisz nam pojemność zbiornika, rodzaj paliwa i lokalizację. W ciągu 24 godzin odezwiemy się z konkretną ceną i terminem.",
+    "ctaLabel": "info@phmarket.cz",
+    "ctaMailtoSubject": "Zapytanie o czyszczenie zbiornika"
+  }
+}

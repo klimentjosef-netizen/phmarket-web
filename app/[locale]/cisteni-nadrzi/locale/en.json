@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "title": "Fuel Tank Cleaning in the Czech Republic",
+    "description": "Professional cleaning of fuel tanks for filling stations and corporate vehicle fleets across the Czech Republic. Removal of bio-sludge, water and sediments. Operating throughout the Czech Republic."
+  },
+  "breadcrumbName": "Tank Cleaning",
+  "schema": {
+    "id": "/cisteni-nadrzi#service",
+    "serviceType": "Professional fuel tank cleaning",
+    "name": "Fuel tank cleaning",
+    "description": "Removal of bio-sludge, sediments and water from the fuel tanks of filling stations, corporate vehicle fleets, generator systems and agricultural machinery. Operating throughout the Czech Republic.",
+    "audience": "Filling stations, transport companies, fleet owners, farmers, operators of standby generators",
+    "priceDescription": "Price on request based on tank volume, type of contamination and distance."
+  },
+  "faqItems": [
+    {
+      "question": "How often does a fuel tank need to be cleaned?",
+      "answer": "For underground tanks at filling stations holding B7 fuel (with a bio-component) we recommend an inspection once a year and physical cleaning typically every 2 to 3 years. For tanks holding diesel without a bio-component (B0) it is sufficient to clean during a fuel change or once every 3 to 5 years. For corporate vehicle fleets and above-ground operational tanks the frequency depends on turnover, but at least once every 2 years."
+    },
+    {
+      "question": "What builds up in the tank and why is it a problem?",
+      "answer": "The main contaminants are: water (condensation plus the hygroscopicity of the MEŘO (FAME) bio-component), bio-sludge (slimy deposits from the degradation of MEŘO (FAME)), iron rust particles from corrosion of the walls, dust and microorganisms. These deposits clog the pump intake and the fuel filter and, in extreme cases, damage the injectors, whose repair in modern diesel engines runs into the tens of thousands of CZK."
+    },
+    {
+      "question": "How long does the cleaning take and do we have to close the operation?",
+      "answer": "A standard underground tank of 30 to 50 m³ can usually be handled in 8 to 24 hours depending on its condition. For filling stations we schedule the work for the lowest-turnover time (typically night / Monday morning) so that the affected station does not have to close its entire operation; we clean one tank in a cycle while the others remain in service."
+    },
+    {
+      "question": "What happens to the pumped-out fuel?",
+      "answer": "Fuel that can be recovered is filtered and returned to the tank. The unusable part (water plus sludge) is taken away as hazardous waste (code 13 07 03* under the Waste Catalogue) to certified disposal. You will receive a disposal protocol for your SEPNO hazardous-waste reporting."
+    },
+    {
+      "question": "Do you also handle above-ground operational tanks and IBC containers?",
+      "answer": "Yes. We clean above-ground tanks (typically 1 to 10 m³) for vehicle fleets, agricultural operations and generators, as well as smaller IBC 1,000 l containers. The process is faster than for underground tanks, often completed within 4 hours."
+    },
+    {
+      "question": "Do you operate only in the Moravian-Silesian Region, or throughout the Czech Republic?",
+      "answer": "We operate throughout the Czech Republic. Our base is in Český Těšín, but we regularly carry out call-outs to Prague, Brno, Plzeň or to the border regions."
+    }
+  ],
+  "content": {
+    "heroTitlePre": "Cleaning of fuel",
+    "heroTitleHl": "tanks",
+    "heroIntro": "Professional cleaning of fuel tanks for filling stations, corporate vehicle fleets, agricultural operations and standby generators throughout the Czech Republic. We remove bio-sludge from MEŘO (FAME), water and sediments, take the hazardous waste away for certified disposal and hand over a protocol. Call-out typically within 5 working days, price on request.",
+    "heroCtaLabel": "Non-binding enquiry: info@phmarket.cz",
+    "heroMailtoSubject": "Tank cleaning enquiry",
+    "defTitle": "What fuel tank cleaning is",
+    "defPara": "Fuel tank cleaning is a technological process in which water, bio-sludge, sediments and rust particles accumulated on the bottom and walls are removed from an underground or above-ground tank. The aim is to restore the fuel cleanliness in line with EN 590 (ČSN) (motor diesel) or EN 228 (ČSN) (petrol) and to prevent damage to the injection systems of end users.",
+    "doTitle": "What exactly we do",
+    "doItems": [
+      "Pumping the fuel into a temporary tank with intermediate filtration",
+      "Removal of deposits on the bottom (mechanically plus suction equipment)",
+      "Drying the tank and visual inspection of the walls",
+      "Refilling the filtered fuel (or supplying new fuel)",
+      "Removal of hazardous waste to certified disposal plus protocol"
+    ],
+    "dontTitle": "What we do not do",
+    "dontItems": [
+      "Structural repairs of tanks and encasing in concrete",
+      "Calibration and metrology (we pass these to a partner company)",
+      "Removing the tank from the ground"
+    ],
+    "whomTitle": "Who the service is intended for",
+    "whomItems": [
+      {
+        "strong": "Filling station operators",
+        "text": ": underground tanks of 30 to 50 m³ with B7 diesel, petrol or premium fuels. Regular checks as prevention against contamination of customers' tanks."
+      },
+      {
+        "strong": "Transport companies and vehicle fleets",
+        "text": ": above-ground storage tanks of 5 to 20 m³ from which lorries or buses refuel. Risk: clogged filters, vehicle breakdowns."
+      },
+      {
+        "strong": "Agricultural operations",
+        "text": ": seasonal stations (combine harvesters, tractors) with fuel standing for several months. Risk: degradation of MEŘO (FAME) in B7 diesel, bio-sludge at the start of the season."
+      },
+      {
+        "strong": "Operators of standby generators",
+        "text": ": data centres, hospitals, industry. Risk: the tank stands for years and in an actual outage the engine refuses to start on spoiled fuel."
+      },
+      {
+        "strong": "Owners of seasonal machinery",
+        "text": ": motorhomes, boats, classic cars with expensive injection systems."
+      }
+    ],
+    "numbersTitle": "Figures and facts",
+    "numbersItems": [
+      { "strong": "Volumes:", "text": "tanks of 1 to 60 m³ (both underground and above-ground)" },
+      {
+        "strong": "Cleaning time:",
+        "text": "above-ground 1 to 10 m³ usually 2 to 6 h, underground 30 to 50 m³ usually 8 to 24 h"
+      },
+      {
+        "strong": "Call-out:",
+        "text": "typically within 5 working days of order confirmation, emergency response within 48 hours (subject to workload)"
+      },
+      {
+        "strong": "Coverage:",
+        "text": "the entire Czech Republic; base in Český Těšín, call-outs to Prague / Brno / Plzeň routinely"
+      },
+      {
+        "strong": "Waste:",
+        "text": "disposal under code 13 07 03* (other liquid fuels) at certified disposal, protocol for SEPNO"
+      },
+      {
+        "strong": "Price:",
+        "text": "on request based on volume, degree of contamination and distance"
+      }
+    ],
+    "howTitle": "How we proceed step by step",
+    "howItems": [
+      {
+        "strong": "Contact and assessment.",
+        "text": "Send us a photograph of the tank, details of the volume, fuel type and last inspection. We will get back to you within 24 hours."
+      },
+      {
+        "strong": "Price quotation.",
+        "text": "We prepare a budget with a fixed price for the standard scope and a rate for extra hours in the event of above-standard contamination."
+      },
+      {
+        "strong": "Scheduling the call-out.",
+        "text": "We choose a time so that the filling station can keep its other tanks running, typically Monday morning or a weekend night."
+      },
+      {
+        "strong": "Pumping the fuel.",
+        "text": "We transfer the fuel into a mobile suction tank with 5 μm and 25 μm pre-filtration."
+      },
+      {
+        "strong": "Mechanical cleaning.",
+        "text": "We remove sediments and sludge from the bottom and walls. For underground tanks we use a camera for visual inspection after cleaning."
+      },
+      {
+        "strong": "Refilling.",
+        "text": "We return the filtered fuel; the unusable fraction is taken away."
+      },
+      {
+        "strong": "Handover and documentation.",
+        "text": "We hand over a cleaning protocol plus a record of the transfer of hazardous waste for your SEPNO reporting."
+      }
+    ],
+    "compTitle": "Comparison with the alternatives",
+    "compCols": [
+      "Criterion",
+      "PHMarket: professional cleaning",
+      "In-house cleaning by your own staff",
+      "Tank replacement"
+    ],
+    "compRows": [
+      ["Time", "8 to 24 h (50 m³)", "2 to 5 days (risk of delay)", "2 to 6 weeks plus construction"],
+      ["Health and safety risk", "Low, certified procedure", "High (fumes, explosive atmosphere)", "Low, but extensive construction"],
+      ["Waste disposal", "Certified, incl. SEPNO protocol", "Risky, without a protocol a fine is likely", "Part of the dismantling"],
+      ["Costs", "One-off price on request", "Hidden costs (time, risk)", "Hundreds of thousands up to a million plus"]
+    ],
+    "faqTitle": "Frequently asked questions",
+    "ctaTitle": "Send a non-binding enquiry",
+    "ctaPara": "Write to us with the tank volume, fuel type and location. We will get back to you within 24 hours with a specific price and date.",
+    "ctaLabel": "info@phmarket.cz",
+    "ctaMailtoSubject": "Tank cleaning enquiry"
+  }
+}

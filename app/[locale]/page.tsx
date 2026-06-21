@@ -1,41 +1,40 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import AppStoreButtons from "@/components/AppStoreButtons";
 import SavingsCounter from "@/components/SavingsCounter";
 import HeroRedesignAnimation from "@/components/HeroRedesignAnimation";
 import JsonLd from "@/components/JsonLd";
 import { mobileApplicationSchema } from "@/lib/jsonld";
+import type { Locale } from "@/i18n/routing";
 
 /* ------------------------------------------------------------------ */
 /*  Hero                                                               */
 /* ------------------------------------------------------------------ */
-function Hero() {
+async function Hero() {
+  const t = await getTranslations("hero");
   return (
     <section className="relative overflow-x-clip hero-premium-bg">
-      {/* Subtle grid overlay */}
       <div className="absolute inset-0 hero-grid-overlay pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left: Content */}
           <div className="relative z-10">
             <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 px-4 py-1.5 text-sm font-medium text-emerald-400 mb-6">
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              Bez registrace ani plastových karet
+              {t("badge")}
             </span>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] tracking-tight">
-              Tankuj chytře.{" "}
+              {t("titleLine1")}{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-emerald-300">
-                Ušetřeno.
+                {t("titleHighlight")}
               </span>
             </h1>
 
             <p className="mt-6 text-lg text-white/60 leading-relaxed max-w-xl">
-              PHMarket tě navede k čerpacím stanicím s kvalitním palivem, kde
-              uplatníš slevové kódy. Bez registrace, poplatků nebo plastových
-              karet. Vše v mobilu.
+              {t("subtitle")}
             </p>
 
             <div className="mt-10">
@@ -43,14 +42,12 @@ function Hero() {
             </div>
           </div>
 
-          {/* Right: Animated Phone Scene */}
-          <div className="relative flex justify-center lg:justify-end" aria-label="Ukázka úspory s PHMarket">
+          <div className="relative flex justify-center lg:justify-end" aria-label={t("sceneAria")}>
             <HeroRedesignAnimation />
           </div>
         </div>
       </div>
 
-      {/* Bottom fade into next section */}
       <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />
     </section>
   );
@@ -59,12 +56,13 @@ function Hero() {
 /* ------------------------------------------------------------------ */
 /*  Stats bar                                                          */
 /* ------------------------------------------------------------------ */
-function StatsBar() {
+async function StatsBar() {
+  const t = await getTranslations("stats");
   const stats = [
-    { value: "100+", label: "partnerských stanic" },
-    { value: "až 3 Kč", label: "úspora na litr" },
-    { value: "0 Kč", label: "poplatek za aplikaci" },
-    { value: "PHMap", label: "mapa stanic" },
+    { value: t("stationsValue"), label: t("stationsLabel") },
+    { value: t("savingValue"), label: t("savingLabel") },
+    { value: t("feeValue"), label: t("feeLabel") },
+    { value: t("mapValue"), label: t("mapLabel") },
   ];
 
   return (
@@ -86,68 +84,42 @@ function StatsBar() {
 /* ------------------------------------------------------------------ */
 /*  Jak to funguje                                                     */
 /* ------------------------------------------------------------------ */
-function HowItWorks() {
-  const steps = [
-    {
-      title: "Stáhni aplikaci",
-      description: "iOS i Android zdarma",
-      icon: (
-        <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-        </svg>
-      ),
-    },
-    {
-      title: "Najdi stanici",
-      description: "Mapa PHMap ukáže nejbližší partnery",
-      icon: (
-        <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-          <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-        </svg>
-      ),
-    },
-    {
-      title: "Uplatni kód",
-      description: "Zobraz kód přímo na pokladně",
-      icon: (
-        <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
-          <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
-        </svg>
-      ),
-    },
-    {
-      title: "Ušetři",
-      description: "Sleva se odečte okamžitě",
-      icon: (
-        <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
-        </svg>
-      ),
-    },
+async function HowItWorks() {
+  const t = await getTranslations("howItWorks");
+  const steps = t.raw("steps") as { title: string; description: string }[];
+  const icons = [
+    <svg key="0" className="w-7 h-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+    </svg>,
+    <svg key="1" className="w-7 h-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+    </svg>,
+    <svg key="2" className="w-7 h-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
+    </svg>,
+    <svg key="3" className="w-7 h-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+    </svg>,
   ];
 
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-dark">
-            Jak to funguje
-          </h2>
-          <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
-            Čtyři jednoduché kroky k levnějšímu tankování
-          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-dark">{t("title")}</h2>
+          <p className="mt-3 text-gray-600 max-w-2xl mx-auto">{t("subtitle")}</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, i) => (
             <div key={step.title} className="text-center">
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/10 text-primary mb-4">
-                {step.icon}
+                {icons[i]}
               </div>
               <div className="text-xs font-bold text-primary mb-1">
-                {i + 1}. krok
+                {i + 1}. {t("stepLabel")}
               </div>
               <h3 className="text-lg font-semibold text-dark">{step.title}</h3>
               <p className="mt-1 text-sm text-gray-500">{step.description}</p>
@@ -162,12 +134,12 @@ function HowItWorks() {
 /* ------------------------------------------------------------------ */
 /*  Další služby                                                       */
 /* ------------------------------------------------------------------ */
-function Services() {
+async function Services() {
+  const t = await getTranslations("services");
   const services = [
     {
-      title: "Čištění nádrží",
-      description:
-        "Profesionální čištění palivových nádrží pro čerpací stanice i firemní zákazníky.",
+      title: t("cisteni.title"),
+      description: t("cisteni.description"),
       href: "/cisteni-nadrzi",
       icon: (
         <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -176,9 +148,8 @@ function Services() {
       ),
     },
     {
-      title: "Mikrozávozy motorové nafty",
-      description:
-        "Dovoz nafty přímo k zákazníkovi, rychle, pohodlně a za výhodné ceny.",
+      title: t("mikrozavozy.title"),
+      description: t("mikrozavozy.description"),
       href: "/mikrozavozy-motorove-nafty",
       icon: (
         <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -192,9 +163,7 @@ function Services() {
     <section className="py-16 md:py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-dark">
-            Další služby
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-dark">{t("title")}</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -210,11 +179,9 @@ function Services() {
               <h3 className="text-xl font-semibold text-dark group-hover:text-primary transition-colors">
                 {service.title}
               </h3>
-              <p className="mt-2 text-sm text-gray-500 leading-relaxed">
-                {service.description}
-              </p>
+              <p className="mt-2 text-sm text-gray-500 leading-relaxed">{service.description}</p>
               <span className="inline-flex items-center gap-1 mt-4 text-sm font-medium text-primary">
-                Zjistit více
+                {t("learnMore")}
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
@@ -230,26 +197,16 @@ function Services() {
 /* ------------------------------------------------------------------ */
 /*  Partneři                                                           */
 /* ------------------------------------------------------------------ */
-function Partners() {
-  const stations = [
-    "ORLEN",
-    "MOL",
-    "EuroOil",
-    "Shell",
-    "OMV",
-    "Benzina",
-    "Robin Oil",
-    "Tank ONO",
-  ];
+async function Partners() {
+  const t = await getTranslations("partners");
+  const stations = ["ORLEN", "MOL", "EuroOil", "Shell", "OMV", "Benzina", "Robin Oil", "Tank ONO"];
 
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-dark">
-            Naše partnerské čerpací stanice
-          </h2>
-          <p className="mt-3 text-gray-600">Naši odběratelé</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-dark">{t("title")}</h2>
+          <p className="mt-3 text-gray-600">{t("subtitle")}</p>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
@@ -270,17 +227,13 @@ function Partners() {
 /* ------------------------------------------------------------------ */
 /*  CTA                                                                */
 /* ------------------------------------------------------------------ */
-function CtaSection() {
+async function CtaSection() {
+  const t = await getTranslations("homeCta");
   return (
     <section className="bg-primary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-white">
-          Začni šetřit ještě dnes.
-        </h2>
-        <p className="mt-4 text-white/80 max-w-xl mx-auto leading-relaxed">
-          Stáhni si aplikaci PHMarket a začni využívat slevové kódy na
-          partnerských čerpacích stanicích po celé ČR.
-        </p>
+        <h2 className="text-3xl md:text-4xl font-bold text-white">{t("title")}</h2>
+        <p className="mt-4 text-white/80 max-w-xl mx-auto leading-relaxed">{t("subtitle")}</p>
         <AppStoreButtons className="mt-8 justify-center" />
       </div>
     </section>
@@ -290,7 +243,10 @@ function CtaSection() {
 /* ------------------------------------------------------------------ */
 /*  Page                                                               */
 /* ------------------------------------------------------------------ */
-export default function Home() {
+export default async function Home({ params }: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <>
       <JsonLd id="mobile-application-schema" data={mobileApplicationSchema} />

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 type Phase = "arrival" | "fueling" | "celebration" | "leaving";
 
@@ -30,6 +31,7 @@ function GoldCoin({ delay, x, size = 24 }: { delay: number; x: number; size?: nu
 /*  Price Tag Card (glass-morphism)                                    */
 /* ------------------------------------------------------------------ */
 function PriceCard({ type, visible }: { type: "competitor" | "phmarket"; visible: boolean }) {
+  const t = useTranslations("hero");
   const isCompetitor = type === "competitor";
 
   const posClass = isCompetitor
@@ -48,7 +50,7 @@ function PriceCard({ type, visible }: { type: "competitor" | "phmarket"; visible
         } backdrop-blur-xl shadow-2xl`}
       >
         <p className="text-[10px] lg:text-[11px] font-medium text-white/60 mb-0.5 lg:mb-1">
-          {isCompetitor ? "Konkurence" : "PHMarket sleva"}
+          {isCompetitor ? t("competitor") : t("phmarketDiscount")}
         </p>
         <p className={`text-base lg:text-xl font-bold ${isCompetitor ? "text-red-400" : "text-emerald-400"}`}>
           {isCompetitor ? "39,90 Kč/l" : "−3,50 Kč/l"}
@@ -62,6 +64,7 @@ function PriceCard({ type, visible }: { type: "competitor" | "phmarket"; visible
 /*  Savings Badge                                                      */
 /* ------------------------------------------------------------------ */
 function SavingsBadge({ visible }: { visible: boolean }) {
+  const t = useTranslations("hero");
   return (
     <div
       className={`absolute top-0 lg:-top-4 left-1/2 -translate-x-1/2 z-40 transition-all duration-500 ${
@@ -70,7 +73,7 @@ function SavingsBadge({ visible }: { visible: boolean }) {
     >
       <div className="hero-glass-card rounded-full px-4 py-2 lg:px-5 lg:py-2.5 border border-emerald-400/40 bg-emerald-500/15 backdrop-blur-xl shadow-2xl whitespace-nowrap">
         <span className="text-xs lg:text-sm font-bold text-emerald-400">
-          Ušetřeno: 175 Kč na nádrži
+          {t("saved")}
         </span>
       </div>
     </div>

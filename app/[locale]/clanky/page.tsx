@@ -1,32 +1,58 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { articles } from "@/lib/articles";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, SITE_URL } from "@/lib/jsonld";
+import type { Locale } from "@/i18n/routing";
 
-export const metadata: Metadata = {
-  title: "Články",
-  description:
-    "Články a novinky ze světa pohonných hmot, čerpacích stanic a úspor při tankování.",
-  alternates: { canonical: "/clanky" },
+// Intl date locale for each app locale
+const DATE_LOCALE: Record<Locale, string> = {
+  cs: "cs-CZ",
+  sk: "sk-SK",
+  pl: "pl-PL",
+  en: "en-GB",
+  de: "de-DE",
 };
 
-const breadcrumb = breadcrumbSchema([
-  { name: "Domů", url: SITE_URL },
-  { name: "Články" },
-]);
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "articlesPage" });
+  return {
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+    alternates: { canonical: "/clanky" },
+  };
+}
 
-function formatDate(dateStr: string) {
+function formatDate(dateStr: string, locale: Locale) {
   const d = new Date(dateStr);
-  return d.toLocaleDateString("cs-CZ", {
+  return d.toLocaleDateString(DATE_LOCALE[locale], {
     day: "numeric",
     month: "long",
     year: "numeric",
   });
 }
 
-export default function ArticlesPage() {
+export default async function ArticlesPage({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("articlesPage");
+
+  const breadcrumb = breadcrumbSchema([
+    { name: t("breadcrumb"), url: SITE_URL },
+    { name: t("breadcrumb") },
+  ]);
+
   const sorted = [...articles].sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
@@ -36,9 +62,9 @@ export default function ArticlesPage() {
       <JsonLd id="breadcrumb-schema" data={breadcrumb} />
       <section className="bg-gradient-to-br from-gray-50 to-white py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-dark">Články</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-dark">{t("title")}</h1>
           <p className="mt-4 text-lg text-gray-600">
-            Novinky a tipy ze světa pohonných hmot a chytrého tankování.
+            {t("heroSubtitle")}
           </p>
         </div>
       </section>
@@ -81,9 +107,9 @@ export default function ArticlesPage() {
                 <div className="p-5">
                   <div className="flex items-center gap-3 text-xs text-gray-400 mb-2">
                     <time dateTime={article.date}>
-                      {formatDate(article.date)}
+                      {formatDate(article.date, locale)}
                     </time>
-                    <span>{article.timeToRead} min čtení</span>
+                    <span>{article.timeToRead} {t("minRead")}</span>
                   </div>
                   <h2 className="text-lg font-semibold text-dark group-hover:text-primary transition-colors leading-snug">
                     {article.title}
@@ -94,7 +120,7 @@ export default function ArticlesPage() {
                     </p>
                   )}
                   <span className="inline-flex items-center gap-1 mt-3 text-sm font-medium text-primary">
-                    Číst více
+                    {t("readMore")}
                     <svg
                       className="w-4 h-4 group-hover:translate-x-1 transition-transform"
                       fill="none"

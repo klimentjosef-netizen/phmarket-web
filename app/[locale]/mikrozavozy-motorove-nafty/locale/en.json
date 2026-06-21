@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Diesel micro-deliveries in the Czech Republic",
+    "description": "Diesel micro-deliveries (200 to 3,000 l) straight to the customer across the Czech Republic. Construction sites, agriculture, vehicle fleets, generators. Price based on the current wholesale price list, delivery typically within 72 hours."
+  },
+  "breadcrumbName": "Diesel micro-deliveries",
+  "schema": {
+    "id": "/mikrozavozy-motorove-nafty#service",
+    "serviceType": "Diesel micro-deliveries",
+    "name": "Diesel micro-deliveries",
+    "description": "Delivery of diesel fuel (typically 200 to 3,000 litres) straight to the customer's address throughout the Czech Republic. For construction sites, agricultural operations, transport companies, backup generators and owners of above-ground operational tanks.",
+    "audience": "Construction companies, farmers, transport companies, vehicle fleets, operators of backup generators",
+    "priceDescription": "Price based on the current wholesale fuel price list + transport according to distance and volume."
+  },
+  "faqItems": [
+    {
+      "question": "What is the minimum and maximum delivery volume?",
+      "answer": "The typical range of a micro-delivery is 200 to 3,000 litres per delivery. We handle smaller volumes (from 200 l) using a transport IBC or a tanker with a smaller dispensing unit; larger volumes (3,000+ l) are handed over to a partner tanker. For regular orders (e.g. farmers in season) we arrange cyclical deliveries on a monthly or weekly basis."
+    },
+    {
+      "question": "How is the price of diesel set?",
+      "answer": "The price is based on the current wholesale price of diesel (referenced against ČEPRO or Unipetrol) on the day of delivery. Transport (calculated according to distance from the depot and volume) and margin are added to this. We always confirm the final price before delivery. For regular customers we offer price indexation to Brent or the ČEPRO price list."
+    },
+    {
+      "question": "Is the fuel dispensed directly into my tank, or just handed over in a canister?",
+      "answer": "The tanker dispenses diesel directly into your above-ground or underground tank through a dispensing hose with a meter (calibrated in accordance with Act No. 505/1990 Coll. on metrology). We issue a delivery note stating the volume in litres at 15 °C, the date and the driver's signature. This is not 'diesel in a canister'. It is a standard wholesale delivery."
+    },
+    {
+      "question": "What fuel do you deliver? Does it comply with EN 590?",
+      "answer": "We deliver class B7 diesel (with the mandatory bio-component up to 7 % FAME (MEŘO)) in accordance with the EN 590 standard. On request we can also supply diesel without a bio-component (B0), which is suitable for machinery left standing for long periods (agriculture, generators, seasonal equipment) because it does not form biological sludge. In winter we deliver winter class D (CFPP down to −20 °C) or arctic class (CFPP −32 °C) depending on the current period."
+    },
+    {
+      "question": "How quickly does the delivery arrive?",
+      "answer": "Standard delivery when confirmed by 10:00 in the morning: typically the next working day, otherwise within 72 hours. Emergency delivery for generators and transport (within 24 hours) is handled individually depending on capacity."
+    },
+    {
+      "question": "Will you issue a VAT invoice, and what payment do you accept?",
+      "answer": "We invoice as a VAT payer as standard (rate 21 %), with payment terms of 7 to 14 days for regular customers; for a first order we require payment in advance or cash on delivery. We accept bank transfer; cash only up to the limit of 270,000 CZK in accordance with Section 4 of the Act on the restriction of cash payments."
+    },
+    {
+      "question": "Do you operate across the whole Czech Republic?",
+      "answer": "Yes. Our base is in Český Těšín (Moravian-Silesian Region), but we regularly deliver throughout the Czech Republic. The eastern half of the country is the most logistically convenient; for the Plzeň and Karlovy Vary regions we plan deliveries with a longer lead time (typically 3 to 5 days)."
+    }
+  ],
+  "content": {
+    "heroTitlePre": "Diesel",
+    "heroTitleHl": "micro-deliveries",
+    "heroIntro": "Delivery of 200 to 3,000 litres of diesel straight to the customer's address throughout the Czech Republic. For construction sites, agricultural operations, transport companies, vehicle fleets, backup generators and owners of above-ground operational tanks. Class B7 fuel in accordance with EN 590, and bio-component-free B0 diesel on request. Price based on the current wholesale price list, standard delivery within 72 hours.",
+    "heroCtaLabel": "Enquiry: info@phmarket.cz",
+    "heroMailtoSubject": "Micro-delivery enquiry",
+    "defTitle": "What is a diesel micro-delivery",
+    "defPara": "A micro-delivery is a small-volume delivery of diesel (typically 200 to 3,000 litres) straight to the customer's address using a tanker or a transport IBC. It differs from bulk delivery to filling stations (10,000+ l) in that it serves end business consumers: construction sites, farmers, hauliers, generator systems.",
+    "doTitle": "What we deliver",
+    "doItems": [
+      "Class B7 diesel (with a bio-component up to 7 % FAME (MEŘO)), EN 590",
+      "Bio-component-free B0 diesel, for generators, seasonal equipment and long-term storage",
+      "Winter classes D and F (CFPP −20 °C and −32 °C respectively) in the period November to March"
+    ],
+    "dontTitle": "What we do not do",
+    "dontItems": [
+      "Petrol (Natural 95, 98, 100)",
+      "LPG, CNG, AdBlue as a standalone delivery",
+      "Micro-deliveries to private individuals for personal use"
+    ],
+    "whomTitle": "Who the service is for",
+    "whomItems": [
+      {
+        "strong": "Construction companies",
+        "text": ": excavators, crushers, cranes and other machinery on site. Instead of driving round to a filling station, we deliver diesel straight to the construction site, often out of sight (a key element in preventing fuel theft)."
+      },
+      {
+        "strong": "Farmers",
+        "text": ": seasonal consumption (spring: sowing, harvest). A micro-delivery covers a short-term increase in consumption without the need to build your own large-capacity tank."
+      },
+      {
+        "strong": "Transport companies and vehicle fleets",
+        "text": ": own storage tank of 5 to 20 m³, regular planned delivery once supplies run low."
+      },
+      {
+        "strong": "Data centres, hospitals, industry",
+        "text": ": filling of backup generators; periodic fuel renewal to prevent biological sludge forming in the tank."
+      },
+      {
+        "strong": "Operators of above-ground tanks",
+        "text": ": small companies with a local tank of 1 to 5 m³ for whom a bulk delivery would not pay off."
+      }
+    ],
+    "numbersTitle": "Figures and facts",
+    "numbersItems": [
+      { "strong": "Delivery range:", "text": "200 to 3,000 litres per run" },
+      {
+        "strong": "Standard delivery time:",
+        "text": "within 72 hours of confirmation (typically the next working day)"
+      },
+      { "strong": "Emergency delivery:", "text": "within 24 hours depending on capacity" },
+      { "strong": "Coverage:", "text": "the entire Czech Republic; base in Český Těšín" },
+      {
+        "strong": "Price:",
+        "text": "current wholesale ČEPRO/Unipetrol price + transport + margin (transparently itemised on the invoice)"
+      },
+      {
+        "strong": "Metrology:",
+        "text": "tanker with a meter calibrated in accordance with Act No. 505/1990 Coll., delivery note stating the volume at 15 °C"
+      },
+      {
+        "strong": "Fuel standard:",
+        "text": "EN 590 (standard B7), B0 or winter classes on request"
+      }
+    ],
+    "howTitle": "How we proceed step by step",
+    "howItems": [
+      {
+        "strong": "Enquiry.",
+        "text": "Send us the volume, type (B7 / B0 / winter), delivery location and required date. Email info@phmarket.cz."
+      },
+      {
+        "strong": "Price quote.",
+        "text": "Within a few hours (working day) we confirm availability, the current price and the delivery date."
+      },
+      {
+        "strong": "Delivery confirmation.",
+        "text": "We issue a pro forma invoice (first order) or confirm the date for an existing customer."
+      },
+      {
+        "strong": "Tanker dispatch.",
+        "text": "The tanker arrives at the agreed time. The driver checks access to the tank and begins dispensing."
+      },
+      {
+        "strong": "Dispensing and delivery note.",
+        "text": "During dispensing the volume is read off the calibrated meter, and a delivery note is issued with the date, time and signature."
+      },
+      {
+        "strong": "Invoice.",
+        "text": "We issue a tax document within 5 working days of delivery, with payment terms as agreed."
+      }
+    ],
+    "compTitle": "Comparison with alternatives",
+    "compCols": [
+      "Criterion",
+      "PHMarket micro-delivery",
+      "Public filling station (canisters / fuel card)",
+      "Bulk delivery (10,000+ l)"
+    ],
+    "compRows": [
+      ["Price per litre", "Wholesale + transport", "Retail (higher)", "Lowest (requires a larger tank)"],
+      ["Minimum volume", "200 l", "No minimum", "Typically 10,000+ l"],
+      ["Time spent", "0, we deliver", "Trip to the pump + handling canisters", "0, we deliver"],
+      ["Theft risk", "Low (straight into the tank)", "High (canisters on site)", "Low"],
+      ["Need for your own tank", "Recommended (1+ m³)", "No", "Required (10+ m³)"]
+    ],
+    "faqTitle": "Frequently asked questions",
+    "ctaTitle": "Need a diesel delivery?",
+    "ctaPara": "Write to us with the volume, fuel type (B7 / B0 / winter), location and required date. We will prepare a price quote during working hours.",
+    "ctaLabel": "info@phmarket.cz",
+    "ctaMailtoSubject": "Diesel micro-delivery enquiry"
+  }
+}

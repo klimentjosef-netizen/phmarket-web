@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { getTranslations } from "next-intl/server";
 
 const SOCIAL_LINKS = [
   {
@@ -39,7 +40,10 @@ const SOCIAL_LINKS = [
   },
 ];
 
-export default function Footer() {
+export default async function Footer() {
+  const t = await getTranslations("footer");
+  const tn = await getTranslations("nav");
+
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -55,39 +59,36 @@ export default function Footer() {
                 className="h-10 w-auto"
               />
             </Link>
-            <p className="text-sm text-gray-400 leading-relaxed">
-              Chytrá aplikace pro úspory na tankování. Bez registrace, poplatků
-              nebo plastových karet.
-            </p>
+            <p className="text-sm text-gray-400 leading-relaxed">{t("tagline")}</p>
           </div>
 
           {/* Quick links */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Navigace</h3>
+            <h3 className="text-white font-semibold mb-4">{t("navHeading")}</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/phmap" className="hover:text-primary transition-colors">
-                  PHMap
+                  {tn("phmap")}
                 </Link>
               </li>
               <li>
                 <Link href="/tankujte-levneji" className="hover:text-primary transition-colors">
-                  Tankujte levněji
+                  {tn("tankujte")}
                 </Link>
               </li>
               <li>
                 <Link href="/cisteni-nadrzi" className="hover:text-primary transition-colors">
-                  Čištění nádrží
+                  {tn("cisteni")}
                 </Link>
               </li>
               <li>
                 <Link href="/mikrozavozy-motorove-nafty" className="hover:text-primary transition-colors">
-                  Mikrozávozy nafty
+                  {tn("mikrozavozy")}
                 </Link>
               </li>
               <li>
                 <Link href="/clanky" className="hover:text-primary transition-colors">
-                  Články
+                  {tn("articles")}
                 </Link>
               </li>
             </ul>
@@ -95,16 +96,16 @@ export default function Footer() {
 
           {/* Legal */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Právní</h3>
+            <h3 className="text-white font-semibold mb-4">{t("legalHeading")}</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/podminky" className="hover:text-primary transition-colors">
-                  Obchodní podmínky
+                  {t("terms")}
                 </Link>
               </li>
               <li>
                 <Link href="/privacy-policy" className="hover:text-primary transition-colors">
-                  Ochrana osobních údajů
+                  {t("privacy")}
                 </Link>
               </li>
             </ul>
@@ -112,7 +113,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Kontakt</h3>
+            <h3 className="text-white font-semibold mb-4">{t("contactHeading")}</h3>
             <address className="not-italic text-sm space-y-1 text-gray-400">
               <p className="font-medium text-gray-300">PHMarket s.r.o.</p>
               <p>Hlavní třída 87/2</p>
@@ -121,7 +122,7 @@ export default function Footer() {
             </address>
             <div className="flex items-center gap-3 mt-4">
               {SOCIAL_LINKS.map((social) => (
-                <Link
+                <a
                   key={social.name}
                   href={social.href}
                   target="_blank"
@@ -130,15 +131,14 @@ export default function Footer() {
                   aria-label={social.name}
                 >
                   {social.icon}
-                </Link>
+                </a>
               ))}
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-500">
-          &copy; {new Date().getFullYear()} PHMarket s.r.o. Všechna práva
-          vyhrazena.
+          &copy; {new Date().getFullYear()} PHMarket s.r.o. {t("rights")}
         </div>
       </div>
     </footer>

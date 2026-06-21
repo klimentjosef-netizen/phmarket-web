@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "homeTitle": "PHMarket: Save on every fill-up",
+    "homeDescription": "PHMarket guides you to fuel stations with quality fuel where you can use discount codes. No registration, no fees, no plastic cards.",
+    "ogDescription": "Discount codes for fuel at partner stations. No registration, no plastic cards."
+  },
+  "nav": {
+    "home": "Home",
+    "phmap": "PHMap",
+    "articles": "Articles",
+    "tankujte": "Fuel up cheaper",
+    "cisteni": "Tank cleaning",
+    "mikrozavozy": "Diesel micro-delivery",
+    "downloadApp": "Download the app"
+  },
+  "switcher": {
+    "label": "Language",
+    "cs": "Čeština",
+    "sk": "Slovenčina",
+    "pl": "Polski",
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "appButtons": {
+    "downloadOn": "Download on"
+  },
+  "footer": {
+    "tagline": "A smart app for saving on fuel. No registration, no fees, no plastic cards.",
+    "navHeading": "Navigation",
+    "legalHeading": "Legal",
+    "contactHeading": "Contact",
+    "terms": "Terms and conditions",
+    "privacy": "Privacy policy",
+    "rights": "All rights reserved."
+  },
+  "hero": {
+    "badge": "No registration or plastic cards",
+    "titleLine1": "Fuel up smart.",
+    "titleHighlight": "Saved.",
+    "subtitle": "PHMarket guides you to fuel stations with quality fuel where you can use discount codes. No registration, no fees, no plastic cards. All in your phone.",
+    "sceneAria": "Example of savings with PHMarket",
+    "competitor": "Competitors",
+    "phmarketDiscount": "PHMarket discount",
+    "saved": "Saved: 175 CZK per tank"
+  },
+  "stats": {
+    "stationsValue": "100+",
+    "stationsLabel": "partner stations",
+    "savingValue": "up to 3 CZK",
+    "savingLabel": "saving per litre",
+    "feeValue": "0 CZK",
+    "feeLabel": "app fee",
+    "mapValue": "PHMap",
+    "mapLabel": "station map"
+  },
+  "savings": {
+    "title": "How much we have saved together",
+    "subtitle": "The number grows in real time, we keep saving every second",
+    "totalSaved": "Total savings of users",
+    "codesUsed": "Discount codes used",
+    "activeUsers": "Active users"
+  },
+  "howItWorks": {
+    "title": "How it works",
+    "subtitle": "Four simple steps to cheaper fuel",
+    "stepLabel": "step",
+    "steps": [
+      { "title": "Download the app", "description": "Free on iOS and Android" },
+      { "title": "Find a station", "description": "The PHMap map shows the nearest partners" },
+      { "title": "Use the code", "description": "Show the code right at the till" },
+      { "title": "Save", "description": "The discount is applied instantly" }
+    ]
+  },
+  "services": {
+    "title": "Other services",
+    "learnMore": "Learn more",
+    "cisteni": {
+      "title": "Tank cleaning",
+      "description": "Professional cleaning of fuel tanks for filling stations and corporate customers."
+    },
+    "mikrozavozy": {
+      "title": "Diesel micro-delivery",
+      "description": "Diesel delivered directly to the customer, fast, convenient and at favourable prices."
+    }
+  },
+  "partners": {
+    "title": "Our partner fuel stations",
+    "subtitle": "Our customers"
+  },
+  "homeCta": {
+    "title": "Start saving today.",
+    "subtitle": "Download the PHMarket app and start using discount codes at partner fuel stations across the Czech Republic."
+  },
+  "legal": {
+    "breadcrumbHome": "Home",
+    "effectiveFrom": "Effective from {date}",
+    "openPdf": "Open document (PDF)",
+    "downloadPdf": "Download PDF",
+    "languageVersions": "Language versions",
+    "tableOfContents": "Table of contents",
+    "viewerFallbackBefore": "Your browser cannot display the PDF directly on the page. ",
+    "viewerFallbackLink": "Open the document in a new window",
+    "mobilePromptTitle": "Open the full text of the document as a PDF.",
+    "mobilePromptSubtitle": "For comfortable reading on mobile we recommend opening the document in full screen.",
+    "operator": "Operator",
+    "emailLabel": "E-mail"
+  },
+  "tankujtePage": {
+    "metaTitle": "Fuel up cheaper with PHMarket",
+    "metaDescription": "Fuel up cheaper with discount codes in the PHMarket app. No registration, no fees, no plastic cards. All in your phone.",
+    "title": "Fuel up <hl>cheaper</hl>",
+    "subtitle": "With the PHMarket app you save on every fill-up. Just show the discount code right at the station till and the discount is deducted instantly from the fuel price.",
+    "benefitsHeading": "Why fuel up with PHMarket?",
+    "benefits": [
+      { "title": "Save up to 3 CZK per litre", "desc": "Thanks to exclusive discount codes you save on every fill-up." },
+      { "title": "No registration", "desc": "No complicated sign-ups or filling in forms. Download and fuel up." },
+      { "title": "No fees", "desc": "The app is completely free. No hidden fees or subscriptions." },
+      { "title": "No plastic cards", "desc": "Done with loyalty cards. Everything is conveniently in your phone." },
+      { "title": "100+ stations", "desc": "A network of partner fuel stations across the Czech Republic." },
+      { "title": "Quality fuel", "desc": "We work only with verified fuel stations offering quality fuel." }
+    ],
+    "ctaTitle": "Start saving today",
+    "ctaSubtitle": "Download the PHMarket app and redeem your first discount code."
+  },
+  "phmapPage": {
+    "metaTitle": "PHMap: Fuel station map",
+    "metaDescription": "PHMap shows you the nearest partner fuel stations with discount codes for fuel. Find a station and save.",
+    "subtitle": "An interactive map of partner fuel stations. Find the nearest station with current discount codes.",
+    "featuresHeading": "What PHMap can do",
+    "features": [
+      { "title": "Nearest stations", "desc": "Shows partner fuel stations near you, sorted by distance." },
+      { "title": "Current discounts", "desc": "For each station you see the current discount codes and the saving per litre." },
+      { "title": "Navigation", "desc": "With one tap you start navigation straight to the chosen station." }
+    ]
+  },
+  "articlesPage": {
+    "metaTitle": "Articles",
+    "metaDescription": "Articles and news from the world of fuel, fuel stations and saving when filling up.",
+    "title": "Articles",
+    "heroSubtitle": "News and tips from the world of fuel and smart fuelling.",
+    "readMore": "Read more",
+    "minRead": "min read",
+    "breadcrumb": "Articles"
+  }
+}
