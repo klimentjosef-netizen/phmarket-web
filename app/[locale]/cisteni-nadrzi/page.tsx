@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import ServicePage from "@/components/ServicePage";
 import type { Locale } from "@/i18n/routing";
+import { localizedAlternates } from "@/lib/seo";
 import { CONTENT } from "./content";
 
 const EMAIL = "info@phmarket.cz";
@@ -16,7 +17,7 @@ export async function generateMetadata({
   return {
     title: c.meta.title,
     description: c.meta.description,
-    alternates: { canonical: "/cisteni-nadrzi" },
+    alternates: localizedAlternates(locale, "/cisteni-nadrzi"),
   };
 }
 

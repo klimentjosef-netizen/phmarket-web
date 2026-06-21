@@ -4,6 +4,7 @@ import LegalDoc from "@/components/LegalDoc";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, SITE_URL } from "@/lib/jsonld";
 import { routing, type Locale } from "@/i18n/routing";
+import { localizedAlternates } from "@/lib/seo";
 
 const CONTACT_EMAIL = "privacy@phmarket.cz";
 
@@ -188,7 +189,7 @@ export async function generateMetadata({
   return {
     title: c.metaTitle,
     description: c.metaDescription,
-    alternates: { canonical: "/privacy-policy" },
+    alternates: localizedAlternates(locale, "/privacy-policy"),
   };
 }
 

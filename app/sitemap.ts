@@ -55,16 +55,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: { languages: languagesFor(p.path) },
   }));
 
-  const articlePages: MetadataRoute.Sitemap = articles.map((a) => {
-    const path = `/clanky/${a.slug}`;
-    return {
-      url: `${BASE_URL}${path}`,
-      lastModified: new Date(a.date),
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-      alternates: { languages: languagesFor(path) },
-    };
-  });
+  // Articles are Czech-only content (served under all locale prefixes but
+  // canonicalised to the cs URL), so we list only the cs URL with no hreflang.
+  const articlePages: MetadataRoute.Sitemap = articles.map((a) => ({
+    url: `${BASE_URL}/clanky/${a.slug}`,
+    lastModified: new Date(a.date),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
 
   return [...staticPages, ...articlePages];
 }

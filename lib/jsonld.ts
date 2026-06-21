@@ -42,7 +42,7 @@ export const organizationSchema = {
     "@type": "ContactPoint",
     contactType: "customer service",
     areaServed: "CZ",
-    availableLanguage: ["Czech"],
+    availableLanguage: ["Czech", "Slovak", "Polish", "English", "German"],
   },
 };
 

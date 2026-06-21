@@ -6,6 +6,7 @@ import { articles } from "@/lib/articles";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, SITE_URL } from "@/lib/jsonld";
 import type { Locale } from "@/i18n/routing";
+import { localizedAlternates } from "@/lib/seo";
 
 // Intl date locale for each app locale
 const DATE_LOCALE: Record<Locale, string> = {
@@ -26,7 +27,7 @@ export async function generateMetadata({
   return {
     title: t("metaTitle"),
     description: t("metaDescription"),
-    alternates: { canonical: "/clanky" },
+    alternates: localizedAlternates(locale, "/clanky"),
   };
 }
 

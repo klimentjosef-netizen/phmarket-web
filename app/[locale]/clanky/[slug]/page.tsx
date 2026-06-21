@@ -21,11 +21,13 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: Props): Metadata {
   const article = articles.find((a) => a.slug === params.slug);
   if (!article) return {};
+  // Czech-only article served under all locale prefixes: consolidate every
+  // variant onto the single cs URL (no hreflang — these are not translations).
   const url = `/clanky/${article.slug}`;
   return {
     title: article.title,
     description: article.seoDescription || article.title,
-    alternates: { canonical: url, languages: { "cs-CZ": url } },
+    alternates: { canonical: url },
     openGraph: {
       type: "article",
       locale: "cs_CZ",

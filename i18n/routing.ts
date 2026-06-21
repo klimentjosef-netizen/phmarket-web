@@ -8,4 +8,7 @@ export const routing = defineRouting({
   defaultLocale: "cs",
   // Czech stays at "/", other languages get a prefix ("/en", "/sk", ...)
   localePrefix: "as-needed",
+  // No Accept-Language auto-redirect: every URL is deterministic for crawlers,
+  // language is chosen explicitly via the switcher / hreflang.
+  localeDetection: false,
 });
