@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { getTranslations, getLocale } from "next-intl/server";
+import { localePath } from "@/lib/seo";
+import type { Locale } from "@/i18n/routing";
 
 const SOCIAL_LINKS = [
   {
@@ -43,10 +45,11 @@ const SOCIAL_LINKS = [
 export default async function Footer() {
   const t = await getTranslations("footer");
   const tn = await getTranslations("nav");
-  const locale = await getLocale();
-  // The account-deletion page exists only in CZ (/smazat-ucet) and EN
-  // (/delete-account); link English visitors to the EN page, everyone else to CZ.
-  const deleteAccountHref = locale === "en" ? "/delete-account" : "/smazat-ucet";
+  const locale = (await getLocale()) as Locale;
+  // The deletion page is localised at /smazat-ucet (per locale prefix); English
+  // also has the dedicated /delete-account alias used for Google Play.
+  const deleteAccountHref =
+    locale === "en" ? "/delete-account" : localePath(locale, "/smazat-ucet");
 
   return (
     <footer className="bg-gray-900 text-gray-300">

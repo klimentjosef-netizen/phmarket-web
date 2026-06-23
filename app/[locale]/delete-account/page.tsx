@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import AccountDeletion from "@/components/AccountDeletion";
+import { TEXTS } from "@/lib/accountDeletionTexts";
 import type { Locale } from "@/i18n/routing";
 
+// Dedicated English alias (the URL provided to Google Play); always English.
 export const metadata: Metadata = {
-  title: "Delete account",
-  description:
-    "Permanently delete your PHMarket account. Enter your e-mail, confirm via the link we send you, and your account will be irreversibly removed.",
+  title: TEXTS.en.metaTitle,
+  description: TEXTS.en.metaDescription,
   alternates: { canonical: "/delete-account" },
   robots: { index: false, follow: true },
 };
