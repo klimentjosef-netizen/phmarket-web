@@ -32,7 +32,8 @@ const TEXTS = {
     emailLabel: "E-mail účtu",
     emailPlaceholder: "vas@email.cz",
     passwordLabel: "Heslo",
-    passwordHint: "Vyplňte, jen pokud jste se registrovali e-mailem a heslem.",
+    passwordHint:
+      "Pokud jste se registrovali přes Google nebo Apple, heslo nevyplňujte – nechte pole prázdné. Heslo zadejte jen tehdy, když jste se registrovali e-mailem a heslem.",
     reasonLabel: "Důvod smazání",
     reasonOptional: "nepovinné",
     reasonOptions: [
@@ -86,7 +87,8 @@ const TEXTS = {
     emailLabel: "Account e-mail",
     emailPlaceholder: "you@email.com",
     passwordLabel: "Password",
-    passwordHint: "Fill this in only if you registered with e-mail and password.",
+    passwordHint:
+      "If you signed up with Google or Apple, leave this empty – no password is needed. Enter a password only if you registered with e-mail and password.",
     reasonLabel: "Reason for deletion",
     reasonOptional: "optional",
     reasonOptions: [
@@ -151,6 +153,34 @@ type ConfirmState =
   | "tokenUsed"
   | "invalidToken"
   | "error";
+
+type Texts = (typeof TEXTS)[Lang];
+
+// Defined at module level (NOT inside AccountDeletion) so it is a stable
+// component type across renders — otherwise inputs lose focus on every keystroke.
+function Shell({ t, children }: { t: Texts; children: React.ReactNode }) {
+  return (
+    <section className="bg-gradient-to-br from-gray-50 to-white min-h-[70vh] py-16 md:py-24">
+      <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="text-3xl md:text-4xl font-bold text-dark">{t.title}</h1>
+        <div className="mt-8">{children}</div>
+        <footer className="mt-12 pt-6 border-t border-gray-200 text-sm text-gray-500">
+          <div className="flex flex-wrap gap-x-6 gap-y-2">
+            <a href={t.termsHref} target="_blank" rel="noopener noreferrer" className="hover:text-primary">
+              {t.footerTerms}
+            </a>
+            <a href={t.privacyHref} target="_blank" rel="noopener noreferrer" className="hover:text-primary">
+              {t.footerPrivacy}
+            </a>
+            <a href={t.otherLangHref} className="hover:text-primary ml-auto">
+              {t.otherLangLabel}
+            </a>
+          </div>
+        </footer>
+      </div>
+    </section>
+  );
+}
 
 export default function AccountDeletion({ lang }: { lang: Lang }) {
   const t = TEXTS[lang];
@@ -266,31 +296,6 @@ export default function AccountDeletion({ lang }: { lang: Lang }) {
   }
 
   /* ---------------------------------------------------------------- */
-  /*  Shared shell                                                    */
-  /* ---------------------------------------------------------------- */
-  const Shell = ({ children }: { children: React.ReactNode }) => (
-    <section className="bg-gradient-to-br from-gray-50 to-white min-h-[70vh] py-16 md:py-24">
-      <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl md:text-4xl font-bold text-dark">{t.title}</h1>
-        <div className="mt-8">{children}</div>
-        <footer className="mt-12 pt-6 border-t border-gray-200 text-sm text-gray-500">
-          <div className="flex flex-wrap gap-x-6 gap-y-2">
-            <a href={t.termsHref as string} target="_blank" rel="noopener noreferrer" className="hover:text-primary">
-              {t.footerTerms as string}
-            </a>
-            <a href={t.privacyHref as string} target="_blank" rel="noopener noreferrer" className="hover:text-primary">
-              {t.footerPrivacy as string}
-            </a>
-            <a href={t.otherLangHref as string} className="hover:text-primary ml-auto">
-              {t.otherLangLabel as string}
-            </a>
-          </div>
-        </footer>
-      </div>
-    </section>
-  );
-
-  /* ---------------------------------------------------------------- */
   /*  Confirmation screen (token flow)                                */
   /* ---------------------------------------------------------------- */
   if (phase === "confirm") {
@@ -305,7 +310,7 @@ export default function AccountDeletion({ lang }: { lang: Lang }) {
     const s = map[confirmState];
     const showBack = confirmState !== "loading" && confirmState !== "deleted";
     return (
-      <Shell>
+      <Shell t={t}>
         <div
           className={`rounded-xl border p-6 ${
             s.tone === "ok"
@@ -336,7 +341,7 @@ export default function AccountDeletion({ lang }: { lang: Lang }) {
   // Neutral success replaces the form entirely (anti-enumeration).
   if (result?.kind === "success") {
     return (
-      <Shell>
+      <Shell t={t}>
         <div className="rounded-xl border border-primary/30 bg-primary/5 p-6">
           <h2 className="text-lg font-semibold text-dark mb-1">
             {t.neutralSuccessTitle as string}
@@ -356,7 +361,7 @@ export default function AccountDeletion({ lang }: { lang: Lang }) {
     null;
 
   return (
-    <Shell>
+    <Shell t={t}>
       <p className="text-gray-600 leading-relaxed mb-8">{t.intro as string}</p>
 
       <form onSubmit={onSubmit} noValidate className="space-y-5">

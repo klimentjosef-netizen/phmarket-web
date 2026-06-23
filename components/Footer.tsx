@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getLocale } from "next-intl/server";
 
 const SOCIAL_LINKS = [
   {
@@ -43,6 +43,10 @@ const SOCIAL_LINKS = [
 export default async function Footer() {
   const t = await getTranslations("footer");
   const tn = await getTranslations("nav");
+  const locale = await getLocale();
+  // The account-deletion page exists only in CZ (/smazat-ucet) and EN
+  // (/delete-account); link English visitors to the EN page, everyone else to CZ.
+  const deleteAccountHref = locale === "en" ? "/delete-account" : "/smazat-ucet";
 
   return (
     <footer className="bg-gray-900 text-gray-300">
@@ -107,6 +111,11 @@ export default async function Footer() {
                 <Link href="/privacy-policy" className="hover:text-primary transition-colors">
                   {t("privacy")}
                 </Link>
+              </li>
+              <li>
+                <a href={deleteAccountHref} className="hover:text-primary transition-colors">
+                  {t("deleteAccount")}
+                </a>
               </li>
             </ul>
           </div>
