@@ -29,12 +29,12 @@ type FormResult =
   | null;
 
 type ConfirmState =
-  | "loading"
+  | "idle"
+  | "working"
   | "deleted"
-  | "tokenExpired"
-  | "tokenUsed"
-  | "invalidToken"
-  | "error";
+  | "expired"
+  | "failed"
+  | "connError";
 
 // Defined at module level (NOT inside AccountDeletion) so it is a stable
 // component type across renders — otherwise inputs lose focus on every keystroke.
@@ -63,9 +63,10 @@ export default function AccountDeletion({ lang }: { lang: Lang }) {
   const t = TEXTS[lang];
 
   // Default to the form (so it is present in the SSR HTML); switch to the
-  // confirm flow only if the URL carries a ?token= (email-link case).
+  // confirm screen only if the URL carries a ?token= (email-link case).
   const [phase, setPhase] = useState<"form" | "confirm">("form");
-  const [confirmState, setConfirmState] = useState<ConfirmState>("loading");
+  const [token, setToken] = useState<string | null>(null);
+  const [confirmState, setConfirmState] = useState<ConfirmState>("idle");
 
   // Form fields
   const [email, setEmail] = useState("");
@@ -79,43 +80,53 @@ export default function AccountDeletion({ lang }: { lang: Lang }) {
   const [clientError, setClientError] = useState<string | null>(null);
   const [passwordRequired, setPasswordRequired] = useState(false);
 
-  // On mount: if there's a token in the URL, run the confirm flow and strip it.
+  // RULE 1: On mount we ONLY read the token from the URL and switch to the
+  // confirm screen. We do NOT call the server here — email clients (Gmail, ...)
+  // prefetch links, which would otherwise trigger deletion without a click and
+  // burn the one-time token. The actual deletion runs only from onConfirm().
   useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const token = params.get("token");
-    if (!token) return;
-    // Remove the token from the URL (history + Referer hygiene)
-    window.history.replaceState({}, "", window.location.pathname);
-    setPhase("confirm");
-
-    (async () => {
-      try {
-        const res = await fetch(DELETE_FN, {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${ANON_KEY}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ deletion_token: token }),
-        });
-        let data: { ok?: boolean; error?: string } = {};
-        try {
-          data = await res.json();
-        } catch {
-          /* non-JSON response */
-        }
-        if (data.ok) setConfirmState("deleted");
-        else if (data.error === "TOKEN_EXPIRED") setConfirmState("tokenExpired");
-        else if (data.error === "TOKEN_ALREADY_USED")
-          setConfirmState("tokenUsed");
-        else if (data.error === "INVALID_TOKEN")
-          setConfirmState("invalidToken");
-        else setConfirmState("error");
-      } catch {
-        setConfirmState("error");
-      }
-    })();
+    const tk = new URLSearchParams(window.location.search).get("token");
+    if (tk) {
+      setToken(tk);
+      setPhase("confirm");
+    }
   }, []);
+
+  async function onConfirmDelete() {
+    if (confirmState === "working") return; // guard against double submit
+    if (!token) {
+      setConfirmState("failed");
+      return;
+    }
+    setConfirmState("working");
+    try {
+      const res = await fetch(DELETE_FN, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${ANON_KEY}`,
+          "Content-Type": "application/json",
+        },
+        // RULE 2: the body key MUST be exactly "deletion_token".
+        body: JSON.stringify({ deletion_token: token }),
+      });
+      let data: { ok?: boolean; status?: string } = {};
+      try {
+        data = await res.json();
+      } catch {
+        /* non-JSON response */
+      }
+
+      if (res.ok && data.ok) {
+        setConfirmState("deleted");
+      } else if (res.status === 410 || data.status === "expired") {
+        setConfirmState("expired");
+      } else {
+        setConfirmState("failed"); // re-enables the button
+      }
+    } catch {
+      setConfirmState("connError"); // re-enables the button
+    }
+  }
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -173,41 +184,55 @@ export default function AccountDeletion({ lang }: { lang: Lang }) {
   }
 
   /* ---------------------------------------------------------------- */
-  /*  Confirmation screen (token flow)                                */
+  /*  Confirmation screen (token flow) — click-driven, no auto-call    */
   /* ---------------------------------------------------------------- */
   if (phase === "confirm") {
-    const map: Record<ConfirmState, { title?: string; body: string; tone: "info" | "ok" | "warn" }> = {
-      loading: { body: t.confirming, tone: "info" },
-      deleted: { title: t.deletedTitle, body: t.deleted, tone: "ok" },
-      tokenExpired: { title: t.tokenExpiredTitle, body: t.tokenExpired, tone: "warn" },
-      tokenUsed: { title: t.tokenUsedTitle, body: t.tokenUsed, tone: "warn" },
-      invalidToken: { title: t.invalidTokenTitle, body: t.invalidToken, tone: "warn" },
-      error: { body: t.genericError, tone: "warn" },
-    };
-    const s = map[confirmState];
-    const showBack = confirmState !== "loading" && confirmState !== "deleted";
+    const buttonDisabled =
+      confirmState === "working" ||
+      confirmState === "deleted" ||
+      confirmState === "expired";
+
+    const statusText =
+      confirmState === "working"
+        ? t.deleting
+        : confirmState === "deleted"
+        ? t.deletedMsg
+        : confirmState === "expired"
+        ? t.expiredMsg
+        : confirmState === "failed"
+        ? t.failedMsg
+        : confirmState === "connError"
+        ? t.connErrorMsg
+        : null;
+
+    const statusTone =
+      confirmState === "deleted"
+        ? "bg-primary/5 border-primary/30 text-dark"
+        : confirmState === "expired"
+        ? "bg-amber-50 border-amber-200 text-amber-800"
+        : confirmState === "failed" || confirmState === "connError"
+        ? "bg-red-50 border-red-200 text-red-700"
+        : "bg-gray-50 border-gray-200 text-gray-700";
+
     return (
       <Shell t={t}>
-        <div
-          className={`rounded-xl border p-6 ${
-            s.tone === "ok"
-              ? "border-primary/30 bg-primary/5"
-              : s.tone === "warn"
-              ? "border-amber-300 bg-amber-50"
-              : "border-gray-200 bg-white"
-          }`}
-        >
-          {s.title && <h2 className="text-lg font-semibold text-dark mb-1">{s.title}</h2>}
-          <p className="text-gray-700 leading-relaxed">{s.body}</p>
+        <div className="rounded-xl border border-amber-300 bg-amber-50 p-6">
+          <p className="text-gray-800 leading-relaxed">{t.confirmIntro}</p>
         </div>
-        {showBack && (
-          <button
-            type="button"
-            onClick={() => setPhase("form")}
-            className="inline-block mt-6 text-primary font-medium hover:underline"
-          >
-            {t.backToForm}
-          </button>
+
+        <button
+          type="button"
+          onClick={onConfirmDelete}
+          disabled={buttonDisabled}
+          className="mt-6 w-full sm:w-auto inline-flex items-center justify-center bg-red-600 hover:bg-red-700 disabled:opacity-60 disabled:cursor-not-allowed text-white font-semibold px-6 py-3 rounded-lg transition-colors"
+        >
+          {t.confirmButton}
+        </button>
+
+        {statusText && (
+          <p className={`mt-5 text-sm rounded-lg border px-4 py-3 ${statusTone}`} role="status">
+            {statusText}
+          </p>
         )}
       </Shell>
     );

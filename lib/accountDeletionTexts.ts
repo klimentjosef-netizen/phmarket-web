@@ -43,19 +43,15 @@ export const TEXTS = {
     invalidEmail: "Zkontrolujte prosím formát e-mailu.",
     genericError:
       "Něco se nepovedlo. Zkuste to prosím za chvíli znovu, nebo nás kontaktujte.",
-    confirming: "Mažeme váš účet…",
-    deletedTitle: "Účet byl smazán",
-    deleted: "Váš účet PHMarket byl trvale smazán. Děkujeme, že jste byli s námi.",
-    tokenExpiredTitle: "Odkaz vypršel",
-    tokenExpired:
-      "Tento odkaz už neplatí (platnost je 24 hodin). Zažádejte prosím o smazání znovu.",
-    tokenUsedTitle: "Odkaz už byl použit",
-    tokenUsed:
-      "Tento odkaz pro smazání už byl jednou použit. Pokud váš účet stále existuje, zažádejte o smazání znovu.",
-    invalidTokenTitle: "Neplatný odkaz",
-    invalidToken:
-      "Tento odkaz není platný. Zažádejte prosím o smazání znovu z formuláře.",
-    backToForm: "Zpět na formulář",
+    confirmIntro:
+      "Kliknutím níže trvale smažete svůj účet PHMarket a všechna data. Tuto akci nelze vrátit.",
+    confirmButton: "Potvrdit trvalé smazání účtu",
+    deleting: "Mažu účet…",
+    deletedMsg: "Účet byl smazán.",
+    expiredMsg: "Odkaz vypršel. Požádejte o smazání účtu znovu z aplikace.",
+    failedMsg: "Smazání se nezdařilo. Zkuste to prosím znovu.",
+    connErrorMsg: "Chyba spojení. Zkuste to prosím znovu.",
+    invalidLink: "Neplatný odkaz.",
     footerTerms: "Obchodní podmínky",
     footerPrivacy: "Ochrana osobních údajů",
     termsHref: `${DOCS}/phmarket-obchodni-podminky-cz.pdf`,
@@ -97,19 +93,15 @@ export const TEXTS = {
     invalidEmail: "Skontrolujte prosím formát e-mailu.",
     genericError:
       "Niečo sa nepodarilo. Skúste to prosím o chvíľu znova, alebo nás kontaktujte.",
-    confirming: "Mažeme váš účet…",
-    deletedTitle: "Účet bol zmazaný",
-    deleted: "Váš účet PHMarket bol natrvalo zmazaný. Ďakujeme, že ste boli s nami.",
-    tokenExpiredTitle: "Odkaz vypršal",
-    tokenExpired:
-      "Tento odkaz už neplatí (platnosť je 24 hodín). Zažiadajte prosím o zmazanie znova.",
-    tokenUsedTitle: "Odkaz už bol použitý",
-    tokenUsed:
-      "Tento odkaz na zmazanie už bol raz použitý. Ak váš účet stále existuje, zažiadajte o zmazanie znova.",
-    invalidTokenTitle: "Neplatný odkaz",
-    invalidToken:
-      "Tento odkaz nie je platný. Zažiadajte prosím o zmazanie znova z formulára.",
-    backToForm: "Späť na formulár",
+    confirmIntro:
+      "Kliknutím nižšie natrvalo zmažete svoj účet PHMarket a všetky dáta. Túto akciu nie je možné vrátiť.",
+    confirmButton: "Potvrdiť trvalé zmazanie účtu",
+    deleting: "Mažem účet…",
+    deletedMsg: "Účet bol zmazaný.",
+    expiredMsg: "Odkaz vypršal. Požiadajte o zmazanie účtu znova z aplikácie.",
+    failedMsg: "Zmazanie sa nepodarilo. Skúste to prosím znova.",
+    connErrorMsg: "Chyba spojenia. Skúste to prosím znova.",
+    invalidLink: "Neplatný odkaz.",
     footerTerms: "Obchodné podmienky",
     footerPrivacy: "Ochrana osobných údajov",
     termsHref: `${DOCS}/phmarket-obchodne-podmienky-sk.pdf`,
@@ -151,19 +143,15 @@ export const TEXTS = {
     invalidEmail: "Sprawdź format adresu e-mail.",
     genericError:
       "Coś poszło nie tak. Spróbuj ponownie za chwilę lub skontaktuj się z nami.",
-    confirming: "Usuwamy Twoje konto…",
-    deletedTitle: "Konto usunięte",
-    deleted: "Twoje konto PHMarket zostało trwale usunięte. Dziękujemy, że byłeś z nami.",
-    tokenExpiredTitle: "Link wygasł",
-    tokenExpired:
-      "Ten link już nie działa (ważność 24 godziny). Poproś o usunięcie ponownie.",
-    tokenUsedTitle: "Link już użyty",
-    tokenUsed:
-      "Ten link do usunięcia został już raz użyty. Jeśli Twoje konto nadal istnieje, poproś o usunięcie ponownie.",
-    invalidTokenTitle: "Nieprawidłowy link",
-    invalidToken:
-      "Ten link jest nieprawidłowy. Poproś o usunięcie ponownie z formularza.",
-    backToForm: "Powrót do formularza",
+    confirmIntro:
+      "Kliknięcie poniżej trwale usunie Twoje konto PHMarket i wszystkie dane. Tej operacji nie można cofnąć.",
+    confirmButton: "Potwierdź trwałe usunięcie konta",
+    deleting: "Usuwam konto…",
+    deletedMsg: "Konto zostało usunięte.",
+    expiredMsg: "Link wygasł. Poproś o usunięcie konta ponownie z aplikacji.",
+    failedMsg: "Usunięcie nie powiodło się. Spróbuj ponownie.",
+    connErrorMsg: "Błąd połączenia. Spróbuj ponownie.",
+    invalidLink: "Nieprawidłowy link.",
     footerTerms: "Regulamin",
     footerPrivacy: "Polityka prywatności",
     termsHref: `${DOCS}/phmarket-regulamin-pl.pdf`,
@@ -204,20 +192,15 @@ export const TEXTS = {
     invalidCredentials: "The password is incorrect. Please check it.",
     invalidEmail: "Please check the e-mail format.",
     genericError: "Something went wrong. Please try again shortly, or contact us.",
-    confirming: "Deleting your account…",
-    deletedTitle: "Account deleted",
-    deleted:
-      "Your PHMarket account has been permanently deleted. Thank you for having been with us.",
-    tokenExpiredTitle: "Link expired",
-    tokenExpired:
-      "This link is no longer valid (it expires after 24 hours). Please request deletion again.",
-    tokenUsedTitle: "Link already used",
-    tokenUsed:
-      "This deletion link has already been used. If your account still exists, request deletion again.",
-    invalidTokenTitle: "Invalid link",
-    invalidToken:
-      "This link is not valid. Please request deletion again from the form.",
-    backToForm: "Back to the form",
+    confirmIntro:
+      "Clicking below will permanently delete your PHMarket account and all data. This action cannot be undone.",
+    confirmButton: "Confirm permanent account deletion",
+    deleting: "Deleting account…",
+    deletedMsg: "Your account has been deleted.",
+    expiredMsg: "The link has expired. Please request account deletion again from the app.",
+    failedMsg: "Deletion failed. Please try again.",
+    connErrorMsg: "Connection error. Please try again.",
+    invalidLink: "Invalid link.",
     footerTerms: "Terms and Conditions",
     footerPrivacy: "Privacy Policy",
     termsHref: `${DOCS}/phmarket-terms-of-service-en.pdf`,
@@ -259,19 +242,15 @@ export const TEXTS = {
     invalidEmail: "Bitte überprüfe das E-Mail-Format.",
     genericError:
       "Etwas ist schiefgelaufen. Bitte versuche es gleich erneut oder kontaktiere uns.",
-    confirming: "Wir löschen dein Konto…",
-    deletedTitle: "Konto gelöscht",
-    deleted: "Dein PHMarket-Konto wurde dauerhaft gelöscht. Danke, dass du bei uns warst.",
-    tokenExpiredTitle: "Link abgelaufen",
-    tokenExpired:
-      "Dieser Link ist nicht mehr gültig (24 Stunden Gültigkeit). Bitte fordere die Löschung erneut an.",
-    tokenUsedTitle: "Link bereits verwendet",
-    tokenUsed:
-      "Dieser Löschlink wurde bereits einmal verwendet. Falls dein Konto noch existiert, fordere die Löschung erneut an.",
-    invalidTokenTitle: "Ungültiger Link",
-    invalidToken:
-      "Dieser Link ist ungültig. Bitte fordere die Löschung erneut über das Formular an.",
-    backToForm: "Zurück zum Formular",
+    confirmIntro:
+      "Mit einem Klick unten löschst du dein PHMarket-Konto und alle Daten dauerhaft. Diese Aktion kann nicht rückgängig gemacht werden.",
+    confirmButton: "Endgültige Kontolöschung bestätigen",
+    deleting: "Konto wird gelöscht…",
+    deletedMsg: "Dein Konto wurde gelöscht.",
+    expiredMsg: "Der Link ist abgelaufen. Bitte fordere die Kontolöschung erneut in der App an.",
+    failedMsg: "Löschung fehlgeschlagen. Bitte versuche es erneut.",
+    connErrorMsg: "Verbindungsfehler. Bitte versuche es erneut.",
+    invalidLink: "Ungültiger Link.",
     footerTerms: "Allgemeine Geschäftsbedingungen",
     footerPrivacy: "Datenschutz",
     termsHref: `${DOCS}/phmarket-agb-de.pdf`,
