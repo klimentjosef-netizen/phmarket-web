@@ -15,6 +15,7 @@ const DATE_LOCALE: Record<Locale, string> = {
   pl: "pl-PL",
   en: "en-GB",
   de: "de-DE",
+  hu: "hu-HU",
 };
 
 export async function generateMetadata({

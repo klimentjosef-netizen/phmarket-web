@@ -7,6 +7,7 @@ export const HREFLANG: Record<Locale, string> = {
   pl: "pl-PL",
   en: "en",
   de: "de-DE",
+  hu: "hu-HU",
 };
 
 // Czech stays at the root ("/"), other locales get a prefix ("/en/phmap").

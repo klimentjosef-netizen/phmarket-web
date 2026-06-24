@@ -191,6 +191,7 @@ import sk from "./locale/sk.json";
 import pl from "./locale/pl.json";
 import en from "./locale/en.json";
 import de from "./locale/de.json";
+import hu from "./locale/hu.json";
 
 export const CONTENT: Record<Locale, ServiceLocaleData> = {
   cs,
@@ -198,4 +199,5 @@ export const CONTENT: Record<Locale, ServiceLocaleData> = {
   pl: pl as ServiceLocaleData,
   en: en as ServiceLocaleData,
   de: de as ServiceLocaleData,
+  hu: hu as ServiceLocaleData,
 };

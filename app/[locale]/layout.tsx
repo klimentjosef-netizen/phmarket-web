@@ -22,6 +22,7 @@ const OG_LOCALE: Record<Locale, string> = {
   pl: "pl_PL",
   en: "en_US",
   de: "de_DE",
+  hu: "hu_HU",
 };
 
 export function generateStaticParams() {

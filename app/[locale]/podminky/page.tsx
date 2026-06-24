@@ -15,6 +15,8 @@ const PDF: Record<Locale, { href: string; download: string }> = {
   en: { href: "/dokumenty/phmarket-terms-of-service-en.pdf", download: "PHMarket-terms-of-service.pdf" },
   de: { href: "/dokumenty/phmarket-agb-de.pdf", download: "PHMarket-agb.pdf" },
   pl: { href: "/dokumenty/phmarket-regulamin-pl.pdf", download: "PHMarket-regulamin.pdf" },
+  // Hungarian PDF not available yet — falls back to the English document.
+  hu: { href: "/dokumenty/phmarket-terms-of-service-en.pdf", download: "PHMarket-terms-of-service.pdf" },
 };
 
 // Language switcher entries (label is always shown in the target language)
@@ -24,6 +26,7 @@ const LANG_LABEL: Record<Locale, string> = {
   en: "🇬🇧 English",
   de: "🇩🇪 Deutsch",
   pl: "🇵🇱 Polski",
+  hu: "🇭🇺 Magyar",
 };
 
 type Content = {
@@ -36,7 +39,7 @@ type Content = {
   toc: string[];
 };
 
-const CONTENT: Record<Locale, Content> = {
+const CONTENT_BASE = {
   cs: {
     metaTitle: "Všeobecné obchodní podmínky",
     metaDescription:
@@ -257,7 +260,11 @@ const CONTENT: Record<Locale, Content> = {
       "ZAŁĄCZNIK 1: Limity operacyjne (Rate Limits i kwoty)",
     ],
   },
-};
+} satisfies Record<"cs" | "sk" | "pl" | "en" | "de", Content>;
+
+// Hungarian chrome not translated yet (waiting for hu legal PDFs); fall back
+// to the English content so /hu/podminky renders. TODO: translate + hu PDF.
+const CONTENT: Record<Locale, Content> = { ...CONTENT_BASE, hu: CONTENT_BASE.en };
 
 export async function generateMetadata({
   params,

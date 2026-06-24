@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "homeTitle": "PHMarket: Spórolj minden tankoláson",
+    "homeDescription": "A PHMarket elvezet azokhoz a minőségi üzemanyagot kínáló töltőállomásokhoz, ahol beválthatod a kedvezménykódokat. Regisztráció, díjak és plasztikkártyák nélkül.",
+    "ogDescription": "Üzemanyag-kedvezménykódok a partnertöltőállomásokon. Regisztráció és plasztikkártyák nélkül."
+  },
+  "nav": {
+    "home": "Kezdőlap",
+    "phmap": "PHMap",
+    "articles": "Cikkek",
+    "tankujte": "Tankolj olcsóbban",
+    "cisteni": "Tartálytisztítás",
+    "mikrozavozy": "Gázolaj mikroszállítás",
+    "downloadApp": "Alkalmazás letöltése"
+  },
+  "switcher": {
+    "label": "Nyelv",
+    "cs": "Čeština",
+    "sk": "Slovenčina",
+    "pl": "Polski",
+    "en": "English",
+    "de": "Deutsch",
+    "hu": "Magyar"
+  },
+  "appButtons": {
+    "downloadOn": "Letöltés innen:"
+  },
+  "footer": {
+    "tagline": "Okos alkalmazás a tankolási megtakarításokhoz. Regisztráció, díjak és plasztikkártyák nélkül.",
+    "navHeading": "Navigáció",
+    "legalHeading": "Jogi információk",
+    "contactHeading": "Kapcsolat",
+    "terms": "Általános szerződési feltételek",
+    "privacy": "Adatvédelem",
+    "deleteAccount": "Fiók törlése",
+    "rights": "Minden jog fenntartva."
+  },
+  "hero": {
+    "badge": "Regisztráció és plasztikkártyák nélkül",
+    "titleLine1": "Tankolj okosan.",
+    "titleHighlight": "Megspórolva.",
+    "subtitle": "A PHMarket elvezet azokhoz a minőségi üzemanyagot kínáló töltőállomásokhoz, ahol beválthatod a kedvezménykódokat. Regisztráció, díjak és plasztikkártyák nélkül. Minden a mobilodban.",
+    "sceneAria": "Megtakarítás bemutatása a PHMarkettel",
+    "competitor": "Konkurencia",
+    "phmarketDiscount": "PHMarket kedvezmény",
+    "saved": "Megspórolva: 175 Kč egy tankolásnál"
+  },
+  "stats": {
+    "stationsValue": "100+",
+    "stationsLabel": "partnertöltőállomás",
+    "savingValue": "akár 3 Kč",
+    "savingLabel": "megtakarítás literenként",
+    "feeValue": "0 Kč",
+    "feeLabel": "díj az alkalmazásért",
+    "mapValue": "PHMap",
+    "mapLabel": "töltőállomások térképe"
+  },
+  "savings": {
+    "title": "Mennyit spóroltunk már együtt",
+    "subtitle": "A szám valós időben nő, minden másodpercben tovább spórolunk",
+    "totalSaved": "Felhasználók teljes megtakarítása",
+    "codesUsed": "Felhasznált kedvezménykódok",
+    "activeUsers": "Aktív felhasználók"
+  },
+  "howItWorks": {
+    "title": "Hogyan működik",
+    "subtitle": "Négy egyszerű lépés az olcsóbb tankoláshoz",
+    "stepLabel": "lépés",
+    "steps": [
+      { "title": "Töltsd le az alkalmazást", "description": "iOS és Android ingyen" },
+      { "title": "Találd meg a töltőállomást", "description": "A PHMap térkép megmutatja a legközelebbi partnereket" },
+      { "title": "Váltsd be a kódot", "description": "Mutasd a kódot közvetlenül a pénztárnál" },
+      { "title": "Spórolj", "description": "A kedvezmény azonnal levonásra kerül" }
+    ]
+  },
+  "services": {
+    "title": "További szolgáltatások",
+    "learnMore": "Tudj meg többet",
+    "cisteni": {
+      "title": "Tartálytisztítás",
+      "description": "Üzemanyagtartályok professzionális tisztítása töltőállomások és vállalati ügyfelek számára."
+    },
+    "mikrozavozy": {
+      "title": "Gázolaj mikroszállítás",
+      "description": "Gázolaj kiszállítása közvetlenül az ügyfélhez, gyorsan, kényelmesen és kedvező áron."
+    }
+  },
+  "partners": {
+    "title": "Partnertöltőállomásaink",
+    "subtitle": "Vásárlóink"
+  },
+  "homeCta": {
+    "title": "Kezdj el spórolni még ma.",
+    "subtitle": "Töltsd le a PHMarket alkalmazást, és kezdd el használni a kedvezménykódokat a partnertöltőállomásokon Csehország egész területén."
+  },
+  "legal": {
+    "breadcrumbHome": "Kezdőlap",
+    "effectiveFrom": "Hatályos {date} óta",
+    "openPdf": "Dokumentum megnyitása (PDF)",
+    "downloadPdf": "PDF letöltése",
+    "languageVersions": "Nyelvi változatok",
+    "tableOfContents": "Dokumentum tartalma",
+    "viewerFallbackBefore": "A böngésződ nem tudja megjeleníteni a PDF-et közvetlenül az oldalon. ",
+    "viewerFallbackLink": "Nyisd meg a dokumentumot új ablakban",
+    "mobilePromptTitle": "A dokumentum teljes szövegét PDF-ben nyithatod meg.",
+    "mobilePromptSubtitle": "A mobilon való kényelmes olvasáshoz javasoljuk, hogy a dokumentumot teljes képernyőn nyisd meg.",
+    "operator": "Üzemeltető",
+    "emailLabel": "E-mail"
+  },
+  "tankujtePage": {
+    "metaTitle": "Tankolj olcsóbban a PHMarkettel",
+    "metaDescription": "Tankolj olcsóbban a PHMarket alkalmazás kedvezménykódjainak köszönhetően. Regisztráció, díjak és plasztikkártyák nélkül. Minden a mobilodban.",
+    "title": "Tankolj <hl>olcsóbban</hl>",
+    "subtitle": "A PHMarket alkalmazással minden tankoláson spórolsz. Elég megmutatni a kedvezménykódot közvetlenül a töltőállomás pénztáránál, és a kedvezmény azonnal levonásra kerül az üzemanyag árából.",
+    "benefitsHeading": "Miért tankolj a PHMarkettel?",
+    "benefits": [
+      { "title": "Megtakarítás akár 3 Kč literenként", "desc": "Az exkluzív kedvezménykódoknak köszönhetően minden tankoláson spórolsz." },
+      { "title": "Regisztráció nélkül", "desc": "Semmilyen bonyolult regisztráció vagy űrlapkitöltés. Töltsd le és tankolj." },
+      { "title": "Semmilyen díj", "desc": "Az alkalmazás teljesen ingyenes. Nincsenek rejtett díjak vagy előfizetés." },
+      { "title": "Plasztikkártyák nélkül", "desc": "Vége a hűségkártyáknak. Minden kényelmesen a mobilodban van." },
+      { "title": "100+ töltőállomás", "desc": "Partnertöltőállomások hálózata Csehország egész területén." },
+      { "title": "Minőségi üzemanyag", "desc": "Csak ellenőrzött, minőségi üzemanyagot kínáló töltőállomásokkal működünk együtt." }
+    ],
+    "ctaTitle": "Kezdj el spórolni még ma",
+    "ctaSubtitle": "Töltsd le a PHMarket alkalmazást, és váltsd be az első kedvezménykódodat."
+  },
+  "phmapPage": {
+    "metaTitle": "PHMap: Töltőállomások térképe",
+    "metaDescription": "A PHMap megmutatja a legközelebbi partnertöltőállomásokat üzemanyag-kedvezménykódokkal. Találd meg a töltőállomást és spórolj.",
+    "subtitle": "Partnertöltőállomások interaktív térképe. Találd meg a legközelebbi töltőállomást az aktuális kedvezménykódokkal.",
+    "featuresHeading": "Mit tud a PHMap",
+    "features": [
+      { "title": "Legközelebbi töltőállomások", "desc": "Megjeleníti a környékeden lévő partnertöltőállomásokat távolság szerint rendezve." },
+      { "title": "Aktuális kedvezmények", "desc": "Minden töltőállomásnál látod az aktuális kedvezménykódokat és a literenkénti megtakarítás mértékét." },
+      { "title": "Navigáció", "desc": "Egyetlen kattintással elindítod a navigációt közvetlenül a kiválasztott töltőállomáshoz." }
+    ]
+  },
+  "articlesPage": {
+    "metaTitle": "Cikkek",
+    "metaDescription": "Cikkek és hírek az üzemanyagok, töltőállomások és tankolási megtakarítások világából.",
+    "title": "Cikkek",
+    "heroSubtitle": "Hírek és tippek az üzemanyagok és az okos tankolás világából.",
+    "readMore": "Tovább",
+    "minRead": "perc olvasás",
+    "breadcrumb": "Cikkek"
+  }
+}

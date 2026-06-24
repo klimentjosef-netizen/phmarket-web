@@ -15,6 +15,8 @@ const PDF: Record<Locale, { href: string; download: string }> = {
   en: { href: "/dokumenty/phmarket-privacy-policy-en.pdf", download: "PHMarket-privacy-policy.pdf" },
   de: { href: "/dokumenty/phmarket-datenschutz-de.pdf", download: "PHMarket-datenschutz.pdf" },
   pl: { href: "/dokumenty/phmarket-prywatnosc-pl.pdf", download: "PHMarket-prywatnosc.pdf" },
+  // Hungarian PDF not available yet — falls back to the English document.
+  hu: { href: "/dokumenty/phmarket-privacy-policy-en.pdf", download: "PHMarket-privacy-policy.pdf" },
 };
 
 // Language switcher entries (label is always shown in the target language)
@@ -24,6 +26,7 @@ const LANG_LABEL: Record<Locale, string> = {
   en: "🇬🇧 English",
   de: "🇩🇪 Deutsch",
   pl: "🇵🇱 Polski",
+  hu: "🇭🇺 Magyar",
 };
 
 type Content = {
@@ -36,7 +39,7 @@ type Content = {
   toc: string[];
 };
 
-const CONTENT: Record<Locale, Content> = {
+const CONTENT_BASE = {
   cs: {
     metaTitle: "Zásady ochrany osobních údajů",
     metaDescription:
@@ -177,7 +180,11 @@ const CONTENT: Record<Locale, Content> = {
       "16. Jak się z nami skontaktować",
     ],
   },
-};
+} satisfies Record<"cs" | "sk" | "pl" | "en" | "de", Content>;
+
+// Hungarian chrome not translated yet (waiting for hu legal PDFs); fall back
+// to the English content so /hu/privacy-policy renders. TODO: translate + hu PDF.
+const CONTENT: Record<Locale, Content> = { ...CONTENT_BASE, hu: CONTENT_BASE.en };
 
 export async function generateMetadata({
   params,

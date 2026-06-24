@@ -11,6 +11,7 @@ const HREFLANG: Record<string, string> = {
   pl: "pl-PL",
   en: "en",
   de: "de-DE",
+  hu: "hu-HU",
 };
 
 // Czech stays at root, other languages get a prefix (localePrefix: "as-needed")

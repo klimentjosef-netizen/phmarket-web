@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Gázolaj mikroszállítás Csehországban",
+    "description": "Gázolaj mikroszállítás (200-3000 l) közvetlenül az ügyfélhez Csehország területén. Építkezések, mezőgazdaság, járműparkok, generátorok. Ár az aktuális nagykereskedelmi árlista szerint, szállítás jellemzően 72 órán belül."
+  },
+  "breadcrumbName": "Gázolaj mikroszállítás",
+  "schema": {
+    "id": "/mikrozavozy-motorove-nafty#service",
+    "serviceType": "Gázolaj mikroszállítás",
+    "name": "Gázolaj mikroszállítás",
+    "description": "Gázolaj kiszállítása (jellemzően 200-3000 liter) közvetlenül az ügyfél címére Csehország egész területén. Építkezések, mezőgazdasági üzemek, fuvarozó cégek, tartalék generátorok és föld feletti üzemi tartályok tulajdonosai számára.",
+    "audience": "Építőipari cégek, mezőgazdasági termelők, fuvarozó cégek, járműparkok, tartalék generátorok üzemeltetői",
+    "priceDescription": "Ár az üzemanyag aktuális nagykereskedelmi árlistája szerint + szállítás a távolság és a mennyiség függvényében."
+  },
+  "faqItems": [
+    {
+      "question": "Mekkora a szállítás minimális és maximális mennyisége?",
+      "answer": "A mikroszállítás jellemző tartománya 200-3000 liter szállításonként. A kisebb mennyiségeket (200 l-től) szállítható IBC tartállyal vagy kisebb kiadagolású tartálykocsival oldjuk meg; a nagyobb mennyiségeket (3000+ l) partner tartálykocsinak adjuk át. Rendszeres vételezés esetén (pl. mezőgazdasági termelők a szezonban) havi vagy heti rendszerességű ciklikus szállítást egyeztetünk."
+    },
+    {
+      "question": "Hogyan kerül meghatározásra a gázolaj ára?",
+      "answer": "Az ár a gázolaj aktuális nagykereskedelmi árából (referenciaként Čepro vagy Unipetrol) indul ki a szállítás napján. Ehhez hozzáadódik a szállítás (a raktártól mért távolság és a mennyiség alapján kalkulálva) és az árrés. Szállítás előtt mindig megerősítjük a végleges árat. Rendszeres vásárlóknak Brent vagy ČEPRO árlistához kötött árindexálást kínálunk."
+    },
+    {
+      "question": "Közvetlenül a tartályomba töltik, vagy a gázolajat csak kannában adják át?",
+      "answer": "A tartálykocsi a gázolajat közvetlenül a föld feletti vagy föld alatti tartályába tölti egy számlálóval ellátott kiadagoló tömlőn keresztül (a 505/1990 Sb. metrológiai törvény szerint hitelesítve). Szállítólevelet állítunk ki a 15 °C-on mért liter mennyiséggel, a dátummal és a sofőr aláírásával. Ez nem „gázolaj kannában”. Ez szabványos nagykereskedelmi szállítás."
+    },
+    {
+      "question": "Milyen üzemanyagot szállítanak? Megfelel a ČSN EN 590 szabványnak?",
+      "answer": "B7 osztályú gázolajat szállítunk (kötelező, legfeljebb 7 % MEŘO biokomponenssel) a ČSN EN 590 szabvány szerint. Kérésre biokomponens nélküli gázolajat (B0) is biztosítunk, amely hosszú állásidejű gépekhez (mezőgazdaság, generátorok, szezonális technika) alkalmas, mivel nem képződik benne bioiszap. A téli időszakban D téli osztályú (CFPP -20 °C-ig) vagy sarkvidéki (CFPP -32 °C) gázolajat szállítunk az aktuális időszaknak megfelelően."
+    },
+    {
+      "question": "Milyen gyorsan érkezik a szállítás?",
+      "answer": "Standard szállítás reggel 10:00-ig történő megerősítés esetén: jellemzően a következő munkanapon, egyébként 72 órán belül. A generátorokhoz és fuvarozáshoz szükséges sürgősségi kiszállítást (24 órán belül) egyedileg, a leterheltség függvényében oldjuk meg."
+    },
+    {
+      "question": "Állítanak ki ÁFA-s számlát, és milyen fizetést fogadnak el?",
+      "answer": "Általában ÁFA-fizetőként számlázunk (21 %-os kulcs), 7-14 napos fizetési határidővel állandó ügyfeleink számára; az első vételezésnél előre fizetést vagy utánvétet kérünk. Banki átutalást fogadunk el; készpénzben kizárólag a készpénzfizetés korlátozásáról szóló törvény § 4 szerinti 270 000 Kč-ig terjedő összeghatárig."
+    },
+    {
+      "question": "Egész Csehország területén tevékenykednek?",
+      "answer": "Igen. Telephelyünk Český Těšín városában (Morva-sziléziai kerület) található, de rendszeresen szállítunk Csehország egész területére. Logisztikailag a legkedvezőbb Csehország keleti fele; a Plzeňi és Karlovy Vary-i kerületbe hosszabb előretartással tervezünk szállítást (jellemzően 3-5 nap)."
+    }
+  ],
+  "content": {
+    "heroTitlePre": "Gázolaj",
+    "heroTitleHl": "mikroszállítás",
+    "heroIntro": "Gázolaj kiszállítása 200-3000 liter mennyiségben közvetlenül az ügyfél címére Csehország egész területén. Építkezések, mezőgazdasági üzemek, fuvarozó cégek, járműparkok, tartalék generátorok és föld feletti üzemi tartályok tulajdonosai számára. B7 osztályú üzemanyag a ČSN EN 590 szabvány szerint, kérésre biokomponens nélküli B0 gázolaj is. Ár az aktuális nagykereskedelmi árlista szerint, standard szállítás 72 órán belül.",
+    "heroCtaLabel": "Árajánlatkérés: info@phmarket.cz",
+    "heroMailtoSubject": "Mikroszállítás árajánlatkérés",
+    "defTitle": "Mi a gázolaj mikroszállítás",
+    "defPara": "A mikroszállítás kis mennyiségű gázolaj (jellemzően 200-3000 liter) kiszállítása közvetlenül az ügyfél címére tartálykocsival vagy szállítható IBC tartállyal. A töltőállomásokhoz történő nagyszállítástól (10 000+ l) abban különbözik, hogy a végső vállalati fogyasztókat szolgálja ki: építkezéseket, mezőgazdasági termelőket, fuvarozókat, generátorrendszereket.",
+    "doTitle": "Mit szállítunk",
+    "doItems": [
+      "B7 osztályú gázolajat (legfeljebb 7 % MEŘO biokomponenssel), ČSN EN 590",
+      "Biokomponens nélküli B0 gázolajat, generátorokhoz, szezonális technikához és hosszú távú tároláshoz",
+      "D és F téli osztályt (CFPP -20 °C, illetve -32 °C) november és március közötti időszakban"
+    ],
+    "dontTitle": "Mit nem csinálunk",
+    "dontItems": [
+      "Benzin (Natural 95, 98, 100)",
+      "LPG, CNG, AdBlue önálló szállításként",
+      "Mikroszállítás magánszemélyeknek személyes felhasználásra"
+    ],
+    "whomTitle": "Kinek szól a szolgáltatás",
+    "whomItems": [
+      {
+        "strong": "Építőipari cégek",
+        "text": ": kotrógépek, törők, daruk és egyéb gépek az építkezésen. A töltőállomás megkerülése helyett a gázolajat közvetlenül az építési területre szállítjuk, gyakran szem elől eltakarva (az üzemanyaglopás megelőzésének kulcseleme)."
+      },
+      {
+        "strong": "Mezőgazdasági termelők",
+        "text": ": szezonális fogyasztás (tavasz: vetés, betakarítás). A mikroszállítás fedezi a rövid távú fogyasztásnövekedést anélkül, hogy saját nagy térfogatú tartályt kellene építeni."
+      },
+      {
+        "strong": "Fuvarozó cégek és járműparkok",
+        "text": ": saját 5-20 m³-es tárolótartály, rendszeres tervezett szállítás a készletek kimerülése után."
+      },
+      {
+        "strong": "Adatközpontok, kórházak, ipar",
+        "text": ": tartalék generátorok feltöltése; az üzemanyag periodikus cseréje, hogy a tartályban ne képződjön bioiszap."
+      },
+      {
+        "strong": "Föld feletti tartályok üzemeltetői",
+        "text": ": kis cégek 1-5 m³-es helyi tartállyal, akiknek a nagyszállítás nem érné meg."
+      }
+    ],
+    "numbersTitle": "Számok és tények",
+    "numbersItems": [
+      { "strong": "Szállítási tartomány:", "text": "200-3000 liter kiszállításonként" },
+      {
+        "strong": "Standard szállítási idő:",
+        "text": "a megerősítéstől számított 72 órán belül (jellemzően a következő munkanapon)"
+      },
+      { "strong": "Sürgősségi szállítás:", "text": "24 órán belül a leterheltség függvényében" },
+      { "strong": "Lefedettség:", "text": "egész Csehország; telephely Český Těšín" },
+      {
+        "strong": "Ár:",
+        "text": "aktuális ČEPRO/Unipetrol nagykereskedelmi ár + szállítás + árrés (átláthatóan tételezve a számlán)"
+      },
+      {
+        "strong": "Metrológia:",
+        "text": "tartálykocsi a 505/1990 Sb. törvény szerint hitelesített számlálóval, szállítólevél 15 °C-on mért mennyiséggel"
+      },
+      {
+        "strong": "Üzemanyag-szabvány:",
+        "text": "ČSN EN 590 (standard B7), kérésre B0 vagy téli osztályok"
+      }
+    ],
+    "howTitle": "Hogyan járunk el lépésről lépésre",
+    "howItems": [
+      {
+        "strong": "Árajánlatkérés.",
+        "text": "Küldje el nekünk a mennyiséget, a típust (B7 / B0 / téli), a szállítási helyet és a kívánt időpontot. Email: info@phmarket.cz."
+      },
+      {
+        "strong": "Árajánlat.",
+        "text": "Néhány órán belül (munkanapon) megerősítjük az elérhetőséget, az aktuális árat és az időpontot."
+      },
+      {
+        "strong": "Szállítás megerősítése.",
+        "text": "Előlegszámlát állítunk ki (első vételezés) vagy megerősítjük az időpontot a meglévő ügyfél számára."
+      },
+      {
+        "strong": "Tartálykocsi kiszállása.",
+        "text": "A tartálykocsi a megbeszélt időpontban érkezik. A sofőr ellenőrzi a tartály hozzáférhetőségét és megkezdi a betöltést."
+      },
+      {
+        "strong": "Betöltés és szállítólevél.",
+        "text": "A kiadagolás során a hitelesített számláló alapján leolvassuk a mennyiséget, és szállítólevelet állítunk ki dátummal, idővel és aláírással."
+      },
+      {
+        "strong": "Számla.",
+        "text": "Az adóügyi bizonylatot a szállítástól számított 5 munkanapon belül állítjuk ki, a fizetési határidő megegyezés szerint."
+      }
+    ],
+    "compTitle": "Összehasonlítás az alternatívákkal",
+    "compCols": [
+      "Szempont",
+      "PHMarket mikroszállítás",
+      "Nyilvános töltőállomás (kannák / vállalati kártya)",
+      "Nagyszállítás (10 000+ l)"
+    ],
+    "compRows": [
+      ["Ár literenként", "Nagykereskedelmi + szállítás", "Kiskereskedelmi (magasabb)", "Legalacsonyabb (nagyobb tartályt igényel)"],
+      ["Minimális mennyiség", "200 l", "Nincs minimum", "Jellemzően 10 000+ l"],
+      ["Kiszolgálási idő", "0, kiszállítjuk", "Út a kúthoz + kannák kezelése", "0, kiszállítjuk"],
+      ["Lopás kockázata", "Alacsony (közvetlenül a tartályba)", "Magas (kannák az építkezésen)", "Alacsony"],
+      ["Saját tartály szükségessége", "Ajánlott (1+ m³)", "Nem", "Szükséges (10+ m³)"]
+    ],
+    "faqTitle": "Gyakori kérdések",
+    "ctaTitle": "Gázolaj kiszállításra van szüksége?",
+    "ctaPara": "Írja meg nekünk a mennyiséget, az üzemanyag típusát (B7 / B0 / téli), a helyet és a kívánt időpontot. Munkaidőben árajánlatot készítünk.",
+    "ctaLabel": "info@phmarket.cz",
+    "ctaMailtoSubject": "Gázolaj mikroszállítás árajánlatkérés"
+  }
+}

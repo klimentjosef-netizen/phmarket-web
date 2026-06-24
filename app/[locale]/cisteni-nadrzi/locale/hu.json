@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "title": "Üzemanyagtartályok tisztítása Csehországban",
+    "description": "Töltőállomások és céges járműflották üzemanyagtartályainak professzionális tisztítása egész Csehországban. Biológiai iszap, víz és üledék eltávolítása. Tevékenység az egész Cseh Köztársaság területén."
+  },
+  "breadcrumbName": "Tartálytisztítás",
+  "schema": {
+    "id": "/cisteni-nadrzi#service",
+    "serviceType": "Üzemanyagtartályok professzionális tisztítása",
+    "name": "Üzemanyagtartályok tisztítása",
+    "description": "Biológiai iszap, üledék és víz eltávolítása töltőállomások, céges járműflották, generátorrendszerek és mezőgazdasági gépek üzemanyagtartályaiból. Tevékenység az egész Cseh Köztársaság területén.",
+    "audience": "Töltőállomások, fuvarozó cégek, járműflotta-tulajdonosok, gazdálkodók, tartalék generátorok üzemeltetői",
+    "priceDescription": "Az ár igény szerint, a tartály térfogata, a szennyeződés típusa és a távolság függvényében."
+  },
+  "faqItems": [
+    {
+      "question": "Milyen gyakran kell tisztítani az üzemanyagtartályt?",
+      "answer": "B7 üzemanyaggal (biokomponenssel) üzemelő töltőállomások földalatti tartályainál évente egyszeri ellenőrzést és általában 2-3 évente fizikai tisztítást javaslunk. Biokomponens nélküli gázolajjal (B0) töltött tartályoknál elegendő a tisztítás az üzemanyagcsere alkalmával vagy 3-5 évente egyszer. Céges járműflottáknál és felszíni üzemi tartályoknál a gyakoriság a forgási sebességtől függ, de legalább 2 évente egyszer szükséges."
+    },
+    {
+      "question": "Mi rakódik le a tartályban, és miért gond ez?",
+      "answer": "A fő szennyező anyagok: víz (kondenzáció + a MEŘO biokomponens higroszkopikussága), biológiai iszap (a MEŘO bomlásából származó nyálkás lerakódások), vasas rozsdarészecskék a falak korróziójából, por és mikroorganizmusok. Ezek a lerakódások eltömítik a szivattyú szívóoldalát, az üzemanyagszűrőt, szélsőséges esetben pedig károsítják a befecskendezőket, amelyek javítása a modern dízelmotoroknál több tízezer koronába kerül."
+    },
+    {
+      "question": "Mennyi ideig tart a tisztítás, és le kell-e zárnunk az üzemet?",
+      "answer": "Egy szokványos, 30-50 m³-es földalatti tartállyal általában 8-24 óra alatt végzünk az állapottól függően. Töltőállomásoknál a beavatkozást a legalacsonyabb forgalmú időszakra tervezzük (jellemzően éjszakára / hétfő reggelre), hogy az érintett állomásnak ne kelljen a teljes üzemet leállítania; egy ciklusban egy tartályt tisztítunk, a többi üzemben marad."
+    },
+    {
+      "question": "Mi történik a kiszivattyúzott üzemanyaggal?",
+      "answer": "A visszanyerhető üzemanyagot átszűrjük és visszajuttatjuk a tartályba. A felhasználhatatlan részt (víz + iszap) veszélyes hulladékként (a Hulladékkatalógus szerinti 13 07 03* kód) szállítjuk el tanúsított ártalmatlanításra. Az ártalmatlanításról jegyzőkönyvet kap a SEPNO bejelentéséhez."
+    },
+    {
+      "question": "Vállalják felszíni üzemi tartályok és konténerek (IBC) tisztítását is?",
+      "answer": "Igen. Tisztítunk felszíni tartályokat (jellemzően 1-10 m³) járműflották, mezőgazdasági üzemek és generátorok számára, valamint kisebb, 1 000 literes IBC konténereket is. Az eljárás gyorsabb, mint a földalatti tartályoknál, gyakran 4 órán belül elkészül."
+    },
+    {
+      "question": "Csak a Morva-sziléziai régióban tevékenykednek, vagy egész Csehországban?",
+      "answer": "Az egész Cseh Köztársaság területén tevékenykedünk. A bázisunk Český Těšínben van, de rendszeresen vállalunk kiszállást Prágába, Brünnbe, Plzeňbe vagy a határvidékre."
+    }
+  ],
+  "content": {
+    "heroTitlePre": "Üzemanyagtartályok",
+    "heroTitleHl": "tisztítása",
+    "heroIntro": "Töltőállomások, céges járműflották, mezőgazdasági üzemek és tartalék generátorok üzemanyagtartályainak professzionális tisztítása egész Csehországban. Eltávolítjuk a MEŘO-ból származó biológiai iszapot, a vizet és az üledéket, elszállítjuk a veszélyes hulladékot tanúsított ártalmatlanításra, és átadjuk a jegyzőkönyvet. Kiszállás jellemzően 5 munkanapon belül, az ár igény szerint.",
+    "heroCtaLabel": "Kötelezettség nélküli árajánlatkérés: info@phmarket.cz",
+    "heroMailtoSubject": "Tartálytisztítás iránti igény",
+    "defTitle": "Mit jelent az üzemanyagtartály tisztítása",
+    "defPara": "Az üzemanyagtartály tisztítása olyan technológiai folyamat, amelynek során a földalatti vagy felszíni tartályból eltávolítják a fenéken és a falakon felhalmozódott vizet, biológiai iszapot, üledéket és rozsdarészecskéket. A cél az üzemanyag tisztaságának helyreállítása a ČSN EN 590 (gázolaj) vagy a ČSN EN 228 (benzin) szabvány szerint, valamint a végfelhasználók befecskendező rendszerének károsodását megelőzni.",
+    "doTitle": "Mit csinálunk konkrétan",
+    "doItems": [
+      "Az üzemanyag kiszivattyúzása ideiglenes tartályba közbenső szűréssel",
+      "A fenéken lévő lerakódások eltávolítása (mechanikusan + szívótechnika)",
+      "A tartály kiszárítása és a falak vizuális ellenőrzése",
+      "Az átszűrt üzemanyag visszatöltése (vagy új betöltése)",
+      "A veszélyes hulladék elszállítása tanúsított ártalmatlanításra + jegyzőkönyv"
+    ],
+    "dontTitle": "Mit nem csinálunk",
+    "dontItems": [
+      "Tartályok építési javítása és betonozása",
+      "Hitelesítés és metrológia (partnercégnek adjuk át)",
+      "A tartály kiemelése a földből"
+    ],
+    "whomTitle": "Kinek szól a szolgáltatás",
+    "whomItems": [
+      {
+        "strong": "Töltőállomások üzemeltetői",
+        "text": ": 30-50 m³-es földalatti tartályok B7 gázolajjal, benzinnel vagy prémium üzemanyagokkal. Rendszeres ellenőrzés a vásárlói tartályok szennyeződésének megelőzéseként."
+      },
+      {
+        "strong": "Fuvarozó cégek és járműflották",
+        "text": ": 5-20 m³-es felszíni tárolótartályok, amelyekből kamionok vagy buszok tankolnak. Kockázat: eltömődött szűrők, járműleállások."
+      },
+      {
+        "strong": "Mezőgazdasági üzemek",
+        "text": ": szezonális állomások (kombájnok, traktorok), ahol az üzemanyag több hónapig áll. Kockázat: a MEŘO bomlása a B7 gázolajban, biológiai iszap a szezon kezdetén."
+      },
+      {
+        "strong": "Tartalék generátorok üzemeltetői",
+        "text": ": adatközpontok, kórházak, ipar. Kockázat: a tartály évekig áll, és egy tényleges áramkimaradás esetén a motor nem hajlandó beindulni a megromlott üzemanyaggal."
+      },
+      {
+        "strong": "Szezonális gépek tulajdonosai",
+        "text": ": lakóautók, hajók, veteránjárművek drága befecskendező rendszerrel."
+      }
+    ],
+    "numbersTitle": "Számok és tények",
+    "numbersItems": [
+      { "strong": "Térfogatok:", "text": "1-60 m³-es tartályok (földalatti és felszíni egyaránt)" },
+      {
+        "strong": "Tisztítási idő:",
+        "text": "felszíni 1-10 m³ általában 2-6 óra, földalatti 30-50 m³ általában 8-24 óra"
+      },
+      {
+        "strong": "Kiszállás:",
+        "text": "jellemzően a megrendelés visszaigazolásától számított 5 munkanapon belül, vészhelyzeti beavatkozás 48 órán belül (a leterheltség függvényében)"
+      },
+      {
+        "strong": "Lefedettség:",
+        "text": "az egész Cseh Köztársaság; bázis Český Těšín, kiszállás Prágába / Brünnbe / Plzeňbe rendszeresen"
+      },
+      {
+        "strong": "Hulladék:",
+        "text": "ártalmatlanítás a 13 07 03* kód alatt (egyéb folyékony üzemanyagok) tanúsított ártalmatlanításban, jegyzőkönyv a SEPNO számára"
+      },
+      {
+        "strong": "Ár:",
+        "text": "igény szerint a térfogat, a szennyeződés mértéke és a távolság függvényében"
+      }
+    ],
+    "howTitle": "Hogyan járunk el lépésről lépésre",
+    "howItems": [
+      {
+        "strong": "Kapcsolatfelvétel és felmérés.",
+        "text": "Küldjön nekünk fényképet a tartályról, valamint adatokat a térfogatról, az üzemanyag típusáról és a legutóbbi ellenőrzésről. 24 órán belül jelentkezünk."
+      },
+      {
+        "strong": "Árajánlat.",
+        "text": "Elkészítjük a költségvetést fix árral a szokványos terjedelemre, valamint óradíjjal a szokványosnál nagyobb szennyeződés esetén jelentkező többletórákra."
+      },
+      {
+        "strong": "A kiszállás megtervezése.",
+        "text": "Az időpontot úgy választjuk meg, hogy a töltőállomás a többi tartályát üzemeltetni tudja, jellemzően hétfő reggel vagy hétvégi éjszaka."
+      },
+      {
+        "strong": "Az üzemanyag kiszivattyúzása.",
+        "text": "Az üzemanyagot 5 μm-es és 25 μm-es előszűréssel ellátott mobil szívótartályba szivattyúzzuk át."
+      },
+      {
+        "strong": "Mechanikus tisztítás.",
+        "text": "Az üledéket és az iszapot eltávolítjuk a fenékről és a falakról. A földalatti tartályoknál kamerát használunk a tisztítás utáni vizuális ellenőrzéshez."
+      },
+      {
+        "strong": "Visszatöltés.",
+        "text": "Az átszűrt üzemanyagot visszatöltjük; a felhasználhatatlan frakciót elszállítjuk."
+      },
+      {
+        "strong": "Átadás és dokumentáció.",
+        "text": "Átadjuk a tisztításról szóló jegyzőkönyvet + a veszélyes hulladék átadásáról szóló igazolást a SEPNO bejelentéséhez."
+      }
+    ],
+    "compTitle": "Összehasonlítás az alternatívákkal",
+    "compCols": [
+      "Szempont",
+      "PHMarket: professzionális tisztítás",
+      "Belső, saját erős tisztítás",
+      "Tartálycsere"
+    ],
+    "compRows": [
+      ["Idő", "8-24 óra (50 m³)", "2-5 nap (késedelem kockázata)", "2-6 hét + építkezés"],
+      ["Munkavédelmi kockázat", "Alacsony, tanúsított eljárás", "Magas (gőzök, robbanásveszélyes légtér)", "Alacsony, de kiterjedt építkezés"],
+      ["Hulladék ártalmatlanítása", "Tanúsított, SEPNO jegyzőkönyvvel együtt", "Kockázatos, jegyzőkönyv nélkül bírság fenyeget", "A bontás része"],
+      ["Költségek", "Egyszeri ár igény szerint", "Rejtett költségek (idő, kockázat)", "Több százezer korona vagy millió+"]
+    ],
+    "faqTitle": "Gyakori kérdések",
+    "ctaTitle": "Küldjön kötelezettség nélküli árajánlatkérést",
+    "ctaPara": "Írja meg nekünk a tartály térfogatát, az üzemanyag típusát és a helyszínt. 24 órán belül jelentkezünk konkrét árral és időponttal.",
+    "ctaLabel": "info@phmarket.cz",
+    "ctaMailtoSubject": "Tartálytisztítás iránti igény"
+  }
+}

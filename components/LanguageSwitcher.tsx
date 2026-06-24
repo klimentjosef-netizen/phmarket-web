@@ -11,6 +11,7 @@ const FLAGS: Record<Locale, string> = {
   pl: "🇵🇱",
   en: "🇬🇧",
   de: "🇩🇪",
+  hu: "🇭🇺",
 };
 
 const LABELS: Record<Locale, string> = {
@@ -19,6 +20,7 @@ const LABELS: Record<Locale, string> = {
   pl: "Polski",
   en: "English",
   de: "Deutsch",
+  hu: "Magyar",
 };
 
 export default function LanguageSwitcher({ className = "" }: { className?: string }) {

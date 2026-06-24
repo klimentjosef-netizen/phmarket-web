@@ -2,7 +2,7 @@
 // Plain module (no "use client") so both the client component and the
 // server page metadata can import it. Note: no en/em dashes in any copy.
 
-export type Lang = "cs" | "sk" | "pl" | "en" | "de";
+export type Lang = "cs" | "sk" | "pl" | "en" | "de" | "hu";
 
 const DOCS = "/dokumenty";
 
@@ -255,6 +255,56 @@ export const TEXTS = {
     footerPrivacy: "Datenschutz",
     termsHref: `${DOCS}/phmarket-agb-de.pdf`,
     privacyHref: `${DOCS}/phmarket-datenschutz-de.pdf`,
+  },
+  hu: {
+    metaTitle: "Fiók törlése",
+    metaDescription:
+      "A PHMarket-fiók végleges törlése. Add meg az e-mailt, erősítsd meg az e-mailben kapott linkkel, és a fiók visszavonhatatlanul törlődik.",
+    title: "Fiók törlése",
+    intro:
+      "Itt véglegesen törölheted a PHMarket-fiókodat. Biztonsági okokból a törlés két lépésben zajlik: először megadod az e-mailt, majd egy e-mailben küldött linkkel megerősíted a törlést.",
+    emailLabel: "Fiók e-mail címe",
+    emailPlaceholder: "te@email.hu",
+    passwordLabel: "Jelszó",
+    passwordHint:
+      "Ha Google vagy Apple fiókkal regisztráltál, ne add meg a jelszót, hagyd üresen a mezőt. Jelszót csak akkor adj meg, ha e-maillel és jelszóval regisztráltál.",
+    reasonLabel: "Törlés oka",
+    reasonOptional: "nem kötelező",
+    reasonOptions: [
+      "Válassz okot (nem kötelező)",
+      "Már nem használom az alkalmazást",
+      "Aggódom az adataim védelméért",
+      "Új fiókot hoztam létre",
+      "Egyéb ok",
+    ],
+    consent:
+      "Tudomásul veszem, hogy a törlés visszavonhatatlan, és minden PHM Cash pontom elvész.",
+    submit: "Fiók törlése",
+    submitting: "Küldés…",
+    mustConsent: "A folytatáshoz kérjük, erősítsd meg a tudomásulvételt.",
+    invalidEmailClient: "Adj meg egy érvényes e-mail címet.",
+    neutralSuccessTitle: "Ellenőrizd a postaládádat",
+    neutralSuccess:
+      "Ha létezik fiók ezzel az e-mail címmel, elküldtük rá a törlést megerősítő linket. A link 24 óráig érvényes.",
+    passwordRequired:
+      "Ez a fiók jelszóval védett. Kérjük, add meg a jelszót, és küldd el újra.",
+    invalidCredentials: "A jelszó nem egyezik. Kérjük, ellenőrizd.",
+    invalidEmail: "Kérjük, ellenőrizd az e-mail formátumát.",
+    genericError:
+      "Valami hiba történt. Kérjük, próbáld újra hamarosan, vagy lépj kapcsolatba velünk.",
+    confirmIntro:
+      "Az alábbi gombra kattintva véglegesen törlöd a PHMarket-fiókodat és minden adatodat. Ez a művelet nem vonható vissza.",
+    confirmButton: "Végleges fióktörlés megerősítése",
+    deleting: "Fiók törlése…",
+    deletedMsg: "A fiók törölve lett.",
+    expiredMsg: "A link lejárt. Kérj új fióktörlést az alkalmazásból.",
+    failedMsg: "A törlés nem sikerült. Kérjük, próbáld újra.",
+    connErrorMsg: "Kapcsolódási hiba. Kérjük, próbáld újra.",
+    invalidLink: "Érvénytelen link.",
+    footerTerms: "Általános Szerződési Feltételek",
+    footerPrivacy: "Adatvédelmi tájékoztató",
+    termsHref: `${DOCS}/phmarket-terms-of-service-en.pdf`,
+    privacyHref: `${DOCS}/phmarket-privacy-policy-en.pdf`,
   },
 } satisfies Record<Lang, Record<string, unknown>>;
 
