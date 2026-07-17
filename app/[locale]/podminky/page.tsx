@@ -5,6 +5,23 @@ import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, SITE_URL } from "@/lib/jsonld";
 import { routing, type Locale } from "@/i18n/routing";
 import { localizedAlternates } from "@/lib/seo";
+import type { LegalSection } from "@/lib/legal/types";
+import { sections as termsCs } from "@/lib/legal/terms.cs";
+import { sections as termsSk } from "@/lib/legal/terms.sk";
+import { sections as termsPl } from "@/lib/legal/terms.pl";
+import { sections as termsEn } from "@/lib/legal/terms.en";
+import { sections as termsDe } from "@/lib/legal/terms.de";
+
+// HTML (readable) version of the document per locale. hu reuses the English
+// text (as the PDF does, until Hungarian legal documents are provided).
+const SECTIONS: Partial<Record<Locale, LegalSection[]>> = {
+  cs: termsCs,
+  sk: termsSk,
+  pl: termsPl,
+  en: termsEn,
+  de: termsDe,
+  hu: termsEn,
+};
 
 const CONTACT_EMAIL = "legal@phmarket.cz";
 
@@ -314,6 +331,7 @@ export default async function PodminkyPage({
         toc={c.toc}
         languages={languages}
         contactEmail={CONTACT_EMAIL}
+        sections={SECTIONS[locale]}
       />
     </>
   );

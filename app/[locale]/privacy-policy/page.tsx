@@ -5,6 +5,22 @@ import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, SITE_URL } from "@/lib/jsonld";
 import { routing, type Locale } from "@/i18n/routing";
 import { localizedAlternates } from "@/lib/seo";
+import type { LegalSection } from "@/lib/legal/types";
+import { sections as privacyCs } from "@/lib/legal/privacy.cs";
+import { sections as privacySk } from "@/lib/legal/privacy.sk";
+import { sections as privacyPl } from "@/lib/legal/privacy.pl";
+import { sections as privacyEn } from "@/lib/legal/privacy.en";
+import { sections as privacyDe } from "@/lib/legal/privacy.de";
+
+// HTML (readable) version per locale. hu reuses the English text (as the PDF).
+const SECTIONS: Partial<Record<Locale, LegalSection[]>> = {
+  cs: privacyCs,
+  sk: privacySk,
+  pl: privacyPl,
+  en: privacyEn,
+  de: privacyDe,
+  hu: privacyEn,
+};
 
 const CONTACT_EMAIL = "privacy@phmarket.cz";
 
@@ -234,6 +250,7 @@ export default async function PrivacyPolicyPage({
         toc={c.toc}
         languages={languages}
         contactEmail={CONTACT_EMAIL}
+        sections={SECTIONS[locale]}
       />
     </>
   );

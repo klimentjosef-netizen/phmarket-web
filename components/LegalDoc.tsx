@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import type { LegalSection } from "@/lib/legal/types";
 
 export type LegalLang = {
   code: string;
@@ -27,6 +28,12 @@ export type LegalDocProps = {
   languages: LegalLang[];
   /** Contact e-mail shown in the operator block */
   contactEmail: string;
+  /**
+   * Full HTML version of the document. When provided, the readable text is
+   * rendered inline (indexable, accessible) and the PDF is offered as the
+   * binding copy to download. When omitted, the PDF is embedded instead.
+   */
+  sections?: LegalSection[];
 };
 
 function ArrowDownTray() {
@@ -55,8 +62,13 @@ export default function LegalDoc({
   toc,
   languages,
   contactEmail,
+  sections,
 }: LegalDocProps) {
   const t = useTranslations("legal");
+  const hasHtml = Array.isArray(sections) && sections.length > 0;
+  const navItems = hasHtml
+    ? sections!.filter((s) => s.heading).map((s) => ({ id: s.id, label: s.heading as string }))
+    : toc.map((label, i) => ({ id: `toc-${i}`, label }));
   return (
     <div className="bg-white">
       {/* Header */}
@@ -139,22 +151,50 @@ export default function LegalDoc({
       <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-10">
           {/* TOC */}
-          <aside className="lg:sticky lg:top-24 lg:self-start">
+          <aside className="lg:sticky lg:top-24 lg:self-start lg:max-h-[calc(100vh-7rem)] lg:overflow-y-auto">
             <h2 className="text-lg font-bold text-dark mb-4">{t("tableOfContents")}</h2>
             <ol className="space-y-1.5">
-              {toc.map((item, i) => (
-                <li
-                  key={i}
-                  className="text-sm text-gray-600 leading-snug py-1.5 px-3 rounded-lg hover:bg-primary/5 hover:text-primary transition-colors"
-                >
-                  {item}
-                </li>
-              ))}
+              {navItems.map((item) => {
+                const inner = (
+                  <span className="block text-sm text-gray-600 leading-snug py-1.5 px-3 rounded-lg hover:bg-primary/5 hover:text-primary transition-colors">
+                    {item.label}
+                  </span>
+                );
+                return (
+                  <li key={item.id}>
+                    {hasHtml ? <a href={`#${item.id}`}>{inner}</a> : inner}
+                  </li>
+                );
+              })}
             </ol>
           </aside>
 
           {/* Document */}
           <div>
+            {hasHtml ? (
+              <article className="legal-body max-w-none">
+                {sections!.map((s) => (
+                  <section key={s.id} id={s.id} className="scroll-mt-24 mb-8">
+                    {s.heading && (
+                      <h2 className="text-xl md:text-2xl font-bold text-dark mb-4 leading-snug">
+                        {s.heading}
+                      </h2>
+                    )}
+                    <div
+                      className="text-[15px] text-gray-700 leading-relaxed space-y-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ol]:list-decimal [&_ol]:pl-6 [&_a]:text-primary [&_a]:underline [&_strong]:text-dark"
+                      dangerouslySetInnerHTML={{ __html: s.html }}
+                    />
+                  </section>
+                ))}
+                <p className="mt-10 text-sm text-gray-500 border-t border-gray-200 pt-6">
+                  {t("effectiveFrom", { date: effectiveDate })}.{" "}
+                  <a href={pdfHref} target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">
+                    {t("openPdf")}
+                  </a>
+                </p>
+              </article>
+            ) : (
+            <>
             {/* Inline viewer (desktop / tablet) */}
             <div className="hidden md:block rounded-2xl overflow-hidden border border-gray-200 shadow-sm bg-gray-50">
               <object
@@ -191,6 +231,8 @@ export default function LegalDoc({
                 {t("openPdf")}
               </a>
             </div>
+            </>
+            )}
 
             {/* Contact / operator */}
             <div className="mt-10 rounded-2xl bg-gray-50 border border-gray-200 p-6">
