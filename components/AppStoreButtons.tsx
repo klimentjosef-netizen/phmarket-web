@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 
 const APP_STORE_URL =
-  "https://apps.apple.com/pl/app/phmarket-obchod/id6753677131";
+  "https://apps.apple.com/pl/app/phmarket/id6760869168";
 const GOOGLE_PLAY_URL =
   "https://play.google.com/store/apps/details?id=branded.m8391e3c5a7fa40ff980dd3ec24d7cd28.phmarket";
 

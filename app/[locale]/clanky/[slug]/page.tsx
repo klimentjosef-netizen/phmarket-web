@@ -240,7 +240,7 @@ export default function ArticlePage({ params }: Props) {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center mt-6">
             <Link
-              href="https://apps.apple.com/pl/app/phmarket-obchod/id6753677131"
+              href="https://apps.apple.com/pl/app/phmarket/id6760869168"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-white text-primary font-semibold px-5 py-3 rounded-lg hover:bg-gray-100 transition-colors"

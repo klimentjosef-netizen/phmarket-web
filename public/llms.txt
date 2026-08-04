@@ -20,7 +20,7 @@
 
 ## Stažení aplikace
 
-- App Store: https://apps.apple.com/pl/app/phmarket-obchod/id6753677131
+- App Store: https://apps.apple.com/pl/app/phmarket/id6760869168
 - Google Play: https://play.google.com/store/apps/details?id=branded.m8391e3c5a7fa40ff980dd3ec24d7cd28.phmarket
 
 ## Provozovatel

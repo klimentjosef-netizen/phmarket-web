@@ -281,7 +281,19 @@ function Station({ phase }: { phase: Phase }) {
 /* ------------------------------------------------------------------ */
 /*  Phone Mockup                                                       */
 /* ------------------------------------------------------------------ */
+const PHONE_SCREENS = ["/app-home.png", "/app-vyhodne.png", "/app-kvalita.png"];
+
 function PhoneMockup({ visible }: { visible: boolean }) {
+  const [screen, setScreen] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(
+      () => setScreen((s) => (s + 1) % PHONE_SCREENS.length),
+      3200
+    );
+    return () => clearInterval(id);
+  }, []);
+
   return (
     <div
       className={`relative z-10 transition-all duration-1000 ease-out ${
@@ -291,14 +303,19 @@ function PhoneMockup({ visible }: { visible: boolean }) {
       <div className="relative w-[200px] h-[400px] sm:w-[240px] sm:h-[480px] lg:w-[280px] lg:h-[560px] xl:w-[310px] xl:h-[620px] rounded-[2.5rem] bg-gradient-to-b from-gray-800 to-gray-900 p-[6px] shadow-2xl shadow-black/40">
         <div className="relative w-full h-full rounded-[2.2rem] overflow-hidden bg-black">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-28 h-6 bg-black rounded-b-2xl z-20" />
-          <Image
-            src="/app-screenshot.png"
-            alt="PHMarket aplikace"
-            fill
-            sizes="(max-width: 640px) 200px, (max-width: 1024px) 240px, (max-width: 1280px) 280px, 310px"
-            className="object-cover object-top"
-            priority
-          />
+          {PHONE_SCREENS.map((src, i) => (
+            <Image
+              key={src}
+              src={src}
+              alt="PHMarket aplikace"
+              fill
+              sizes="(max-width: 640px) 200px, (max-width: 1024px) 240px, (max-width: 1280px) 280px, 310px"
+              className={`object-cover object-top transition-opacity duration-700 ${
+                i === screen ? "opacity-100" : "opacity-0"
+              }`}
+              priority={i === 0}
+            />
+          ))}
         </div>
       </div>
       <div className="absolute -inset-8 bg-emerald-500/10 rounded-full blur-3xl -z-10 hero-phone-glow" />

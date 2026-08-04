@@ -16,7 +16,7 @@ const NAV_LINKS = [
 ] as const;
 
 const APP_STORE_URL =
-  "https://apps.apple.com/pl/app/phmarket-obchod/id6753677131";
+  "https://apps.apple.com/pl/app/phmarket/id6760869168";
 
 export default function Navbar() {
   const t = useTranslations("nav");
