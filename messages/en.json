@@ -2,7 +2,7 @@
   "meta": {
     "homeTitle": "PHMarket: Save on every fill-up",
     "homeDescription": "PHMarket guides you to fuel stations with quality fuel where you can use discount codes. No registration, no fees, no plastic cards.",
-    "ogDescription": "Discount codes for fuel at partner stations. No registration, no plastic cards."
+    "ogDescription": "Discount codes for fuel at stations in six Central European countries. No registration, no plastic cards."
   },
   "nav": {
     "home": "Home",
@@ -47,7 +47,7 @@
   },
   "stats": {
     "stationsValue": "100+",
-    "stationsLabel": "partner stations",
+    "stationsLabel": "fuel stations",
     "savingValue": "up to 3 CZK",
     "savingLabel": "saving per litre",
     "feeValue": "0 CZK",
@@ -85,13 +85,22 @@
       "description": "Diesel delivered directly to the customer, fast, convenient and at favourable prices."
     }
   },
-  "partners": {
-    "title": "Our partner fuel stations",
-    "subtitle": "Our customers"
+  "coverage": {
+    "title": "Where we operate",
+    "subtitle": "PHMarket works in six Central European countries.",
+    "mapAria": "Map of Central Europe with the countries where PHMarket operates highlighted",
+    "countries": {
+      "DE": "Germany",
+      "PL": "Poland",
+      "CZ": "Czechia",
+      "SK": "Slovakia",
+      "AT": "Austria",
+      "HU": "Hungary"
+    }
   },
   "homeCta": {
     "title": "Start saving today.",
-    "subtitle": "Download the PHMarket app and start using discount codes at partner fuel stations across the Czech Republic."
+    "subtitle": "Download the PHMarket app and start using discount codes at fuel stations in six Central European countries."
   },
   "legal": {
     "breadcrumbHome": "Home",
@@ -118,7 +127,7 @@
       { "title": "No registration", "desc": "No complicated sign-ups or filling in forms. Download and fuel up." },
       { "title": "No fees", "desc": "The app is completely free. No hidden fees or subscriptions." },
       { "title": "No plastic cards", "desc": "Done with loyalty cards. Everything is conveniently in your phone." },
-      { "title": "100+ stations", "desc": "A network of partner fuel stations across the Czech Republic." },
+      { "title": "100+ stations", "desc": "A network of fuel stations in six Central European countries." },
       { "title": "Quality fuel", "desc": "We work only with verified fuel stations offering quality fuel." }
     ],
     "ctaTitle": "Start saving today",
@@ -126,11 +135,11 @@
   },
   "phmapPage": {
     "metaTitle": "PHMap: Fuel station map",
-    "metaDescription": "PHMap shows you the nearest partner fuel stations with discount codes for fuel. Find a station and save.",
-    "subtitle": "An interactive map of partner fuel stations. Find the nearest station with current discount codes.",
+    "metaDescription": "PHMap shows you the nearest fuel stations with discount codes for fuel. Find a station and save.",
+    "subtitle": "An interactive map of fuel stations with discounts. Find the nearest station with current discount codes.",
     "featuresHeading": "What PHMap can do",
     "features": [
-      { "title": "Nearest stations", "desc": "Shows partner fuel stations near you, sorted by distance." },
+      { "title": "Nearest stations", "desc": "Shows fuel stations with discounts near you, sorted by distance." },
       { "title": "Current discounts", "desc": "For each station you see the current discount codes and the saving per litre." },
       { "title": "Navigation", "desc": "With one tap you start navigation straight to the chosen station." }
     ]

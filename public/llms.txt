@@ -1,18 +1,24 @@
 # PHMarket
 
-> PHMarket je česká aplikace pro úspory na tankování. Spojuje řidiče s partnerskými čerpacími stanicemi v ČR, kde uplatní slevové kódy přímo z mobilu — bez registrace a bez plastových karet. Dále nabízí B2B služby čištění palivových nádrží a mikrozávozy motorové nafty.
+> PHMarket je aplikace pro úspory na tankování. Spojuje řidiče s čerpacími stanicemi v šesti zemích střední Evropy, kde uplatní slevové kódy přímo z mobilu, bez registrace a bez plastových karet. Dále nabízí B2B služby čištění palivových nádrží a mikrozávozy motorové nafty v Česku.
 
 ## Co PHMarket dělá
 
-- **Aplikace pro slevy na tankování (iOS, Android, zdarma)** — mapa partnerských čerpacích stanic v ČR, slevové kódy na benzín a naftu, bez registrace, bez poplatků
-- **PHMap** — mapa partnerských čerpacích stanic v reálném čase
-- **Čištění palivových nádrží** — B2B služba pro čerpací stanice a firmy s vozovým parkem v ČR (odstranění biokalů, sedimentů, vody)
-- **Mikrozávozy motorové nafty** — dovoz nafty přímo k zákazníkovi v ČR
+- **Aplikace pro slevy na tankování (iOS, Android, zdarma)**: mapa čerpacích stanic se slevami, slevové kódy na benzín a naftu, bez registrace, bez poplatků
+- **PHMap**: mapa čerpacích stanic se slevovými kódy v reálném čase
+- **Čištění palivových nádrží**: B2B služba pro čerpací stanice a firmy s vozovým parkem v Česku (odstranění biokalů, sedimentů, vody)
+- **Mikrozávozy motorové nafty**: dovoz nafty přímo k zákazníkovi v Česku
+
+## Kde PHMarket působí
+
+Aplikace funguje v šesti zemích střední Evropy: Česko (CZ), Slovensko (SK), Polsko (PL), Německo (DE), Rakousko (AT), Maďarsko (HU).
+Web je dostupný v šesti jazycích: čeština, slovenština, polština, angličtina, němčina, maďarština.
+B2B služby (čištění nádrží, mikrozávozy nafty) poskytujeme v Česku.
 
 ## Klíčové stránky
 
-- [Domovská stránka](https://phmarket.cz): co PHMarket dělá, jak funguje, partneři
-- [Mapa partnerských stanic / PHMap](https://phmarket.cz/phmap): mapa čerpacích stanic v ČR se slevovými kódy
+- [Domovská stránka](https://phmarket.cz): co PHMarket dělá, jak funguje, kde působíme
+- [Mapa stanic / PHMap](https://phmarket.cz/phmap): mapa čerpacích stanic se slevovými kódy
 - [Tankujte levněji](https://phmarket.cz/tankujte-levneji): jak používat slevové kódy na palivo
 - [Čištění nádrží](https://phmarket.cz/cisteni-nadrzi): profesionální čištění palivových nádrží
 - [Mikrozávozy motorové nafty](https://phmarket.cz/mikrozavozy-motorove-nafty): dovoz nafty k zákazníkovi

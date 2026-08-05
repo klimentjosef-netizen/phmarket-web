@@ -2,7 +2,7 @@
   "meta": {
     "homeTitle": "PHMarket: Oszczędzaj przy każdym tankowaniu",
     "homeDescription": "PHMarket poprowadzi Cię do stacji paliw z dobrej jakości paliwem, gdzie wykorzystasz kody rabatowe. Bez rejestracji, opłat i plastikowych kart.",
-    "ogDescription": "Kody rabatowe na paliwo na partnerskich stacjach. Bez rejestracji, bez plastikowych kart."
+    "ogDescription": "Kody rabatowe na paliwo na stacjach w sześciu krajach Europy Środkowej. Bez rejestracji, bez plastikowych kart."
   },
   "nav": {
     "home": "Strona główna",
@@ -47,7 +47,7 @@
   },
   "stats": {
     "stationsValue": "100+",
-    "stationsLabel": "stacji partnerskich",
+    "stationsLabel": "stacji paliw",
     "savingValue": "do 3 Kč",
     "savingLabel": "oszczędność na litr",
     "feeValue": "0 Kč",
@@ -85,13 +85,22 @@
       "description": "Dostawa oleju napędowego bezpośrednio do klienta, szybko, wygodnie i w korzystnych cenach."
     }
   },
-  "partners": {
-    "title": "Nasze partnerskie stacje paliw",
-    "subtitle": "Nasi odbiorcy"
+  "coverage": {
+    "title": "Gdzie działamy",
+    "subtitle": "PHMarket działa w sześciu krajach Europy Środkowej.",
+    "mapAria": "Mapa Europy Środkowej z zaznaczonymi krajami, w których działa PHMarket",
+    "countries": {
+      "DE": "Niemcy",
+      "PL": "Polska",
+      "CZ": "Czechy",
+      "SK": "Słowacja",
+      "AT": "Austria",
+      "HU": "Węgry"
+    }
   },
   "homeCta": {
     "title": "Zacznij oszczędzać już dziś.",
-    "subtitle": "Pobierz aplikację PHMarket i zacznij korzystać z kodów rabatowych na partnerskich stacjach paliw w całych Czechach."
+    "subtitle": "Pobierz aplikację PHMarket i zacznij korzystać z kodów rabatowych na stacjach paliw w sześciu krajach Europy Środkowej."
   },
   "legal": {
     "breadcrumbHome": "Strona główna",
@@ -118,7 +127,7 @@
       { "title": "Bez rejestracji", "desc": "Żadnych skomplikowanych rejestracji ani wypełniania formularzy. Pobierz i tankuj." },
       { "title": "Żadnych opłat", "desc": "Aplikacja jest całkowicie darmowa. Żadnych ukrytych opłat ani abonamentu." },
       { "title": "Bez plastikowych kart", "desc": "Koniec z kartami lojalnościowymi. Wszystko masz wygodnie w telefonie." },
-      { "title": "100+ stacji", "desc": "Sieć partnerskich stacji paliw w całych Czechach." },
+      { "title": "100+ stacji", "desc": "Sieć stacji paliw w sześciu krajach Europy Środkowej." },
       { "title": "Dobre paliwo", "desc": "Współpracujemy tylko ze sprawdzonymi stacjami paliw z dobrej jakości paliwem." }
     ],
     "ctaTitle": "Zacznij oszczędzać już dziś",
@@ -126,11 +135,11 @@
   },
   "phmapPage": {
     "metaTitle": "PHMap: Mapa stacji paliw",
-    "metaDescription": "PHMap pokaże Ci najbliższe partnerskie stacje paliw z kodami rabatowymi na paliwo. Znajdź stację i oszczędzaj.",
-    "subtitle": "Interaktywna mapa partnerskich stacji paliw. Znajdź najbliższą stację z aktualnymi kodami rabatowymi.",
+    "metaDescription": "PHMap pokaże Ci najbliższe stacje paliw z kodami rabatowymi na paliwo. Znajdź stację i oszczędzaj.",
+    "subtitle": "Interaktywna mapa stacji paliw z rabatami. Znajdź najbliższą stację z aktualnymi kodami rabatowymi.",
     "featuresHeading": "Co potrafi PHMap",
     "features": [
-      { "title": "Najbliższe stacje", "desc": "Pokazuje partnerskie stacje paliw w Twojej okolicy uszeregowane według odległości." },
+      { "title": "Najbliższe stacje", "desc": "Pokazuje stacje paliw z rabatami w Twojej okolicy uszeregowane według odległości." },
       { "title": "Aktualne rabaty", "desc": "Przy każdej stacji widzisz aktualne kody rabatowe i wysokość oszczędności na litr." },
       { "title": "Nawigacja", "desc": "Jednym kliknięciem uruchomisz nawigację bezpośrednio do wybranej stacji." }
     ]

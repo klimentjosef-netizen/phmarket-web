@@ -2,7 +2,7 @@
   "meta": {
     "homeTitle": "PHMarket: Spare bei jedem Tanken",
     "homeDescription": "PHMarket führt dich zu Tankstellen mit hochwertigem Kraftstoff, wo du Rabattcodes einlöst. Ohne Registrierung, Gebühren oder Plastikkarten.",
-    "ogDescription": "Rabattcodes für Kraftstoff an Partnertankstellen. Ohne Registrierung, ohne Plastikkarten."
+    "ogDescription": "Rabattcodes für Kraftstoff an Tankstellen in sechs Ländern Mitteleuropas. Ohne Registrierung, ohne Plastikkarten."
   },
   "nav": {
     "home": "Startseite",
@@ -47,7 +47,7 @@
   },
   "stats": {
     "stationsValue": "100+",
-    "stationsLabel": "Partnertankstellen",
+    "stationsLabel": "Tankstellen",
     "savingValue": "bis zu 3 CZK",
     "savingLabel": "Ersparnis pro Liter",
     "feeValue": "0 CZK",
@@ -85,13 +85,22 @@
       "description": "Diesel direkt zum Kunden geliefert, schnell, bequem und zu günstigen Preisen."
     }
   },
-  "partners": {
-    "title": "Unsere Partnertankstellen",
-    "subtitle": "Unsere Abnehmer"
+  "coverage": {
+    "title": "Wo wir tätig sind",
+    "subtitle": "PHMarket funktioniert in sechs Ländern Mitteleuropas.",
+    "mapAria": "Karte Mitteleuropas mit hervorgehobenen Ländern, in denen PHMarket tätig ist",
+    "countries": {
+      "DE": "Deutschland",
+      "PL": "Polen",
+      "CZ": "Tschechien",
+      "SK": "Slowakei",
+      "AT": "Österreich",
+      "HU": "Ungarn"
+    }
   },
   "homeCta": {
     "title": "Fang noch heute an zu sparen.",
-    "subtitle": "Lade die PHMarket-App herunter und nutze Rabattcodes an Partnertankstellen in ganz Tschechien."
+    "subtitle": "Lade die PHMarket-App herunter und nutze Rabattcodes an Tankstellen in sechs Ländern Mitteleuropas."
   },
   "legal": {
     "breadcrumbHome": "Startseite",
@@ -118,7 +127,7 @@
       { "title": "Ohne Registrierung", "desc": "Keine komplizierten Anmeldungen oder Formulare. Herunterladen und tanken." },
       { "title": "Keine Gebühren", "desc": "Die App ist komplett kostenlos. Keine versteckten Gebühren oder Abos." },
       { "title": "Ohne Plastikkarten", "desc": "Schluss mit Treuekarten. Alles bequem in deinem Handy." },
-      { "title": "100+ Tankstellen", "desc": "Ein Netz von Partnertankstellen in ganz Tschechien." },
+      { "title": "100+ Tankstellen", "desc": "Ein Netz von Tankstellen in sechs Ländern Mitteleuropas." },
       { "title": "Hochwertiger Kraftstoff", "desc": "Wir arbeiten nur mit geprüften Tankstellen mit hochwertigem Kraftstoff." }
     ],
     "ctaTitle": "Fang noch heute an zu sparen",
@@ -126,11 +135,11 @@
   },
   "phmapPage": {
     "metaTitle": "PHMap: Tankstellenkarte",
-    "metaDescription": "PHMap zeigt dir die nächsten Partnertankstellen mit Rabattcodes für Kraftstoff. Finde eine Tankstelle und spare.",
-    "subtitle": "Eine interaktive Karte der Partnertankstellen. Finde die nächste Tankstelle mit aktuellen Rabattcodes.",
+    "metaDescription": "PHMap zeigt dir die nächsten Tankstellen mit Rabattcodes für Kraftstoff. Finde eine Tankstelle und spare.",
+    "subtitle": "Eine interaktive Karte der Tankstellen mit Rabatten. Finde die nächste Tankstelle mit aktuellen Rabattcodes.",
     "featuresHeading": "Was PHMap kann",
     "features": [
-      { "title": "Nächste Tankstellen", "desc": "Zeigt Partnertankstellen in deiner Nähe, sortiert nach Entfernung." },
+      { "title": "Nächste Tankstellen", "desc": "Zeigt Tankstellen mit Rabatten in deiner Nähe, sortiert nach Entfernung." },
       { "title": "Aktuelle Rabatte", "desc": "Bei jeder Tankstelle siehst du die aktuellen Rabattcodes und die Ersparnis pro Liter." },
       { "title": "Navigation", "desc": "Mit einem Tippen startest du die Navigation direkt zur gewählten Tankstelle." }
     ]

@@ -2,7 +2,7 @@
   "meta": {
     "homeTitle": "PHMarket: Šetri pri každom tankovaní",
     "homeDescription": "PHMarket ťa navedie k čerpacím staniciam s kvalitným palivom, kde uplatníš zľavové kódy. Bez registrácie, poplatkov alebo plastových kariet.",
-    "ogDescription": "Zľavové kódy na pohonné hmoty u partnerských čerpacích staníc. Bez registrácie, bez plastových kariet."
+    "ogDescription": "Zľavové kódy na pohonné hmoty na čerpacích staniciach v šiestich krajinách strednej Európy. Bez registrácie, bez plastových kariet."
   },
   "nav": {
     "home": "Domov",
@@ -47,7 +47,7 @@
   },
   "stats": {
     "stationsValue": "100+",
-    "stationsLabel": "partnerských staníc",
+    "stationsLabel": "čerpacích staníc",
     "savingValue": "až 3 Kč",
     "savingLabel": "úspora na liter",
     "feeValue": "0 Kč",
@@ -85,13 +85,22 @@
       "description": "Dovoz nafty priamo k zákazníkovi, rýchlo, pohodlne a za výhodné ceny."
     }
   },
-  "partners": {
-    "title": "Naše partnerské čerpacie stanice",
-    "subtitle": "Naši odberatelia"
+  "coverage": {
+    "title": "Kde pôsobíme",
+    "subtitle": "PHMarket funguje v šiestich krajinách strednej Európy.",
+    "mapAria": "Mapa strednej Európy so zvýraznenými krajinami, v ktorých PHMarket pôsobí",
+    "countries": {
+      "DE": "Nemecko",
+      "PL": "Poľsko",
+      "CZ": "Česko",
+      "SK": "Slovensko",
+      "AT": "Rakúsko",
+      "HU": "Maďarsko"
+    }
   },
   "homeCta": {
     "title": "Začni šetriť ešte dnes.",
-    "subtitle": "Stiahni si aplikáciu PHMarket a začni využívať zľavové kódy u partnerských čerpacích staníc po celej ČR."
+    "subtitle": "Stiahni si aplikáciu PHMarket a začni využívať zľavové kódy na čerpacích staniciach v šiestich krajinách strednej Európy."
   },
   "legal": {
     "breadcrumbHome": "Domov",
@@ -118,7 +127,7 @@
       { "title": "Bez registrácie", "desc": "Žiadne zložité registrácie ani vypĺňanie formulárov. Stiahni a tankuj." },
       { "title": "Žiadne poplatky", "desc": "Aplikácia je kompletne zadarmo. Žiadne skryté poplatky ani predplatné." },
       { "title": "Bez plastových kariet", "desc": "Koniec s vernostnými kartami. Všetko máš pohodlne v mobile." },
-      { "title": "100+ staníc", "desc": "Sieť partnerských čerpacích staníc po celej Českej republike." },
+      { "title": "100+ staníc", "desc": "Sieť čerpacích staníc v šiestich krajinách strednej Európy." },
       { "title": "Kvalitné palivo", "desc": "Spolupracujeme len s overenými čerpacími stanicami s kvalitným palivom." }
     ],
     "ctaTitle": "Začni šetriť ešte dnes",
@@ -126,11 +135,11 @@
   },
   "phmapPage": {
     "metaTitle": "PHMap: Mapa čerpacích staníc",
-    "metaDescription": "PHMap ti ukáže najbližšie partnerské čerpacie stanice so zľavovými kódmi na pohonné hmoty. Nájdi stanicu a ušetri.",
-    "subtitle": "Interaktívna mapa partnerských čerpacích staníc. Nájdi najbližšiu stanicu s aktuálnymi zľavovými kódmi.",
+    "metaDescription": "PHMap ti ukáže najbližšie čerpacie stanice so zľavovými kódmi na pohonné hmoty. Nájdi stanicu a ušetri.",
+    "subtitle": "Interaktívna mapa čerpacích staníc so zľavami. Nájdi najbližšiu stanicu s aktuálnymi zľavovými kódmi.",
     "featuresHeading": "Čo PHMap dokáže",
     "features": [
-      { "title": "Najbližšie stanice", "desc": "Zobrazí partnerské čerpacie stanice vo tvojom okolí zoradené podľa vzdialenosti." },
+      { "title": "Najbližšie stanice", "desc": "Zobrazí čerpacie stanice so zľavami vo tvojom okolí zoradené podľa vzdialenosti." },
       { "title": "Aktuálne zľavy", "desc": "Pri každej stanici vidíš aktuálne zľavové kódy a výšku úspory na liter." },
       { "title": "Navigácia", "desc": "Jedným kliknutím spustíš navigáciu priamo k vybranej stanici." }
     ]

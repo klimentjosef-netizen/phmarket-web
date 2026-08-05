@@ -156,7 +156,7 @@ export default function StationMap() {
       {/* Station list */}
       <div className="space-y-3 max-h-[550px] overflow-y-auto pr-1">
         <p className="text-sm text-gray-400 mb-2">
-          {stations.length} partnerských stanic
+          {stations.length} čerpacích stanic
           {userLocation && " · řazeno dle vzdálenosti"}
         </p>
         {sortedStations.map((station) => (

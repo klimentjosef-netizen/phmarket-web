@@ -19,7 +19,7 @@ export const organizationSchema = {
     height: 384,
   },
   description:
-    "Česká aplikace pro úspory na tankování pomocí slevových kódů na partnerských čerpacích stanicích. Bez registrace a plastových karet.",
+    "Aplikace pro úspory na tankování pomocí slevových kódů na čerpacích stanicích v šesti zemích střední Evropy. Bez registrace a plastových karet.",
   foundingDate: "2015",
   taxID: "04529031",
   vatID: "CZ04529031",
@@ -41,8 +41,15 @@ export const organizationSchema = {
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer service",
-    areaServed: "CZ",
-    availableLanguage: ["Czech", "Slovak", "Polish", "English", "German"],
+    areaServed: ["CZ", "SK", "PL", "DE", "AT", "HU"],
+    availableLanguage: [
+      "Czech",
+      "Slovak",
+      "Polish",
+      "English",
+      "German",
+      "Hungarian",
+    ],
   },
 };
 
@@ -69,7 +76,8 @@ export const mobileApplicationSchema = {
     priceCurrency: "CZK",
   },
   description:
-    "Aplikace pro slevové kódy na tankování v ČR. Bez registrace a plastových karet.",
+    "Aplikace pro slevové kódy na tankování v šesti zemích střední Evropy. Bez registrace a plastových karet.",
+  countriesSupported: ["CZ", "SK", "PL", "DE", "AT", "HU"],
   downloadUrl: [APP_STORE_URL, PLAY_STORE_URL],
   publisher: { "@id": ORG_ID },
 };

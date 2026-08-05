@@ -4,7 +4,9 @@ import AppStoreButtons from "@/components/AppStoreButtons";
 import SavingsCounter from "@/components/SavingsCounter";
 import HeroRedesignAnimation from "@/components/HeroRedesignAnimation";
 import JsonLd from "@/components/JsonLd";
+import CoverageMap from "@/components/CoverageMap";
 import { mobileApplicationSchema } from "@/lib/jsonld";
+import { COVERAGE, type CoverageCode } from "@/lib/coverage";
 import type { Locale } from "@/i18n/routing";
 
 /* ------------------------------------------------------------------ */
@@ -195,30 +197,23 @@ async function Services() {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Partneři                                                           */
+/*  Kde působíme                                                       */
 /* ------------------------------------------------------------------ */
-async function Partners() {
-  const t = await getTranslations("partners");
-  const stations = ["ORLEN", "MOL", "EuroOil", "Shell", "OMV", "Benzina", "Robin Oil", "Tank ONO"];
+async function Coverage() {
+  const t = await getTranslations("coverage");
+  const names = Object.fromEntries(
+    COVERAGE.map((iso) => [iso, t(`countries.${iso}`)])
+  ) as Record<CoverageCode, string>;
 
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-dark">{t("title")}</h2>
-          <p className="mt-3 text-gray-600">{t("subtitle")}</p>
+          <p className="mt-3 text-gray-600 max-w-2xl mx-auto">{t("subtitle")}</p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-          {stations.map((name) => (
-            <div
-              key={name}
-              className="flex items-center justify-center h-20 rounded-xl bg-gray-50 border border-gray-100 text-gray-400 font-semibold text-sm"
-            >
-              {name}
-            </div>
-          ))}
-        </div>
+        <CoverageMap names={names} ariaLabel={t("mapAria")} />
       </div>
     </section>
   );
@@ -255,7 +250,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
       <SavingsCounter />
       <HowItWorks />
       <Services />
-      <Partners />
+      <Coverage />
       <CtaSection />
     </>
   );
