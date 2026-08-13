@@ -84,6 +84,10 @@
     "mikrozavozy": {
       "title": "Diesel micro-delivery",
       "description": "Diesel delivered directly to the customer, fast, convenient and at favourable prices."
+    },
+    "partneri": {
+      "title": "For fuel stations",
+      "description": "Bring new drivers and company fleets to your station. No entry fees, commission only from verified purchases."
     }
   },
   "coverage": {

@@ -84,6 +84,10 @@
     "mikrozavozy": {
       "title": "Diesel-Mikrolieferung",
       "description": "Diesel direkt zum Kunden geliefert, schnell, bequem und zu günstigen Preisen."
+    },
+    "partneri": {
+      "title": "Für Tankstellen",
+      "description": "Holen Sie neue Fahrer und Firmenflotten an Ihre Tankstelle. Ohne Aufnahmegebühren, Vergütung erst aus geprüften Einkäufen."
     }
   },
   "coverage": {

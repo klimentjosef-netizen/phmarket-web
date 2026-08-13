@@ -84,6 +84,10 @@
     "mikrozavozy": {
       "title": "Gázolaj mikroszállítás",
       "description": "Gázolaj kiszállítása közvetlenül az ügyfélhez, gyorsan, kényelmesen és kedvező áron."
+    },
+    "partneri": {
+      "title": "Töltőállomásoknak",
+      "description": "Hozzon új sofőröket és céges flottákat az állomására. Belépési díj nélkül, jutalék csak ellenőrzött vásárlásokból."
     }
   },
   "coverage": {

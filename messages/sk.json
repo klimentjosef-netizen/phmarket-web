@@ -84,6 +84,10 @@
     "mikrozavozy": {
       "title": "Mikrorozvozy motorovej nafty",
       "description": "Dovoz nafty priamo k zákazníkovi, rýchlo, pohodlne a za výhodné ceny."
+    },
+    "partneri": {
+      "title": "Pre čerpacie stanice",
+      "description": "Priveďte na svoju stanicu nových vodičov a firemné flotily. Bez vstupných poplatkov, odmena až z overených nákupov."
     }
   },
   "coverage": {
