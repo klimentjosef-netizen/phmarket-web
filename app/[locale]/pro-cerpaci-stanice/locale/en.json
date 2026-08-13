@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "title": "Partnership for fuel stations",
+    "description": "We bring new drivers and company fleets to your fuel station. No entry fees and no payments for advertising, your commission is calculated only from verified and paid purchases."
+  },
+  "breadcrumbName": "For fuel stations",
+  "schema": {
+    "id": "/pro-cerpaci-stanice#service",
+    "serviceType": "Partner programme for fuel stations",
+    "name": "PHMarket fuel station partnership",
+    "description": "A partner programme for fuel station operators. PHMarket brings drivers and company fleets to partner stations through a mobile app, B2B cooperation and targeted promotion. No entry fees, the commission is calculated from verified and paid transactions.",
+    "audience": "Fuel station operators, owners of fuel station networks, independent local stations",
+    "priceDescription": "No registration, licence or administrative fees. The partner commission is based solely on genuinely completed, verified and paid transactions."
+  },
+  "content": {
+    "heroTitlePre": "Fill your pumps with",
+    "heroTitleHl": "new drivers",
+    "heroSubtitle": "No advertising fees, no risk and no disruption to your operation.",
+    "heroIntro": "PHMarket connects fuel stations with drivers and company fleets who are actively looking for cheaper fuel. We bring you real customers and encourage them to keep coming back. You only pay from verified, completed purchases.",
+    "heroCtaLabel": "I want to become a PHMarket partner",
+
+    "whyTitle": "Marketing that costs nothing upfront but delivers results",
+    "whyIntro": "You run a fuel station and want to increase throughput, but standard marketing packages, pay per click or overpriced advertising with no guaranteed outcome make no sense to you? Most marketing models demand an investment before the first car even pulls onto your forecourt.",
+    "whyLead": "PHMarket changes the rules of the game.",
+    "whyOutro": "We are building a growing network of partner fuel stations and bringing drivers and business customers to them through a modern mobile app, B2B partnerships, digital benefits and targeted promotion.",
+    "principlesTitle": "The core principles of our partnership",
+    "principles": [
+      {
+        "strong": "No fees to join the network:",
+        "text": "You pay no registration, licence or administrative fees for connecting."
+      },
+      {
+        "strong": "No payments for impressions or advertising:",
+        "text": "We charge you nothing for having your logo visible in the app or on the website."
+      },
+      {
+        "strong": "Commission only from real sales:",
+        "text": "The commission depends solely on genuinely completed, verified and paid transactions."
+      }
+    ],
+
+    "howTitle": "How the PHMarket model works in practice",
+    "howIntro": "The whole system is designed to be as transparent, fast and understandable as possible, both for you as a partner and for the driver behind the wheel.",
+    "howFlow": [
+      "PHMarket brings the customer",
+      "The customer refuels",
+      "The purchase is verified",
+      "You receive the revenue and commission"
+    ],
+    "howSteps": [
+      {
+        "strong": "Reaching the driver through the app or the B2B network:",
+        "text": "The driver finds the nearest partner station on their route in the PHMarket app, or is referred to it through business cooperation."
+      },
+      {
+        "strong": "Arrival and refuelling:",
+        "text": "The customer drives to your fuel station, refuels and may also buy from your shop."
+      },
+      {
+        "strong": "Easy identification:",
+        "text": "At the till the customer shows a unique QR code or a 10-digit barcode straight from their phone screen."
+      },
+      {
+        "strong": "Verification and records:",
+        "text": "The system records and verifies the transaction. The purchase is linked to the customer profile and counted into the monthly settlement."
+      },
+      {
+        "strong": "Settlement without guesswork:",
+        "text": "At the end of the month a transparent settlement takes place. Both the partner commission and our claim are based only on confirmed data."
+      }
+    ],
+
+    "benefitsTitle": "Why is a PHMarket partnership worthwhile for your fuel station?",
+    "benefits": [
+      {
+        "title": "You pay only for demonstrable performance",
+        "body": "While traditional marketing costs you money regardless of whether anyone actually turned up, with PHMarket you risk nothing. If we do not bring you drivers, you pay nothing. The commission is calculated from verified data, so you have full control over the value the system delivers."
+      },
+      {
+        "title": "Access to strong B2B clients (agriculture and construction)",
+        "body": "In Czechia we operate nationwide in delivering fuel directly into the tanks and machinery of agricultural and construction companies. We actively connect these strong business partners and their fleets with our fuel station network, securing you a flow of high volume customers."
+      },
+      {
+        "title": "Free promotion across modern channels",
+        "body": "By joining the network you gain access to the whole PHMarket marketing apparatus. We will tell a wide community of drivers about your station without you having to set up advertising accounts, hire agencies or produce expensive creatives. We handle all the promotion."
+      },
+      {
+        "title": "Your own presentation in the mobile app",
+        "body": "Every partner gets a dedicated profile in the PHMarket app. Drivers will see clearly, right on their phone:",
+        "items": [
+          "Precise navigation and the location of your fuel station.",
+          "Up to date information on opening hours and services offered (car wash, air compressor, bistro, shop).",
+          "Fuel prices and availability, subject to the technical capabilities of the system.",
+          "Special offers and benefits valid at your station.",
+          "A clear mark that you are an official partner site of the network."
+        ]
+      }
+    ],
+
+    "loyaltyTitle": "A system built on repeat visits",
+    "loyaltyBody": "PHMarket is not a one off discount portal. Our goal is to build a long term customer ecosystem that teaches drivers to come back to you regularly. Loyalty mechanics in the app motivate customers to favour partner stations when planning their journeys.",
+
+    "audienceTitle": "Which customers and companies will choose you first?",
+    "audienceIntro": "The PHMarket app and our ecosystem are not aimed only at ordinary motorists, they connect you with a broad B2B and B2C client base:",
+    "audienceItems": [
+      {
+        "strong": "Agricultural and construction companies:",
+        "text": " Across Czechia we deliver fuel directly into the fuel tanks, storage tanks and machinery of farmers and construction companies. We actively connect these companies and their drivers with our network of partner fuel stations for refuelling on the road."
+      },
+      {
+        "strong": "Company fleets and sole traders:",
+        "text": " Fleet managers and drivers of commercial vehicles who use the PHMarket system to manage fuel costs efficiently."
+      },
+      {
+        "strong": "Everyday drivers and families:",
+        "text": " People who want to keep their running costs under control and appreciate digital benefits on everyday purchases."
+      },
+      {
+        "strong": "Cross border commuters and transit traffic:",
+        "text": " Drivers who commute daily for work or regularly cross Czechia and Europe along motorways and transit routes."
+      },
+      {
+        "strong": "Active deal seekers:",
+        "text": " Customers who prefer modern technology and deliberately look for offers with added value."
+      }
+    ],
+
+    "marginsTitle": "Protect your margins: we fund the benefits",
+    "marginsIntro": "One of the biggest pitfalls of classic loyalty programmes is having to subsidise discounts straight out of your own margin. PHMarket takes a different approach:",
+    "marginsItems": [
+      {
+        "strong": "PHMarket carries the customer benefits:",
+        "text": "The main advantages that motivate drivers to visit are funded by PHMarket and its partner system. You need not worry about your profit margins being cut across the board."
+      },
+      {
+        "strong": "Adding your own offer is voluntary:",
+        "text": "If you decide to support sales at your station even further (for example with a deal on coffee, the car wash or shop goods), you can add your own benefit to the system. That is entirely your decision, not a condition."
+      }
+    ],
+
+    "opsTitle": "Zero operational disruption: you do not need to change your processes",
+    "opsIntro": "We know that running a fuel station demands a smooth flow and that every wasted second at the till creates a queue. That is why the whole PHMarket technology is designed with simplicity and compatibility in mind.",
+    "opsItems": [
+      {
+        "strong": "No expensive hardware needed:",
+        "text": "You do not have to buy any complicated new terminals or replace your existing station equipment."
+      },
+      {
+        "strong": "Compatibility with your current systems:",
+        "text": "We develop our solution with the commonly used point of sale and forecourt systems in mind."
+      },
+      {
+        "strong": "Fast processing at the till:",
+        "text": "Identification by QR or a 10-digit barcode takes the cashier only a moment and does not disrupt the flow of service."
+      }
+    ],
+
+    "networkTitle": "Build the strongest fuel station network with us",
+    "networkIntro": "PHMarket is not standing still. Our vision is to build an extensive, interconnected network of partner fuel stations across Czechia and, step by step, along the key European transit routes.",
+    "networkFormulaLead": "In this model a simple direct proportion applies:",
+    "networkFormula": [
+      "More partners",
+      "More drivers and companies in the network",
+      "More frequent refuelling",
+      "Higher revenue for you"
+    ],
+    "networkOutro": "As a partner you do not become just another item on an advertising leaflet. You become an equal part of a growing customer ecosystem that keeps bringing you new and returning customers over the long term.",
+
+    "ctaTitle": "Connect your station to the PHMarket network today",
+    "ctaIntro": "Do you want to increase the volume of fuel sold and bring new drivers to your station without risk and without wasting money on ineffective advertising? Fill in the non-binding form and our team will get back to you shortly with a concrete proposal.",
+    "form": {
+      "title": "Contact form for partners",
+      "intro": "All fields are required. Sending the form places you under no obligation.",
+      "labels": {
+        "name": "Name and surname of the responsible person",
+        "company": "Company / operator name",
+        "station": "Fuel station name and location",
+        "phone": "Phone contact",
+        "email": "Email address"
+      },
+      "consentPre": "I consent to the processing of the details provided for the purpose of handling this enquiry. More in the",
+      "consentLink": "privacy policy",
+      "consentPost": ".",
+      "submitLabel": "Send a non-binding enquiry",
+      "sendingLabel": "Sending...",
+      "successTitle": "Enquiry sent",
+      "successText": "Thank you. Our team will get back to you shortly with a concrete proposal.",
+      "errorValidation": "Please check the fields, something is not right.",
+      "errorSend": "Sending failed. Please try again, or write to us directly at info@phmarket.cz."
+    },
+
+    "customTitle": "Do you have specific requirements or run a whole network of stations?",
+    "customBody": "We are fully open to tailoring the cooperation to your needs. Whether you manage a single local station or an extensive network of fuel stations, we will gladly discuss the integration options with you.",
+
+    "closingClaim": "PHMarket connects fuel stations with customers.",
+    "closingBadges": [
+      "Partnership with no entry fees",
+      "Commission based on real purchases",
+      "Marketing fully handled by PHMarket"
+    ]
+  }
+}

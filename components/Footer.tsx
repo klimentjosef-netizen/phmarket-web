@@ -94,6 +94,11 @@ export default async function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/pro-cerpaci-stanice" className="hover:text-primary transition-colors">
+                  {tn("partneri")}
+                </Link>
+              </li>
+              <li>
                 <Link href="/clanky" className="hover:text-primary transition-colors">
                   {tn("articles")}
                 </Link>

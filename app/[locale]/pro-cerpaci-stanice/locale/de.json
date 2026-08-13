@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "title": "Partnerschaft für Tankstellen",
+    "description": "Wir bringen neue Fahrer und Firmenflotten an Ihre Tankstelle. Ohne Aufnahmegebühren und ohne Zahlungen für Werbung, die Vergütung wird erst aus geprüften und bezahlten Einkäufen berechnet."
+  },
+  "breadcrumbName": "Für Tankstellen",
+  "schema": {
+    "id": "/pro-cerpaci-stanice#service",
+    "serviceType": "Partnerprogramm für Tankstellen",
+    "name": "PHMarket Tankstellenpartnerschaft",
+    "description": "Partnerprogramm für Tankstellenbetreiber. PHMarket bringt Fahrer und Firmenflotten über eine mobile App, B2B-Kooperationen und gezielte Werbung an Partnertankstellen. Ohne Aufnahmegebühren, die Vergütung wird aus geprüften und bezahlten Transaktionen berechnet.",
+    "audience": "Tankstellenbetreiber, Eigentümer von Tankstellennetzen, unabhängige lokale Tankstellen",
+    "priceDescription": "Keine Aufnahme-, Lizenz- oder Verwaltungsgebühren. Die Partnervergütung basiert ausschließlich auf tatsächlich getätigten, geprüften und bezahlten Transaktionen."
+  },
+  "content": {
+    "heroTitlePre": "Füllen Sie Ihre Zapfsäulen mit",
+    "heroTitleHl": "neuen Fahrern",
+    "heroSubtitle": "Ohne Werbegebühren, ohne Risiko und ohne Eingriff in Ihren Betrieb.",
+    "heroIntro": "PHMarket verbindet Tankstellen mit Fahrern und Firmenflotten, die aktiv nach günstigerem Tanken suchen. Wir bringen Ihnen echte Kunden und fördern deren wiederholte Rückkehr. Sie zahlen ausschließlich aus geprüften und getätigten Einkäufen.",
+    "heroCtaLabel": "Ich möchte PHMarket-Partner werden",
+
+    "whyTitle": "Marketing, das im Voraus nichts kostet, aber Ergebnisse bringt",
+    "whyIntro": "Sie betreiben eine Tankstelle und wollen den Absatz steigern, aber übliche Marketingpakete, Zahlungen pro Klick oder überteuerte Werbung ohne Ergebnisgarantie ergeben für Sie keinen Sinn? Die meisten Marketingmodelle verlangen Investitionen, noch bevor das erste Auto auf Ihr Gelände fährt.",
+    "whyLead": "PHMarket ändert die Spielregeln.",
+    "whyOutro": "Wir bauen ein wachsendes Netz von Partnertankstellen auf und bringen Fahrer sowie Firmenkunden über eine moderne mobile App, B2B-Partnerschaften, digitale Vorteile und gezielte Werbung zu ihnen.",
+    "principlesTitle": "Die Grundsätze unserer Partnerschaft",
+    "principles": [
+      {
+        "strong": "Keine Gebühren für den Eintritt ins Netz:",
+        "text": "Sie zahlen keinerlei Aufnahme-, Lizenz- oder Verwaltungsgebühren für den Anschluss."
+      },
+      {
+        "strong": "Keine Zahlungen für Einblendungen oder Werbung:",
+        "text": "Wir berechnen Ihnen nichts dafür, dass Ihr Logo in der App oder auf der Website zu sehen ist."
+      },
+      {
+        "strong": "Vergütung erst aus tatsächlichem Verkauf:",
+        "text": "Die Höhe der Vergütung richtet sich ausschließlich nach tatsächlich getätigten, geprüften und bezahlten Transaktionen."
+      }
+    ],
+
+    "howTitle": "Wie funktioniert das PHMarket-Modell in der Praxis?",
+    "howIntro": "Das gesamte System ist so gestaltet, dass es maximal transparent, schnell und verständlich ist, sowohl für Sie als Partner als auch für den Fahrer am Steuer.",
+    "howFlow": [
+      "PHMarket bringt den Kunden",
+      "Der Kunde tankt",
+      "Der Einkauf wird geprüft",
+      "Sie erhalten Umsatz und Vergütung"
+    ],
+    "howSteps": [
+      {
+        "strong": "Ansprache des Fahrers über die App oder das B2B-Netz:",
+        "text": "Der Fahrer findet in der PHMarket-App die nächste Partnertankstelle auf seiner Route oder kommt auf Empfehlung im Rahmen der Firmenkooperation."
+      },
+      {
+        "strong": "Ankunft und Tanken:",
+        "text": "Der Kunde fährt auf Ihre Tankstelle, tankt Kraftstoff und kauft gegebenenfalls im Shop ein."
+      },
+      {
+        "strong": "Einfache Identifikation:",
+        "text": "Beim Bezahlen an der Kasse weist sich der Kunde mit einem eindeutigen QR-Code oder einem 10-stelligen Strichcode direkt vom Display seines Mobiltelefons aus."
+      },
+      {
+        "strong": "Prüfung und Erfassung:",
+        "text": "Das System erfasst und prüft die Transaktion. Der Einkauf wird dem Kundenprofil zugeordnet und in die monatliche Auswertung einbezogen."
+      },
+      {
+        "strong": "Abrechnung ohne Diskussionen:",
+        "text": "Am Monatsende erfolgt eine transparente Abrechnung. Sowohl die Partnervergütung als auch unser Anspruch beruhen ausschließlich auf bestätigten Daten."
+      }
+    ],
+
+    "benefitsTitle": "Warum lohnt sich die Partnerschaft mit PHMarket für Ihre Tankstelle?",
+    "benefits": [
+      {
+        "title": "Sie zahlen ausschließlich für nachweisbare Leistung",
+        "body": "Während klassisches Marketing Sie Geld kostet, unabhängig davon, ob jemand tatsächlich gekommen ist, riskieren Sie bei PHMarket keinen Cent. Wenn wir Ihnen keine Fahrer bringen, zahlen Sie nichts. Die Vergütung wird aus geprüften Daten berechnet, sodass Sie die volle Kontrolle darüber haben, welchen Wert Ihnen das System bringt."
+      },
+      {
+        "title": "Zugang zu starker B2B-Kundschaft (Landwirtschaft und Bauwesen)",
+        "body": "In Tschechien sind wir landesweit in der Belieferung von Kraftstoffen direkt in Tanks und Maschinen von Landwirtschafts- und Baufirmen tätig. Diese starken Firmenpartner und ihre Fuhrparks verbinden wir aktiv mit unserem Tankstellennetz und sichern Ihnen so den Zustrom volumenstarker Kunden."
+      },
+      {
+        "title": "Kostenlose Werbung über moderne Kanäle",
+        "body": "Mit dem Eintritt ins Netz erhalten Sie Zugang zum gesamten Marketingapparat von PHMarket. Wir machen Ihre Tankstelle in einer breiten Fahrergemeinschaft bekannt, ohne dass Sie eigene Werbekonten anlegen, Agenturen beauftragen oder teure Motive erstellen müssen. Die gesamte Werbung übernehmen wir."
+      },
+      {
+        "title": "Eigene Präsentation in der mobilen App",
+        "body": "Jeder Partner erhält in der PHMarket-App ein eigenes Profil. Fahrer sehen direkt auf ihrem Telefon übersichtlich:",
+        "items": [
+          "Die genaue Navigation und Lage Ihrer Tankstelle.",
+          "Aktuelle Angaben zu Öffnungszeiten und angebotenen Leistungen (Waschanlage, Kompressor, Bistro, Shop).",
+          "Kraftstoffpreise und Verfügbarkeit nach den technischen Möglichkeiten des Systems.",
+          "Sonderaktionen und Vorteile, die an Ihrer Tankstelle gelten.",
+          "Die klare Kennzeichnung, dass Sie ein offizieller Partnerstandort des Netzes sind."
+        ]
+      }
+    ],
+
+    "loyaltyTitle": "Ein System, das auf wiederholten Besuchen aufbaut",
+    "loyaltyBody": "PHMarket ist kein einmaliges Rabattportal. Unser Ziel ist ein langfristiges Kundenökosystem, das Fahrer daran gewöhnt, regelmäßig zu Ihnen zu fahren. Treuemechanismen in der App motivieren Kunden, bei der Planung ihrer Fahrten gerade Partnertankstellen zu bevorzugen.",
+
+    "audienceTitle": "Für welche Kunden und Firmen werden Sie die erste Wahl?",
+    "audienceIntro": "Die PHMarket-App und unser Ökosystem richten sich nicht nur an gewöhnliche Autofahrer, sondern verbinden Sie mit einer breiten B2B- und B2C-Kundschaft:",
+    "audienceItems": [
+      {
+        "strong": "Landwirtschaftsbetriebe und Baufirmen:",
+        "text": " In ganz Tschechien liefern wir Kraftstoffe direkt in Kraftstofftanks, Lagerbehälter und Maschinen von Landwirten und Bauunternehmen. Diese Firmen und ihre Fahrer verbinden wir aktiv mit unserem Netz von Partnertankstellen für das Tanken unterwegs."
+      },
+      {
+        "strong": "Firmenflotten und Selbstständige:",
+        "text": " Fuhrparkmanager und Fahrer von Nutzfahrzeugen, die das PHMarket-System zur effizienten Steuerung der Kraftstoffkosten nutzen."
+      },
+      {
+        "strong": "Gewöhnliche Fahrer und Familien:",
+        "text": " Menschen, die ihre laufenden Kosten unter Kontrolle halten wollen und digitale Vorteile beim alltäglichen Einkauf zu schätzen wissen."
+      },
+      {
+        "strong": "Pendler und Transitverkehr:",
+        "text": " Fahrer, die täglich zur Arbeit pendeln oder regelmäßig Tschechien und Europa auf Autobahnen und Transitstrecken durchqueren."
+      },
+      {
+        "strong": "Aktive Vorteilssucher:",
+        "text": " Kunden, die moderne Technologien bevorzugen und gezielt nach Angeboten mit Mehrwert suchen."
+      }
+    ],
+
+    "marginsTitle": "Schützen Sie Ihre Margen: die Vorteile finanzieren wir",
+    "marginsIntro": "Einer der größten Fallstricke klassischer Treueprogramme ist die Notwendigkeit, Rabatte direkt aus der eigenen Marge zu subventionieren. Bei PHMarket ist der Ansatz ein anderer:",
+    "marginsItems": [
+      {
+        "strong": "Die Kundenvorteile trägt PHMarket:",
+        "text": "Die wichtigsten Vorteile, die Fahrer zum Anfahren motivieren, finanziert PHMarket mit seinem Partnersystem. Sie müssen keine flächendeckende Senkung Ihrer Gewinnmargen befürchten."
+      },
+      {
+        "strong": "Freiwillige Einbindung eines eigenen Angebots:",
+        "text": "Wenn Sie den Verkauf an Ihrer Tankstelle noch stärker unterstützen wollen (zum Beispiel mit einer Aktion auf Kaffee, die Waschanlage oder das Shop-Sortiment), können Sie dem System auch einen eigenen Vorteil hinzufügen. Das ist jedoch ganz Ihre Entscheidung und keine Bedingung."
+      }
+    ],
+
+    "opsTitle": "Null betriebliche Komplikationen: Sie müssen Ihre Abläufe nicht ändern",
+    "opsIntro": "Wir wissen, dass der Betrieb einer Tankstelle einen reibungslosen Ablauf verlangt und jede unnötige Sekunde an der Kasse Warteschlangen erzeugt. Deshalb ist die gesamte Technologie von PHMarket auf Einfachheit und Kompatibilität ausgelegt.",
+    "opsItems": [
+      {
+        "strong": "Keine teure Hardware nötig:",
+        "text": "Sie müssen keine komplizierten neuen Terminals kaufen und Ihre bestehende Tankstellenausstattung nicht austauschen."
+      },
+      {
+        "strong": "Kompatibilität mit bestehenden Systemen:",
+        "text": "Wir entwickeln unsere Lösung mit Blick auf die gängigen Kassen- und Abfertigungssysteme von Tankstellen."
+      },
+      {
+        "strong": "Schnelle Abfertigung an der Kasse:",
+        "text": "Die Identifikation per QR- oder 10-stelligem Strichcode nimmt dem Kassierer nur einen Augenblick und stört den Ablauf nicht."
+      }
+    ],
+
+    "networkTitle": "Bauen Sie mit uns das stärkste Tankstellennetz auf",
+    "networkIntro": "PHMarket bleibt nicht stehen. Unsere Vision ist ein umfangreiches, vernetztes Netz von Partnertankstellen in ganz Tschechien und schrittweise auch an den wichtigsten europäischen Transitstrecken.",
+    "networkFormulaLead": "In diesem Modell gilt eine einfache direkte Proportion:",
+    "networkFormula": [
+      "Mehr Partner",
+      "Mehr Fahrer und Firmen im Netz",
+      "Höhere Tankfrequenz",
+      "Höhere Umsätze für Sie"
+    ],
+    "networkOutro": "Als Partner werden Sie nicht nur ein weiterer Posten auf einem Werbeflyer. Sie werden ein gleichwertiger Teil eines wachsenden Kundenökosystems, das Ihnen langfristig neue und wiederkehrende Kunden zuführt.",
+
+    "ctaTitle": "Schließen Sie Ihre Tankstelle noch heute an das PHMarket-Netz an",
+    "ctaIntro": "Wollen Sie die verkaufte Kraftstoffmenge steigern und neue Fahrer an Ihre Tankstelle bringen, ohne Risiko und ohne Geld für unwirksame Werbung zu verschwenden? Füllen Sie das unverbindliche Formular aus und unser Team meldet sich in Kürze mit einem konkreten Kooperationsvorschlag.",
+    "form": {
+      "title": "Kontaktformular für Partner",
+      "intro": "Alle Felder sind Pflichtfelder. Mit dem Absenden gehen Sie keine Verpflichtung ein.",
+      "labels": {
+        "name": "Vor- und Nachname der verantwortlichen Person",
+        "company": "Name des Unternehmens / Betreibers",
+        "station": "Name und Standort der Tankstelle",
+        "phone": "Telefonkontakt",
+        "email": "E-Mail-Adresse"
+      },
+      "consentPre": "Ich stimme der Verarbeitung der angegebenen Daten zum Zweck der Bearbeitung dieser Anfrage zu. Mehr in den",
+      "consentLink": "Datenschutzhinweisen",
+      "consentPost": ".",
+      "submitLabel": "Unverbindliche Anfrage senden",
+      "sendingLabel": "Senden...",
+      "successTitle": "Anfrage gesendet",
+      "successText": "Vielen Dank. Unser Team meldet sich in Kürze mit einem konkreten Kooperationsvorschlag.",
+      "errorValidation": "Bitte prüfen Sie die ausgefüllten Felder, etwas stimmt nicht.",
+      "errorSend": "Das Senden ist fehlgeschlagen. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt an info@phmarket.cz."
+    },
+
+    "customTitle": "Haben Sie besondere Anforderungen oder betreiben Sie ein ganzes Tankstellennetz?",
+    "customBody": "Wir sind für eine individuelle, auf Ihre Bedürfnisse zugeschnittene Zusammenarbeit vollkommen offen. Ob Sie eine einzelne lokale Tankstelle oder ein umfangreiches Tankstellennetz verwalten, wir besprechen die Integrationsmöglichkeiten gern mit Ihnen.",
+
+    "closingClaim": "PHMarket verbindet Tankstellen mit Kunden.",
+    "closingBadges": [
+      "Partnerschaft ohne Aufnahmegebühren",
+      "Vergütung auf Basis echter Einkäufe",
+      "Marketing vollständig durch PHMarket"
+    ]
+  }
+}

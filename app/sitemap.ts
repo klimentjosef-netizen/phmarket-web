@@ -43,6 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/tankujte-levneji", changeFrequency: "monthly", priority: 0.9 },
     { path: "/cisteni-nadrzi", changeFrequency: "monthly", priority: 0.8 },
     { path: "/mikrozavozy-motorove-nafty", changeFrequency: "monthly", priority: 0.8 },
+    { path: "/pro-cerpaci-stanice", changeFrequency: "monthly", priority: 0.8 },
     { path: "/clanky", changeFrequency: "weekly", priority: 0.8 },
     { path: "/podminky", changeFrequency: "yearly", priority: 0.3 },
     { path: "/privacy-policy", changeFrequency: "yearly", priority: 0.3 },

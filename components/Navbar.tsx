@@ -13,6 +13,7 @@ const NAV_LINKS = [
   { href: "/tankujte-levneji", key: "tankujte" },
   { href: "/cisteni-nadrzi", key: "cisteni" },
   { href: "/mikrozavozy-motorove-nafty", key: "mikrozavozy" },
+  { href: "/pro-cerpaci-stanice", key: "partneri" },
 ] as const;
 
 const APP_STORE_URL =
@@ -39,7 +40,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop nav */}
-          <div className="hidden lg:flex items-center gap-1">
+          <div className="hidden xl:flex items-center gap-1">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
@@ -52,7 +53,7 @@ export default function Navbar() {
           </div>
 
           {/* Right side: language + CTA */}
-          <div className="hidden lg:flex items-center gap-2">
+          <div className="hidden xl:flex items-center gap-2">
             <LanguageSwitcher />
             <Link
               href={APP_STORE_URL}
@@ -65,7 +66,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile controls */}
-          <div className="flex items-center gap-1 lg:hidden">
+          <div className="flex items-center gap-1 xl:hidden">
             <LanguageSwitcher />
             <button
               type="button"
@@ -90,7 +91,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="lg:hidden border-t border-gray-100 bg-white">
+        <div className="xl:hidden border-t border-gray-100 bg-white">
           <div className="px-4 py-3 space-y-1">
             {NAV_LINKS.map((link) => (
               <Link

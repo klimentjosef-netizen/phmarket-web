@@ -8,6 +8,7 @@
 - **PHMap**: mapa čerpacích stanic se slevovými kódy v reálném čase
 - **Čištění palivových nádrží**: B2B služba pro čerpací stanice a firmy s vozovým parkem v Česku (odstranění biokalů, sedimentů, vody)
 - **Mikrozávozy motorové nafty**: dovoz nafty přímo k zákazníkovi v Česku
+- **Partnerský program pro čerpací stanice**: PHMarket přivádí na partnerské stanice řidiče a firemní flotily, bez vstupních poplatků a bez plateb za reklamu, odměna se počítá z ověřených a zaplacených transakcí
 
 ## Kde PHMarket působí
 
@@ -22,6 +23,7 @@ B2B služby (čištění nádrží, mikrozávozy nafty) poskytujeme v Česku.
 - [Tankujte levněji](https://phmarket.cz/tankujte-levneji): jak používat slevové kódy na palivo
 - [Čištění nádrží](https://phmarket.cz/cisteni-nadrzi): profesionální čištění palivových nádrží
 - [Mikrozávozy motorové nafty](https://phmarket.cz/mikrozavozy-motorove-nafty): dovoz nafty k zákazníkovi
+- [Pro čerpací stanice](https://phmarket.cz/pro-cerpaci-stanice): partnerský program pro provozovatele čerpacích stanic, včetně kontaktního formuláře
 - [Články](https://phmarket.cz/clanky): články o palivech, cenách, kvalitě a chytrém tankování
 
 ## Stažení aplikace
