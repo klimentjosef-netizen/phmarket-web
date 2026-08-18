@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Partnerség töltőállomásoknak",
+    "title": "Partnerség töltőállomásoknak | Növelje a forgalmát | PHMarket",
     "description": "Új sofőröket és céges flottákat hozunk a töltőállomására. Belépési és hirdetési díj nélkül, a jutalék csak az ellenőrzött és kifizetett vásárlásokból számolódik."
   },
   "breadcrumbName": "Töltőállomásoknak",
@@ -12,14 +12,55 @@
     "audience": "Töltőállomás-üzemeltetők, töltőállomás-hálózatok tulajdonosai, független helyi állomások",
     "priceDescription": "Nincs belépési, licenc- vagy adminisztrációs díj. A partner jutaléka kizárólag a ténylegesen megvalósult, ellenőrzött és kifizetett tranzakciókon alapul."
   },
+  "faqItems": [
+    {
+      "question": "Hogyan növelhetem töltőállomásom forgalmát hirdetési befektetés nélkül?",
+      "answer": "A PHMarket mobilalkalmazáson, B2B együttműködésen és célzott promóción keresztül hoz sofőröket és céges flottákat a partnerállomásokra. A hálózatba lépésért és az alkalmazásban való megjelenésért semmit nem fizet, a jutalék csak a ténylegesen megvalósult, ellenőrzött és kifizetett tranzakciókból számolódik. Ha nem hozunk Önnek sofőröket, nem fizet semmit, így a forgalom növelése nem kíván előre marketingbefektetést."
+    },
+    {
+      "question": "Hogyan vonzhatok új sofőröket a töltőállomásomra?",
+      "answer": "A sofőrök a PHMarket alkalmazásban keresik meg az útvonalukhoz legközelebbi partnerállomást. Minden partner dedikált profilt kap az alkalmazásban navigációval, nyitvatartással, a nyújtott szolgáltatások áttekintésével (mosó, kompresszor, bisztró, shop) és az érvényes kedvezményekkel. A sofőrközösségen belüli promóciót a PHMarket biztosítja, nem kell hirdetési fiókot létrehoznia vagy ügynökséget megbíznia."
+    },
+    {
+      "question": "Hogyan szerezhetek céges ügyfeleket és flottákat a töltőállomásomnak?",
+      "answer": "A flottakezelők, egyéni vállalkozók és haszongépjármű-vezetők a PHMarket rendszerét használják az üzemanyagköltségeik kezelésére. Ezeket a céges ügyfeleket aktívan összekötjük a partnerállomások hálózatával, így nagy volumenű B2B tankolás is Önhöz kerül, nem csupán a hétköznapi autósok."
+    },
+    {
+      "question": "Hogyan szerezhetek ügyfélként gazdálkodókat és építőipari cégeket?",
+      "answer": "Csehország egész területén szállítunk üzemanyagot közvetlenül mezőgazdasági és építőipari cégek üzemanyagtartályaiba, tárolóiba és gépeibe. Ezeket a cégeket és sofőrjeiket összekötjük a partner töltőállomások hálózatával az úton történő tankoláshoz, így hozzáférést kap olyan ügyfélkörhöz, amelyet hagyományos hirdetéssel nem érne el."
+    },
+    {
+      "question": "Hogyan működik a töltőállomásoknak szóló jutalékrendszer?",
+      "answer": "A jutalék kizárólag a ténylegesen megvalósult, ellenőrzött és kifizetett tranzakcióktól függ. A rendszer rögzíti és ellenőrzi a tranzakciót, hozzárendeli a vásárló profiljához, és beszámítja a havi kiértékelésbe. A hónap végén átlátható elszámolás történik, amelyben a partner jutaléka és a mi igényünk is kizárólag megerősített adatokon alapul."
+    },
+    {
+      "question": "Mennyibe kerül a töltőállomás bekapcsolása a PHMarket hálózatába?",
+      "answer": "A hálózatba lépés díjmentes. Nem fizet belépési, licenc- vagy adminisztrációs díjat a csatlakozásért, és semmit nem számlázunk azért, hogy a logója látható az alkalmazásban vagy a weboldalon. A töltőállomásoknak szóló marketinget saját költségünkön biztosítjuk, Ön csak az ellenőrzött vásárlások után fizet."
+    },
+    {
+      "question": "Össze kell kapcsolnom a kasszarendszeremet, vagy új hardvert kell vásárolnom?",
+      "answer": "Nem kell bonyolult új terminálokat vásárolnia, és a meglévő állomásfelszerelést sem kell cserélnie. Megoldásunkat a töltőállomásokon általánosan használt kassza- és kiszolgálórendszerek figyelembevételével fejlesztjük. A kasszánál a vásárló QR-kóddal vagy 10 jegyű vonalkóddal azonosítja magát a telefonja kijelzőjéről, ami a pénztárosnak csak egy pillanat, és nem töri meg a kiszolgálás folyamatosságát."
+    },
+    {
+      "question": "Ki finanszírozza a kedvezményeket a hűség- és kedvezményrendszerben?",
+      "answer": "A sofőröket érkezésre ösztönző fő vásárlói kedvezményeket a PHMarket és partnerrendszere finanszírozza. Így nem a saját árréséből támogatja a kedvezményeket, és nem kell tartania a jövedelmezőség általános csökkenésétől. Saját kedvezményt (például kávéra, mosóra vagy shopos árukra szóló akciót) önként adhat a rendszerhez, ez nem feltétele az együttműködésnek."
+    },
+    {
+      "question": "Hogyan regisztrálhatom a töltőállomásomat a PHMarket alkalmazásba?",
+      "answer": "Töltse ki a kötelezettségmentes űrlapot ezen az oldalon. Szükségünk van a felelős személy nevére, a cég nevére, az állomás nevére és helyére, telefonszámra és e-mail címre. Csapatunk konkrét együttműködési javaslattal jelentkezik. A bekapcsolás után az állomása saját profilt kap az alkalmazásban, és a hálózat hivatalos partnerhelyeként jelenik meg."
+    },
+    {
+      "question": "Több állomást üzemeltetek. Beállítható az együttműködés egy teljes hálózatra?",
+      "answer": "Igen. Az együttműködést egyedileg alakítjuk ki az igényei szerint, akár egyetlen helyi állomást kezel, akár kiterjedt töltőállomás-hálózatot. Szívesen megbeszéljük az integráció lehetőségeit és a több telephelyre vonatkozó feltételeket is."
+    }
+  ],
   "content": {
-    "heroTitlePre": "Töltse meg kútoszlopait",
+    "heroTitlePre": "Növelje töltőállomása forgalmát",
     "heroTitleHl": "új sofőrökkel",
     "heroSubtitle": "Hirdetési díjak, kockázat és az üzemmenet megzavarása nélkül.",
-    "heroIntro": "A PHMarket összeköti a töltőállomásokat azokkal a sofőrökkel és céges flottákkal, akik aktívan keresik a kedvezőbb tankolást. Valódi vásárlókat hozunk Önnek, és támogatjuk a visszatérésüket. Kizárólag az ellenőrzött és megvalósult vásárlások után fizet.",
+    "heroIntro": "A PHMarket összeköti a töltőállomásokat azokkal a sofőrökkel, céges flottákkal és B2B ügyfelekkel, akik aktívan keresik a kedvezőbb tankolást. Valódi vásárlókat hozunk Önnek, és támogatjuk a visszatérésüket. Kizárólag az ellenőrzött és megvalósult vásárlások után fizet.",
     "heroCtaLabel": "PHMarket partner szeretnék lenni",
-
-    "whyTitle": "Marketing, amely előre nem kerül pénzbe, mégis eredményt hoz",
+    "whyTitle": "Marketing töltőállomásoknak, amely előre nem kerül pénzbe, mégis eredményt hoz",
     "whyIntro": "Töltőállomást üzemeltet, és növelné a forgalmát, de a szokásos marketingcsomagok, a kattintásalapú fizetés vagy a túlárazott, eredménygarancia nélküli hirdetés nem éri meg Önnek? A legtöbb marketingmodell már azelőtt befektetést kíván, hogy az első autó behajtana az állomására.",
     "whyLead": "A PHMarket megváltoztatja a játékszabályokat.",
     "whyOutro": "Növekvő partnerállomás-hálózatot építünk, és modern mobilalkalmazáson, B2B partnerségeken, digitális kedvezményeken és célzott promóción keresztül hozunk hozzájuk sofőröket és céges ügyfeleket.",
@@ -38,7 +79,6 @@
         "text": "A jutalék mértéke kizárólag a ténylegesen megvalósult, ellenőrzött és kifizetett tranzakcióktól függ."
       }
     ],
-
     "howTitle": "Hogyan működik a PHMarket modell a gyakorlatban?",
     "howIntro": "A teljes rendszert úgy terveztük, hogy a lehető legátláthatóbb, leggyorsabb és legérthetőbb legyen mind Önnek mint partnernek, mind a volán mögött ülő sofőrnek.",
     "howFlow": [
@@ -69,7 +109,6 @@
         "text": "A hónap végén átlátható elszámolás történik. A partner jutaléka és a mi igényünk is kizárólag megerősített adatokon alapul."
       }
     ],
-
     "benefitsTitle": "Miért éri meg a PHMarket partnerség az Ön töltőállomásának?",
     "benefits": [
       {
@@ -96,10 +135,8 @@
         ]
       }
     ],
-
-    "loyaltyTitle": "Ismételt látogatásokra épülő rendszer",
+    "loyaltyTitle": "Töltőállomásoknak szóló hűségrendszer, amely ismételt látogatásokra épül",
     "loyaltyBody": "A PHMarket nem egyszeri kedvezményportál. Célunk egy hosszú távú vásárlói ökoszisztéma felépítése, amely megtanítja a sofőröket arra, hogy rendszeresen Önhöz járjanak. Az alkalmazás hűségmechanizmusai arra ösztönzik a vásárlókat, hogy útjaik tervezésekor éppen a partnerállomásokat részesítsék előnyben.",
-
     "audienceTitle": "Milyen vásárlóknak és cégeknek lesz Ön az első választás?",
     "audienceIntro": "A PHMarket alkalmazás és ökoszisztémánk nem csak a hétköznapi autósokat célozza, hanem széles B2B és B2C ügyfélkörrel köti össze Önt:",
     "audienceItems": [
@@ -124,7 +161,6 @@
         "text": " Vásárlók, akik a modern technológiát részesítik előnyben, és céltudatosan keresik a többletértéket kínáló ajánlatokat."
       }
     ],
-
     "marginsTitle": "Védje az árrését: a kedvezményeket mi finanszírozzuk",
     "marginsIntro": "A klasszikus hűségprogramok egyik legnagyobb buktatója, hogy a kedvezményeket közvetlenül a saját árrésből kell támogatni. A PHMarketnél más a megközelítés:",
     "marginsItems": [
@@ -137,7 +173,6 @@
         "text": "Ha úgy dönt, hogy még jobban támogatja az eladást az állomásán (például kávéra, mosóra vagy shopos árukra szóló akcióval), saját kedvezményt is hozzáadhat a rendszerhez. Ez azonban teljes mértékben az Ön döntése, nem feltétel."
       }
     ],
-
     "opsTitle": "Nulla üzemeltetési bonyodalom: nem kell megváltoztatnia a folyamatait",
     "opsIntro": "Tudjuk, hogy egy töltőállomás üzemeltetése zökkenőmentes működést kíván, és minden felesleges másodperc a kasszánál sort épít. Ezért a teljes PHMarket technológiai megoldást az egyszerűségre és a kompatibilitásra terveztük.",
     "opsItems": [
@@ -154,7 +189,6 @@
         "text": "A QR- vagy 10 jegyű vonalkódos azonosítás a pénztárosnak csak egy pillanat, és nem töri meg a kiszolgálás folyamatosságát."
       }
     ],
-
     "networkTitle": "Építse velünk a legerősebb töltőállomás-hálózatot",
     "networkIntro": "A PHMarket nem áll meg. Víziónk egy kiterjedt, összekapcsolt partner töltőállomás-hálózat felépítése Csehország egész területén, majd fokozatosan a legfontosabb európai tranzitútvonalakon is.",
     "networkFormulaLead": "Ebben a modellben egyszerű egyenes arányosság érvényes:",
@@ -165,7 +199,7 @@
       "Magasabb bevétel Önnek"
     ],
     "networkOutro": "Partnerként nem csupán egy újabb tétel lesz egy reklámszórólapon. Egyenrangú részévé válik egy növekvő vásárlói ökoszisztémának, amely hosszú távon biztosítja Önnek az új és visszatérő vásárlók áramlását.",
-
+    "faqTitle": "Töltőállomás-üzemeltetők gyakori kérdései",
     "ctaTitle": "Csatlakoztassa állomását a PHMarket hálózatához még ma",
     "ctaIntro": "Szeretné növelni az eladott üzemanyag mennyiségét, és új sofőröket hozni az állomására kockázat nélkül, anélkül hogy hatástalan hirdetésre pazarolna? Töltse ki a kötelezettségmentes űrlapot, és csapatunk hamarosan jelentkezik konkrét együttműködési javaslattal.",
     "form": {
@@ -188,10 +222,8 @@
       "errorValidation": "Kérjük, ellenőrizze a kitöltött mezőket, valami nem stimmel.",
       "errorSend": "A küldés nem sikerült. Kérjük, próbálja újra, vagy írjon nekünk közvetlenül az info@phmarket.cz címre."
     },
-
     "customTitle": "Egyedi igényei vannak, vagy egy teljes állomáshálózatot üzemeltet?",
     "customBody": "Teljesen nyitottak vagyunk az igényeire szabott, egyedi együttműködésre. Akár egyetlen helyi állomást kezel, akár kiterjedt töltőállomás-hálózatot, szívesen megbeszéljük Önnel az integráció lehetőségeit.",
-
     "closingClaim": "A PHMarket összeköti a töltőállomásokat a vásárlókkal.",
     "closingBadges": [
       "Partnerség belépési díj nélkül",

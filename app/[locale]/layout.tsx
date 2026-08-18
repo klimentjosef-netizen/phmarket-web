@@ -51,7 +51,7 @@ export async function generateMetadata({
       url: SITE_URL + localePath(locale),
       title: t("homeTitle"),
       description: t("ogDescription"),
-      images: [{ url: "/logo.png", width: 384, height: 384, alt: "PHMarket logo" }],
+      images: [{ url: "/logo.png", width: 328, height: 142, alt: "PHMarket logo" }],
     },
     twitter: {
       card: "summary_large_image",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Partnerstvo pre čerpacie stanice",
+    "title": "Partnerstvo pre čerpacie stanice | Zvýšte výtoč paliva | PHMarket",
     "description": "Privádzame na vašu čerpaciu stanicu nových vodičov aj firemné flotily. Bez vstupných poplatkov a bez platieb za reklamu, odmena sa počíta až z overených a zaplatených nákupov."
   },
   "breadcrumbName": "Pre čerpacie stanice",
@@ -12,14 +12,55 @@
     "audience": "Prevádzkovatelia čerpacích staníc, majitelia sietí čerpacích staníc, nezávislé lokálne stanice",
     "priceDescription": "Bez zápisného, licenčných a administratívnych poplatkov. Odmena partnera vychádza výhradne z reálne uskutočnených, overených a zaplatených transakcií."
   },
+  "faqItems": [
+    {
+      "question": "Ako zvýšiť výtoč čerpacej stanice bez investície do reklamy?",
+      "answer": "PHMarket privádza na partnerské stanice vodičov aj firemné flotily prostredníctvom mobilnej aplikácie, B2B spolupráce a cielenej propagácie. Za vstup do siete ani za zobrazenie v aplikácii neplatíte nič, odmena sa počíta až z reálne uskutočnených, overených a zaplatených transakcií. Ak vám žiadnych vodičov neprivedieme, nič neplatíte, takže zvýšenie výtoče nevyžaduje žiadnu investíciu do marketingu vopred."
+    },
+    {
+      "question": "Ako prilákať na čerpaciu stanicu nových vodičov?",
+      "answer": "Vodiči si v aplikácii PHMarket vyhľadávajú najbližšiu partnerskú stanicu na svojej trase. Každý partner má v aplikácii vlastný profil s navigáciou, otváracími hodinami, prehľadom služieb (umyváreň, kompresor, bistro, doplnkový predaj) a platnými benefitmi. Propagáciu medzi komunitou vodičov zaisťuje PHMarket, nemusíte zakladať reklamné účty ani najímať agentúru."
+    },
+    {
+      "question": "Ako získať pre čerpaciu stanicu firemných zákazníkov a vozové parky?",
+      "answer": "Správcovia vozových parkov, živnostníci a vodiči úžitkových vozidiel využívajú systém PHMarket na riadenie nákladov na pohonné hmoty. Týchto firemných zákazníkov aktívne prepájame so sieťou partnerských staníc, takže k vám smeruje aj objemovo významné B2B tankovanie, nie iba bežní motoristi."
+    },
+    {
+      "question": "Ako získať ako zákazníkov poľnohospodárov a stavebné firmy?",
+      "answer": "V rámci celoštátnej pôsobnosti v Česku zavážame pohonné hmoty priamo do palivových nádrží, zásobníkov a strojov poľnohospodárskych a stavebných firiem. Tieto firmy a ich vodičov prepájame so sieťou partnerských čerpacích staníc pre tankovanie na cestách, takže získavate prístup ku klientele, ku ktorej sa bežnou reklamou nedostanete."
+    },
+    {
+      "question": "Ako funguje provízny systém pre čerpacie stanice?",
+      "answer": "Odmena sa odvíja výhradne od reálne uskutočnených, overených a zaplatených transakcií. Systém zaznamená a overí transakciu, priradí ju k profilu zákazníka a započíta do mesačného vyhodnotenia. Na konci mesiaca prebehne transparentné vyúčtovanie, kde odmena partnera aj náš nárok vychádza iba z potvrdených dát."
+    },
+    {
+      "question": "Koľko stojí zapojenie čerpacej stanice do siete PHMarket?",
+      "answer": "Vstup do siete je bez poplatkov. Neplatíte zápisné, licenčné ani administratívne poplatky za pripojenie a neúčtujeme vám nič za to, že je vaše logo vidieť v aplikácii alebo na webe. Marketing pre čerpacie stanice zaisťujeme na svoje náklady, platíte až z overených nákupov."
+    },
+    {
+      "question": "Musím prepojiť svoj pokladničný systém alebo kupovať nový hardvér?",
+      "answer": "Nemusíte nakupovať žiadne zložité nové terminály ani meniť súčasné vybavenie čerpacej stanice. Vývoj nášho riešenia prebieha s ohľadom na bežne používané pokladničné a odbavovacie systémy čerpacích staníc. Zákazník sa pri pokladni preukáže QR kódom alebo 10-miestnym čiarovým kódom z displeja telefónu, čo pokladníkovi zaberie iba okamih a nenarušuje plynulosť obsluhy."
+    },
+    {
+      "question": "Kto financuje benefity vo vernostnom a zľavovom systéme?",
+      "answer": "Hlavné zákaznícke benefity, ktoré motivujú vodičov k príchodu, financuje PHMarket a jeho partnerský systém. Nedotujete teda zľavy z vlastnej marže a nemusíte sa obávať plošného znižovania ziskovosti. Vlastný benefit (napríklad akciu na kávu, umývaciu linku alebo doplnkový sortiment) môžete do systému pridať dobrovoľne, nie je to podmienkou spolupráce."
+    },
+    {
+      "question": "Ako zaregistrujem čerpaciu stanicu do aplikácie PHMarket?",
+      "answer": "Vyplňte nezáväzný formulár na tejto stránke. Potrebujeme meno zodpovednej osoby, názov spoločnosti, názov a lokalitu stanice, telefón a e-mail. Náš tím sa vám ozve s konkrétnym návrhom spolupráce. Po zapojení získa vaša stanica v aplikácii vlastný profil a označenie oficiálneho partnerského miesta siete."
+    },
+    {
+      "question": "Prevádzkujem viac staníc. Dá sa nastaviť spolupráca pre celú sieť?",
+      "answer": "Áno. Spoluprácu nastavujeme individuálne podľa vašich potrieb, či už spravujete jedinú lokálnu stanicu, alebo rozsiahlu sieť čerpacích staníc. Radi s vami preberieme možnosti integrácie aj podmienky pre viac prevádzok súčasne."
+    }
+  ],
   "content": {
-    "heroTitlePre": "Zaplňte svoje stojany",
+    "heroTitlePre": "Zvýšte výtoč svojej čerpacej stanice",
     "heroTitleHl": "novými vodičmi",
     "heroSubtitle": "Bez reklamných poplatkov, bez rizika a bez zásahu do prevádzky.",
-    "heroIntro": "PHMarket prepája čerpacie stanice s vodičmi aj firemnými flotilami, ktorí aktívne hľadajú výhodnejšie tankovanie. Privádzame vám reálnych zákazníkov a podporujeme ich opakované návraty. Platíte iba z preverených a uskutočnených nákupov.",
+    "heroIntro": "PHMarket prepája čerpacie stanice s vodičmi, firemnými flotilami aj B2B zákazníkmi, ktorí aktívne hľadajú výhodnejšie tankovanie. Privádzame vám reálnych zákazníkov a podporujeme ich opakované návraty. Platíte iba z preverených a uskutočnených nákupov.",
     "heroCtaLabel": "Chcem sa stať partnerom PHMarket",
-
-    "whyTitle": "Marketing, ktorý nestojí peniaze vopred, ale prináša výsledky",
+    "whyTitle": "Marketing pre čerpacie stanice, ktorý nestojí peniaze vopred, ale prináša výsledky",
     "whyIntro": "Prevádzkujete čerpaciu stanicu a chcete zvýšiť výtoč, ale bežné marketingové balíky, platby za preklik alebo predražená reklama bez garancie výsledku pre vás nemajú zmysel? Väčšina marketingových modelov vyžaduje investície ešte predtým, než na vašu stanicu dorazí prvé auto.",
     "whyLead": "PHMarket mení pravidlá hry.",
     "whyOutro": "Budujeme rastúcu sieť partnerských čerpacích staníc a privádzame k nim vodičov aj firemných zákazníkov prostredníctvom modernej mobilnej aplikácie, B2B partnerstiev, digitálnych benefitov a cielenej propagácie.",
@@ -38,7 +79,6 @@
         "text": "Výška odmeny sa odvíja výhradne od reálne uskutočnených, overených a zaplatených transakcií."
       }
     ],
-
     "howTitle": "Ako funguje model PHMarket v praxi?",
     "howIntro": "Celý systém je navrhnutý tak, aby bol maximálne transparentný, rýchly a zrozumiteľný ako pre vás ako partnera, tak pre vodiča za volantom.",
     "howFlow": [
@@ -69,7 +109,6 @@
         "text": "Na konci mesiaca prebehne transparentné vyúčtovanie. Odmena partnera aj náš nárok vychádza iba z potvrdených dát."
       }
     ],
-
     "benefitsTitle": "Prečo je partnerstvo s PHMarket výhodné pre vašu čerpaciu stanicu?",
     "benefits": [
       {
@@ -96,10 +135,8 @@
         ]
       }
     ],
-
-    "loyaltyTitle": "Systém postavený na opakovaných návštevách",
+    "loyaltyTitle": "Vernostný systém pre čerpacie stanice postavený na opakovaných návštevách",
     "loyaltyBody": "PHMarket nie je jednorazový zľavový portál. Naším cieľom je vybudovať dlhodobý zákaznícky ekosystém, ktorý vodičov naučí jazdiť k vám pravidelne. Vernostné mechanizmy v aplikácii motivujú zákazníkov, aby pri plánovaní svojich ciest preferovali práve partnerské stanice.",
-
     "audienceTitle": "Pre akých zákazníkov a firmy budete prvou voľbou?",
     "audienceIntro": "Aplikácia PHMarket a náš ekosystém nesmerujú iba na bežných motoristov, ale prepájajú vás s rozsiahlou B2B aj B2C klientelou:",
     "audienceItems": [
@@ -124,7 +161,6 @@
         "text": " Zákazníci, ktorí preferujú moderné technológie a cielene vyhľadávajú ponuky prinášajúce pridanú hodnotu."
       }
     ],
-
     "marginsTitle": "Chráňte svoje marže: benefity financujeme my",
     "marginsIntro": "Jedným z najväčších úskalí klasických vernostných programov je nutnosť dotovať zľavy priamo z vlastnej marže. Pri PHMarkete je prístup odlišný:",
     "marginsItems": [
@@ -137,7 +173,6 @@
         "text": "Ak sa rozhodnete podporiť predaj na svojej stanici ešte viac (napríklad akciou na kávu, umývaciu linku alebo doplnkový sortiment), môžete do systému pridať aj vlastný benefit. Je to však úplne na vašom rozhodnutí, nie podmienkou."
       }
     ],
-
     "opsTitle": "Nulové prevádzkové komplikácie: nemusíte meniť svoje procesy",
     "opsIntro": "Vieme, že prevádzka čerpacej stanice vyžaduje hladký priebeh a každá zbytočná sekunda pri pokladni tvorí rady. Preto je celé technologické riešenie PHMarket navrhnuté s dôrazom na jednoduchosť a kompatibilitu.",
     "opsItems": [
@@ -154,7 +189,6 @@
         "text": "Identifikácia cez QR alebo 10-miestny čiarový kód zaberie pokladníkovi iba okamih a nenarušuje plynulosť obsluhy."
       }
     ],
-
     "networkTitle": "Budujte s nami najsilnejšiu sieť čerpacích staníc",
     "networkIntro": "PHMarket nezostáva na mieste. Našou víziou je vybudovať rozsiahlu a prepojenú sieť partnerských čerpacích staníc v rámci celého Česka a postupne aj na kľúčových európskych tranzitných tepnách.",
     "networkFormulaLead": "V tomto modeli platí jednoduchá priama úmera:",
@@ -165,7 +199,7 @@
       "Vyššie tržby pre vás"
     ],
     "networkOutro": "Ako partner sa nestávate iba ďalšou položkou v reklamnom letáku. Stávate sa rovnocennou súčasťou rastúceho zákazníckeho ekosystému, ktorý vám dlhodobo zaisťuje prísun nových aj vracajúcich sa zákazníkov.",
-
+    "faqTitle": "Časté otázky prevádzkovateľov čerpacích staníc",
     "ctaTitle": "Pripojte svoju stanicu k sieti PHMarket ešte dnes",
     "ctaIntro": "Chcete zvýšiť objem predaného paliva a priviesť na svoju stanicu nových vodičov bez rizika a míňania financií za neúčinnú reklamu? Vyplňte nezáväzný formulár a náš tím sa vám čoskoro ozve s konkrétnym návrhom spolupráce.",
     "form": {
@@ -188,10 +222,8 @@
       "errorValidation": "Skontrolujte prosím vyplnené polia, niečo nie je v poriadku.",
       "errorSend": "Odoslanie sa nepodarilo. Skúste to prosím znova, alebo nám napíšte priamo na info@phmarket.cz."
     },
-
     "customTitle": "Máte špecifické požiadavky alebo prevádzkujete celú sieť staníc?",
     "customBody": "Sme plne otvorení individuálnemu nastaveniu spolupráce na mieru vašim potrebám. Či už spravujete jedinú lokálnu stanicu, alebo rozsiahlu sieť čerpacích staníc, radi s vami preberieme možnosti integrácie.",
-
     "closingClaim": "PHMarket prepája čerpacie stanice so zákazníkmi.",
     "closingBadges": [
       "Partnerstvo bez vstupných poplatkov",

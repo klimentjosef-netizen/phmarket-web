@@ -1,6 +1,12 @@
 import JsonLd from "@/components/JsonLd";
 import PartnerForm, { type PartnerFormContent } from "@/components/PartnerForm";
-import { breadcrumbSchema, serviceSchema, SITE_URL } from "@/lib/jsonld";
+import {
+  breadcrumbSchema,
+  faqSchema,
+  serviceSchema,
+  SITE_URL,
+  type FaqItem,
+} from "@/lib/jsonld";
 
 export type StrongItem = { strong: string; text: string };
 export type BenefitBlock = { title: string; body: string; items?: string[] };
@@ -48,6 +54,8 @@ export type PartnerContent = {
   networkFormula: string[];
   networkOutro: string;
 
+  faqTitle: string;
+
   ctaTitle: string;
   ctaIntro: string;
   form: PartnerFormContent;
@@ -71,6 +79,7 @@ export type PartnerSchemaData = {
 export type PartnerPageProps = {
   breadcrumbName: string;
   schema: PartnerSchemaData;
+  faqItems: FaqItem[];
   content: PartnerContent;
 };
 
@@ -99,6 +108,7 @@ function FlowLine({ steps }: { steps: string[] }) {
 export default function PartnerPage({
   breadcrumbName,
   schema,
+  faqItems,
   content: c,
 }: PartnerPageProps) {
   const service = serviceSchema(schema);
@@ -106,11 +116,13 @@ export default function PartnerPage({
     { name: breadcrumbName, url: SITE_URL },
     { name: breadcrumbName },
   ]);
+  const faq = faqSchema(faqItems);
 
   return (
     <>
       <JsonLd id="service-schema" data={service} />
       <JsonLd id="breadcrumb-schema" data={breadcrumb} />
+      <JsonLd id="faq-schema" data={faq} />
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-50 to-white py-16 md:py-24">
@@ -259,8 +271,23 @@ export default function PartnerPage({
         </div>
       </section>
 
+      {/* FAQ: covers the question-form long-tail queries, feeds FAQPage schema */}
+      <section className="py-12 md:py-16">
+        <div className="mx-auto max-w-3xl space-y-4 px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-dark md:text-3xl">{c.faqTitle}</h2>
+          <div className="space-y-6">
+            {faqItems.map((item) => (
+              <div key={item.question}>
+                <h3 className="text-lg font-semibold text-dark">{item.question}</h3>
+                <p className="mt-2 leading-relaxed text-gray-700">{item.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA + form */}
-      <section id={FORM_ANCHOR} className="scroll-mt-20 py-12 md:py-16">
+      <section id={FORM_ANCHOR} className="scroll-mt-20 bg-gray-50 py-12 md:py-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-dark md:text-3xl">{c.ctaTitle}</h2>
           <p className="mt-4 leading-relaxed text-gray-700">{c.ctaIntro}</p>
@@ -271,7 +298,7 @@ export default function PartnerPage({
       </section>
 
       {/* Bespoke setups */}
-      <section className="bg-gray-50 py-12 md:py-16">
+      <section className="py-12 md:py-16">
         <div className="mx-auto max-w-3xl space-y-4 px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-dark md:text-3xl">{c.customTitle}</h2>
           <p className="leading-relaxed text-gray-700">{c.customBody}</p>

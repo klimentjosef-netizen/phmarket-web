@@ -13,7 +13,9 @@ export async function generateMetadata({
   const { locale } = await params;
   const c = CONTENT[locale];
   return {
-    title: c.meta.title,
+    // absolute: the title already ends with the brand, so skip the layout's
+    // "%s | PHMarket" template (it would render "PHMarket" twice)
+    title: { absolute: c.meta.title },
     description: c.meta.description,
     alternates: localizedAlternates(locale, "/pro-cerpaci-stanice"),
   };
@@ -32,6 +34,7 @@ export default async function ProCerpaciStanicePage({
     <PartnerPage
       breadcrumbName={data.breadcrumbName}
       schema={data.schema}
+      faqItems={data.faqItems}
       content={data.content}
     />
   );

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Partnerstwo dla stacji paliw",
+    "title": "Partnerstwo dla stacji paliw | Zwiększ sprzedaż paliwa | PHMarket",
     "description": "Przyprowadzamy na Twoją stację paliw nowych kierowców i floty firmowe. Bez opłat wstępnych i bez płatności za reklamę, wynagrodzenie liczone jest dopiero od zweryfikowanych i opłaconych zakupów."
   },
   "breadcrumbName": "Dla stacji paliw",
@@ -12,14 +12,55 @@
     "audience": "Operatorzy stacji paliw, właściciele sieci stacji paliw, niezależne stacje lokalne",
     "priceDescription": "Bez wpisowego, opłat licencyjnych i administracyjnych. Wynagrodzenie partnera wynika wyłącznie z faktycznie zrealizowanych, zweryfikowanych i opłaconych transakcji."
   },
+  "faqItems": [
+    {
+      "question": "Jak zwiększyć sprzedaż paliwa na stacji bez inwestycji w reklamę?",
+      "answer": "PHMarket przyprowadza na stacje partnerskie kierowców i floty firmowe poprzez aplikację mobilną, współpracę B2B i ukierunkowaną promocję. Za wejście do sieci ani za wyświetlanie w aplikacji nie płacisz nic, wynagrodzenie liczone jest dopiero od faktycznie zrealizowanych, zweryfikowanych i opłaconych transakcji. Jeśli nie przyprowadzimy Ci kierowców, nic nie płacisz, więc wzrost sprzedaży nie wymaga żadnej inwestycji w marketing z góry."
+    },
+    {
+      "question": "Jak przyciągnąć na stację paliw nowych kierowców?",
+      "answer": "Kierowcy wyszukują w aplikacji PHMarket najbliższą stację partnerską na swojej trasie. Każdy partner ma w aplikacji własny profil z nawigacją, godzinami otwarcia, przeglądem usług (myjnia, kompresor, bistro, sprzedaż dodatkowa) i obowiązującymi benefitami. Promocję w społeczności kierowców zapewnia PHMarket, nie musisz zakładać kont reklamowych ani wynajmować agencji."
+    },
+    {
+      "question": "Jak zdobyć dla stacji paliw klientów firmowych i floty?",
+      "answer": "Zarządcy flot, przedsiębiorcy i kierowcy pojazdów użytkowych korzystają z systemu PHMarket do zarządzania kosztami paliwa. Tych klientów firmowych aktywnie łączymy z siecią stacji partnerskich, więc trafia do Ciebie także tankowanie B2B o dużym wolumenie, a nie tylko zwykli kierowcy."
+    },
+    {
+      "question": "Jak zdobyć jako klientów rolników i firmy budowlane?",
+      "answer": "Na terenie całych Czech dostarczamy paliwa bezpośrednio do zbiorników paliwowych, magazynów i maszyn firm rolniczych oraz budowlanych. Te firmy i ich kierowców łączymy z siecią partnerskich stacji paliw do tankowania w trasie, więc zyskujesz dostęp do klienteli, do której zwykłą reklamą nie dotrzesz."
+    },
+    {
+      "question": "Jak działa system prowizyjny dla stacji paliw?",
+      "answer": "Wynagrodzenie zależy wyłącznie od faktycznie zrealizowanych, zweryfikowanych i opłaconych transakcji. System rejestruje i weryfikuje transakcję, przypisuje ją do profilu klienta i wlicza do miesięcznego rozliczenia. Na koniec miesiąca następuje przejrzyste rozliczenie, w którym wynagrodzenie partnera i nasza należność wynikają wyłącznie z potwierdzonych danych."
+    },
+    {
+      "question": "Ile kosztuje przyłączenie stacji paliw do sieci PHMarket?",
+      "answer": "Wejście do sieci jest bez opłat. Nie płacisz wpisowego, opłat licencyjnych ani administracyjnych za przyłączenie i nie naliczamy Ci nic za to, że Twoje logo jest widoczne w aplikacji lub na stronie. Marketing dla stacji paliw zapewniamy na własny koszt, płacisz dopiero od zweryfikowanych zakupów."
+    },
+    {
+      "question": "Czy muszę integrować swój system kasowy albo kupować nowy sprzęt?",
+      "answer": "Nie musisz kupować żadnych skomplikowanych nowych terminali ani wymieniać obecnego wyposażenia stacji. Nasze rozwiązanie rozwijamy z uwzględnieniem powszechnie używanych systemów kasowych i obsługowych stacji paliw. Klient przy kasie okazuje kod QR lub 10-cyfrowy kod kreskowy z ekranu telefonu, co zajmuje kasjerowi tylko chwilę i nie zakłóca płynności obsługi."
+    },
+    {
+      "question": "Kto finansuje benefity w systemie lojalnościowym i rabatowym?",
+      "answer": "Główne benefity dla klientów, które motywują kierowców do przyjazdu, finansuje PHMarket i jego system partnerski. Nie dotujesz więc rabatów z własnej marży i nie musisz obawiać się powszechnego obniżania rentowności. Własny benefit (na przykład akcję na kawę, myjnię lub asortyment dodatkowy) możesz dodać do systemu dobrowolnie, nie jest to warunek współpracy."
+    },
+    {
+      "question": "Jak zarejestrować stację paliw w aplikacji PHMarket?",
+      "answer": "Wypełnij niezobowiązujący formularz na tej stronie. Potrzebujemy imienia i nazwiska osoby odpowiedzialnej, nazwy firmy, nazwy i lokalizacji stacji, telefonu oraz e-maila. Nasz zespół odezwie się z konkretną propozycją współpracy. Po przyłączeniu Twoja stacja otrzyma w aplikacji własny profil i oznaczenie oficjalnego miejsca partnerskiego sieci."
+    },
+    {
+      "question": "Prowadzę kilka stacji. Czy można ustalić współpracę dla całej sieci?",
+      "answer": "Tak. Współpracę ustalamy indywidualnie według Twoich potrzeb, niezależnie od tego, czy zarządzasz jedną lokalną stacją, czy rozległą siecią stacji paliw. Chętnie omówimy możliwości integracji oraz warunki dla kilku placówek jednocześnie."
+    }
+  ],
   "content": {
-    "heroTitlePre": "Zapełnij swoje dystrybutory",
-    "heroTitleHl": "nowymi kierowcami",
+    "heroTitlePre": "Zwiększ sprzedaż paliwa na swojej stacji dzięki",
+    "heroTitleHl": "nowym kierowcom",
     "heroSubtitle": "Bez opłat reklamowych, bez ryzyka i bez ingerencji w pracę stacji.",
-    "heroIntro": "PHMarket łączy stacje paliw z kierowcami i flotami firmowymi, którzy aktywnie szukają tańszego tankowania. Przyprowadzamy Ci realnych klientów i wspieramy ich powroty. Płacisz wyłącznie od zweryfikowanych i zrealizowanych zakupów.",
+    "heroIntro": "PHMarket łączy stacje paliw z kierowcami, flotami firmowymi i klientami B2B, którzy aktywnie szukają tańszego tankowania. Przyprowadzamy Ci realnych klientów i wspieramy ich powroty. Płacisz wyłącznie od zweryfikowanych i zrealizowanych zakupów.",
     "heroCtaLabel": "Chcę zostać partnerem PHMarket",
-
-    "whyTitle": "Marketing, który nie kosztuje z góry, ale przynosi wyniki",
+    "whyTitle": "Marketing dla stacji paliw, który nie kosztuje z góry, ale przynosi wyniki",
     "whyIntro": "Prowadzisz stację paliw i chcesz zwiększyć sprzedaż, ale zwykłe pakiety marketingowe, płatności za kliknięcie czy przepłacona reklama bez gwarancji efektu nie mają dla Ciebie sensu? Większość modeli marketingowych wymaga inwestycji jeszcze zanim na Twoją stację wjedzie pierwszy samochód.",
     "whyLead": "PHMarket zmienia zasady gry.",
     "whyOutro": "Budujemy rosnącą sieć partnerskich stacji paliw i przyprowadzamy do nich kierowców oraz klientów firmowych poprzez nowoczesną aplikację mobilną, partnerstwa B2B, benefity cyfrowe i ukierunkowaną promocję.",
@@ -38,7 +79,6 @@
         "text": "Wysokość wynagrodzenia zależy wyłącznie od faktycznie zrealizowanych, zweryfikowanych i opłaconych transakcji."
       }
     ],
-
     "howTitle": "Jak model PHMarket działa w praktyce?",
     "howIntro": "Cały system zaprojektowaliśmy tak, aby był maksymalnie przejrzysty, szybki i zrozumiały zarówno dla Ciebie jako partnera, jak i dla kierowcy za kierownicą.",
     "howFlow": [
@@ -69,7 +109,6 @@
         "text": "Na koniec miesiąca następuje przejrzyste rozliczenie. Wynagrodzenie partnera oraz nasza należność wynikają wyłącznie z potwierdzonych danych."
       }
     ],
-
     "benefitsTitle": "Dlaczego partnerstwo z PHMarket opłaca się Twojej stacji paliw?",
     "benefits": [
       {
@@ -96,10 +135,8 @@
         ]
       }
     ],
-
-    "loyaltyTitle": "System oparty na powracających wizytach",
+    "loyaltyTitle": "System lojalnościowy dla stacji paliw oparty na powracających wizytach",
     "loyaltyBody": "PHMarket nie jest jednorazowym portalem rabatowym. Naszym celem jest zbudowanie długofalowego ekosystemu klientów, który nauczy kierowców regularnie do Ciebie wracać. Mechanizmy lojalnościowe w aplikacji motywują klientów, aby planując swoje trasy wybierali właśnie stacje partnerskie.",
-
     "audienceTitle": "Dla jakich klientów i firm będziesz pierwszym wyborem?",
     "audienceIntro": "Aplikacja PHMarket i nasz ekosystem nie są skierowane wyłącznie do zwykłych kierowców, ale łączą Cię z szeroką klientelą B2B i B2C:",
     "audienceItems": [
@@ -124,7 +161,6 @@
         "text": " Klienci, którzy preferują nowoczesne technologie i celowo szukają ofert przynoszących dodatkową wartość."
       }
     ],
-
     "marginsTitle": "Chroń swoje marże: benefity finansujemy my",
     "marginsIntro": "Jedną z największych pułapek klasycznych programów lojalnościowych jest konieczność dotowania rabatów bezpośrednio z własnej marży. W PHMarkecie podejście jest inne:",
     "marginsItems": [
@@ -137,7 +173,6 @@
         "text": "Jeśli zdecydujesz się wesprzeć sprzedaż na swojej stacji jeszcze bardziej (na przykład akcją na kawę, myjnię lub asortyment dodatkowy), możesz dodać do systemu również własny benefit. Jest to jednak wyłącznie Twoja decyzja, a nie warunek."
       }
     ],
-
     "opsTitle": "Zero komplikacji operacyjnych: nie musisz zmieniać swoich procesów",
     "opsIntro": "Wiemy, że praca stacji paliw wymaga płynności, a każda zbędna sekunda przy kasie tworzy kolejki. Dlatego całe rozwiązanie technologiczne PHMarket zaprojektowaliśmy z naciskiem na prostotę i kompatybilność.",
     "opsItems": [
@@ -154,7 +189,6 @@
         "text": "Identyfikacja przez kod QR lub 10-cyfrowy kod kreskowy zajmuje kasjerowi tylko chwilę i nie zakłóca płynności obsługi."
       }
     ],
-
     "networkTitle": "Budujcie z nami najsilniejszą sieć stacji paliw",
     "networkIntro": "PHMarket nie stoi w miejscu. Naszą wizją jest zbudowanie rozległej i połączonej sieci partnerskich stacji paliw na terenie całych Czech, a stopniowo także na kluczowych europejskich trasach tranzytowych.",
     "networkFormulaLead": "W tym modelu obowiązuje prosta zależność wprost proporcjonalna:",
@@ -165,7 +199,7 @@
       "Wyższe przychody dla Ciebie"
     ],
     "networkOutro": "Jako partner nie stajesz się jedynie kolejną pozycją w ulotce reklamowej. Stajesz się równorzędną częścią rosnącego ekosystemu klientów, który długofalowo zapewnia Ci napływ nowych i powracających klientów.",
-
+    "faqTitle": "Częste pytania operatorów stacji paliw",
     "ctaTitle": "Podłącz swoją stację do sieci PHMarket jeszcze dziś",
     "ctaIntro": "Chcesz zwiększyć wolumen sprzedanego paliwa i przyprowadzić na swoją stację nowych kierowców bez ryzyka i marnowania pieniędzy na nieskuteczną reklamę? Wypełnij niezobowiązujący formularz, a nasz zespół wkrótce odezwie się z konkretną propozycją współpracy.",
     "form": {
@@ -188,10 +222,8 @@
       "errorValidation": "Sprawdź proszę wypełnione pola, coś się nie zgadza.",
       "errorSend": "Wysyłka nie powiodła się. Spróbuj proszę ponownie lub napisz do nas bezpośrednio na info@phmarket.cz."
     },
-
     "customTitle": "Masz szczególne wymagania lub prowadzisz całą sieć stacji?",
     "customBody": "Jesteśmy w pełni otwarci na indywidualne ustalenie współpracy dopasowanej do Twoich potrzeb. Niezależnie od tego, czy zarządzasz jedną lokalną stacją, czy rozległą siecią stacji paliw, chętnie omówimy z Tobą możliwości integracji.",
-
     "closingClaim": "PHMarket łączy stacje paliw z klientami.",
     "closingBadges": [
       "Partnerstwo bez opłat wstępnych",

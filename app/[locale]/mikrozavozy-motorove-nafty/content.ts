@@ -3,9 +3,9 @@ import type { ServiceLocaleData } from "../cisteni-nadrzi/content";
 
 const cs: ServiceLocaleData = {
   meta: {
-    title: "Mikrozávozy motorové nafty v ČR",
+    title: "Mikrozávozy nafty pro zemědělce a stavební firmy",
     description:
-      "Mikrozávozy motorové nafty (200 až 3 000 l) přímo k zákazníkovi v České republice. Stavby, zemědělství, vozové parky, generátory. Cena dle aktuální velkoobchodní cenovky, dodávka typicky do 72 hodin.",
+      "Závozy motorové nafty přímo do nádrží a strojů zemědělských podniků, stavebních firem a vozových parků po celé ČR. Dodávka 200 až 3 000 litrů, typicky do 72 hodin.",
   },
   breadcrumbName: "Mikrozávozy motorové nafty",
   schema: {
