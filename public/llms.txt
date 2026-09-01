@@ -29,7 +29,7 @@ B2B služby (čištění nádrží, mikrozávozy nafty) poskytujeme v Česku.
 ## Stažení aplikace
 
 - App Store: https://apps.apple.com/pl/app/phmarket/id6760869168
-- Google Play: https://play.google.com/store/apps/details?id=branded.m8391e3c5a7fa40ff980dd3ec24d7cd28.phmarket
+- Google Play: https://play.google.com/store/apps/details?id=cz.phmarket.app
 
 ## Provozovatel
 

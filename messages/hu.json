@@ -24,7 +24,10 @@
     "hu": "Magyar"
   },
   "appButtons": {
-    "downloadOn": "Letöltés innen:"
+    "downloadOn": "Letöltés innen:",
+    "chooseTitle": "Válasszon áruházat",
+    "chooseSubtitle": "A PHMarket alkalmazás iPhone és Android készülékre is elérhető.",
+    "close": "Bezárás"
   },
   "footer": {
     "tagline": "Okos alkalmazás a tankolási megtakarításokhoz. Regisztráció, díjak és plasztikkártyák nélkül.",

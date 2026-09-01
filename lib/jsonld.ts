@@ -1,9 +1,7 @@
+import { APP_STORE_URL, GOOGLE_PLAY_URL as PLAY_STORE_URL } from "./appLinks";
+
 export const SITE_URL = "https://phmarket.cz";
 export const ORG_ID = `${SITE_URL}/#organization`;
-
-const APP_STORE_URL = "https://apps.apple.com/pl/app/phmarket/id6760869168";
-const PLAY_STORE_URL =
-  "https://play.google.com/store/apps/details?id=branded.m8391e3c5a7fa40ff980dd3ec24d7cd28.phmarket";
 
 export const organizationSchema = {
   "@context": "https://schema.org",

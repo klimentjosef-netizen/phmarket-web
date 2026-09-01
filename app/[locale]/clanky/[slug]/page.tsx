@@ -9,6 +9,7 @@ import {
   breadcrumbSchema,
   SITE_URL,
 } from "@/lib/jsonld";
+import { APP_STORE_URL, GOOGLE_PLAY_URL } from "@/lib/appLinks";
 
 interface Props {
   params: { slug: string };
@@ -240,7 +241,7 @@ export default function ArticlePage({ params }: Props) {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center mt-6">
             <Link
-              href="https://apps.apple.com/pl/app/phmarket/id6760869168"
+              href={APP_STORE_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-white text-primary font-semibold px-5 py-3 rounded-lg hover:bg-gray-100 transition-colors"
@@ -248,7 +249,7 @@ export default function ArticlePage({ params }: Props) {
               App Store
             </Link>
             <Link
-              href="https://play.google.com/store/apps/details?id=branded.m8391e3c5a7fa40ff980dd3ec24d7cd28.phmarket"
+              href={GOOGLE_PLAY_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-white text-primary font-semibold px-5 py-3 rounded-lg hover:bg-gray-100 transition-colors"

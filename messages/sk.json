@@ -24,7 +24,10 @@
     "hu": "Magyar"
   },
   "appButtons": {
-    "downloadOn": "Stiahnuť na"
+    "downloadOn": "Stiahnuť na",
+    "chooseTitle": "Vyberte si obchod",
+    "chooseSubtitle": "Aplikácia PHMarket je k dispozícii pre iPhone aj Android.",
+    "close": "Zavrieť"
   },
   "footer": {
     "tagline": "Šikovná aplikácia na úspory pri tankovaní. Bez registrácie, poplatkov alebo plastových kariet.",

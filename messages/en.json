@@ -24,7 +24,10 @@
     "hu": "Magyar"
   },
   "appButtons": {
-    "downloadOn": "Download on"
+    "downloadOn": "Download on",
+    "chooseTitle": "Choose your store",
+    "chooseSubtitle": "The PHMarket app is available for iPhone and Android.",
+    "close": "Close"
   },
   "footer": {
     "tagline": "A smart app for saving on fuel. No registration, no fees, no plastic cards.",

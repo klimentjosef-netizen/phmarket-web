@@ -24,7 +24,10 @@
     "hu": "Magyar"
   },
   "appButtons": {
-    "downloadOn": "Pobierz z"
+    "downloadOn": "Pobierz z",
+    "chooseTitle": "Wybierz sklep",
+    "chooseSubtitle": "Aplikacja PHMarket jest dostępna na iPhone'a i Androida.",
+    "close": "Zamknij"
   },
   "footer": {
     "tagline": "Sprytna aplikacja do oszczędzania na tankowaniu. Bez rejestracji, opłat i plastikowych kart.",

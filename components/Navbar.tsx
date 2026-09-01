@@ -5,6 +5,7 @@ import { Link } from "@/i18n/navigation";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
+import DownloadAppButton from "./DownloadAppButton";
 
 const NAV_LINKS = [
   { href: "/", key: "home" },
@@ -15,9 +16,6 @@ const NAV_LINKS = [
   { href: "/mikrozavozy-motorove-nafty", key: "mikrozavozy" },
   { href: "/pro-cerpaci-stanice", key: "partneri" },
 ] as const;
-
-const APP_STORE_URL =
-  "https://apps.apple.com/pl/app/phmarket/id6760869168";
 
 export default function Navbar() {
   const t = useTranslations("nav");
@@ -55,14 +53,10 @@ export default function Navbar() {
           {/* Right side: language + CTA */}
           <div className="hidden xl:flex items-center gap-2">
             <LanguageSwitcher />
-            <Link
-              href={APP_STORE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <DownloadAppButton
+              label={t("downloadApp")}
               className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
-            >
-              {t("downloadApp")}
-            </Link>
+            />
           </div>
 
           {/* Mobile controls */}
@@ -103,15 +97,11 @@ export default function Navbar() {
                 {t(link.key)}
               </Link>
             ))}
-            <Link
-              href={APP_STORE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block mt-3 text-center bg-primary hover:bg-primary-dark text-white font-semibold px-4 py-2.5 rounded-lg transition-colors"
-              onClick={() => setMobileOpen(false)}
-            >
-              {t("downloadApp")}
-            </Link>
+            <DownloadAppButton
+              label={t("downloadApp")}
+              className="block w-full mt-3 text-center bg-primary hover:bg-primary-dark text-white font-semibold px-4 py-2.5 rounded-lg transition-colors"
+              onChosen={() => setMobileOpen(false)}
+            />
           </div>
         </div>
       )}
