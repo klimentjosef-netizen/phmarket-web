@@ -59,6 +59,9 @@ export async function generateMetadata({
       description: t("ogDescription"),
       images: ["/logo.png"],
     },
+    verification: {
+      google: "BC_WCajuaIZtu1Y5joVKSyg4GHSbe1ryj-co6ct63s8",
+    },
     robots: {
       index: true,
       follow: true,
