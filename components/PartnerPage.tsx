@@ -1,4 +1,6 @@
+import { ArrowDown, ArrowRight, Check } from "@phosphor-icons/react/dist/ssr";
 import JsonLd from "@/components/JsonLd";
+import { CtaBand, Faq, PageHero, SplitSection } from "@/components/sections";
 import PartnerForm, { type PartnerFormContent } from "@/components/PartnerForm";
 import {
   breadcrumbSchema,
@@ -85,25 +87,48 @@ export type PartnerPageProps = {
 
 const FORM_ANCHOR = "formular";
 
-/** Arrow-separated chips used for the two "A → B → C" flow lines */
+/** Kroky za sebou se sipkami, pouzito pro dve linky typu "A, potom B, potom C" */
 function FlowLine({ steps }: { steps: string[] }) {
   return (
-    <div className="flex flex-wrap items-center gap-x-2 gap-y-2">
+    <ol className="grid grid-cols-1 border-l border-t border-line sm:grid-cols-2 xl:grid-cols-4">
       {steps.map((step, i) => (
-        <span key={step} className="flex items-center gap-2">
-          <span className="rounded-lg bg-primary/10 px-3 py-1.5 text-sm font-semibold text-primary-dark">
+        <li
+          key={step}
+          className="flex items-start gap-3 border-b border-r border-line bg-surface p-4"
+        >
+          <span aria-hidden className="font-mono text-sm font-medium text-accent">
+            {i + 1}
+          </span>
+          <span className="font-mono text-sm font-medium leading-snug tracking-[-0.02em] text-ink">
             {step}
           </span>
           {i < steps.length - 1 && (
-            <span className="text-primary/60" aria-hidden="true">
-              &rarr;
-            </span>
+            <ArrowRight
+              className="ml-auto mt-0.5 hidden h-4 w-4 shrink-0 text-accent sm:block"
+              aria-hidden="true"
+            />
           )}
-        </span>
+        </li>
       ))}
-    </div>
+    </ol>
   );
 }
+
+/** Polozky "tucny nazev + vysvetleni" jako radky oddelene linkou */
+function StrongRows({ items }: { items: StrongItem[] }) {
+  return (
+    <ul className="border-t border-line">
+      {items.map((item) => (
+        <li key={item.strong} className="border-b border-line py-5">
+          <h3 className="h-sub">{item.strong.replace(/:\s*$/, "")}</h3>
+          <p className="mt-2 max-w-[68ch] leading-relaxed text-gray-700">{item.text.trim()}</p>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+const bodyClass = "max-w-[68ch] leading-relaxed text-gray-700";
 
 export default function PartnerPage({
   breadcrumbName,
@@ -125,45 +150,45 @@ export default function PartnerPage({
       <JsonLd id="faq-schema" data={faq} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-gray-50 to-white py-16 md:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl font-bold leading-tight text-dark md:text-5xl">
-              {c.heroTitlePre} <span className="text-primary">{c.heroTitleHl}</span>
-            </h1>
-            <p className="mt-4 text-lg font-medium text-gray-600">{c.heroSubtitle}</p>
-            <p className="mt-6 text-lg leading-relaxed text-gray-700">{c.heroIntro}</p>
-            <a
-              href={`#${FORM_ANCHOR}`}
-              className="mt-8 inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-semibold text-white transition-colors hover:bg-primary-dark"
-            >
-              {c.heroCtaLabel}
-            </a>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        title={
+          <>
+            {c.heroTitlePre} <span className="text-accent">{c.heroTitleHl}</span>
+          </>
+        }
+        subtitle={c.heroSubtitle}
+        intro={c.heroIntro}
+      >
+        <a href={`#${FORM_ANCHOR}`} className="btn-primary">
+          {c.heroCtaLabel}
+          <ArrowDown className="h-4 w-4 shrink-0" weight="bold" aria-hidden="true" />
+        </a>
+      </PageHero>
 
       {/* Why: pay-for-performance marketing + partnership principles */}
-      <section className="py-12 md:py-16">
-        <div className="mx-auto max-w-3xl space-y-4 px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-dark md:text-3xl">{c.whyTitle}</h2>
-          <p className="leading-relaxed text-gray-700">{c.whyIntro}</p>
-          <p className="text-lg font-semibold text-primary">{c.whyLead}</p>
-          <p className="leading-relaxed text-gray-700">{c.whyOutro}</p>
+      <SplitSection title={c.whyTitle}>
+        <p className={bodyClass}>{c.whyIntro}</p>
+        <p className="my-7 max-w-[30ch] font-mono text-xl font-normal leading-snug tracking-[-0.03em] text-accent md:text-2xl">
+          {c.whyLead}
+        </p>
+        <p className={bodyClass}>{c.whyOutro}</p>
+      </SplitSection>
 
-          <h3 className="pt-4 text-xl font-semibold text-dark">{c.principlesTitle}</h3>
-          <ol className="space-y-3">
+      {/* Partnership principles */}
+      <section className="border-b border-line bg-gray-50 py-14 md:py-20">
+        <div className="container-page">
+          <h2 className="h-section reveal max-w-3xl">{c.principlesTitle}</h2>
+          <ol className="mt-10 grid grid-cols-1 border-l border-t border-line md:grid-cols-3">
             {c.principles.map((item, i) => (
-              <li
-                key={item.strong}
-                className="flex gap-4 rounded-lg border border-gray-200 bg-white p-4"
-              >
-                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-white">
+              <li key={item.strong} className="reveal border-b border-r border-line bg-surface p-6 sm:p-8">
+                <span
+                  aria-hidden
+                  className="font-mono text-4xl font-light leading-none tracking-[-0.05em] text-accent"
+                >
                   {i + 1}
                 </span>
-                <span className="text-gray-700">
-                  <strong className="text-dark">{item.strong}</strong> {item.text}
-                </span>
+                <h3 className="h-sub mt-5">{item.strong.replace(/:\s*$/, "")}</h3>
+                <p className="mt-2 leading-relaxed text-gray-700">{item.text}</p>
               </li>
             ))}
           </ol>
@@ -171,15 +196,31 @@ export default function PartnerPage({
       </section>
 
       {/* How it works */}
-      <section className="bg-gray-50 py-12 md:py-16">
-        <div className="mx-auto max-w-3xl space-y-4 px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-dark md:text-3xl">{c.howTitle}</h2>
-          <p className="leading-relaxed text-gray-700">{c.howIntro}</p>
-          <FlowLine steps={c.howFlow} />
-          <ol className="list-decimal space-y-3 pl-6 pt-2 text-gray-700">
-            {c.howSteps.map((item) => (
-              <li key={item.strong}>
-                <strong className="text-dark">{item.strong}</strong> {item.text}
+      <section className="border-b border-line py-14 md:py-20">
+        <div className="container-page">
+          <div className="reveal max-w-3xl">
+            <h2 className="h-section">{c.howTitle}</h2>
+            <p className={`mt-5 ${bodyClass}`}>{c.howIntro}</p>
+          </div>
+          <div className="reveal mt-8">
+            <FlowLine steps={c.howFlow} />
+          </div>
+          <ol className="mt-10 grid grid-cols-1 gap-x-12 md:grid-cols-2">
+            {c.howSteps.map((item, i) => (
+              <li
+                key={item.strong}
+                className="reveal grid grid-cols-[2.75rem_1fr] items-baseline gap-3 border-t border-line py-6"
+              >
+                <span
+                  aria-hidden
+                  className="font-mono text-3xl font-light leading-none tracking-[-0.05em] text-accent"
+                >
+                  {i + 1}
+                </span>
+                <div>
+                  <h3 className="h-sub">{item.strong.replace(/:\s*$/, "")}</h3>
+                  <p className="mt-1.5 leading-relaxed text-gray-700">{item.text}</p>
+                </div>
               </li>
             ))}
           </ol>
@@ -187,140 +228,112 @@ export default function PartnerPage({
       </section>
 
       {/* Benefits */}
-      <section className="py-12 md:py-16">
-        <div className="mx-auto max-w-3xl space-y-6 px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-dark md:text-3xl">{c.benefitsTitle}</h2>
+      <SplitSection title={c.benefitsTitle} tinted>
+        <div className="space-y-4">
           {c.benefits.map((block) => (
-            <div key={block.title} className="space-y-2">
-              <h3 className="text-xl font-semibold text-dark">{block.title}</h3>
-              <p className="leading-relaxed text-gray-700">{block.body}</p>
+            <div key={block.title} className="border border-line bg-surface p-6 sm:p-8">
+              <h3 className="h-sub sm:text-xl">{block.title}</h3>
+              <p className={`mt-3 ${bodyClass}`}>{block.body}</p>
               {block.items && (
-                <ul className="list-disc space-y-1 pl-6 text-gray-700">
+                <ul className="mt-4 space-y-2.5 text-gray-700">
                   {block.items.map((item) => (
-                    <li key={item}>{item}</li>
+                    <li key={item} className="flex gap-3">
+                      <Check
+                        className="mt-1 h-4 w-4 shrink-0 text-accent"
+                        weight="bold"
+                        aria-hidden="true"
+                      />
+                      <span>{item}</span>
+                    </li>
                   ))}
                 </ul>
               )}
             </div>
           ))}
         </div>
-      </section>
+      </SplitSection>
 
       {/* Repeat visits */}
-      <section className="bg-gray-50 py-12 md:py-16">
-        <div className="mx-auto max-w-3xl space-y-4 px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-dark md:text-3xl">{c.loyaltyTitle}</h2>
-          <p className="leading-relaxed text-gray-700">{c.loyaltyBody}</p>
+      <section className="border-b border-line py-14 md:py-20">
+        <div className="container-page reveal max-w-4xl">
+          <h2 className="h-section">{c.loyaltyTitle}</h2>
+          <p className="mt-6 text-lg leading-relaxed text-gray-700 md:text-xl">{c.loyaltyBody}</p>
         </div>
       </section>
 
       {/* Audience */}
-      <section className="py-12 md:py-16">
-        <div className="mx-auto max-w-3xl space-y-4 px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-dark md:text-3xl">{c.audienceTitle}</h2>
-          <p className="leading-relaxed text-gray-700">{c.audienceIntro}</p>
-          <ul className="space-y-3 text-gray-700">
-            {c.audienceItems.map((item) => (
-              <li key={item.strong}>
-                <strong className="text-dark">{item.strong}</strong>
-                {item.text}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
+      <SplitSection title={c.audienceTitle} tinted>
+        <p className={`mb-8 ${bodyClass}`}>{c.audienceIntro}</p>
+        <StrongRows items={c.audienceItems} />
+      </SplitSection>
 
-      {/* Margins */}
-      <section className="bg-gray-50 py-12 md:py-16">
-        <div className="mx-auto max-w-3xl space-y-4 px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-dark md:text-3xl">{c.marginsTitle}</h2>
-          <p className="leading-relaxed text-gray-700">{c.marginsIntro}</p>
-          <ul className="space-y-3 text-gray-700">
-            {c.marginsItems.map((item) => (
-              <li key={item.strong}>
-                <strong className="text-dark">{item.strong}</strong> {item.text}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* No operational disruption */}
-      <section className="py-12 md:py-16">
-        <div className="mx-auto max-w-3xl space-y-4 px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-dark md:text-3xl">{c.opsTitle}</h2>
-          <p className="leading-relaxed text-gray-700">{c.opsIntro}</p>
-          <ul className="space-y-3 text-gray-700">
-            {c.opsItems.map((item) => (
-              <li key={item.strong}>
-                <strong className="text-dark">{item.strong}</strong> {item.text}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* Network vision */}
-      <section className="bg-gray-50 py-12 md:py-16">
-        <div className="mx-auto max-w-3xl space-y-4 px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-dark md:text-3xl">{c.networkTitle}</h2>
-          <p className="leading-relaxed text-gray-700">{c.networkIntro}</p>
-          <p className="font-medium text-gray-700">{c.networkFormulaLead}</p>
-          <FlowLine steps={c.networkFormula} />
-          <p className="leading-relaxed text-gray-700">{c.networkOutro}</p>
-        </div>
-      </section>
-
-      {/* FAQ: covers the question-form long-tail queries, feeds FAQPage schema */}
-      <section className="py-12 md:py-16">
-        <div className="mx-auto max-w-3xl space-y-4 px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-dark md:text-3xl">{c.faqTitle}</h2>
-          <div className="space-y-6">
-            {faqItems.map((item) => (
-              <div key={item.question}>
-                <h3 className="text-lg font-semibold text-dark">{item.question}</h3>
-                <p className="mt-2 leading-relaxed text-gray-700">{item.answer}</p>
-              </div>
-            ))}
+      {/* Margins + No operational disruption */}
+      <section className="border-b border-line py-14 md:py-20">
+        <div className="container-page grid grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-16">
+          <div className="reveal">
+            <h2 className="h-section">{c.marginsTitle}</h2>
+            <p className={`mb-8 mt-5 ${bodyClass}`}>{c.marginsIntro}</p>
+            <StrongRows items={c.marginsItems} />
+          </div>
+          <div className="reveal">
+            <h2 className="h-section">{c.opsTitle}</h2>
+            <p className={`mb-8 mt-5 ${bodyClass}`}>{c.opsIntro}</p>
+            <StrongRows items={c.opsItems} />
           </div>
         </div>
       </section>
 
+      {/* Network vision */}
+      <section className="border-b border-line bg-gray-50 py-14 md:py-20">
+        <div className="container-page">
+          <div className="reveal max-w-3xl">
+            <h2 className="h-section">{c.networkTitle}</h2>
+            <p className={`mt-5 ${bodyClass}`}>{c.networkIntro}</p>
+            <p className="mt-6 font-medium text-ink">{c.networkFormulaLead}</p>
+          </div>
+          <div className="reveal mt-5">
+            <FlowLine steps={c.networkFormula} />
+          </div>
+          <p className={`reveal mt-8 ${bodyClass}`}>{c.networkOutro}</p>
+        </div>
+      </section>
+
+      {/* FAQ: covers the question-form long-tail queries, feeds FAQPage schema */}
+      <SplitSection title={c.faqTitle}>
+        <Faq items={faqItems} />
+      </SplitSection>
+
       {/* CTA + form */}
-      <section id={FORM_ANCHOR} className="scroll-mt-20 bg-gray-50 py-12 md:py-16">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-dark md:text-3xl">{c.ctaTitle}</h2>
-          <p className="mt-4 leading-relaxed text-gray-700">{c.ctaIntro}</p>
-          <div className="mt-8">
+      <section id={FORM_ANCHOR} className="scroll-mt-20 border-b border-line bg-gray-50 py-14 md:py-20">
+        <div className="container-page grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1.15fr] lg:gap-16">
+          <div className="reveal lg:sticky lg:top-28 lg:self-start">
+            <h2 className="h-section">{c.ctaTitle}</h2>
+            <p className={`mt-5 ${bodyClass}`}>{c.ctaIntro}</p>
+            <div className="mt-10 border-t border-line pt-8">
+              <h3 className="h-sub">{c.customTitle}</h3>
+              <p className={`mt-3 ${bodyClass}`}>{c.customBody}</p>
+            </div>
+          </div>
+          <div className="reveal">
             <PartnerForm content={c.form} />
           </div>
         </div>
       </section>
 
-      {/* Bespoke setups */}
-      <section className="py-12 md:py-16">
-        <div className="mx-auto max-w-3xl space-y-4 px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-dark md:text-3xl">{c.customTitle}</h2>
-          <p className="leading-relaxed text-gray-700">{c.customBody}</p>
-        </div>
-      </section>
-
       {/* Closing claim */}
-      <section className="bg-primary py-14 md:py-16">
-        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-          <p className="text-2xl font-bold text-white">{c.closingClaim}</p>
-          <div className="mt-6 flex flex-wrap justify-center gap-3">
-            {c.closingBadges.map((badge) => (
-              <span
-                key={badge}
-                className="rounded-full bg-white/15 px-4 py-2 text-sm font-medium text-white"
-              >
-                {badge}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
+      <CtaBand title={c.closingClaim}>
+        <ul className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          {c.closingBadges.map((badge) => (
+            <li
+              key={badge}
+              className="flex items-center gap-2.5 border border-white/30 px-4 py-2.5 text-sm font-medium text-white"
+            >
+              <Check className="h-4 w-4 shrink-0" weight="bold" aria-hidden="true" />
+              {badge}
+            </li>
+          ))}
+        </ul>
+      </CtaBand>
     </>
   );
 }

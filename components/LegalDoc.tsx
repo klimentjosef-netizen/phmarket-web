@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { ArrowUpRight, DownloadSimple } from "@phosphor-icons/react/dist/ssr";
 import type { LegalSection } from "@/lib/legal/types";
 
 export type LegalLang = {
@@ -36,22 +37,6 @@ export type LegalDocProps = {
   sections?: LegalSection[];
 };
 
-function ArrowDownTray() {
-  return (
-    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" aria-hidden="true">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
-    </svg>
-  );
-}
-
-function ArrowTopRight() {
-  return (
-    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" aria-hidden="true">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-    </svg>
-  );
-}
-
 export default function LegalDoc({
   title,
   subtitle,
@@ -70,30 +55,27 @@ export default function LegalDoc({
     ? sections!.filter((s) => s.heading).map((s) => ({ id: s.id, label: s.heading as string }))
     : toc.map((label, i) => ({ id: `toc-${i}`, label }));
   return (
-    <div className="bg-white">
+    <div>
       {/* Header */}
-      <section className="hero-premium-bg">
+      <section className="border-b border-line">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20">
-          <nav className="text-sm text-white/50 mb-6" aria-label="Drobečková navigace">
-            <Link href="/" className="hover:text-emerald-400 transition-colors">
+          <nav className="mb-6 font-mono text-xs text-muted" aria-label="Drobečková navigace">
+            <Link href="/" className="transition-colors hover:text-accent">
               {t("breadcrumbHome")}
             </Link>
             <span className="mx-2">/</span>
-            <span className="text-white/80">{title}</span>
+            <span className="text-ink">{title}</span>
           </nav>
 
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 text-xs font-medium text-emerald-400 mb-5">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-            {t("effectiveFrom", { date: effectiveDate })}
-          </span>
+          <p className="label mb-5">{t("effectiveFrom", { date: effectiveDate })}</p>
 
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
+          <h1 className="h-page">
             {title}
           </h1>
           {subtitle && (
-            <p className="mt-3 text-lg text-emerald-300/80 font-medium">{subtitle}</p>
+            <p className="mt-4 font-mono text-base font-medium tracking-[-0.02em] text-accent md:text-lg">{subtitle}</p>
           )}
-          <p className="mt-5 text-base text-white/60 leading-relaxed max-w-3xl">
+          <p className="lead mt-5 max-w-3xl">
             {intro}
           </p>
 
@@ -103,17 +85,17 @@ export default function LegalDoc({
               href={pdfHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-white font-semibold px-5 py-3 transition-colors shadow-lg shadow-emerald-500/20"
+              className="btn-primary"
             >
-              <ArrowTopRight />
+              <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
               {t("openPdf")}
             </a>
             <a
               href={pdfHref}
               download={downloadName}
-              className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 hover:border-emerald-400/60 text-white font-semibold px-5 py-3 transition-colors"
+              className="btn-outline"
             >
-              <ArrowDownTray />
+              <DownloadSimple className="h-5 w-5" aria-hidden="true" />
               {t("downloadPdf")}
             </a>
           </div>
@@ -121,7 +103,7 @@ export default function LegalDoc({
           {/* Language versions */}
           {languages.length > 0 && (
             <div className="mt-7">
-              <p className="text-xs uppercase tracking-wider text-white/40 mb-2">
+              <p className="mb-2.5 text-sm text-muted">
                 {t("languageVersions")}
               </p>
               <div className="flex flex-wrap gap-2">
@@ -132,10 +114,10 @@ export default function LegalDoc({
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-current={lang.current ? "true" : undefined}
-                    className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-medium transition-colors ${
+                    className={`inline-flex items-center gap-1.5 border px-3 py-1.5 text-sm font-medium transition-colors ${
                       lang.current
-                        ? "bg-emerald-500/20 text-emerald-300 border border-emerald-400/40"
-                        : "bg-white/5 text-white/70 border border-white/10 hover:border-white/30"
+                        ? "border-accent bg-primary/10 text-accent"
+                        : "border-line text-muted hover:border-accent hover:text-ink"
                     }`}
                   >
                     {lang.label}
@@ -152,11 +134,11 @@ export default function LegalDoc({
         <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-10">
           {/* TOC */}
           <aside className="lg:sticky lg:top-24 lg:self-start lg:max-h-[calc(100vh-7rem)] lg:overflow-y-auto">
-            <h2 className="text-lg font-bold text-dark mb-4">{t("tableOfContents")}</h2>
-            <ol className="space-y-1.5">
+            <h2 className="h-sub mb-4 text-base">{t("tableOfContents")}</h2>
+            <ol className="border-l border-line">
               {navItems.map((item) => {
                 const inner = (
-                  <span className="block text-sm text-gray-600 leading-snug py-1.5 px-3 rounded-lg hover:bg-primary/5 hover:text-primary transition-colors">
+                  <span className="-ml-px block border-l border-transparent px-4 py-1.5 text-sm leading-snug text-muted transition-colors hover:border-accent hover:text-ink">
                     {item.label}
                   </span>
                 );
@@ -176,19 +158,19 @@ export default function LegalDoc({
                 {sections!.map((s) => (
                   <section key={s.id} id={s.id} className="scroll-mt-24 mb-8">
                     {s.heading && (
-                      <h2 className="text-xl md:text-2xl font-bold text-dark mb-4 leading-snug">
+                      <h2 className="h-display mb-4 text-xl leading-snug md:text-2xl">
                         {s.heading}
                       </h2>
                     )}
                     <div
-                      className="text-[15px] text-gray-700 leading-relaxed space-y-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ol]:list-decimal [&_ol]:pl-6 [&_a]:text-primary [&_a]:underline [&_strong]:text-dark"
+                      className="prose-body"
                       dangerouslySetInnerHTML={{ __html: s.html }}
                     />
                   </section>
                 ))}
-                <p className="mt-10 text-sm text-gray-500 border-t border-gray-200 pt-6">
+                <p className="mt-10 border-t border-line pt-6 text-sm text-muted">
                   {t("effectiveFrom", { date: effectiveDate })}.{" "}
-                  <a href={pdfHref} target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">
+                  <a href={pdfHref} target="_blank" rel="noopener noreferrer" className="font-medium text-accent hover:underline">
                     {t("openPdf")}
                   </a>
                 </p>
@@ -196,7 +178,7 @@ export default function LegalDoc({
             ) : (
             <>
             {/* Inline viewer (desktop / tablet) */}
-            <div className="hidden md:block rounded-2xl overflow-hidden border border-gray-200 shadow-sm bg-gray-50">
+            <div className="hidden overflow-hidden border border-line bg-gray-50 md:block">
               <object
                 data={`${pdfHref}#view=FitH`}
                 type="application/pdf"
@@ -205,7 +187,7 @@ export default function LegalDoc({
               >
                 <div className="p-8 text-center text-gray-600">
                   {t("viewerFallbackBefore")}
-                  <a href={pdfHref} target="_blank" rel="noopener noreferrer" className="text-primary font-semibold underline">
+                  <a href={pdfHref} target="_blank" rel="noopener noreferrer" className="font-semibold text-accent underline">
                     {t("viewerFallbackLink")}
                   </a>
                   .
@@ -214,8 +196,8 @@ export default function LegalDoc({
             </div>
 
             {/* Mobile prompt */}
-            <div className="md:hidden rounded-2xl border border-gray-200 bg-gray-50 p-6 text-center">
-              <p className="text-gray-700 font-medium">
+            <div className="border border-line bg-surface p-6 text-center md:hidden">
+              <p className="font-medium text-ink">
                 {t("mobilePromptTitle")}
               </p>
               <p className="text-sm text-gray-500 mt-1 mb-5">
@@ -225,9 +207,9 @@ export default function LegalDoc({
                 href={pdfHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-primary hover:bg-primary-dark text-white font-semibold px-5 py-3 transition-colors w-full"
+                className="btn-primary w-full"
               >
-                <ArrowTopRight />
+                <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
                 {t("openPdf")}
               </a>
             </div>
@@ -235,15 +217,15 @@ export default function LegalDoc({
             )}
 
             {/* Contact / operator */}
-            <div className="mt-10 rounded-2xl bg-gray-50 border border-gray-200 p-6">
-              <h2 className="text-base font-bold text-dark mb-3">{t("operator")}</h2>
+            <div className="mt-10 border border-line bg-surface p-6">
+              <h2 className="h-sub mb-3 text-base">{t("operator")}</h2>
               <address className="not-italic text-sm text-gray-600 space-y-0.5">
-                <p className="font-semibold text-dark">PHMarket s.r.o.</p>
+                <p className="font-semibold text-ink">PHMarket s.r.o.</p>
                 <p>Hlavní třída 87/2, 737 01 Český Těšín, Česká republika</p>
-                <p>IČO: 04529031 &middot; DIČ: CZ04529031</p>
+                <p>IČO: 04529031, DIČ: CZ04529031</p>
                 <p>
                   {t("emailLabel")}:{" "}
-                  <a href={`mailto:${contactEmail}`} className="text-primary font-medium hover:underline">
+                  <a href={`mailto:${contactEmail}`} className="font-medium text-accent hover:underline">
                     {contactEmail}
                   </a>
                 </p>

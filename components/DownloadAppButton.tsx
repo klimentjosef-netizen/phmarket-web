@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
+import { X } from "@phosphor-icons/react";
 import { APP_STORE_URL, GOOGLE_PLAY_URL } from "@/lib/appLinks";
 import { AppleIcon, GooglePlayIcon } from "./StoreIcons";
 
@@ -31,6 +32,11 @@ export default function DownloadAppButton({
     onChosen?.();
   };
 
+  const stores = [
+    { name: "App Store", href: APP_STORE_URL, Icon: AppleIcon },
+    { name: "Google Play", href: GOOGLE_PLAY_URL, Icon: GooglePlayIcon },
+  ];
+
   return (
     <>
       <button type="button" className={className} onClick={() => setOpen(true)}>
@@ -39,57 +45,49 @@ export default function DownloadAppButton({
 
       {open && (
         <div
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 px-4"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 px-4"
           onClick={() => setOpen(false)}
         >
           <div
             role="dialog"
             aria-modal="true"
             aria-label={t("chooseTitle")}
-            className="relative w-full max-w-sm rounded-2xl bg-white p-6 shadow-xl"
+            className="relative w-full max-w-sm border border-line bg-surface p-6 shadow-2xl shadow-black/20"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               type="button"
               onClick={() => setOpen(false)}
               aria-label={t("close")}
-              className="absolute right-3 top-3 rounded-md p-1.5 text-gray-400 hover:bg-gray-100 hover:text-gray-600 transition-colors"
+              className="absolute right-3 top-3 p-1.5 text-muted transition-colors hover:text-ink"
             >
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
+              <X className="h-5 w-5" aria-hidden="true" />
             </button>
 
-            <h2 className="text-lg font-bold text-dark pr-8">{t("chooseTitle")}</h2>
-            <p className="mt-1 text-sm text-gray-600">{t("chooseSubtitle")}</p>
+            <h2 className="h-sub pr-8">{t("chooseTitle")}</h2>
+            <p className="mt-2 text-sm text-muted">{t("chooseSubtitle")}</p>
 
             <div className="mt-5 space-y-3">
-              <a
-                href={APP_STORE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={handleChoice}
-                className="flex items-center gap-3 rounded-lg bg-dark px-5 py-3 text-white hover:bg-dark/90 transition-colors"
-              >
-                <AppleIcon />
-                <span className="text-left">
-                  <span className="block text-[10px] leading-tight">{t("downloadOn")}</span>
-                  <span className="block text-sm font-semibold leading-tight">App Store</span>
-                </span>
-              </a>
-              <a
-                href={GOOGLE_PLAY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={handleChoice}
-                className="flex items-center gap-3 rounded-lg bg-dark px-5 py-3 text-white hover:bg-dark/90 transition-colors"
-              >
-                <GooglePlayIcon />
-                <span className="text-left">
-                  <span className="block text-[10px] leading-tight">{t("downloadOn")}</span>
-                  <span className="block text-sm font-semibold leading-tight">Google Play</span>
-                </span>
-              </a>
+              {stores.map(({ name, href, Icon }) => (
+                <a
+                  key={name}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={handleChoice}
+                  className="flex items-center gap-3 bg-ink px-5 py-3 text-paper transition-colors hover:bg-accent hover:text-white"
+                >
+                  <Icon className="h-7 w-7 shrink-0" />
+                  <span className="text-left">
+                    <span className="block text-[11px] leading-tight opacity-75">
+                      {t("downloadOn")}
+                    </span>
+                    <span className="block font-mono text-[15px] font-medium leading-tight tracking-[-0.02em]">
+                      {name}
+                    </span>
+                  </span>
+                </a>
+              ))}
             </div>
           </div>
         </div>

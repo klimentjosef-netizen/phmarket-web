@@ -1,8 +1,10 @@
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
+import { ArrowRight, Drop, GasPump, Truck } from "@phosphor-icons/react/dist/ssr";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import AppStoreButtons from "@/components/AppStoreButtons";
 import SavingsCounter from "@/components/SavingsCounter";
-import HeroRedesignAnimation from "@/components/HeroRedesignAnimation";
+import PhoneShowcase from "@/components/PhoneShowcase";
 import JsonLd from "@/components/JsonLd";
 import CoverageMap from "@/components/CoverageMap";
 import { mobileApplicationSchema } from "@/lib/jsonld";
@@ -12,45 +14,35 @@ import type { Locale } from "@/i18n/routing";
 /* ------------------------------------------------------------------ */
 /*  Hero                                                               */
 /* ------------------------------------------------------------------ */
+const delay = (i: number) => ({ "--i": i }) as React.CSSProperties;
+
 async function Hero() {
   const t = await getTranslations("hero");
   return (
-    <section className="relative overflow-x-clip hero-premium-bg">
-      <div className="absolute inset-0 hero-grid-overlay pointer-events-none" />
+    <section className="overflow-x-clip">
+      <div className="container-page pb-14 pt-10 md:pb-20 md:pt-14 lg:pt-16">
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.15fr_1fr] lg:gap-10">
+          <div>
+            <p className="label rise">{t("badge")}</p>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 lg:py-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="relative z-10">
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 px-4 py-1.5 text-sm font-medium text-emerald-400 mb-6">
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              {t("badge")}
-            </span>
-
-            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] tracking-tight">
-              {t("titleLine1")}{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-emerald-300">
-                {t("titleHighlight")}
-              </span>
+            <h1 className="h-hero rise mt-5" style={delay(1)}>
+              {t("titleLine1")} <span className="text-accent">{t("titleHighlight")}</span>
             </h1>
 
-            <p className="mt-6 text-lg text-white/60 leading-relaxed max-w-xl">
+            <p className="lead rise mt-6 max-w-xl" style={delay(2)}>
               {t("subtitle")}
             </p>
 
-            <div className="mt-10">
-              <AppStoreButtons className="" />
+            <div className="rise mt-9" style={delay(3)}>
+              <AppStoreButtons />
             </div>
           </div>
 
-          <div className="relative flex justify-center lg:justify-end" aria-label={t("sceneAria")}>
-            <HeroRedesignAnimation />
+          <div className="rise" style={delay(2)}>
+            <PhoneShowcase label={t("sceneAria")} />
           </div>
         </div>
       </div>
-
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />
     </section>
   );
 }
@@ -68,16 +60,25 @@ async function StatsBar() {
   ];
 
   return (
-    <section className="bg-primary">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
-          {stats.map((stat) => (
-            <div key={stat.label}>
-              <p className="text-2xl md:text-3xl font-bold">{stat.value}</p>
-              <p className="text-sm text-white/80 mt-1">{stat.label}</p>
+    <section className="border-y border-line bg-surface">
+      <div className="container-page">
+        <dl className="grid grid-cols-2 md:grid-cols-4">
+          {stats.map((stat, i) => (
+            <div
+              key={stat.label}
+              className={`flex flex-col-reverse justify-end py-6 md:py-8 ${
+                i % 2 === 1 ? "border-l border-line pl-5" : "pr-5"
+              } ${i >= 2 ? "border-t border-line md:border-t-0" : ""} ${
+                i > 0 ? "md:border-l md:pl-6" : ""
+              }`}
+            >
+              <dt className="mt-1.5 text-sm text-muted">{stat.label}</dt>
+              <dd className="font-mono text-2xl font-normal tracking-[-0.04em] text-ink md:text-[2rem]">
+                {stat.value}
+              </dd>
             </div>
           ))}
-        </div>
+        </dl>
       </div>
     </section>
   );
@@ -89,44 +90,35 @@ async function StatsBar() {
 async function HowItWorks() {
   const t = await getTranslations("howItWorks");
   const steps = t.raw("steps") as { title: string; description: string }[];
-  const icons = [
-    <svg key="0" className="w-7 h-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-    </svg>,
-    <svg key="1" className="w-7 h-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-    </svg>,
-    <svg key="2" className="w-7 h-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
-      <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
-    </svg>,
-    <svg key="3" className="w-7 h-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
-    </svg>,
-  ];
 
   return (
-    <section className="py-16 md:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-dark">{t("title")}</h2>
-          <p className="mt-3 text-gray-600 max-w-2xl mx-auto">{t("subtitle")}</p>
-        </div>
+    <section className="border-t border-line py-16 md:py-24">
+      <div className="container-page">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1.35fr] lg:gap-16">
+          <div className="reveal lg:sticky lg:top-28 lg:self-start">
+            <h2 className="h-section">{t("title")}</h2>
+            <p className="lead mt-4 max-w-md">{t("subtitle")}</p>
+          </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {steps.map((step, i) => (
-            <div key={step.title} className="text-center">
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/10 text-primary mb-4">
-                {icons[i]}
-              </div>
-              <div className="text-xs font-bold text-primary mb-1">
-                {i + 1}. {t("stepLabel")}
-              </div>
-              <h3 className="text-lg font-semibold text-dark">{step.title}</h3>
-              <p className="mt-1 text-sm text-gray-500">{step.description}</p>
-            </div>
-          ))}
+          <ol className="border-t border-line">
+            {steps.map((step, i) => (
+              <li
+                key={step.title}
+                className="reveal grid grid-cols-[3.25rem_1fr] items-baseline gap-4 border-b border-line py-6 sm:grid-cols-[5rem_1fr] sm:py-8"
+              >
+                <span
+                  aria-hidden
+                  className="font-mono text-4xl font-light leading-none tracking-[-0.05em] text-accent sm:text-5xl"
+                >
+                  {i + 1}
+                </span>
+                <div>
+                  <h3 className="h-sub sm:text-xl">{step.title}</h3>
+                  <p className="mt-1.5 text-muted">{step.description}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
         </div>
       </div>
     </section>
@@ -138,68 +130,74 @@ async function HowItWorks() {
 /* ------------------------------------------------------------------ */
 async function Services() {
   const t = await getTranslations("services");
-  const services = [
+  const featured = {
+    title: t("partneri.title"),
+    description: t("partneri.description"),
+    href: "/pro-cerpaci-stanice",
+  };
+  const others = [
     {
       title: t("cisteni.title"),
       description: t("cisteni.description"),
       href: "/cisteni-nadrzi",
-      icon: (
-        <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
-        </svg>
-      ),
+      Icon: Drop,
     },
     {
       title: t("mikrozavozy.title"),
       description: t("mikrozavozy.description"),
       href: "/mikrozavozy-motorove-nafty",
-      icon: (
-        <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H18.75M2.25 14.25h1.5m0 0v-3.375c0-.621.504-1.125 1.125-1.125H9M3.75 14.25V5.625A1.125 1.125 0 014.875 4.5h9.75c.621 0 1.125.504 1.125 1.125v8.25M9 9.75h3.75m-3.75 3h3.75" />
-        </svg>
-      ),
-    },
-    {
-      title: t("partneri.title"),
-      description: t("partneri.description"),
-      href: "/pro-cerpaci-stanice",
-      icon: (
-        <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z" />
-        </svg>
-      ),
+      Icon: Truck,
     },
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-dark">{t("title")}</h2>
-        </div>
+    <section className="border-t border-line bg-gray-50 py-16 md:py-24">
+      <div className="container-page">
+        <h2 className="h-section reveal">{t("title")}</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {services.map((service) => (
-            <Link
-              key={service.href}
-              href={service.href}
-              className="group bg-white rounded-2xl border border-gray-200 p-6 hover:border-primary/40 hover:shadow-lg transition-all"
-            >
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
-                {service.icon}
-              </div>
-              <h3 className="text-xl font-semibold text-dark group-hover:text-primary transition-colors">
-                {service.title}
+        <div className="mt-10 grid grid-cols-1 gap-4 lg:grid-cols-[1.25fr_1fr]">
+          <Link
+            href={featured.href}
+            className="reveal group flex min-h-[20rem] flex-col justify-between bg-gradient-to-br from-primary-dark via-primary to-[#3f9a4e] p-7 text-white sm:p-10"
+          >
+            <GasPump className="h-12 w-12" weight="light" aria-hidden="true" />
+            <div>
+              <h3 className="font-mono text-2xl font-normal tracking-[-0.03em] sm:text-3xl">
+                {featured.title}
               </h3>
-              <p className="mt-2 text-sm text-gray-500 leading-relaxed">{service.description}</p>
-              <span className="inline-flex items-center gap-1 mt-4 text-sm font-medium text-primary">
+              <p className="mt-3 max-w-md leading-relaxed text-white/85">{featured.description}</p>
+              <span className="mt-6 inline-flex items-center gap-2 font-mono text-sm font-medium">
                 {t("learnMore")}
-                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                </svg>
+                <ArrowRight
+                  className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1.5"
+                  weight="bold"
+                  aria-hidden="true"
+                />
               </span>
-            </Link>
-          ))}
+            </div>
+          </Link>
+
+          <div className="grid grid-cols-1 gap-4">
+            {others.map(({ title, description, href, Icon }) => (
+              <Link
+                key={href}
+                href={href}
+                className="reveal group flex flex-col border border-line bg-surface p-7 transition-colors duration-300 hover:border-accent"
+              >
+                <Icon className="h-9 w-9 text-accent" weight="light" aria-hidden="true" />
+                <h3 className="h-sub mt-5 sm:text-xl">{title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted">{description}</p>
+                <span className="mt-5 inline-flex items-center gap-2 font-mono text-sm font-medium text-accent">
+                  {t("learnMore")}
+                  <ArrowRight
+                    className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1.5"
+                    weight="bold"
+                    aria-hidden="true"
+                  />
+                </span>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </section>
@@ -216,11 +214,11 @@ async function Coverage() {
   ) as Record<CoverageCode, string>;
 
   return (
-    <section className="py-16 md:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-dark">{t("title")}</h2>
-          <p className="mt-3 text-gray-600 max-w-2xl mx-auto">{t("subtitle")}</p>
+    <section className="border-t border-line py-16 md:py-24">
+      <div className="container-page">
+        <div className="reveal mb-10 max-w-2xl">
+          <h2 className="h-section">{t("title")}</h2>
+          <p className="lead mt-4">{t("subtitle")}</p>
         </div>
 
         <CoverageMap names={names} ariaLabel={t("mapAria")} />
@@ -235,11 +233,25 @@ async function Coverage() {
 async function CtaSection() {
   const t = await getTranslations("homeCta");
   return (
-    <section className="bg-primary">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-white">{t("title")}</h2>
-        <p className="mt-4 text-white/80 max-w-xl mx-auto leading-relaxed">{t("subtitle")}</p>
-        <AppStoreButtons className="mt-8 justify-center" />
+    <section className="container-page pb-16 md:pb-24">
+      <div className="reveal grid grid-cols-1 overflow-hidden bg-gradient-to-br from-primary-dark via-primary to-[#3f9a4e] md:grid-cols-[1.5fr_1fr]">
+        <div className="p-7 sm:p-10 lg:p-14">
+          <h2 className="font-mono text-3xl font-normal leading-[1.1] tracking-[-0.035em] text-white sm:text-4xl lg:text-5xl">
+            {t("title")}
+          </h2>
+          <p className="mt-5 max-w-lg leading-relaxed text-white/85 md:text-lg">{t("subtitle")}</p>
+          <AppStoreButtons className="mt-8" tone="onBrand" />
+        </div>
+        <div className="relative hidden min-h-[20rem] md:block">
+          <Image
+            src="/app-screenshot.png"
+            alt=""
+            width={1206}
+            height={2622}
+            sizes="320px"
+            className="absolute left-1/2 top-12 w-[270px] max-w-none -translate-x-1/2 shadow-2xl shadow-black/40"
+          />
+        </div>
       </div>
     </section>
   );

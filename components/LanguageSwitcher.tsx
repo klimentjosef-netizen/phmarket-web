@@ -4,15 +4,7 @@ import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing, type Locale } from "@/i18n/routing";
 import { useState, useRef, useEffect } from "react";
-
-const FLAGS: Record<Locale, string> = {
-  cs: "🇨🇿",
-  sk: "🇸🇰",
-  pl: "🇵🇱",
-  en: "🇬🇧",
-  de: "🇩🇪",
-  hu: "🇭🇺",
-};
+import { CaretDown, Globe } from "@phosphor-icons/react";
 
 const LABELS: Record<Locale, string> = {
   cs: "Čeština",
@@ -48,22 +40,24 @@ export default function LanguageSwitcher({ className = "" }: { className?: strin
       <button
         type="button"
         onClick={() => setOpen((o) => !o)}
-        className="inline-flex items-center gap-1.5 px-2.5 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-primary hover:bg-gray-50 transition-colors"
+        className="inline-flex items-center gap-1.5 px-2.5 py-2 font-mono text-sm font-medium text-muted transition-colors hover:text-ink"
         aria-label="Změnit jazyk"
         aria-haspopup="listbox"
         aria-expanded={open}
       >
-        <span className="text-base leading-none">{FLAGS[locale]}</span>
+        <Globe className="h-[18px] w-[18px]" aria-hidden="true" />
         <span className="uppercase">{locale}</span>
-        <svg className={`w-3.5 h-3.5 transition-transform ${open ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-        </svg>
+        <CaretDown
+          className={`h-3 w-3 transition-transform ${open ? "rotate-180" : ""}`}
+          weight="bold"
+          aria-hidden="true"
+        />
       </button>
 
       {open && (
         <ul
           role="listbox"
-          className="absolute right-0 mt-2 w-44 rounded-xl border border-gray-100 bg-white shadow-lg py-1.5 z-50"
+          className="absolute right-0 z-50 mt-2 w-48 border border-line bg-surface py-1.5 shadow-xl shadow-black/10"
         >
           {routing.locales.map((l) => (
             <li key={l}>
@@ -71,11 +65,11 @@ export default function LanguageSwitcher({ className = "" }: { className?: strin
                 type="button"
                 onClick={() => switchTo(l)}
                 aria-selected={l === locale}
-                className={`w-full flex items-center gap-2.5 px-3.5 py-2 text-sm text-left transition-colors ${
-                  l === locale ? "text-primary font-semibold bg-primary/5" : "text-gray-600 hover:bg-gray-50"
+                className={`flex w-full items-center gap-3 px-3.5 py-2 text-left text-sm transition-colors ${
+                  l === locale ? "bg-primary/10 font-semibold text-accent" : "text-ink hover:bg-gray-50"
                 }`}
               >
-                <span className="text-base leading-none">{FLAGS[l]}</span>
+                <span className="w-6 font-mono text-xs uppercase text-muted">{l}</span>
                 {LABELS[l]}
               </button>
             </li>

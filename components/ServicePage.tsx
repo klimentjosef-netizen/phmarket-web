@@ -1,5 +1,7 @@
 import Link from "next/link";
+import { Check, EnvelopeSimple, X } from "@phosphor-icons/react/dist/ssr";
 import JsonLd from "@/components/JsonLd";
+import { CtaBand, Faq, PageHero, SplitSection } from "@/components/sections";
 import {
   breadcrumbSchema,
   faqSchema,
@@ -85,55 +87,63 @@ export default function ServicePage({
       <JsonLd id="faq-schema" data={faq} />
 
       {/* Hero + Answer capsule */}
-      <section className="bg-gradient-to-br from-gray-50 to-white py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold text-dark leading-tight">
-              {c.heroTitlePre}{" "}
-              <span className="text-primary">{c.heroTitleHl}</span>
-            </h1>
-            <p className="mt-6 text-lg text-gray-700 leading-relaxed">
-              {c.heroIntro}
-            </p>
-            <Link
-              href={`mailto:${email}?subject=${encodeURIComponent(c.heroMailtoSubject)}`}
-              className="inline-flex items-center gap-2 mt-8 bg-primary hover:bg-primary-dark text-white font-semibold px-6 py-3 rounded-lg transition-colors"
-            >
-              {c.heroCtaLabel}
-            </Link>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        title={
+          <>
+            {c.heroTitlePre} <span className="text-accent">{c.heroTitleHl}</span>
+          </>
+        }
+        intro={c.heroIntro}
+      >
+        <Link
+          href={`mailto:${email}?subject=${encodeURIComponent(c.heroMailtoSubject)}`}
+          className="btn-primary"
+        >
+          <EnvelopeSimple className="h-5 w-5 shrink-0" aria-hidden="true" />
+          {c.heroCtaLabel}
+        </Link>
+      </PageHero>
 
       {/* Definition */}
-      <section className="py-12 md:py-16">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-dark">{c.defTitle}</h2>
-          <p className="text-gray-700 leading-relaxed">{c.defPara}</p>
-          <h3 className="text-xl font-semibold text-dark pt-2">{c.doTitle}</h3>
-          <ul className="list-disc pl-6 space-y-1 text-gray-700">
-            {c.doItems.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-          <h3 className="text-xl font-semibold text-dark pt-2">{c.dontTitle}</h3>
-          <ul className="list-disc pl-6 space-y-1 text-gray-700">
-            {c.dontItems.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
+      <SplitSection title={c.defTitle}>
+        <p className="max-w-[68ch] leading-relaxed text-gray-700 md:text-lg">{c.defPara}</p>
+        <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div className="border border-line bg-surface p-6">
+            <h3 className="h-sub">{c.doTitle}</h3>
+            <ul className="mt-4 space-y-3 text-gray-700">
+              {c.doItems.map((item) => (
+                <li key={item} className="flex gap-3">
+                  <Check className="mt-1 h-4 w-4 shrink-0 text-accent" weight="bold" aria-hidden="true" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="border border-line p-6">
+            <h3 className="h-sub">{c.dontTitle}</h3>
+            <ul className="mt-4 space-y-3 text-gray-700">
+              {c.dontItems.map((item) => (
+                <li key={item} className="flex gap-3">
+                  <X className="mt-1 h-4 w-4 shrink-0 text-gray-400" weight="bold" aria-hidden="true" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-      </section>
+      </SplitSection>
 
       {/* For whom */}
-      <section className="py-12 md:py-16 bg-gray-50">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-dark">{c.whomTitle}</h2>
-          <ul className="space-y-3 text-gray-700">
+      <section className="border-b border-line bg-gray-50 py-14 md:py-20">
+        <div className="container-page">
+          <h2 className="h-section reveal max-w-3xl">{c.whomTitle}</h2>
+          <ul className="mt-10 grid grid-cols-1 gap-x-12 md:grid-cols-2">
             {c.whomItems.map((item) => (
-              <li key={item.strong}>
-                <strong>{item.strong}</strong>
-                {item.text}
+              <li key={item.strong} className="reveal border-t border-line py-6">
+                <h3 className="h-sub">{item.strong}</h3>
+                <p className="mt-2 leading-relaxed text-gray-700">
+                  {item.text.replace(/^\s*:\s*/, "")}
+                </p>
               </li>
             ))}
           </ul>
@@ -141,57 +151,67 @@ export default function ServicePage({
       </section>
 
       {/* Numbers */}
-      <section className="py-12 md:py-16">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-dark">{c.numbersTitle}</h2>
-          <ul className="space-y-2 text-gray-700">
+      <section className="border-b border-line py-14 md:py-20">
+        <div className="container-page">
+          <h2 className="h-section reveal">{c.numbersTitle}</h2>
+          <dl className="mt-10 grid grid-cols-1 border-l border-t border-line sm:grid-cols-2 lg:grid-cols-3">
             {c.numbersItems.map((item) => (
-              <li key={item.strong}>
-                <strong>{item.strong}</strong> {item.text}
-              </li>
+              <div key={item.strong} className="reveal border-b border-r border-line bg-surface p-6">
+                <dt className="label">{item.strong.replace(/:\s*$/, "")}</dt>
+                <dd className="mt-3 leading-relaxed text-ink">{item.text}</dd>
+              </div>
             ))}
-          </ul>
+          </dl>
         </div>
       </section>
 
       {/* How-to */}
-      <section className="py-12 md:py-16 bg-gray-50">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-dark">{c.howTitle}</h2>
-          <ol className="list-decimal pl-6 space-y-3 text-gray-700">
-            {c.howItems.map((item) => (
-              <li key={item.strong}>
-                <strong>{item.strong}</strong> {item.text}
-              </li>
-            ))}
-          </ol>
-        </div>
-      </section>
+      <SplitSection title={c.howTitle} tinted>
+        <ol className="border-t border-line">
+          {c.howItems.map((item, i) => (
+            <li
+              key={item.strong}
+              className="grid grid-cols-[2.75rem_1fr] items-baseline gap-4 border-b border-line py-6 sm:grid-cols-[4rem_1fr]"
+            >
+              <span
+                aria-hidden
+                className="font-mono text-3xl font-light leading-none tracking-[-0.05em] text-accent sm:text-4xl"
+              >
+                {i + 1}
+              </span>
+              <div>
+                <h3 className="h-sub">{item.strong}</h3>
+                <p className="mt-1.5 leading-relaxed text-gray-700">{item.text}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </SplitSection>
 
       {/* Comparison */}
-      <section className="py-12 md:py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-dark">{c.compTitle}</h2>
-          <div className="overflow-x-auto">
-            <table className="w-full text-left border-collapse">
+      <section className="border-b border-line py-14 md:py-20">
+        <div className="container-page">
+          <h2 className="h-section reveal max-w-3xl">{c.compTitle}</h2>
+          <div className="reveal mt-10 overflow-x-auto border border-line bg-surface">
+            <table className="w-full min-w-[640px] border-collapse text-left text-[15px]">
               <thead>
-                <tr className="border-b border-gray-200">
-                  <th className="py-3 pr-4 font-semibold text-dark">{c.compCols[0]}</th>
-                  <th className="py-3 pr-4 font-semibold text-primary">{c.compCols[1]}</th>
-                  <th className="py-3 pr-4 font-semibold text-gray-600">{c.compCols[2]}</th>
-                  <th className="py-3 font-semibold text-gray-600">{c.compCols[3]}</th>
+                <tr className="border-b border-line font-mono text-sm">
+                  <th className="px-5 py-4 font-medium text-muted">{c.compCols[0]}</th>
+                  <th className="bg-primary px-5 py-4 font-medium text-white">{c.compCols[1]}</th>
+                  <th className="px-5 py-4 font-medium text-muted">{c.compCols[2]}</th>
+                  <th className="px-5 py-4 font-medium text-muted">{c.compCols[3]}</th>
                 </tr>
               </thead>
               <tbody className="text-gray-700">
                 {c.compRows.map((row, i) => (
                   <tr
                     key={row[0]}
-                    className={i < c.compRows.length - 1 ? "border-b border-gray-100" : undefined}
+                    className={i < c.compRows.length - 1 ? "border-b border-line" : undefined}
                   >
-                    <td className="py-3 pr-4 font-medium">{row[0]}</td>
-                    <td className="py-3 pr-4">{row[1]}</td>
-                    <td className="py-3 pr-4">{row[2]}</td>
-                    <td className="py-3">{row[3]}</td>
+                    <td className="px-5 py-4 font-medium text-ink">{row[0]}</td>
+                    <td className="bg-primary/10 px-5 py-4 font-medium text-ink">{row[1]}</td>
+                    <td className="px-5 py-4">{row[2]}</td>
+                    <td className="px-5 py-4">{row[3]}</td>
                   </tr>
                 ))}
               </tbody>
@@ -201,33 +221,20 @@ export default function ServicePage({
       </section>
 
       {/* FAQ */}
-      <section className="py-12 md:py-16 bg-gray-50">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-dark">{c.faqTitle}</h2>
-          <div className="space-y-6">
-            {faqItems.map((item) => (
-              <div key={item.question}>
-                <h3 className="text-lg font-semibold text-dark">{item.question}</h3>
-                <p className="mt-2 text-gray-700 leading-relaxed">{item.answer}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <SplitSection title={c.faqTitle}>
+        <Faq items={faqItems} />
+      </SplitSection>
 
       {/* CTA */}
-      <section className="bg-primary py-16 md:py-20">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white">{c.ctaTitle}</h2>
-          <p className="mt-4 text-white/90 max-w-xl mx-auto">{c.ctaPara}</p>
-          <Link
-            href={`mailto:${email}?subject=${encodeURIComponent(c.ctaMailtoSubject)}`}
-            className="inline-flex items-center gap-2 mt-6 bg-white text-primary hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg transition-colors"
-          >
-            {c.ctaLabel}
-          </Link>
-        </div>
-      </section>
+      <CtaBand title={c.ctaTitle} text={c.ctaPara}>
+        <Link
+          href={`mailto:${email}?subject=${encodeURIComponent(c.ctaMailtoSubject)}`}
+          className="btn-onbrand"
+        >
+          <EnvelopeSimple className="h-5 w-5 shrink-0" aria-hidden="true" />
+          {c.ctaLabel}
+        </Link>
+      </CtaBand>
     </>
   );
 }

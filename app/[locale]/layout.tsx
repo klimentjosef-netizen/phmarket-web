@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Hanken_Grotesk, JetBrains_Mono } from "next/font/google";
 import "../globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
@@ -11,9 +11,17 @@ import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import { organizationSchema, websiteSchema, SITE_URL } from "@/lib/jsonld";
 
-const inter = Inter({
+const sans = Hanken_Grotesk({
   subsets: ["latin", "latin-ext"],
-  variable: "--font-inter",
+  variable: "--font-sans",
+  display: "swap",
+});
+
+// Strojove pismo pro nadpisy, cisla a tlacitka: stejny charakter jako v aplikaci
+const mono = JetBrains_Mono({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-mono",
+  display: "swap",
 });
 
 const OG_LOCALE: Record<Locale, string> = {
@@ -90,7 +98,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${sans.variable} ${mono.variable} font-sans antialiased`}>
         <NextIntlClientProvider messages={messages}>
           <JsonLd id="organization-schema" data={organizationSchema} />
           <JsonLd id="website-schema" data={websiteSchema} />

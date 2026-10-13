@@ -93,43 +93,34 @@ function LiveNumber({
 export default function SavingsCounter() {
   const t = useTranslations("savings");
   return (
-    <section className="py-16 md:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-dark">{t("title")}</h2>
-          <p className="mt-3 text-gray-600">{t("subtitle")}</p>
+    <section className="py-16 md:py-24">
+      <div className="container-page">
+        <div className="reveal max-w-2xl">
+          <h2 className="h-section">{t("title")}</h2>
+          <p className="lead mt-4">{t("subtitle")}</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          <div className="text-center">
-            <div className="text-4xl md:text-5xl font-bold text-primary">
-              <LiveNumber
-                baseline={BASELINE_SAVINGS}
-                perSec={SAVINGS_PER_SEC}
-                suffix=" Kč"
-              />
+        <div className="reveal mt-10 grid grid-cols-1 border border-line bg-surface lg:grid-cols-[1.7fr_1fr]">
+          <div className="p-6 sm:p-10">
+            <div className="font-mono text-[2.5rem] font-light leading-none tracking-[-0.05em] text-accent sm:text-6xl lg:text-7xl xl:text-[5.25rem]">
+              <LiveNumber baseline={BASELINE_SAVINGS} perSec={SAVINGS_PER_SEC} suffix=" Kč" />
             </div>
-            <p className="mt-2 text-sm text-gray-500">{t("totalSaved")}</p>
+            <p className="mt-4 text-sm text-muted md:text-base">{t("totalSaved")}</p>
           </div>
-          <div className="text-center">
-            <div className="text-4xl md:text-5xl font-bold text-primary">
-              <LiveNumber
-                baseline={BASELINE_CODES}
-                perSec={CODES_PER_SEC}
-                suffix="+"
-              />
+
+          <div className="grid grid-cols-2 border-t border-line lg:grid-cols-1 lg:border-l lg:border-t-0">
+            <div className="p-6 sm:px-10 lg:py-7">
+              <div className="font-mono text-3xl font-light tracking-[-0.04em] text-ink md:text-4xl">
+                <LiveNumber baseline={BASELINE_CODES} perSec={CODES_PER_SEC} suffix="+" />
+              </div>
+              <p className="mt-2 text-sm text-muted">{t("codesUsed")}</p>
             </div>
-            <p className="mt-2 text-sm text-gray-500">{t("codesUsed")}</p>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl md:text-5xl font-bold text-primary">
-              <LiveNumber
-                baseline={BASELINE_USERS}
-                perSec={USERS_PER_SEC}
-                suffix="+"
-              />
+            <div className="border-l border-line p-6 sm:px-10 lg:border-l-0 lg:border-t lg:py-7">
+              <div className="font-mono text-3xl font-light tracking-[-0.04em] text-ink md:text-4xl">
+                <LiveNumber baseline={BASELINE_USERS} perSec={USERS_PER_SEC} suffix="+" />
+              </div>
+              <p className="mt-2 text-sm text-muted">{t("activeUsers")}</p>
             </div>
-            <p className="mt-2 text-sm text-gray-500">{t("activeUsers")}</p>
           </div>
         </div>
       </div>

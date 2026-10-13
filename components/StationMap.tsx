@@ -134,7 +134,7 @@ export default function StationMap() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
       {/* Map */}
-      <div className="lg:col-span-2 rounded-2xl overflow-hidden border border-gray-200 bg-gray-100 h-[400px] md:h-[550px]">
+      <div className="relative z-0 h-[400px] overflow-hidden border border-line bg-gray-100 md:h-[550px] lg:col-span-2">
         {MapComponent ? (
           <>
             <link
@@ -145,17 +145,14 @@ export default function StationMap() {
           </>
         ) : (
           <div className="flex items-center justify-center h-full">
-            <div className="text-center">
-              <div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto mb-3" />
-              <p className="text-sm text-gray-400">Načítám mapu...</p>
-            </div>
+            <p className="animate-pulse font-mono text-sm text-muted">Načítám mapu...</p>
           </div>
         )}
       </div>
 
       {/* Station list */}
-      <div className="space-y-3 max-h-[550px] overflow-y-auto pr-1">
-        <p className="text-sm text-gray-400 mb-2">
+      <div className="max-h-[550px] space-y-2 overflow-y-auto pr-1">
+        <p className="mb-3 font-mono text-xs text-muted">
           {stations.length} čerpacích stanic
           {userLocation && " · řazeno dle vzdálenosti"}
         </p>
@@ -164,21 +161,21 @@ export default function StationMap() {
             key={station.id}
             type="button"
             onClick={() => setSelectedStation(station)}
-            className={`w-full text-left rounded-xl border p-3 transition-all ${
+            className={`w-full border p-3.5 text-left transition-colors ${
               selectedStation?.id === station.id
-                ? "border-primary bg-primary/5"
-                : "border-gray-200 bg-white hover:border-primary/30"
+                ? "border-accent bg-primary/10"
+                : "border-line bg-surface hover:border-accent"
             }`}
           >
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between gap-3">
               <div>
-                <p className="font-semibold text-sm text-dark">
+                <p className="font-mono text-sm font-medium tracking-[-0.02em] text-ink">
                   {station.name}
                 </p>
                 <p className="text-xs text-gray-500 mt-0.5">
                   {station.address}
                   {userLocation && (
-                    <span className="ml-1 text-primary">
+                    <span className="ml-1 text-accent">
                       ·{" "}
                       {getDistance(
                         userLocation[0],
@@ -191,7 +188,7 @@ export default function StationMap() {
                   )}
                 </p>
               </div>
-              <span className="bg-primary text-white text-xs font-bold px-2 py-1 rounded-lg shrink-0">
+              <span className="shrink-0 bg-primary px-2 py-1 font-mono text-xs font-medium text-white">
                 {station.discount}
               </span>
             </div>
@@ -199,7 +196,7 @@ export default function StationMap() {
               {station.fuels.map((f) => (
                 <span
                   key={f}
-                  className="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full"
+                  className="bg-gray-100 px-2 py-0.5 font-mono text-[10px] text-gray-600"
                 >
                   {f}
                 </span>

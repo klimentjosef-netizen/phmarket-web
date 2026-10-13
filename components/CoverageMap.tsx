@@ -3,7 +3,6 @@
 import { useState } from "react";
 import {
   COVERAGE,
-  FLAGS,
   MAP_LABELS,
   MAP_SHAPES,
   MAP_VIEW_BOX,
@@ -38,8 +37,8 @@ export default function CoverageMap({ names, ariaLabel }: Props) {
               <path
                 key={shape.iso}
                 d={shape.d}
-                fill="#eceef1"
-                stroke="#ffffff"
+                fill="var(--map-neutral)"
+                stroke="rgb(var(--paper))"
                 strokeWidth={2.5}
                 strokeLinejoin="round"
               />
@@ -56,7 +55,7 @@ export default function CoverageMap({ names, ariaLabel }: Props) {
                     ? "url(#coverage-hover)"
                     : "url(#coverage-active)"
                 }
-                stroke="#ffffff"
+                stroke="rgb(var(--paper))"
                 strokeWidth={2.5}
                 strokeLinejoin="round"
                 className="transition-[fill] duration-300"
@@ -73,8 +72,8 @@ export default function CoverageMap({ names, ariaLabel }: Props) {
               y={MAP_LABELS[iso][1]}
               textAnchor="middle"
               dominantBaseline="middle"
-              className="fill-white font-bold pointer-events-none select-none"
-              style={{ fontSize: 34, letterSpacing: "0.06em" }}
+              className="pointer-events-none select-none fill-white font-mono font-medium"
+              style={{ fontSize: 30, letterSpacing: "0.04em" }}
             >
               {iso}
             </text>
@@ -130,27 +129,23 @@ export default function CoverageMap({ names, ariaLabel }: Props) {
         </svg>
       </div>
 
-      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3">
+      <ul className="grid grid-cols-2 border-l border-t border-line">
         {COVERAGE.map((iso) => (
           <li
             key={iso}
             onMouseEnter={() => setHovered(iso)}
             onMouseLeave={() => setHovered(null)}
-            className={`flex items-center gap-3 rounded-xl border bg-white px-4 py-3 transition-all duration-200 ${
-              hovered === iso
-                ? "border-primary/40 shadow-md shadow-primary/10 -translate-y-0.5"
-                : "border-gray-100 shadow-sm"
+            className={`flex min-w-0 items-center gap-3 border-b border-r border-line px-4 py-4 transition-colors duration-200 ${
+              hovered === iso ? "bg-primary/10" : "bg-surface"
             }`}
           >
-            <span aria-hidden className="text-2xl leading-none shrink-0">
-              {FLAGS[iso]}
-            </span>
-            <span className="font-semibold text-dark min-w-0 truncate">
-              {names[iso]}
-            </span>
-            <span className="ml-auto shrink-0 text-xs font-semibold text-primary/60 tracking-wider">
+            <span
+              aria-hidden
+              className="flex h-9 w-9 shrink-0 items-center justify-center bg-primary font-mono text-xs font-medium text-white"
+            >
               {iso}
             </span>
+            <span className="min-w-0 truncate font-medium text-ink">{names[iso]}</span>
           </li>
         ))}
       </ul>

@@ -9,7 +9,9 @@ import {
   breadcrumbSchema,
   SITE_URL,
 } from "@/lib/jsonld";
-import { APP_STORE_URL, GOOGLE_PLAY_URL } from "@/lib/appLinks";
+import AppStoreButtons from "@/components/AppStoreButtons";
+import { CtaBand } from "@/components/sections";
+import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
 
 interface Props {
   params: { slug: string };
@@ -73,7 +75,7 @@ function renderContent(content: string) {
           key={`list-${elements.length}`}
           className={`${
             listType === "ul" ? "list-disc" : "list-decimal"
-          } pl-6 space-y-1 text-gray-600 leading-relaxed`}
+          } pl-6 space-y-1.5 text-gray-700 leading-relaxed`}
         >
           {listItems.map((item, j) => (
             <li key={j}>{item}</li>
@@ -93,7 +95,7 @@ function renderContent(content: string) {
       elements.push(
         <h4
           key={i}
-          className="text-lg font-semibold text-dark mt-6 mb-2"
+          className="h-sub !mt-8"
         >
           {line.slice(5)}
         </h4>
@@ -103,7 +105,7 @@ function renderContent(content: string) {
       elements.push(
         <h3
           key={i}
-          className="text-xl font-semibold text-dark mt-8 mb-3"
+          className="h-sub !mt-10 text-xl"
         >
           {line.slice(4)}
         </h3>
@@ -113,7 +115,7 @@ function renderContent(content: string) {
       elements.push(
         <h2
           key={i}
-          className="text-2xl font-bold text-dark mt-10 mb-4"
+          className="h-display !mt-12 text-2xl md:text-[1.75rem]"
         >
           {line.slice(3)}
         </h2>
@@ -131,7 +133,7 @@ function renderContent(content: string) {
     } else {
       flushList();
       elements.push(
-        <p key={i} className="text-gray-600 leading-relaxed">
+        <p key={i} className="leading-relaxed text-gray-700">
           {line}
         </p>
       );
@@ -170,52 +172,25 @@ export default function ArticlePage({ params }: Props) {
     <article>
       <JsonLd id="article-schema" data={schema} />
       <JsonLd id="breadcrumb-schema" data={breadcrumb} />
-      {/* Cover image */}
-      {article.coverImage && (
-        <div className="relative w-full h-[300px] md:h-[400px]">
-          <Image
-            src={article.coverImage}
-            alt={article.title}
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
-      )}
-
       {/* Header */}
-      <section className={`bg-gradient-to-br from-gray-50 to-white ${article.coverImage ? "py-10 md:py-14" : "py-16 md:py-20"}`}>
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="border-b border-line">
+        <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
           <Link
             href="/clanky"
-            className="inline-flex items-center gap-1 text-sm text-primary hover:underline mb-6"
+            className="rise mb-8 inline-flex items-center gap-2 font-mono text-sm font-medium text-accent hover:underline"
           >
-            <svg
-              className="w-4 h-4"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-              />
-            </svg>
+            <ArrowLeft className="h-4 w-4" weight="bold" aria-hidden="true" />
             Zpět na články
           </Link>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-dark leading-tight">
+          <h1 className="h-display rise text-[1.75rem] leading-[1.15] sm:text-4xl lg:text-[2.75rem]">
             {article.title}
           </h1>
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-4 text-sm text-gray-400">
+          <div className="rise mt-6 flex flex-wrap items-center gap-x-5 gap-y-1 font-mono text-xs text-muted">
             <time dateTime={article.date}>{formatDate(article.date)}</time>
             {article.updatedAt && (
               <span>
                 aktualizováno{" "}
-                <time dateTime={article.updatedAt}>
-                  {formatDate(article.updatedAt)}
-                </time>
+                <time dateTime={article.updatedAt}>{formatDate(article.updatedAt)}</time>
               </span>
             )}
             <span>{article.timeToRead} min čtení</span>
@@ -223,42 +198,36 @@ export default function ArticlePage({ params }: Props) {
         </div>
       </section>
 
+      {/* Cover image */}
+      {article.coverImage && (
+        <div className="mx-auto max-w-5xl px-4 pt-10 sm:px-6 lg:px-8">
+          <div className="relative aspect-[1200/630] w-full overflow-hidden border border-line">
+            <Image
+              src={article.coverImage}
+              alt={article.title}
+              fill
+              sizes="(max-width: 1024px) 100vw, 960px"
+              className="object-cover"
+              priority
+            />
+          </div>
+        </div>
+      )}
+
       {/* Content */}
-      <section className="py-12 md:py-16">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+      <section className="py-10 md:py-14">
+        <div className="mx-auto max-w-3xl space-y-4 px-4 text-[17px] sm:px-6 lg:px-8">
           {renderContent(article.content)}
         </div>
       </section>
 
       {/* CTA */}
-      <section className="bg-primary py-12 md:py-16">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-white">
-            Stáhni si PHMarket a začni šetřit
-          </h2>
-          <p className="mt-3 text-white/80">
-            Slevové kódy na pohonné hmoty přímo v mobilu.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center mt-6">
-            <Link
-              href={APP_STORE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-white text-primary font-semibold px-5 py-3 rounded-lg hover:bg-gray-100 transition-colors"
-            >
-              App Store
-            </Link>
-            <Link
-              href={GOOGLE_PLAY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-white text-primary font-semibold px-5 py-3 rounded-lg hover:bg-gray-100 transition-colors"
-            >
-              Google Play
-            </Link>
-          </div>
-        </div>
-      </section>
+      <CtaBand
+        title="Stáhni si PHMarket a začni šetřit"
+        text="Slevové kódy na pohonné hmoty přímo v mobilu."
+      >
+        <AppStoreButtons tone="onBrand" />
+      </CtaBand>
     </article>
   );
 }

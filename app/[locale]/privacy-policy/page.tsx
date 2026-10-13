@@ -37,12 +37,12 @@ const PDF: Record<Locale, { href: string; download: string }> = {
 
 // Language switcher entries (label is always shown in the target language)
 const LANG_LABEL: Record<Locale, string> = {
-  cs: "🇨🇿 Čeština",
-  sk: "🇸🇰 Slovenčina",
-  en: "🇬🇧 English",
-  de: "🇩🇪 Deutsch",
-  pl: "🇵🇱 Polski",
-  hu: "🇭🇺 Magyar",
+  cs: "Čeština",
+  sk: "Slovenčina",
+  en: "English",
+  de: "Deutsch",
+  pl: "Polski",
+  hu: "Magyar",
 };
 
 type Content = {

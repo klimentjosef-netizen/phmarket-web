@@ -2,146 +2,196 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  color: #1a1a1a;
-  background: #ffffff;
-}
-
 /* ================================================================== */
-/*  Hero Redesign Animations                                           */
+/*  Barvy: svetly a tmavy rezim podle nastaveni zarizeni               */
 /* ================================================================== */
+:root {
+  color-scheme: light;
+  --paper: 245 247 244;
+  --surface: 255 255 255;
+  --ink: 16 21 18;
+  --muted: 84 96 88;
+  --line: 211 219 212;
+  --accent: 24 110 49;
 
-/* -- Glass-morphism card ------------------------------------------- */
-.hero-glass-card {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-}
+  --gray-50: 238 242 238;
+  --gray-100: 229 234 229;
+  --gray-200: 211 219 212;
+  --gray-300: 186 196 188;
+  --gray-400: 112 124 115;
+  --gray-500: 94 106 98;
+  --gray-600: 74 85 77;
+  --gray-700: 52 62 55;
+  --gray-800: 33 41 36;
+  --gray-900: 20 26 22;
 
-/* -- Levitation (floating cards) ----------------------------------- */
-@keyframes hero-levitate-1 {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-12px); }
-}
-@keyframes hero-levitate-2 {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-8px); }
-}
-.hero-levitate-1 { animation: hero-levitate-1 4s ease-in-out infinite; }
-.hero-levitate-2 { animation: hero-levitate-2 5s ease-in-out infinite; }
-
-/* -- Road slide ---------------------------------------------------- */
-@keyframes hero-road-slide {
-  0% { opacity: 0; transform: translateX(-30px) scaleX(0.6); }
-  20% { opacity: 0.6; }
-  80% { opacity: 0.6; }
-  100% { opacity: 0; transform: translateX(30px) scaleX(1.2); }
+  --map-neutral: #e3e8e3;
 }
 
-/* -- Coin fall ----------------------------------------------------- */
-@keyframes hero-coin-fall {
-  0% { opacity: 0; transform: translateY(0) rotate(0deg); }
-  10% { opacity: 1; }
-  80% { opacity: 1; }
-  100% { opacity: 0; transform: translateY(400px) rotate(720deg); }
-}
-@keyframes hero-coin-spin {
-  0%, 100% { transform: scaleX(1); }
-  50% { transform: scaleX(0.3); }
-}
-.hero-coin-fall { animation: hero-coin-fall 2.8s ease-in forwards; }
-.hero-coin-spin { animation: hero-coin-spin 0.6s ease-in-out infinite; }
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --paper: 11 16 13;
+    --surface: 19 26 21;
+    --ink: 236 242 237;
+    --muted: 156 168 159;
+    --line: 40 51 43;
+    --accent: 104 204 132;
 
-/* -- Hero fuel station --------------------------------------------- */
-@keyframes hero-hose-flow {
-  to { stroke-dashoffset: -16; }
-}
-.hero-hose-flow {
-  stroke-dasharray: 3 5;
-  animation: hero-hose-flow 0.5s linear infinite;
-}
-@keyframes hero-pump-glow {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 0.85; }
-}
-.hero-pump-glow { animation: hero-pump-glow 1.1s ease-in-out infinite; }
+    --gray-50: 19 26 21;
+    --gray-100: 27 36 30;
+    --gray-200: 40 51 43;
+    --gray-300: 61 74 64;
+    --gray-400: 138 150 141;
+    --gray-500: 156 168 159;
+    --gray-600: 178 189 181;
+    --gray-700: 203 212 205;
+    --gray-800: 222 229 223;
+    --gray-900: 236 242 237;
 
-@keyframes hero-fuel-drop {
-  0% { opacity: 0; transform: translateY(0) scale(0.6); }
-  30% { opacity: 1; }
-  100% { opacity: 0; transform: translateY(14px) scale(1); }
-}
-.hero-fuel-drop { animation: hero-fuel-drop 0.9s ease-in infinite; }
-
-@keyframes hero-car-bob {
-  0%, 100% { transform: translateY(0); }
-  25% { transform: translateY(-1.5px); }
-  75% { transform: translateY(1.5px); }
-}
-.hero-car-bob { animation: hero-car-bob 0.45s ease-in-out infinite; }
-
-@keyframes hero-wheel-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-.hero-wheel-spin {
-  animation: hero-wheel-spin 0.5s linear infinite;
-  transform-box: fill-box;
-  transform-origin: center;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-car-bob, .hero-wheel-spin, .hero-hose-flow, .hero-pump-glow, .hero-fuel-drop {
-    animation: none;
+    --map-neutral: #1b241e;
   }
 }
 
-/* -- Phone glow ---------------------------------------------------- */
-@keyframes hero-phone-glow {
-  0%, 100% { opacity: 0.4; transform: scale(1); }
-  50% { opacity: 0.7; transform: scale(1.1); }
-}
-.hero-phone-glow { animation: hero-phone-glow 3s ease-in-out infinite; }
-
-/* -- Celebration pulse --------------------------------------------- */
-@keyframes hero-pulse-glow {
-  0%, 100% { opacity: 0.3; transform: scale(0.9); }
-  50% { opacity: 0.6; transform: scale(1.15); }
-}
-.hero-pulse-glow { animation: hero-pulse-glow 2s ease-in-out infinite; }
-
-/* -- Price pop (reused for other sections) ------------------------- */
-@keyframes price-pop {
-  0% { opacity: 0; transform: scale(0.5); }
-  50% { transform: scale(1.15); }
-  100% { opacity: 1; transform: scale(1); }
-}
-.animate-price-pop { animation: price-pop 0.4s ease-out forwards; }
-
-/* -- Bounce in ---------------------------------------------------- */
-@keyframes bounce-in {
-  0% { opacity: 0; transform: scale(0) rotate(-10deg); }
-  60% { transform: scale(1.2) rotate(3deg); }
-  100% { opacity: 1; transform: scale(1) rotate(0deg); }
-}
-.animate-bounce-in { animation: bounce-in 0.5s ease-out forwards; }
-
-/* -- Hero gradient background ------------------------------------- */
-.hero-premium-bg {
-  background: linear-gradient(
-    160deg,
-    #0a1a0f 0%,
-    #0d2818 25%,
-    #0f3321 50%,
-    #0a2015 75%,
-    #061210 100%
-  );
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    color: rgb(var(--ink));
+    background: rgb(var(--paper));
+  }
+  ::selection {
+    background: #186e31;
+    color: #ffffff;
+  }
+  :focus-visible {
+    outline: 2px solid rgb(var(--accent));
+    outline-offset: 2px;
+  }
+  /* Dlouha slova (nemcina, madarstina) se v nadpisech radeji rozdeli, nez aby pretekla. */
+  h1,
+  h2,
+  h3 {
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-wrap: balance;
+  }
 }
 
-/* -- Subtle grid overlay ------------------------------------------ */
-.hero-grid-overlay {
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-  background-size: 60px 60px;
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Nadpisy strojovym pismem, stejne jako v aplikaci */
+  .h-display {
+    @apply font-mono font-normal tracking-[-0.035em] text-ink;
+  }
+  .h-hero {
+    @apply h-display text-[2.1rem] leading-[1.08] sm:text-5xl lg:text-[3.5rem] xl:text-6xl;
+  }
+  .h-page {
+    @apply h-display text-[1.9rem] leading-[1.1] sm:text-4xl lg:text-5xl;
+  }
+  .h-section {
+    @apply h-display text-2xl leading-[1.15] sm:text-3xl lg:text-[2.5rem];
+  }
+  .h-sub {
+    @apply font-mono text-lg font-medium leading-snug tracking-[-0.02em] text-ink;
+  }
+  .lead {
+    @apply text-base leading-relaxed text-muted md:text-lg;
+  }
+  .label {
+    @apply font-mono text-xs font-medium uppercase tracking-[0.14em] text-accent;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-3.5 text-center font-mono text-sm font-medium tracking-[-0.01em] transition-[background-color,border-color,color,transform] duration-200 active:translate-y-px disabled:cursor-not-allowed disabled:opacity-60;
+  }
+  .btn-primary {
+    @apply btn bg-primary text-white hover:bg-primary-dark;
+  }
+  .btn-outline {
+    @apply btn border border-line bg-surface text-ink hover:border-accent hover:text-accent;
+  }
+  /* Tlacitko na zelenem podkladu */
+  .btn-onbrand {
+    @apply btn bg-white text-[#0f4a22] hover:bg-[#e6efe7];
+  }
+
+  .field {
+    @apply w-full border border-gray-300 bg-surface px-3.5 py-3 text-ink outline-none transition-colors placeholder:text-gray-400 focus:border-accent focus:ring-1 focus:ring-accent;
+  }
+
+  /* Text pravnich dokumentu a clanku */
+  .prose-body {
+    @apply space-y-4 text-[15px] leading-relaxed text-gray-700 md:text-base;
+  }
+  .prose-body ul {
+    @apply list-disc space-y-1 pl-6;
+  }
+  .prose-body ol {
+    @apply list-decimal space-y-1 pl-6;
+  }
+  .prose-body a {
+    @apply text-accent underline underline-offset-2;
+  }
+  .prose-body strong {
+    @apply font-semibold text-ink;
+  }
+}
+
+/* ================================================================== */
+/*  Pohyb: nabeh hera a odhaleni sekci pri rolovani                    */
+/* ================================================================== */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .rise {
+    animation: rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: calc(var(--i, 0) * 90ms);
+  }
+
+  /* Odhaleni rizene rolovanim. Kde ho prohlizec neumi, obsah je rovnou videt. */
+  @supports (animation-timeline: view()) {
+    .reveal {
+      animation: rise linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 32%;
+    }
+  }
+}
+
+/* FAQ: nativni rozbalovani bez JavaScriptu */
+details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+details[open] .faq-icon {
+  transform: rotate(45deg);
+}
+.faq-icon {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Mapa Leaflet respektuje ostre hrany webu */
+.leaflet-container {
+  font-family: inherit;
+}
+.leaflet-popup-content-wrapper {
+  border-radius: 0 !important;
 }

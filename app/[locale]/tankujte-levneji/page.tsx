@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import AppStoreButtons from "@/components/AppStoreButtons";
+import { CtaBand, PageHero } from "@/components/sections";
 import type { Locale } from "@/i18n/routing";
 import { localizedAlternates } from "@/lib/seo";
 
@@ -30,51 +31,40 @@ export default async function TankujteLevnejiPage({
 
   return (
     <>
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-gray-50 to-white py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold text-dark leading-tight">
-              {t.rich("title", {
-                hl: (chunks) => <span className="text-primary">{chunks}</span>,
-              })}
-            </h1>
-            <p className="mt-4 text-lg text-gray-600 leading-relaxed">
-              {t("subtitle")}
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        title={t.rich("title", {
+          hl: (chunks) => <span className="text-accent">{chunks}</span>,
+        })}
+        intro={t("subtitle")}
+      >
+        <AppStoreButtons />
+      </PageHero>
 
       {/* Benefits */}
-      <section className="py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-dark mb-12">
-            {t("benefitsHeading")}
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {benefits.map((b) => (
-              <div key={b.title} className="bg-gray-50 rounded-xl p-6 border border-gray-100">
-                <h3 className="font-semibold text-dark text-lg">{b.title}</h3>
-                <p className="mt-2 text-sm text-gray-500 leading-relaxed">{b.desc}</p>
+      <section className="py-14 md:py-20">
+        <div className="container-page">
+          <h2 className="h-section reveal">{t("benefitsHeading")}</h2>
+          <div className="mt-10 grid grid-cols-1 border-l border-t border-line sm:grid-cols-2 lg:grid-cols-3">
+            {benefits.map((b, i) => (
+              <div
+                key={b.title}
+                className={`reveal border-b border-r border-line p-6 sm:p-8 ${
+                  i === 0 ? "bg-primary text-white" : "bg-surface"
+                }`}
+              >
+                <h3 className={`h-sub text-xl ${i === 0 ? "text-white" : ""}`}>{b.title}</h3>
+                <p className={`mt-3 leading-relaxed ${i === 0 ? "text-white/85" : "text-muted"}`}>
+                  {b.desc}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="bg-primary py-16 md:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
-            {t("ctaTitle")}
-          </h2>
-          <p className="mt-4 text-white/80 max-w-xl mx-auto">
-            {t("ctaSubtitle")}
-          </p>
-          <AppStoreButtons className="mt-8 justify-center" />
-        </div>
-      </section>
+      <CtaBand title={t("ctaTitle")} text={t("ctaSubtitle")}>
+        <AppStoreButtons tone="onBrand" />
+      </CtaBand>
     </>
   );
 }

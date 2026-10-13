@@ -40,16 +40,16 @@ type ConfirmState =
 // component type across renders — otherwise inputs lose focus on every keystroke.
 function Shell({ t, children }: { t: Texts; children: React.ReactNode }) {
   return (
-    <section className="bg-gradient-to-br from-gray-50 to-white min-h-[70vh] py-16 md:py-24">
+    <section className="min-h-[70vh] py-14 md:py-20">
       <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl md:text-4xl font-bold text-dark">{t.title}</h1>
+        <h1 className="h-page">{t.title}</h1>
         <div className="mt-8">{children}</div>
         <footer className="mt-12 pt-6 border-t border-gray-200 text-sm text-gray-500">
           <div className="flex flex-wrap gap-x-6 gap-y-2">
-            <a href={t.termsHref} target="_blank" rel="noopener noreferrer" className="hover:text-primary">
+            <a href={t.termsHref} target="_blank" rel="noopener noreferrer" className="hover:text-accent">
               {t.footerTerms}
             </a>
-            <a href={t.privacyHref} target="_blank" rel="noopener noreferrer" className="hover:text-primary">
+            <a href={t.privacyHref} target="_blank" rel="noopener noreferrer" className="hover:text-accent">
               {t.footerPrivacy}
             </a>
           </div>
@@ -207,7 +207,7 @@ export default function AccountDeletion({ lang }: { lang: Lang }) {
 
     const statusTone =
       confirmState === "deleted"
-        ? "bg-primary/5 border-primary/30 text-dark"
+        ? "bg-primary/10 border-accent text-ink"
         : confirmState === "expired"
         ? "bg-amber-50 border-amber-200 text-amber-800"
         : confirmState === "failed" || confirmState === "connError"
@@ -217,7 +217,7 @@ export default function AccountDeletion({ lang }: { lang: Lang }) {
     return (
       <Shell t={t}>
         <div className="rounded-xl border border-amber-300 bg-amber-50 p-6">
-          <p className="text-gray-800 leading-relaxed">{t.confirmIntro}</p>
+          <p className="leading-relaxed text-amber-900">{t.confirmIntro}</p>
         </div>
 
         <button
@@ -278,7 +278,7 @@ export default function AccountDeletion({ lang }: { lang: Lang }) {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder={t.emailPlaceholder}
-            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 focus:border-primary focus:ring-1 focus:ring-primary outline-none"
+            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 focus:border-accent focus:ring-1 focus:ring-accent outline-none"
           />
         </div>
 
@@ -292,8 +292,8 @@ export default function AccountDeletion({ lang }: { lang: Lang }) {
             autoComplete="current-password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className={`w-full rounded-lg border px-4 py-2.5 outline-none focus:ring-1 focus:ring-primary ${
-              passwordRequired ? "border-amber-400" : "border-gray-300 focus:border-primary"
+            className={`w-full rounded-lg border px-4 py-2.5 outline-none focus:ring-1 focus:ring-accent ${
+              passwordRequired ? "border-amber-400" : "border-gray-300 focus:border-accent"
             }`}
           />
           <p className="mt-1 text-xs text-gray-500">{t.passwordHint}</p>
@@ -308,7 +308,7 @@ export default function AccountDeletion({ lang }: { lang: Lang }) {
             id="ad-reason"
             value={reason}
             onChange={(e) => setReason(e.target.value)}
-            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 bg-white focus:border-primary focus:ring-1 focus:ring-primary outline-none"
+            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 bg-surface focus:border-accent focus:ring-1 focus:ring-accent outline-none"
           >
             {t.reasonOptions.map((opt, i) => (
               <option key={i} value={i === 0 ? "" : opt}>
@@ -323,7 +323,7 @@ export default function AccountDeletion({ lang }: { lang: Lang }) {
             type="checkbox"
             checked={consent}
             onChange={(e) => setConsent(e.target.checked)}
-            className="mt-1 h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+            className="mt-1 h-4 w-4 rounded border-gray-300 text-accent focus:ring-accent"
           />
           <span className="text-sm text-gray-700 leading-snug">{t.consent}</span>
         </label>

@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { List, X } from "@phosphor-icons/react";
 import LanguageSwitcher from "./LanguageSwitcher";
 import DownloadAppButton from "./DownloadAppButton";
 
@@ -19,12 +20,16 @@ const NAV_LINKS = [
 
 export default function Navbar() {
   const t = useTranslations("nav");
+  const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
 
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
+
   return (
-    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+    <nav className="sticky top-0 z-50 border-b border-line bg-paper/90 backdrop-blur-md">
+      <div className="container-page">
+        <div className="flex h-16 items-center justify-between gap-4">
           {/* Logo */}
           <Link href="/" className="shrink-0">
             <Image
@@ -32,18 +37,23 @@ export default function Navbar() {
               alt="PHMarket logo"
               width={140}
               height={60}
-              className="h-10 w-auto"
+              className="h-12 w-auto"
               priority
             />
           </Link>
 
           {/* Desktop nav */}
-          <div className="hidden xl:flex items-center gap-1">
+          <div className="hidden items-center xl:flex">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-3 py-2 text-sm font-medium text-gray-600 hover:text-primary rounded-md transition-colors"
+                aria-current={isActive(link.href) ? "page" : undefined}
+                className={`relative px-3 py-2 text-sm font-medium transition-colors after:absolute after:inset-x-3 after:-bottom-[13px] after:h-0.5 after:origin-left after:bg-accent after:transition-transform after:duration-300 hover:text-ink ${
+                  isActive(link.href)
+                    ? "text-ink after:scale-x-100"
+                    : "text-muted after:scale-x-0 hover:after:scale-x-100"
+                }`}
               >
                 {t(link.key)}
               </Link>
@@ -51,12 +61,9 @@ export default function Navbar() {
           </div>
 
           {/* Right side: language + CTA */}
-          <div className="hidden xl:flex items-center gap-2">
+          <div className="hidden items-center gap-2 xl:flex">
             <LanguageSwitcher />
-            <DownloadAppButton
-              label={t("downloadApp")}
-              className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
-            />
+            <DownloadAppButton label={t("downloadApp")} className="btn-primary !py-2.5" />
           </div>
 
           {/* Mobile controls */}
@@ -64,19 +71,15 @@ export default function Navbar() {
             <LanguageSwitcher />
             <button
               type="button"
-              className="p-2 rounded-md text-gray-600 hover:text-primary"
+              className="p-2 text-ink"
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label={mobileOpen ? "Zavřít menu" : "Otevřít menu"}
               aria-expanded={mobileOpen}
             >
               {mobileOpen ? (
-                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+                <X className="h-6 w-6" aria-hidden="true" />
               ) : (
-                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
+                <List className="h-6 w-6" aria-hidden="true" />
               )}
             </button>
           </div>
@@ -85,13 +88,16 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="xl:hidden border-t border-gray-100 bg-white">
-          <div className="px-4 py-3 space-y-1">
+        <div className="border-t border-line bg-paper xl:hidden">
+          <div className="container-page py-3">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-primary hover:bg-gray-50 rounded-md transition-colors"
+                aria-current={isActive(link.href) ? "page" : undefined}
+                className={`block border-b border-line py-3.5 font-mono text-base tracking-[-0.02em] transition-colors ${
+                  isActive(link.href) ? "text-accent" : "text-ink hover:text-accent"
+                }`}
                 onClick={() => setMobileOpen(false)}
               >
                 {t(link.key)}
@@ -99,7 +105,7 @@ export default function Navbar() {
             ))}
             <DownloadAppButton
               label={t("downloadApp")}
-              className="block w-full mt-3 text-center bg-primary hover:bg-primary-dark text-white font-semibold px-4 py-2.5 rounded-lg transition-colors"
+              className="btn-primary mb-2 mt-5 w-full"
               onChosen={() => setMobileOpen(false)}
             />
           </div>
