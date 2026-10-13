@@ -173,6 +173,51 @@
   }
 }
 
+/* ================================================================== */
+/*  Scena v heru: auto u stojanu                                       */
+/* ================================================================== */
+@keyframes scene-hose-flow {
+  to {
+    stroke-dashoffset: -16;
+  }
+}
+@keyframes scene-car-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-1.2px);
+  }
+  75% {
+    transform: translateY(1.2px);
+  }
+}
+@keyframes scene-wheel-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.scene-hose-flow {
+  stroke-dasharray: 3 5;
+  animation: scene-hose-flow 0.5s linear infinite;
+}
+.scene-car-bob {
+  animation: scene-car-bob 0.45s ease-in-out infinite;
+}
+.scene-wheel-spin {
+  animation: scene-wheel-spin 0.5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+@media (prefers-reduced-motion: reduce) {
+  .scene-hose-flow,
+  .scene-car-bob,
+  .scene-wheel-spin {
+    animation: none;
+  }
+}
+
 /* FAQ: nativni rozbalovani bez JavaScriptu */
 details > summary {
   list-style: none;
