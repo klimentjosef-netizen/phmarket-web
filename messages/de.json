@@ -47,14 +47,14 @@
     "sceneAria": "Beispiel für Ersparnis mit PHMarket",
     "competitor": "Konkurrenz",
     "phmarketDiscount": "PHMarket Rabatt",
-    "saved": "Gespart: 175 CZK pro Tankfüllung"
+    "saved": "Gespart bei jeder Tankfüllung"
   },
   "stats": {
     "stationsValue": "100+",
     "stationsLabel": "Tankstellen",
-    "savingValue": "bis zu 3 CZK",
-    "savingLabel": "Ersparnis pro Liter",
-    "feeValue": "0 CZK",
+    "savingValue": "Rabatte",
+    "savingLabel": "an Partnertankstellen",
+    "feeValue": "0 €",
     "feeLabel": "Gebühr für die App",
     "mapValue": "PHMap",
     "mapLabel": "Tankstellenkarte"
@@ -131,7 +131,7 @@
     "subtitle": "Mit der PHMarket-App sparst du bei jedem Tanken. Zeige einfach den Rabattcode direkt an der Kasse der Tankstelle und der Rabatt wird sofort vom Kraftstoffpreis abgezogen.",
     "benefitsHeading": "Warum mit PHMarket tanken?",
     "benefits": [
-      { "title": "Spare bis zu 3 CZK pro Liter", "desc": "Dank exklusiver Rabattcodes sparst du bei jedem Tanken." },
+      { "title": "Rabatte auf Kraftstoff", "desc": "Dank exklusiver Rabattcodes sparst du bei jedem Tanken." },
       { "title": "Ohne Registrierung", "desc": "Keine komplizierten Anmeldungen oder Formulare. Herunterladen und tanken." },
       { "title": "Keine Gebühren", "desc": "Die App ist komplett kostenlos. Keine versteckten Gebühren oder Abos." },
       { "title": "Ohne Plastikkarten", "desc": "Schluss mit Treuekarten. Alles bequem in deinem Handy." },

@@ -3,6 +3,7 @@
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing, type Locale } from "@/i18n/routing";
+import { domainFor } from "@/i18n/domains";
 import { useState, useRef, useEffect } from "react";
 import { CaretDown, Globe } from "@phosphor-icons/react";
 
@@ -32,6 +33,16 @@ export default function LanguageSwitcher({ className = "" }: { className?: strin
 
   function switchTo(next: Locale) {
     setOpen(false);
+    // Languages with their own country domain (phmarket.sk …) live there, not on this site.
+    const d = domainFor(next);
+    if (d && d.domain !== window.location.host) {
+      window.location.href = `https://${d.domain}${pathname === "/" ? "" : pathname}`;
+      return;
+    }
+    if (next === "cs" && window.location.host !== "www.phmarket.cz" && domainFor(locale)) {
+      window.location.href = `https://www.phmarket.cz${pathname === "/" ? "" : pathname}`;
+      return;
+    }
     router.replace(pathname, { locale: next });
   }
 

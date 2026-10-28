@@ -47,14 +47,14 @@
     "sceneAria": "Przykład oszczędności z PHMarket",
     "competitor": "Konkurencja",
     "phmarketDiscount": "Rabat PHMarket",
-    "saved": "Zaoszczędzone: 175 Kč na baku"
+    "saved": "Oszczędzasz przy każdym tankowaniu"
   },
   "stats": {
     "stationsValue": "100+",
     "stationsLabel": "stacji paliw",
-    "savingValue": "do 3 Kč",
-    "savingLabel": "oszczędność na litr",
-    "feeValue": "0 Kč",
+    "savingValue": "Rabaty",
+    "savingLabel": "na stacjach partnerskich",
+    "feeValue": "0 zł",
     "feeLabel": "opłata za aplikację",
     "mapValue": "PHMap",
     "mapLabel": "mapa stacji"
@@ -131,7 +131,7 @@
     "subtitle": "Z aplikacją PHMarket zaoszczędzisz przy każdym tankowaniu. Wystarczy pokazać kod rabatowy bezpośrednio przy kasie stacji, a rabat zostanie odliczony natychmiast od ceny paliwa.",
     "benefitsHeading": "Dlaczego tankować z PHMarket?",
     "benefits": [
-      { "title": "Oszczędność do 3 Kč na litr", "desc": "Dzięki ekskluzywnym kodom rabatowym oszczędzasz przy każdym tankowaniu." },
+      { "title": "Rabaty na paliwo", "desc": "Dzięki ekskluzywnym kodom rabatowym oszczędzasz przy każdym tankowaniu." },
       { "title": "Bez rejestracji", "desc": "Żadnych skomplikowanych rejestracji ani wypełniania formularzy. Pobierz i tankuj." },
       { "title": "Żadnych opłat", "desc": "Aplikacja jest całkowicie darmowa. Żadnych ukrytych opłat ani abonamentu." },
       { "title": "Bez plastikowych kart", "desc": "Koniec z kartami lojalnościowymi. Wszystko masz wygodnie w telefonie." },

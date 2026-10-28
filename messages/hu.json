@@ -47,14 +47,14 @@
     "sceneAria": "Megtakarítás bemutatása a PHMarkettel",
     "competitor": "Konkurencia",
     "phmarketDiscount": "PHMarket kedvezmény",
-    "saved": "Megspórolva: 175 Kč egy tankolásnál"
+    "saved": "Spórolsz minden tankolásnál"
   },
   "stats": {
     "stationsValue": "100+",
     "stationsLabel": "töltőállomás",
-    "savingValue": "akár 3 Kč",
-    "savingLabel": "megtakarítás literenként",
-    "feeValue": "0 Kč",
+    "savingValue": "Kedvezmények",
+    "savingLabel": "a partnerkutakon",
+    "feeValue": "0 Ft",
     "feeLabel": "díj az alkalmazásért",
     "mapValue": "PHMap",
     "mapLabel": "töltőállomások térképe"
@@ -131,7 +131,7 @@
     "subtitle": "A PHMarket alkalmazással minden tankoláson spórolsz. Elég megmutatni a kedvezménykódot közvetlenül a töltőállomás pénztáránál, és a kedvezmény azonnal levonásra kerül az üzemanyag árából.",
     "benefitsHeading": "Miért tankolj a PHMarkettel?",
     "benefits": [
-      { "title": "Megtakarítás akár 3 Kč literenként", "desc": "Az exkluzív kedvezménykódoknak köszönhetően minden tankoláson spórolsz." },
+      { "title": "Üzemanyag-kedvezmények", "desc": "Az exkluzív kedvezménykódoknak köszönhetően minden tankoláson spórolsz." },
       { "title": "Regisztráció nélkül", "desc": "Semmilyen bonyolult regisztráció vagy űrlapkitöltés. Töltsd le és tankolj." },
       { "title": "Semmilyen díj", "desc": "Az alkalmazás teljesen ingyenes. Nincsenek rejtett díjak vagy előfizetés." },
       { "title": "Plasztikkártyák nélkül", "desc": "Vége a hűségkártyáknak. Minden kényelmesen a mobilodban van." },

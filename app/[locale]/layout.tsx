@@ -5,7 +5,8 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing, type Locale } from "@/i18n/routing";
-import { localePath, localizedAlternates } from "@/lib/seo";
+import { localizedAlternates } from "@/lib/seo";
+import { absoluteUrl, domainFor } from "@/i18n/domains";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
@@ -46,7 +47,8 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "meta" });
 
   return {
-    metadataBase: new URL(SITE_URL),
+    // Each country domain is its own site (phmarket.sk …); relative URLs resolve against it.
+    metadataBase: new URL(domainFor(locale) ? `https://${domainFor(locale)!.domain}` : SITE_URL),
     title: { default: t("homeTitle"), template: "%s | PHMarket" },
     description: t("homeDescription"),
     applicationName: "PHMarket",
@@ -56,7 +58,7 @@ export async function generateMetadata({
       type: "website",
       locale: OG_LOCALE[locale],
       siteName: "PHMarket",
-      url: SITE_URL + localePath(locale),
+      url: locale === "cs" ? SITE_URL : absoluteUrl(locale),
       title: t("homeTitle"),
       description: t("ogDescription"),
       images: [{ url: "/logo.png", width: 328, height: 142, alt: "PHMarket logo" }],

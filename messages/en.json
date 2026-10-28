@@ -47,14 +47,14 @@
     "sceneAria": "Example of savings with PHMarket",
     "competitor": "Competitors",
     "phmarketDiscount": "PHMarket discount",
-    "saved": "Saved: 175 CZK per tank"
+    "saved": "Saved on every fill-up"
   },
   "stats": {
     "stationsValue": "100+",
     "stationsLabel": "fuel stations",
-    "savingValue": "up to 3 CZK",
-    "savingLabel": "saving per litre",
-    "feeValue": "0 CZK",
+    "savingValue": "Discounts",
+    "savingLabel": "at partner stations",
+    "feeValue": "€0",
     "feeLabel": "app fee",
     "mapValue": "PHMap",
     "mapLabel": "station map"
@@ -131,7 +131,7 @@
     "subtitle": "With the PHMarket app you save on every fill-up. Just show the discount code right at the station till and the discount is deducted instantly from the fuel price.",
     "benefitsHeading": "Why fuel up with PHMarket?",
     "benefits": [
-      { "title": "Save up to 3 CZK per litre", "desc": "Thanks to exclusive discount codes you save on every fill-up." },
+      { "title": "Fuel discounts", "desc": "Thanks to exclusive discount codes you save on every fill-up." },
       { "title": "No registration", "desc": "No complicated sign-ups or filling in forms. Download and fuel up." },
       { "title": "No fees", "desc": "The app is completely free. No hidden fees or subscriptions." },
       { "title": "No plastic cards", "desc": "Done with loyalty cards. Everything is conveniently in your phone." },

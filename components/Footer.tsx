@@ -3,17 +3,18 @@ import { Link } from "@/i18n/navigation";
 import { getTranslations, getLocale } from "next-intl/server";
 import { localePath } from "@/lib/seo";
 import type { Locale } from "@/i18n/routing";
+import { socialFor } from "@/i18n/domains";
 import { FacebookLogo, InstagramLogo, TiktokLogo } from "@phosphor-icons/react/dist/ssr";
 
-const SOCIAL_LINKS = [
-  { name: "Instagram", href: "https://www.instagram.com/phmarket_cz/", Icon: InstagramLogo },
-  {
-    name: "Facebook",
-    href: "https://www.facebook.com/people/PHMarket/61577959808959/#",
-    Icon: FacebookLogo,
-  },
-  { name: "TikTok", href: "https://www.tiktok.com/@phmarket_cz", Icon: TiktokLogo },
-];
+// Instagram, Facebook and TikTok of the visitor's country (falls back to the Czech profiles).
+function socialLinks(locale: Locale) {
+  const s = socialFor(locale);
+  return [
+    { name: "Instagram", href: s.instagram, Icon: InstagramLogo },
+    { name: "Facebook", href: s.facebook, Icon: FacebookLogo },
+    { name: "TikTok", href: s.tiktok, Icon: TiktokLogo },
+  ];
+}
 
 const NAV = [
   { href: "/phmap", key: "phmap" },
@@ -53,7 +54,7 @@ export default async function Footer() {
             </Link>
             <p className="max-w-xs text-sm leading-relaxed text-muted">{t("tagline")}</p>
             <div className="mt-5 flex items-center gap-2">
-              {SOCIAL_LINKS.map(({ name, href, Icon }) => (
+              {socialLinks(locale).map(({ name, href, Icon }) => (
                 <a
                   key={name}
                   href={href}

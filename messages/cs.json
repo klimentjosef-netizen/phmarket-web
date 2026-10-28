@@ -47,12 +47,12 @@
     "sceneAria": "Ukázka úspory s PHMarket",
     "competitor": "Konkurence",
     "phmarketDiscount": "PHMarket sleva",
-    "saved": "Ušetřeno: 175 Kč na nádrži"
+    "saved": "Ušetřeno: až 25 Kč na nádrži"
   },
   "stats": {
     "stationsValue": "100+",
     "stationsLabel": "čerpacích stanic",
-    "savingValue": "až 3 Kč",
+    "savingValue": "až 0,50 Kč",
     "savingLabel": "úspora na litr",
     "feeValue": "0 Kč",
     "feeLabel": "poplatek za aplikaci",
@@ -131,7 +131,7 @@
     "subtitle": "S aplikací PHMarket ušetříte na každém tankování. Stačí zobrazit slevový kód přímo na pokladně čerpací stanice a sleva se odečte okamžitě z ceny paliva.",
     "benefitsHeading": "Proč tankovat s PHMarket?",
     "benefits": [
-      { "title": "Úspora až 3 Kč na litr", "desc": "Díky exkluzivním slevovým kódům ušetříte na každém tankování." },
+      { "title": "Úspora až 0,50 Kč na litr", "desc": "Díky exkluzivním slevovým kódům ušetříte na každém tankování." },
       { "title": "Bez registrace", "desc": "Žádné složité registrace ani vyplňování formulářů. Stáhni a tankuj." },
       { "title": "Žádné poplatky", "desc": "Aplikace je kompletně zdarma. Žádné skryté poplatky ani předplatné." },
       { "title": "Bez plastových karet", "desc": "Konec s věrnostními kartami. Vše máš pohodlně v mobilu." },

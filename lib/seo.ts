@@ -1,4 +1,5 @@
 import { routing, type Locale } from "@/i18n/routing";
+import { absoluteUrl, COUNTRY_DOMAINS } from "@/i18n/domains";
 
 // hreflang code for each app locale (used in <link rel="alternate"> and sitemap)
 export const HREFLANG: Record<Locale, string> = {
@@ -6,13 +7,16 @@ export const HREFLANG: Record<Locale, string> = {
   sk: "sk-SK",
   pl: "pl-PL",
   en: "en",
-  de: "de-DE",
+  de: "de",
   hu: "hu-HU",
 };
 
 // Czech stays at the root ("/"), other locales get a prefix ("/en/phmap").
 // Returns a root-relative path; metadataBase resolves it to an absolute URL.
 export function localePath(locale: Locale, path = ""): string {
+  // With country domains live, every alternate must be absolute (phmarket.sk/phmap, phmarket.cz/phmap),
+  // otherwise it would resolve against the domain the page is served from.
+  if (COUNTRY_DOMAINS.some((d) => d.live && d.locale !== "cs")) return absoluteUrl(locale, path);
   return locale === routing.defaultLocale ? path || "/" : `/${locale}${path}`;
 }
 
