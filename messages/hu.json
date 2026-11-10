@@ -154,9 +154,8 @@
       { "title": "Aktuális kedvezmények", "desc": "Minden töltőállomásnál látod az aktuális kedvezménykódokat és a literenkénti megtakarítás mértékét." },
       { "title": "Navigáció", "desc": "Egyetlen kattintással elindítod a navigációt közvetlenül a kiválasztott töltőállomáshoz." }
     ],
-    "loadingMap": "Térkép betöltése...",
-    "stationCount": "{count, plural, other {# töltőállomás}}",
-    "sortedByDistance": "távolság szerint rendezve"
+    "comingSoonTitle": "A térképet előkészítjük",
+    "comingSoonText": "Hamarosan itt láthatod azokat a töltőállomásokat, ahol a PHMarket működik. Addig is közvetlenül az alkalmazásban találod meg őket."
   },
   "articlesPage": {
     "metaTitle": "Cikkek",

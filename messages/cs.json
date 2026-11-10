@@ -154,9 +154,8 @@
       { "title": "Aktuální slevy", "desc": "U každé stanice vidíš aktuální slevové kódy a výši úspory na litr." },
       { "title": "Navigace", "desc": "Jedním kliknutím spustíš navigaci přímo k vybrané stanici." }
     ],
-    "loadingMap": "Načítám mapu...",
-    "stationCount": "{count, plural, one {# čerpací stanice} few {# čerpací stanice} other {# čerpacích stanic}}",
-    "sortedByDistance": "řazeno dle vzdálenosti"
+    "comingSoonTitle": "Mapu připravujeme",
+    "comingSoonText": "Brzy tady uvidíš čerpací stanice, kde PHMarket funguje. Do té doby je najdeš přímo v aplikaci."
   },
   "articlesPage": {
     "metaTitle": "Články",

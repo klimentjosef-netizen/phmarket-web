@@ -154,9 +154,8 @@
       { "title": "Current discounts", "desc": "For each station you see the current discount codes and the saving per litre." },
       { "title": "Navigation", "desc": "With one tap you start navigation straight to the chosen station." }
     ],
-    "loadingMap": "Loading map...",
-    "stationCount": "{count, plural, one {# fuel station} other {# fuel stations}}",
-    "sortedByDistance": "sorted by distance"
+    "comingSoonTitle": "We are preparing the map",
+    "comingSoonText": "Soon you will see the fuel stations where PHMarket works right here. Until then, you will find them directly in the app."
   },
   "articlesPage": {
     "metaTitle": "Articles",

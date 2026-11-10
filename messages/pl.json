@@ -154,9 +154,8 @@
       { "title": "Aktualne rabaty", "desc": "Przy każdej stacji widzisz aktualne kody rabatowe i wysokość oszczędności na litr." },
       { "title": "Nawigacja", "desc": "Jednym kliknięciem uruchomisz nawigację bezpośrednio do wybranej stacji." }
     ],
-    "loadingMap": "Ładowanie mapy...",
-    "stationCount": "{count, plural, one {# stacja paliw} few {# stacje paliw} many {# stacji paliw} other {# stacji paliw}}",
-    "sortedByDistance": "posortowane według odległości"
+    "comingSoonTitle": "Przygotowujemy mapę",
+    "comingSoonText": "Wkrótce zobaczysz tu stacje paliw, na których działa PHMarket. Do tego czasu znajdziesz je bezpośrednio w aplikacji."
   },
   "articlesPage": {
     "metaTitle": "Artykuły",

@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import AppStoreButtons from "@/components/AppStoreButtons";
-import StationMap from "@/components/StationMap";
-import { MapPin, NavigationArrow, Tag } from "@phosphor-icons/react/dist/ssr";
+import { MapPin, MapTrifold, NavigationArrow, Tag } from "@phosphor-icons/react/dist/ssr";
 import type { Locale } from "@/i18n/routing";
 import { localizedAlternates } from "@/lib/seo";
 
@@ -52,10 +51,14 @@ export default async function PHMapPage({
         </div>
       </section>
 
-      {/* Map */}
+      {/* Map: in preparation until real station data is available */}
       <section className="py-8 md:py-12">
         <div className="container-page">
-          <StationMap />
+          <div className="flex flex-col items-center justify-center border border-line bg-gray-50 px-6 py-16 text-center md:py-24">
+            <MapTrifold className="h-12 w-12 text-accent" weight="light" aria-hidden="true" />
+            <h2 className="h-sub mt-6 text-2xl">{t("comingSoonTitle")}</h2>
+            <p className="mt-3 max-w-md leading-relaxed text-muted">{t("comingSoonText")}</p>
+          </div>
         </div>
       </section>
 

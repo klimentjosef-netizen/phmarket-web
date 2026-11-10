@@ -154,9 +154,8 @@
       { "title": "Aktuelle Rabatte", "desc": "Bei jeder Tankstelle siehst du die aktuellen Rabattcodes und die Ersparnis pro Liter." },
       { "title": "Navigation", "desc": "Mit einem Tippen startest du die Navigation direkt zur gewählten Tankstelle." }
     ],
-    "loadingMap": "Karte wird geladen...",
-    "stationCount": "{count, plural, one {# Tankstelle} other {# Tankstellen}}",
-    "sortedByDistance": "nach Entfernung sortiert"
+    "comingSoonTitle": "Die Karte ist in Vorbereitung",
+    "comingSoonText": "Bald siehst du hier die Tankstellen, an denen PHMarket funktioniert. Bis dahin findest du sie direkt in der App."
   },
   "articlesPage": {
     "metaTitle": "Artikel",
