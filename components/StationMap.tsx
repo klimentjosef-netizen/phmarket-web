@@ -80,9 +80,6 @@ export default function StationMap() {
                             </span>
                           ))}
                         </div>
-                        <p className="mt-2 text-sm font-bold text-green-700">
-                          {station.discount}
-                        </p>
                       </div>
                     </Popup>
                   </Marker>
@@ -190,9 +187,6 @@ export default function StationMap() {
                   )}
                 </p>
               </div>
-              <span className="shrink-0 bg-primary px-2 py-1 font-mono text-xs font-medium text-white">
-                {station.discount}
-              </span>
             </div>
             <div className="flex gap-1.5 mt-2">
               {station.fuels.map((f) => (

@@ -5,7 +5,6 @@ export interface Station {
   lat: number;
   lng: number;
   fuels: string[];
-  discount: string;
   brand: string;
 }
 
@@ -17,7 +16,6 @@ export const stations: Station[] = [
     lat: 49.7462,
     lng: 18.6285,
     fuels: ["Natural 95", "Diesel"],
-    discount: "-2,50 Kč/l",
     brand: "ORLEN",
   },
   {
@@ -27,7 +25,6 @@ export const stations: Station[] = [
     lat: 49.6775,
     lng: 18.6726,
     fuels: ["Natural 95", "Diesel", "LPG"],
-    discount: "-1,80 Kč/l",
     brand: "MOL",
   },
   {
@@ -37,7 +34,6 @@ export const stations: Station[] = [
     lat: 49.7797,
     lng: 18.4341,
     fuels: ["Diesel", "AdBlue"],
-    discount: "-3,00 Kč/l",
     brand: "EuroOil",
   },
   {
@@ -47,7 +43,6 @@ export const stations: Station[] = [
     lat: 49.8542,
     lng: 18.5426,
     fuels: ["Natural 95", "Diesel"],
-    discount: "-2,20 Kč/l",
     brand: "Robin Oil",
   },
   {
@@ -57,7 +52,6 @@ export const stations: Station[] = [
     lat: 49.6881,
     lng: 18.3535,
     fuels: ["Natural 95", "Natural 98", "Diesel"],
-    discount: "-1,50 Kč/l",
     brand: "Tank ONO",
   },
   {
@@ -67,7 +61,6 @@ export const stations: Station[] = [
     lat: 49.8272,
     lng: 18.1691,
     fuels: ["Natural 95", "Diesel", "LPG"],
-    discount: "-2,00 Kč/l",
     brand: "ORLEN",
   },
   {
@@ -77,7 +70,6 @@ export const stations: Station[] = [
     lat: 49.7987,
     lng: 18.2654,
     fuels: ["Natural 95", "Diesel"],
-    discount: "-2,80 Kč/l",
     brand: "EuroOil",
   },
   {
@@ -87,7 +79,6 @@ export const stations: Station[] = [
     lat: 49.9368,
     lng: 17.8969,
     fuels: ["Natural 95", "Natural 98", "Diesel"],
-    discount: "-1,60 Kč/l",
     brand: "MOL",
   },
   {
@@ -97,7 +88,6 @@ export const stations: Station[] = [
     lat: 49.9043,
     lng: 18.3574,
     fuels: ["Natural 95", "Diesel"],
-    discount: "-2,40 Kč/l",
     brand: "Robin Oil",
   },
   {
@@ -107,7 +97,6 @@ export const stations: Station[] = [
     lat: 49.8452,
     lng: 18.4308,
     fuels: ["Natural 95", "Diesel", "AdBlue"],
-    discount: "-1,90 Kč/l",
     brand: "Tank ONO",
   },
   {
@@ -117,7 +106,6 @@ export const stations: Station[] = [
     lat: 49.5943,
     lng: 18.0103,
     fuels: ["Natural 95", "Diesel"],
-    discount: "-2,10 Kč/l",
     brand: "ORLEN",
   },
   {
@@ -127,7 +115,6 @@ export const stations: Station[] = [
     lat: 49.5881,
     lng: 18.3585,
     fuels: ["Natural 95", "Diesel"],
-    discount: "-2,70 Kč/l",
     brand: "EuroOil",
   },
 ];
