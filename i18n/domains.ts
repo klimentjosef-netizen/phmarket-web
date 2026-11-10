@@ -17,7 +17,7 @@ export const COUNTRY_DOMAINS: CountryDomain[] = [
   { domain: "www.phmarket.sk", locale: "sk", live: true },
   { domain: "www.phmarket.pl", locale: "pl", live: true },
   { domain: "www.phmarket.at", locale: "de", live: true },
-  { domain: "www.phmarket.hu", locale: "hu", live: false },
+  { domain: "www.phmarket.hu", locale: "hu", live: true },
   { domain: "www.phmarket.eu", locale: "en", live: true },
 ];
 
