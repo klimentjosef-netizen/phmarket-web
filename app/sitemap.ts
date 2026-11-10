@@ -56,13 +56,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const host = headers().get("host")?.replace(/^(?!www\.)/, "www.") ?? "";
   const own = COUNTRY_DOMAINS.find((d) => d.live && d.domain === host && d.locale !== "cs");
   if (own) {
-    return SITE_PATHS.map((p) => ({
+    const ownPages: MetadataRoute.Sitemap = SITE_PATHS.map((p) => ({
       url: absoluteUrl(own.locale, p.path),
       lastModified: now,
       changeFrequency: p.changeFrequency,
       priority: p.priority,
       alternates: { languages: languagesFor(p.path) },
     }));
+    const ownArticles: MetadataRoute.Sitemap = articles.map((a) => ({
+      url: absoluteUrl(own.locale, `/clanky/${a.slug}`),
+      lastModified: new Date(a.date),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+      alternates: { languages: languagesFor(`/clanky/${a.slug}`) },
+    }));
+    return [...ownPages, ...ownArticles];
   }
 
   const staticPaths = SITE_PATHS;
@@ -76,13 +84,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: { languages: languagesFor(p.path) },
   }));
 
-  // Articles are Czech-only content (served under all locale prefixes but
-  // canonicalised to the cs URL), so we list only the cs URL with no hreflang.
+  // Articles are translated into every language (lib/article-translations), same slug everywhere
   const articlePages: MetadataRoute.Sitemap = articles.map((a) => ({
     url: `${BASE_URL}/clanky/${a.slug}`,
     lastModified: new Date(a.date),
     changeFrequency: "monthly" as const,
     priority: 0.7,
+    alternates: { languages: languagesFor(`/clanky/${a.slug}`) },
   }));
 
   return [...staticPages, ...articlePages];

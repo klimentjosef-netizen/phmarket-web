@@ -2,23 +2,13 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { articles } from "@/lib/articles";
+import { formatArticleDate, getArticles } from "@/lib/articles";
 import JsonLd from "@/components/JsonLd";
 import { PageHero } from "@/components/sections";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import { breadcrumbSchema, SITE_URL } from "@/lib/jsonld";
 import type { Locale } from "@/i18n/routing";
 import { localizedAlternates } from "@/lib/seo";
-
-// Intl date locale for each app locale
-const DATE_LOCALE: Record<Locale, string> = {
-  cs: "cs-CZ",
-  sk: "sk-SK",
-  pl: "pl-PL",
-  en: "en-GB",
-  de: "de-DE",
-  hu: "hu-HU",
-};
 
 export async function generateMetadata({
   params,
@@ -32,15 +22,6 @@ export async function generateMetadata({
     description: t("metaDescription"),
     alternates: localizedAlternates(locale, "/clanky"),
   };
-}
-
-function formatDate(dateStr: string, locale: Locale) {
-  const d = new Date(dateStr);
-  return d.toLocaleDateString(DATE_LOCALE[locale], {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
 }
 
 export default async function ArticlesPage({
@@ -57,7 +38,7 @@ export default async function ArticlesPage({
     { name: t("breadcrumb") },
   ]);
 
-  const sorted = [...articles].sort(
+  const sorted = [...getArticles(locale)].sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
 
@@ -94,7 +75,7 @@ export default async function ArticlesPage({
                 </div>
                 <div className={i === 0 ? "pt-5 lg:self-center lg:pt-0" : "pt-5"}>
                   <div className="flex items-center gap-4 font-mono text-xs text-muted">
-                    <time dateTime={article.date}>{formatDate(article.date, locale)}</time>
+                    <time dateTime={article.date}>{formatArticleDate(article.date, locale)}</time>
                     <span>
                       {article.timeToRead} {t("minRead")}
                     </span>

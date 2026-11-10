@@ -12,7 +12,9 @@
     "cisteni": "Čistenie nádrží",
     "mikrozavozy": "Mikrorozvozy nafty",
     "partneri": "Pre čerpacie stanice",
-    "downloadApp": "Stiahnuť aplikáciu"
+    "downloadApp": "Stiahnuť aplikáciu",
+    "openMenu": "Otvoriť menu",
+    "closeMenu": "Zavrieť menu"
   },
   "switcher": {
     "label": "Jazyk",
@@ -122,7 +124,8 @@
     "mobilePromptTitle": "Celé znenie dokumentu otvoríte v PDF.",
     "mobilePromptSubtitle": "Pre pohodlné čítanie na mobile odporúčame dokument otvoriť na celú obrazovku.",
     "operator": "Prevádzkovateľ",
-    "emailLabel": "E-mail"
+    "emailLabel": "E-mail",
+    "breadcrumbLabel": "Omrvinková navigácia"
   },
   "tankujtePage": {
     "metaTitle": "Tankujte lacnejšie",
@@ -150,7 +153,10 @@
       { "title": "Najbližšie stanice", "desc": "Zobrazí čerpacie stanice so zľavami vo tvojom okolí zoradené podľa vzdialenosti." },
       { "title": "Aktuálne zľavy", "desc": "Pri každej stanici vidíš aktuálne zľavové kódy a výšku úspory na liter." },
       { "title": "Navigácia", "desc": "Jedným kliknutím spustíš navigáciu priamo k vybranej stanici." }
-    ]
+    ],
+    "loadingMap": "Načítavam mapu...",
+    "stationCount": "{count, plural, one {# čerpacia stanica} few {# čerpacie stanice} other {# čerpacích staníc}}",
+    "sortedByDistance": "zoradené podľa vzdialenosti"
   },
   "articlesPage": {
     "metaTitle": "Články",
@@ -159,6 +165,10 @@
     "heroSubtitle": "Novinky a tipy zo sveta pohonných hmôt a šikovného tankovania.",
     "readMore": "Čítať viac",
     "minRead": "min čítania",
-    "breadcrumb": "Články"
+    "breadcrumb": "Články",
+    "backToArticles": "Späť na články",
+    "updated": "aktualizované",
+    "ctaTitle": "Stiahni si PHMarket a začni šetriť",
+    "ctaText": "Zľavové kódy na pohonné hmoty priamo v mobile."
   }
 }

@@ -148,10 +148,12 @@ export type ArticleSchemaInput = {
   description: string;
   image?: string | null;
   wordCount?: number;
+  url?: string;
+  inLanguage?: string;
 };
 
 export function articleSchema(a: ArticleSchemaInput) {
-  const url = `${SITE_URL}/clanky/${a.slug}`;
+  const url = a.url ?? `${SITE_URL}/clanky/${a.slug}`;
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -159,7 +161,7 @@ export function articleSchema(a: ArticleSchemaInput) {
     description: a.description,
     datePublished: a.datePublished,
     dateModified: a.dateModified || a.datePublished,
-    inLanguage: "cs-CZ",
+    inLanguage: a.inLanguage ?? "cs-CZ",
     author: {
       "@type": "Organization",
       name: "PHMarket",

@@ -11,6 +11,16 @@ export const HREFLANG: Record<Locale, string> = {
   hu: "hu-HU",
 };
 
+// Open Graph locale for each app locale
+export const OG_LOCALE: Record<Locale, string> = {
+  cs: "cs_CZ",
+  sk: "sk_SK",
+  pl: "pl_PL",
+  en: "en_US",
+  de: "de_DE",
+  hu: "hu_HU",
+};
+
 // Czech stays at the root ("/"), other locales get a prefix ("/en/phmap").
 // Returns a root-relative path; metadataBase resolves it to an absolute URL.
 export function localePath(locale: Locale, path = ""): string {

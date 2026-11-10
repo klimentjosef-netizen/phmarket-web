@@ -12,7 +12,9 @@
     "cisteni": "Czyszczenie zbiorników",
     "mikrozavozy": "Mikrodostawy oleju napędowego",
     "partneri": "Dla stacji paliw",
-    "downloadApp": "Pobierz aplikację"
+    "downloadApp": "Pobierz aplikację",
+    "openMenu": "Otwórz menu",
+    "closeMenu": "Zamknij menu"
   },
   "switcher": {
     "label": "Język",
@@ -122,7 +124,8 @@
     "mobilePromptTitle": "Pełną treść dokumentu otworzysz w PDF.",
     "mobilePromptSubtitle": "Dla wygodnego czytania na telefonie zalecamy otwarcie dokumentu na pełnym ekranie.",
     "operator": "Operator",
-    "emailLabel": "E-mail"
+    "emailLabel": "E-mail",
+    "breadcrumbLabel": "Nawigacja okruszkowa"
   },
   "tankujtePage": {
     "metaTitle": "Tankuj taniej",
@@ -150,7 +153,10 @@
       { "title": "Najbliższe stacje", "desc": "Pokazuje stacje paliw z rabatami w Twojej okolicy uszeregowane według odległości." },
       { "title": "Aktualne rabaty", "desc": "Przy każdej stacji widzisz aktualne kody rabatowe i wysokość oszczędności na litr." },
       { "title": "Nawigacja", "desc": "Jednym kliknięciem uruchomisz nawigację bezpośrednio do wybranej stacji." }
-    ]
+    ],
+    "loadingMap": "Ładowanie mapy...",
+    "stationCount": "{count, plural, one {# stacja paliw} few {# stacje paliw} many {# stacji paliw} other {# stacji paliw}}",
+    "sortedByDistance": "posortowane według odległości"
   },
   "articlesPage": {
     "metaTitle": "Artykuły",
@@ -159,6 +165,10 @@
     "heroSubtitle": "Nowości i porady ze świata paliw oraz sprytnego tankowania.",
     "readMore": "Czytaj więcej",
     "minRead": "min czytania",
-    "breadcrumb": "Artykuły"
+    "breadcrumb": "Artykuły",
+    "backToArticles": "Wróć do artykułów",
+    "updated": "zaktualizowano",
+    "ctaTitle": "Pobierz PHMarket i zacznij oszczędzać",
+    "ctaText": "Kody rabatowe na paliwo prosto w telefonie."
   }
 }

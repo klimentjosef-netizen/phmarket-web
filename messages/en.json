@@ -12,7 +12,9 @@
     "cisteni": "Tank cleaning",
     "mikrozavozy": "Diesel micro-delivery",
     "partneri": "For fuel stations",
-    "downloadApp": "Download the app"
+    "downloadApp": "Download the app",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "switcher": {
     "label": "Language",
@@ -122,7 +124,8 @@
     "mobilePromptTitle": "Open the full text of the document as a PDF.",
     "mobilePromptSubtitle": "For comfortable reading on mobile we recommend opening the document in full screen.",
     "operator": "Operator",
-    "emailLabel": "E-mail"
+    "emailLabel": "E-mail",
+    "breadcrumbLabel": "Breadcrumb"
   },
   "tankujtePage": {
     "metaTitle": "Fuel up cheaper",
@@ -150,7 +153,10 @@
       { "title": "Nearest stations", "desc": "Shows fuel stations with discounts near you, sorted by distance." },
       { "title": "Current discounts", "desc": "For each station you see the current discount codes and the saving per litre." },
       { "title": "Navigation", "desc": "With one tap you start navigation straight to the chosen station." }
-    ]
+    ],
+    "loadingMap": "Loading map...",
+    "stationCount": "{count, plural, one {# fuel station} other {# fuel stations}}",
+    "sortedByDistance": "sorted by distance"
   },
   "articlesPage": {
     "metaTitle": "Articles",
@@ -159,6 +165,10 @@
     "heroSubtitle": "News and tips from the world of fuel and smart fuelling.",
     "readMore": "Read more",
     "minRead": "min read",
-    "breadcrumb": "Articles"
+    "breadcrumb": "Articles",
+    "backToArticles": "Back to articles",
+    "updated": "updated",
+    "ctaTitle": "Download PHMarket and start saving",
+    "ctaText": "Fuel discount codes right on your phone."
   }
 }

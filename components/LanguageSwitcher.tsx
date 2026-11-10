@@ -1,6 +1,6 @@
 "use client";
 
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing, type Locale } from "@/i18n/routing";
 import { domainFor } from "@/i18n/domains";
@@ -18,6 +18,7 @@ const LABELS: Record<Locale, string> = {
 
 export default function LanguageSwitcher({ className = "" }: { className?: string }) {
   const locale = useLocale() as Locale;
+  const t = useTranslations("switcher");
   const pathname = usePathname();
   const router = useRouter();
   const [open, setOpen] = useState(false);
@@ -52,7 +53,7 @@ export default function LanguageSwitcher({ className = "" }: { className?: strin
         type="button"
         onClick={() => setOpen((o) => !o)}
         className="inline-flex items-center gap-1.5 px-2.5 py-2 font-mono text-sm font-medium text-muted transition-colors hover:text-ink"
-        aria-label="Změnit jazyk"
+        aria-label={t("label")}
         aria-haspopup="listbox"
         aria-expanded={open}
       >

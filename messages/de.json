@@ -12,7 +12,9 @@
     "cisteni": "Tankreinigung",
     "mikrozavozy": "Diesel-Mikrolieferung",
     "partneri": "Für Tankstellen",
-    "downloadApp": "App herunterladen"
+    "downloadApp": "App herunterladen",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen"
   },
   "switcher": {
     "label": "Sprache",
@@ -122,7 +124,8 @@
     "mobilePromptTitle": "Den vollständigen Text des Dokuments öffnen Sie als PDF.",
     "mobilePromptSubtitle": "Für bequemes Lesen auf dem Handy empfehlen wir, das Dokument im Vollbild zu öffnen.",
     "operator": "Betreiber",
-    "emailLabel": "E-Mail"
+    "emailLabel": "E-Mail",
+    "breadcrumbLabel": "Brotkrümelnavigation"
   },
   "tankujtePage": {
     "metaTitle": "Günstiger tanken",
@@ -150,7 +153,10 @@
       { "title": "Nächste Tankstellen", "desc": "Zeigt Tankstellen mit Rabatten in deiner Nähe, sortiert nach Entfernung." },
       { "title": "Aktuelle Rabatte", "desc": "Bei jeder Tankstelle siehst du die aktuellen Rabattcodes und die Ersparnis pro Liter." },
       { "title": "Navigation", "desc": "Mit einem Tippen startest du die Navigation direkt zur gewählten Tankstelle." }
-    ]
+    ],
+    "loadingMap": "Karte wird geladen...",
+    "stationCount": "{count, plural, one {# Tankstelle} other {# Tankstellen}}",
+    "sortedByDistance": "nach Entfernung sortiert"
   },
   "articlesPage": {
     "metaTitle": "Artikel",
@@ -159,6 +165,10 @@
     "heroSubtitle": "Neuigkeiten und Tipps aus der Welt des Kraftstoffs und des smarten Tankens.",
     "readMore": "Mehr lesen",
     "minRead": "Min. Lesezeit",
-    "breadcrumb": "Artikel"
+    "breadcrumb": "Artikel",
+    "backToArticles": "Zurück zu den Artikeln",
+    "updated": "aktualisiert",
+    "ctaTitle": "Lade PHMarket herunter und fang an zu sparen",
+    "ctaText": "Rabattcodes für Kraftstoff direkt auf dem Handy."
   }
 }

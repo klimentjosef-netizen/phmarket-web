@@ -73,7 +73,7 @@ export default function Navbar() {
               type="button"
               className="p-2 text-ink"
               onClick={() => setMobileOpen(!mobileOpen)}
-              aria-label={mobileOpen ? "Zavřít menu" : "Otevřít menu"}
+              aria-label={mobileOpen ? t("closeMenu") : t("openMenu")}
               aria-expanded={mobileOpen}
             >
               {mobileOpen ? (

@@ -5,7 +5,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing, type Locale } from "@/i18n/routing";
-import { localizedAlternates } from "@/lib/seo";
+import { localizedAlternates, OG_LOCALE } from "@/lib/seo";
 import { absoluteUrl, domainFor } from "@/i18n/domains";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -24,15 +24,6 @@ const mono = JetBrains_Mono({
   variable: "--font-mono",
   display: "swap",
 });
-
-const OG_LOCALE: Record<Locale, string> = {
-  cs: "cs_CZ",
-  sk: "sk_SK",
-  pl: "pl_PL",
-  en: "en_US",
-  de: "de_DE",
-  hu: "hu_HU",
-};
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

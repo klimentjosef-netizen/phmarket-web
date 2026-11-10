@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import { articles } from "@/lib/articles";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
+import type { Locale } from "@/i18n/routing";
+import { articles, formatArticleDate, getArticle } from "@/lib/articles";
+import { HREFLANG, localePath, localizedAlternates, OG_LOCALE } from "@/lib/seo";
 import JsonLd from "@/components/JsonLd";
 import {
   articleSchema,
@@ -14,27 +17,27 @@ import { CtaBand } from "@/components/sections";
 import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ locale: Locale; slug: string }>;
 }
 
 export function generateStaticParams() {
   return articles.map((a) => ({ slug: a.slug }));
 }
 
-export function generateMetadata({ params }: Props): Metadata {
-  const article = articles.find((a) => a.slug === params.slug);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale, slug } = await params;
+  const article = getArticle(locale, slug);
   if (!article) return {};
-  // Czech-only article served under all locale prefixes: consolidate every
-  // variant onto the single cs URL (no hreflang — these are not translations).
-  const url = `/clanky/${article.slug}`;
+  // Every article is translated into all languages under the same slug
+  const alternates = localizedAlternates(locale, `/clanky/${article.slug}`);
   return {
     title: article.title,
     description: article.seoDescription || article.title,
-    alternates: { canonical: url },
+    alternates,
     openGraph: {
       type: "article",
-      locale: "cs_CZ",
-      url,
+      locale: OG_LOCALE[locale],
+      url: alternates.canonical,
       title: article.title,
       description: article.seoDescription || article.title,
       publishedTime: article.date,
@@ -50,15 +53,6 @@ export function generateMetadata({ params }: Props): Metadata {
       images: article.coverImage ? [article.coverImage] : undefined,
     },
   };
-}
-
-function formatDate(dateStr: string) {
-  const d = new Date(dateStr);
-  return d.toLocaleDateString("cs-CZ", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
 }
 
 function renderContent(content: string) {
@@ -144,9 +138,13 @@ function renderContent(content: string) {
   return elements;
 }
 
-export default function ArticlePage({ params }: Props) {
-  const article = articles.find((a) => a.slug === params.slug);
+export default async function ArticlePage({ params }: Props) {
+  const { locale, slug } = await params;
+  setRequestLocale(locale);
+  const article = getArticle(locale, slug);
   if (!article) notFound();
+  const t = await getTranslations("articlesPage");
+  const tNav = await getTranslations("nav");
 
   const wordCount = article.content
     .split(/\s+/)
@@ -160,11 +158,13 @@ export default function ArticlePage({ params }: Props) {
     description: article.seoDescription || article.title,
     image: article.coverImage,
     wordCount,
+    url: localePath(locale, `/clanky/${article.slug}`),
+    inLanguage: HREFLANG[locale],
   });
 
   const breadcrumb = breadcrumbSchema([
-    { name: "Domů", url: SITE_URL },
-    { name: "Články", url: `${SITE_URL}/clanky` },
+    { name: tNav("home"), url: SITE_URL },
+    { name: t("breadcrumb"), url: `${SITE_URL}/clanky` },
     { name: article.title },
   ]);
 
@@ -180,20 +180,22 @@ export default function ArticlePage({ params }: Props) {
             className="rise mb-8 inline-flex items-center gap-2 font-mono text-sm font-medium text-accent hover:underline"
           >
             <ArrowLeft className="h-4 w-4" weight="bold" aria-hidden="true" />
-            Zpět na články
+            {t("backToArticles")}
           </Link>
           <h1 className="h-display rise text-[1.75rem] leading-[1.15] sm:text-4xl lg:text-[2.75rem]">
             {article.title}
           </h1>
           <div className="rise mt-6 flex flex-wrap items-center gap-x-5 gap-y-1 font-mono text-xs text-muted">
-            <time dateTime={article.date}>{formatDate(article.date)}</time>
+            <time dateTime={article.date}>{formatArticleDate(article.date, locale)}</time>
             {article.updatedAt && (
               <span>
-                aktualizováno{" "}
-                <time dateTime={article.updatedAt}>{formatDate(article.updatedAt)}</time>
+                {t("updated")}{" "}
+                <time dateTime={article.updatedAt}>{formatArticleDate(article.updatedAt, locale)}</time>
               </span>
             )}
-            <span>{article.timeToRead} min čtení</span>
+            <span>
+              {article.timeToRead} {t("minRead")}
+            </span>
           </div>
         </div>
       </section>
@@ -223,8 +225,8 @@ export default function ArticlePage({ params }: Props) {
 
       {/* CTA */}
       <CtaBand
-        title="Stáhni si PHMarket a začni šetřit"
-        text="Slevové kódy na pohonné hmoty přímo v mobilu."
+        title={t("ctaTitle")}
+        text={t("ctaText")}
       >
         <AppStoreButtons tone="onBrand" />
       </CtaBand>

@@ -12,7 +12,9 @@
     "cisteni": "Tartálytisztítás",
     "mikrozavozy": "Gázolaj mikroszállítás",
     "partneri": "Töltőállomásoknak",
-    "downloadApp": "Alkalmazás letöltése"
+    "downloadApp": "Alkalmazás letöltése",
+    "openMenu": "Menü megnyitása",
+    "closeMenu": "Menü bezárása"
   },
   "switcher": {
     "label": "Nyelv",
@@ -122,7 +124,8 @@
     "mobilePromptTitle": "A dokumentum teljes szövegét PDF-ben nyithatod meg.",
     "mobilePromptSubtitle": "A mobilon való kényelmes olvasáshoz javasoljuk, hogy a dokumentumot teljes képernyőn nyisd meg.",
     "operator": "Üzemeltető",
-    "emailLabel": "E-mail"
+    "emailLabel": "E-mail",
+    "breadcrumbLabel": "Morzsamenü"
   },
   "tankujtePage": {
     "metaTitle": "Tankolj olcsóbban",
@@ -150,7 +153,10 @@
       { "title": "Legközelebbi töltőállomások", "desc": "Megjeleníti a környékeden lévő kedvezményes töltőállomásokat távolság szerint rendezve." },
       { "title": "Aktuális kedvezmények", "desc": "Minden töltőállomásnál látod az aktuális kedvezménykódokat és a literenkénti megtakarítás mértékét." },
       { "title": "Navigáció", "desc": "Egyetlen kattintással elindítod a navigációt közvetlenül a kiválasztott töltőállomáshoz." }
-    ]
+    ],
+    "loadingMap": "Térkép betöltése...",
+    "stationCount": "{count, plural, other {# töltőállomás}}",
+    "sortedByDistance": "távolság szerint rendezve"
   },
   "articlesPage": {
     "metaTitle": "Cikkek",
@@ -159,6 +165,10 @@
     "heroSubtitle": "Hírek és tippek az üzemanyagok és az okos tankolás világából.",
     "readMore": "Tovább",
     "minRead": "perc olvasás",
-    "breadcrumb": "Cikkek"
+    "breadcrumb": "Cikkek",
+    "backToArticles": "Vissza a cikkekhez",
+    "updated": "frissítve",
+    "ctaTitle": "Töltsd le a PHMarketet, és kezdj el spórolni",
+    "ctaText": "Üzemanyag-kedvezménykódok közvetlenül a mobilodon."
   }
 }

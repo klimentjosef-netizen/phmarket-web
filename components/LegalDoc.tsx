@@ -59,7 +59,7 @@ export default function LegalDoc({
       {/* Header */}
       <section className="border-b border-line">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20">
-          <nav className="mb-6 font-mono text-xs text-muted" aria-label="Drobečková navigace">
+          <nav className="mb-6 font-mono text-xs text-muted" aria-label={t("breadcrumbLabel")}>
             <Link href="/" className="transition-colors hover:text-accent">
               {t("breadcrumbHome")}
             </Link>

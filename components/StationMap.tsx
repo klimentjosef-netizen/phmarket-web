@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 import { stations, type Station } from "@/lib/stations";
 
 export default function StationMap() {
+  const t = useTranslations("phmapPage");
   const [MapComponent, setMapComponent] = useState<React.ComponentType | null>(
     null
   );
@@ -145,7 +147,7 @@ export default function StationMap() {
           </>
         ) : (
           <div className="flex items-center justify-center h-full">
-            <p className="animate-pulse font-mono text-sm text-muted">Načítám mapu...</p>
+            <p className="animate-pulse font-mono text-sm text-muted">{t("loadingMap")}</p>
           </div>
         )}
       </div>
@@ -153,8 +155,8 @@ export default function StationMap() {
       {/* Station list */}
       <div className="max-h-[550px] space-y-2 overflow-y-auto pr-1">
         <p className="mb-3 font-mono text-xs text-muted">
-          {stations.length} čerpacích stanic
-          {userLocation && " · řazeno dle vzdálenosti"}
+          {t("stationCount", { count: stations.length })}
+          {userLocation && ` · ${t("sortedByDistance")}`}
         </p>
         {sortedStations.map((station) => (
           <button
