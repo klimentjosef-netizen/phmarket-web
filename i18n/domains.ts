@@ -50,6 +50,24 @@ export const SOCIAL: Partial<Record<Locale, Partial<SocialProfiles>>> = {
     facebook: "https://www.facebook.com/people/PHMarket/61577959808959/#",
     tiktok: "https://www.tiktok.com/@phmarket_cz",
   },
+  // Country pages and Instagram accounts from Meta Business Suite (Modern Digital Environment), 10. 11. 2026.
+  // TikTok and English (phmarket.eu) have no local profiles yet, so they fall back to the Czech ones.
+  sk: {
+    instagram: "https://www.instagram.com/phmarketsk/",
+    facebook: "https://www.facebook.com/profile.php?id=61596123476279",
+  },
+  pl: {
+    instagram: "https://www.instagram.com/phmarketpl/",
+    facebook: "https://www.facebook.com/profile.php?id=61596146873545",
+  },
+  de: {
+    instagram: "https://www.instagram.com/phmarketat/",
+    facebook: "https://www.facebook.com/profile.php?id=61595942402444",
+  },
+  hu: {
+    instagram: "https://www.instagram.com/phmarkethu/",
+    facebook: "https://www.facebook.com/profile.php?id=61595925005004",
+  },
 };
 export function socialFor(locale: Locale): SocialProfiles {
   return { ...(SOCIAL.cs as SocialProfiles), ...(SOCIAL[locale] ?? {}) };
