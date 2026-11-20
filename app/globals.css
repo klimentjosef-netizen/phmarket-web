@@ -141,6 +141,9 @@
   .prose-body strong {
     @apply font-semibold text-ink;
   }
+  .prose-body h3 {
+    @apply pt-2 font-mono text-base font-medium tracking-[-0.02em] text-ink md:text-lg;
+  }
 }
 
 /* ================================================================== */
